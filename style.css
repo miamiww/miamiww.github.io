@@ -6,6 +6,6 @@
 
 h1 {
   animation-name: colorChange;
-  animation-duration: 3s;
+  animation-duration: 20s;
   color: green;
 }
