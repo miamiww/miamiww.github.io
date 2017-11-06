@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational Media on Alden&#39;s ITP Blog</title>
+    <link>http://example.org/categories/computational-media/</link>
+    <description>Recent content in Computational Media on Alden&#39;s ITP Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2017 20:35:05 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/computational-media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Circle Game with Tracking</title>
+      <link>http://example.org/2017/10/23/circle-game-with-tracking/</link>
+      <pubDate>Mon, 23 Oct 2017 20:35:05 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/23/circle-game-with-tracking/</guid>
+      <description>&amp;nbsp;
+I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I&amp;#8217;d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn&amp;#8217;t finish that in a playable way.
+You can see the improved code here.
+I put a playable version of it here.</description>
+    </item>
+    
+    <item>
+      <title>Circle Game</title>
+      <link>http://example.org/2017/10/16/circle-game/</link>
+      <pubDate>Mon, 16 Oct 2017 19:11:09 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/16/circle-game/</guid>
+      <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
+&amp;#8220;Points&amp;#8221; are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of &amp;#8220;cookie clicker&amp;#8221; type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
+    </item>
+    
+    <item>
+      <title>You Suck</title>
+      <link>http://example.org/2017/10/07/you-suck/</link>
+      <pubDate>Sat, 07 Oct 2017 15:24:50 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/07/you-suck/</guid>
+      <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
+
+You can see the code for that here.
+Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out &amp;#8220;You Suck&amp;#8221;. I thought that was pretty funny but we weren&amp;#8217;t sure how to get the actual drawing mechanism to work, i.</description>
+    </item>
+    
+    <item>
+      <title>Experiments in P5 drawing</title>
+      <link>http://example.org/2017/09/18/week-1-experiments-in-p5-drawing/</link>
+      <pubDate>Mon, 18 Sep 2017 19:06:11 +0000</pubDate>
+      
+      <guid>http://example.org/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
+      <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
+http://alpha.editor.p5js.org/alden/sketches/ByIzAYaq-
+Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background&amp;#8230; or a website background 🙂 I used for loops to avoid copy/pasting all my code:
+http://alpha.editor.p5js.org/alden/sketches/Hyzy-5p9-
+This led me to try to recreate this piece by Paul Nasca:</description>
+    </item>
+    
+  </channel>
+</rss>
