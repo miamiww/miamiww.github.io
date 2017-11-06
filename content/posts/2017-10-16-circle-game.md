@@ -2,7 +2,7 @@
 title: Circle Game
 author: alden
 type: post
-date: 2017-10-16T19:11:09+00:00
+date: 2017-10-16 19:11:09 +00:00
 url: /2017/10/16/circle-game/
 categories:
   - Computational Media

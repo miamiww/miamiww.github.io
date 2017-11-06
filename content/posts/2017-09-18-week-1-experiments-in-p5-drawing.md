@@ -2,7 +2,7 @@
 title: Experiments in P5 drawing
 author: alden
 type: post
-date: 2017-09-18T19:06:11+00:00
+date: 2017-09-18 19:06:11 +00:00
 url: /2017/09/18/week-1-experiments-in-p5-drawing/
 categories:
   - Computational Media

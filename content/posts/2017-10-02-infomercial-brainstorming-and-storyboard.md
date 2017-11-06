@@ -2,7 +2,7 @@
 title: Infomercial Brainstorming and Storyboard
 author: alden
 type: post
-date: 2017-10-02T00:55:17+00:00
+date: 2017-10-02 00:55:17 +00:00
 url: /2017/10/02/infomercial-brainstorming-and-storyboard/
 categories:
   - Sound and Video

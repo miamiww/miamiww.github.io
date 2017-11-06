@@ -2,7 +2,7 @@
 title: Janet Cardiff Sound Walk and Reading Response
 author: alden
 type: post
-date: 2017-09-14T23:18:20+00:00
+date: 2017-09-14 23:18:20 +00:00
 url: /2017/09/14/janet-cardiff-sound-walk/
 categories:
   - Sound and Video

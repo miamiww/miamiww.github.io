@@ -2,7 +2,7 @@
 title: Business Card
 author: alden
 type: post
-date: 2017-10-18T03:53:49+00:00
+date: 2017-10-18 03:53:49 +00:00
 url: /2017/10/18/business-card/
 categories:
   - Visual Language

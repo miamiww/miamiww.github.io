@@ -2,7 +2,7 @@
 title: Sound Walk
 author: alden
 type: post
-date: 2017-09-22T15:07:33+00:00
+date: 2017-09-22 15:07:33 +00:00
 url: /2017/09/22/sound-walk/
 categories:
   - Sound and Video

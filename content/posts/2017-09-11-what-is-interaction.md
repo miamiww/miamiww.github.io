@@ -2,7 +2,7 @@
 title: What Is Interaction?
 author: alden
 type: post
-date: 2017-09-11T15:16:37+00:00
+date: 2017-09-11 15:16:37 +00:00
 url: /2017/09/11/what-is-interaction/
 categories:
   - Physical Computing

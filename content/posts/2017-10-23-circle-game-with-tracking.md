@@ -2,7 +2,7 @@
 title: Circle Game with Tracking
 author: alden
 type: post
-date: 2017-10-23T20:35:05+00:00
+date: 2017-10-23 20:35:05 +00:00
 url: /2017/10/23/circle-game-with-tracking/
 categories:
   - Computational Media

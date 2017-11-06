@@ -2,7 +2,7 @@
 title: Making a Controller for My P5 Game
 author: alden
 type: post
-date: 2017-10-18T04:43:38+00:00
+date: 2017-10-18 04:43:38 +00:00
 url: /2017/10/18/making-a-controller-for-my-p5-game/
 categories:
   - Physical Computing

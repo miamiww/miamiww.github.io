@@ -2,7 +2,7 @@
 title: Sign Research
 author: alden
 type: post
-date: 2017-09-19T23:18:55+00:00
+date: 2017-09-19 23:18:55 +00:00
 url: /2017/09/19/sign-intervention/
 categories:
   - Visual Language

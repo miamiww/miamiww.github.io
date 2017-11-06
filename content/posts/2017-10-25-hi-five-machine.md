@@ -2,7 +2,7 @@
 title: Hi Five Machine
 author: alden
 type: post
-date: 2017-10-25T19:18:34+00:00
+date: 2017-10-25 19:18:34 +00:00
 url: /2017/10/25/hi-five-machine/
 categories:
   - Physical Computing

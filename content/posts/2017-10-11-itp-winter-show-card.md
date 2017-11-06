@@ -2,7 +2,7 @@
 title: ITP Winter Show Card
 author: alden
 type: post
-date: 2017-10-11T14:30:41+00:00
+date: 2017-10-11 14:30:41 +00:00
 url: /2017/10/11/itp-winter-show-card/
 categories:
   - Visual Language

@@ -2,7 +2,7 @@
 title: Boarding Pass and Expressive Words
 author: alden
 type: post
-date: 2017-09-27T02:23:17+00:00
+date: 2017-09-27 02:23:17 +00:00
 url: /2017/09/27/boarding-pass-and-expressive-words/
 categories:
   - Visual Language

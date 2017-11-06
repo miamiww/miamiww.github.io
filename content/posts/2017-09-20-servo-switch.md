@@ -2,7 +2,7 @@
 title: Servo Switch
 author: alden
 type: post
-date: 2017-09-20T16:03:28+00:00
+date: 2017-09-20 16:03:28 +00:00
 url: /2017/09/20/servo-switch/
 enclosure:
   - |
@@ -10,13 +10,13 @@ enclosure:
         http://www.alden.life/wp-content/uploads/2017/09/2017-09-19-14.42.04.mov
         19374672
         video/quicktime
-        
+
   - |
     |
         http://www.alden.life/wp-content/uploads/2017/09/2017-09-19-14.56.05.mov
         21498326
         video/quicktime
-        
+
 categories:
   - Physical Computing
 

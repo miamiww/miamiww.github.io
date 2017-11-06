@@ -2,7 +2,7 @@
 title: Blowing on Confetti
 author: alden
 type: post
-date: 2017-09-25T19:43:14+00:00
+date: 2017-09-25 19:43:14 +00:00
 url: /2017/09/25/blowing-on-confetti/
 categories:
   - Uncategorized

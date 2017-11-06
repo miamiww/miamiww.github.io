@@ -2,7 +2,7 @@
 title: Subway Turnstile
 author: alden
 type: post
-date: 2017-09-27T05:12:48+00:00
+date: 2017-09-27 05:12:48 +00:00
 url: /2017/09/27/subway-turnstile/
 categories:
   - Physical Computing

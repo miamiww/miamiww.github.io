@@ -2,7 +2,7 @@
 title: Breaking A Servo?
 author: alden
 type: post
-date: 2017-10-04T15:34:20+00:00
+date: 2017-10-04 15:34:20 +00:00
 url: /2017/10/04/breaking-a-servo/
 categories:
   - Physical Computing
