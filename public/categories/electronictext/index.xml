@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electronictext on My New Hugo Site</title>
+    <link>http://www.alden.life/categories/electronictext/</link>
+    <description>Recent content in Electronictext on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2018 17:29:45 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.alden.life/categories/electronictext/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ken Wark on Chantal Mouffe</title>
+      <link>http://www.alden.life/2018/02/02/ken-wark-on-chantal-mouffe/</link>
+      <pubDate>Fri, 02 Feb 2018 17:29:45 +0000</pubDate>
+      
+      <guid>http://www.alden.life/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
+      <description>For my transcription exercise I wanted to pick something that was
+a) short enough so that I could transcribe the whole thing
+b) interesting enough that I wouldn&amp;#8217;t mind listening to it over and over again
+c) spoken slowly enough that I would only have to pause and rewind ten seconds 500 times and not 1000.
+I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video on Chantal Mouffe for DIS magazine (now just DIS?</description>
+    </item>
+    
+  </channel>
+</rss>
