@@ -1,10 +1,1 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Alden's ITP Blog"
 theme = "minimo"
-
-
-[params.assets]
-favicon = "favicon.ico"
-customCSS = ["css/custom.css"]
-customJS = ["js/custom.js"]

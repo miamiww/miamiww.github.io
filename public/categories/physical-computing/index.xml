@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Physical Computing on Alden&#39;s ITP Blog</title>
-    <link>http://example.org/categories/physical-computing/</link>
-    <description>Recent content in Physical Computing on Alden&#39;s ITP Blog</description>
+    <title>Physical Computing on My New Hugo Site</title>
+    <link>http://www.alden.life/categories/physical-computing/</link>
+    <description>Recent content in Physical Computing on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 19:18:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Nov 2017 19:28:42 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/physical-computing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.alden.life/categories/physical-computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Haunted Dollhouse Planning</title>
+      <link>http://www.alden.life/2017/11/15/haunted-dollhouse-planning/</link>
+      <pubDate>Wed, 15 Nov 2017 19:28:42 +0000</pubDate>
+      
+      <guid>http://www.alden.life/2017/11/15/haunted-dollhouse-planning/</guid>
+      <description>At this point I have gotten the basic Google home API working on my raspberry pi and have started manipulating the methods of interaction (changing the trigger word, changing the voices) and have started to work on building a specific Google home Action. Still to do is build the haunted dollhouse enclosure. Since the basic first interaction I want users to have with the haunted doll is to knock on the dollhouse door, I wanted to first set up a basic knock and open circuit.</description>
+    </item>
+    
+    <item>
+      <title>Haunted Dolls and Things</title>
+      <link>http://www.alden.life/2017/11/01/haunted-dolls-and-things/</link>
+      <pubDate>Wed, 01 Nov 2017 04:25:59 +0000</pubDate>
+      
+      <guid>http://www.alden.life/2017/11/01/haunted-dolls-and-things/</guid>
+      <description>Recently I&amp;#8217;ve been thinking mostly &amp;#8211; but somewhat disjointedly &amp;#8211; about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI &amp;#8211; which frequently is embodied feminized labor &amp;#8211; disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
+    </item>
+    
+    <item>
       <title>Hi Five Machine</title>
-      <link>http://example.org/2017/10/25/hi-five-machine/</link>
+      <link>http://www.alden.life/2017/10/25/hi-five-machine/</link>
       <pubDate>Wed, 25 Oct 2017 19:18:34 +0000</pubDate>
       
-      <guid>http://example.org/2017/10/25/hi-five-machine/</guid>
+      <guid>http://www.alden.life/2017/10/25/hi-five-machine/</guid>
       <description>For our midterm Ridwan and I thought it would be really funny to make a machine that claims to give a high five but actually fakes you out every time.
 Aesthetically it reminds me a bit of the toilet hand from Zelda.
 Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for camera tracking controlling the hand, an HC- SR04 distance sensor, and an LCD screen.</description>
@@ -24,38 +42,38 @@ Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for 
     
     <item>
       <title>Making a Controller for My P5 Game</title>
-      <link>http://example.org/2017/10/18/making-a-controller-for-my-p5-game/</link>
+      <link>http://www.alden.life/2017/10/18/making-a-controller-for-my-p5-game/</link>
       <pubDate>Wed, 18 Oct 2017 04:43:38 +0000</pubDate>
       
-      <guid>http://example.org/2017/10/18/making-a-controller-for-my-p5-game/</guid>
+      <guid>http://www.alden.life/2017/10/18/making-a-controller-for-my-p5-game/</guid>
       <description>(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
 One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, express, and a websocket to interface between P5 and the arduino.</description>
     </item>
     
     <item>
       <title>Breaking A Servo?</title>
-      <link>http://example.org/2017/10/04/breaking-a-servo/</link>
+      <link>http://www.alden.life/2017/10/04/breaking-a-servo/</link>
       <pubDate>Wed, 04 Oct 2017 15:34:20 +0000</pubDate>
       
-      <guid>http://example.org/2017/10/04/breaking-a-servo/</guid>
+      <guid>http://www.alden.life/2017/10/04/breaking-a-servo/</guid>
       <description>I wanted to make a project that would display a dubiously motivational message each time I sat at my home office desk. To start off I used a HC-SR04 ping distance sensor and attached a pin with a message (in this case a pin I got at the art book fair) to a little SG90 micro servo motor. I initially tried to map the distance readings of the HC-SR04 to the angle of the servo motor, but it was too noisy and the servo jittered around quickly (you can see that code commented out below).</description>
     </item>
     
     <item>
       <title>Subway Turnstile</title>
-      <link>http://example.org/2017/09/27/subway-turnstile/</link>
+      <link>http://www.alden.life/2017/09/27/subway-turnstile/</link>
       <pubDate>Wed, 27 Sep 2017 05:12:48 +0000</pubDate>
       
-      <guid>http://example.org/2017/09/27/subway-turnstile/</guid>
+      <guid>http://www.alden.life/2017/09/27/subway-turnstile/</guid>
       <description>Since moving to New York I&amp;#8217;ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn&amp;#8217;t gotten the hang of swiping smoothly enough to avoid &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221;, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221; message, they were walking straight into the turnstile after doing it.</description>
     </item>
     
     <item>
       <title>Servo Switch</title>
-      <link>http://example.org/2017/09/20/servo-switch/</link>
+      <link>http://www.alden.life/2017/09/20/servo-switch/</link>
       <pubDate>Wed, 20 Sep 2017 16:03:28 +0000</pubDate>
       
-      <guid>http://example.org/2017/09/20/servo-switch/</guid>
+      <guid>http://www.alden.life/2017/09/20/servo-switch/</guid>
       <description>Pen Switch
 My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. 
 Servo Switch
@@ -64,10 +82,10 @@ I really wanted to get my hands into programming the arduino so I next made a sw
     
     <item>
       <title>What Is Interaction?</title>
-      <link>http://example.org/2017/09/11/what-is-interaction/</link>
+      <link>http://www.alden.life/2017/09/11/what-is-interaction/</link>
       <pubDate>Mon, 11 Sep 2017 15:16:37 +0000</pubDate>
       
-      <guid>http://example.org/2017/09/11/what-is-interaction/</guid>
+      <guid>http://www.alden.life/2017/09/11/what-is-interaction/</guid>
       <description>Within ten minutes of using any screened device my left eye begins to strain and ache. My wrists hurt almost constantly and frequently I need to use wrist splints when typing in order to avoid the pain. When I go to sleep at night I have a dull ache in my neck and between my eyes, and when I wake up my first thought is to check my phone. Before thinking about coffee, before thinking about food, or work, or my day ahead, or my partner lying beside me, a light goes off in my brain, a synapse fires, indicating that it is seeking a dopamine reward for checking Twitter.</description>
     </item>
     
