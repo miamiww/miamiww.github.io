@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>  | Making a Controller for My P5 Game</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.30.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link href='dist/main.css' rel='stylesheet' type="text/css" />
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Making a Controller for My P5 Game" />
+<meta property="og:description" content="(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
+One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, express, and a websocket to interface between P5 and the arduino." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2017/10/18/making-a-controller-for-my-p5-game/" />
+
+
+
+<meta property="article:published_time" content="2017-10-18T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-10-18T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Making a Controller for My P5 Game">
+<meta itemprop="description" content="(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
+One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, express, and a websocket to interface between P5 and the arduino.">
+
+
+<meta itemprop="datePublished" content="2017-10-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-18T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="357">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Making a Controller for My P5 Game"/>
+<meta name="twitter:description" content="(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
+One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, express, and a websocket to interface between P5 and the arduino."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <p class="f6 b helvetica tracked">
+        
+        POST
+      </p>
+      <h1 class="f1 athelas">
+        Making a Controller for My P5 Game
+      </h1>
+        
+        
+      <time class="f6 mv4 dib tracked" datetime="2017-10-18T00:00:00Z">
+        October 18, 2017
+      </time>
+      <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+        <p>(note all the code for these projects can be viewed on my Github <a href="https://github.com/miamiww/PhysicalComputing/tree/master/Week6/joystickP5">here</a> though I will make specific references to scripts down below).</p>
+
+<p>One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, <a href="https://expressjs.com/">express</a>, and a websocket to interface between P5 and the arduino.</p>
+
+<p><img class="wp-image-246 size-full aligncenter" src="http://www.alden.life/wp-content/uploads/2017/10/giphy.gif" alt="" width="480" height="324" /></p>
+
+<p>I started out by adapting the <a href="https://github.com/miamiww/PhysicalComputing/blob/master/Week6/joystickP5/AnalogInOutSerial/AnalogInOutSerial.ino">SerialInOut example code</a> for arduino to work for a joystick since the example uses a potentiometer and a joystick is just two potentiometers and a switch. Making those changes I wrote <a href="https://github.com/miamiww/PhysicalComputing/blob/master/Week6/joystickP5/Joystick/Joystick.ino">this code</a> for outputting the joystick readings to serial. I had some trouble setting wiring the joystick initially but Aiden helped me out. Also I read on a now forgotten stack exchange that INPUT_PULLUP is necessary for setting the pinmode on digital ins that are going over serial, but I didn&#8217;t understand why that is the case.</p>
+
+<p><img class="wp-image-250  aligncenter" src="http://www.alden.life/wp-content/uploads/2017/10/joystick-2-e1508300755163-1024x1024.jpg" alt="" width="501" height="501" srcset="http://www.alden.life/wp-content/uploads/2017/10/joystick-2-e1508300755163-1024x1024.jpg 1024w, http://www.alden.life/wp-content/uploads/2017/10/joystick-2-e1508300755163-150x150.jpg 150w, http://www.alden.life/wp-content/uploads/2017/10/joystick-2-e1508300755163-300x300.jpg 300w, http://www.alden.life/wp-content/uploads/2017/10/joystick-2-e1508300755163-768x768.jpg 768w" sizes="(max-width: 501px) 100vw, 501px" /></p>
+
+<p>Before trying to figure out how to integrate the serial readings into my game/poem script I connected it to a very quick example <a href="https://github.com/miamiww/PhysicalComputing/blob/master/Week6/joystickP5/public/sketch.js">here</a> which you can see in the first gif above. I&#8217;d used node and websockets before but I didn&#8217;t really remember them very well so it took me a pretty long time to get off the ground. I made use of some code that I had from <a href="http://grayarea.org/community-entry/mark-hellar/">Mark Hellar</a> from when I was at Grey Area, which is why I ended up using express.</p>
+
+<p><img class="aligncenter wp-image-249 size-full" src="http://www.alden.life/wp-content/uploads/2017/10/NOtGood.gif" alt="" width="480" height="300" /></p>
+
+<p>Once I figured out the example worked I went about redoing my P5 project to take the serial input. It didn&#8217;t take very long, I just replaced the mouseX and mousePressed variables with the respective inputs from the joystick. I intentionally made it so that you couldn&#8217;t see the player&#8217;s &#8220;cursor&#8221;, I wanted discovering the relationship between what the player was doing and the motion of the ball to be didactic and not immediately clear (so that you have to play around with the joystick before you figure out what is going on).</p>
+
+      </section>
+      
+
+
+    </article>
+    <div class="ph3 mt2 mt6-ns">
+      
+
+
+
+
+
+
+
+  <div class="bg-light-gray pa3">
+    <ul>
+      <li class="list b mb3">
+        29 More Posts
+      </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2018/02/15/312/" class="link ph2 pv2 db black">
+            Peñabots, Digital Obfuscation, and Government Trolling
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2018/02/02/ken-wark-on-chantal-mouffe/" class="link ph2 pv2 db black">
+            Ken Wark on Chantal Mouffe
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/12/11/psychographic-categorization-neural-network-simulator-2000/" class="link ph2 pv2 db black">
+            Psychographic Categorization Neural Network Simulator 2000
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/11/20/crypt-vs-mausoleum/" class="link ph2 pv2 db black">
+            Crypt vs Mausoleum
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/11/16/make-a-digital-public-space/" class="link ph2 pv2 db black">
+            Make a Digital Public Space
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/11/15/haunted-dollhouse-planning/" class="link ph2 pv2 db black">
+            Haunted Dollhouse Planning
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/11/06/world-cheese-index/" class="link ph2 pv2 db black">
+            World Cheese Index
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/11/01/haunted-dolls-and-things/" class="link ph2 pv2 db black">
+            Haunted Dolls and Things
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/30/button-game/" class="link ph2 pv2 db black">
+            Button Game
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/25/hi-five-machine/" class="link ph2 pv2 db black">
+            Hi Five Machine
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/23/circle-game-with-tracking/" class="link ph2 pv2 db black">
+            Circle Game with Tracking
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/20/empathy-lense-kickstarter-campaign/" class="link ph2 pv2 db black">
+            Empathy Lense Kickstarter Campaign
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/18/business-card/" class="link ph2 pv2 db black">
+            Business Card
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/18/making-a-controller-for-my-p5-game/" class="link ph2 pv2 db black o-50">
+            Making a Controller for My P5 Game
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/16/circle-game/" class="link ph2 pv2 db black">
+            Circle Game
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/11/itp-winter-show-card/" class="link ph2 pv2 db black">
+            ITP Winter Show Card
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/07/you-suck/" class="link ph2 pv2 db black">
+            You Suck
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/04/breaking-a-servo/" class="link ph2 pv2 db black">
+            Breaking A Servo?
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/04/personal-color-palette/" class="link ph2 pv2 db black">
+            Personal Color Palette
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/10/02/infomercial-brainstorming-and-storyboard/" class="link ph2 pv2 db black">
+            Infomercial Brainstorming and Storyboard
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/27/boarding-pass-and-expressive-words/" class="link ph2 pv2 db black">
+            Boarding Pass and Expressive Words
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/27/subway-turnstile/" class="link ph2 pv2 db black">
+            Subway Turnstile
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/25/blowing-on-confetti/" class="link ph2 pv2 db black">
+            Blowing on Confetti
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/22/sound-walk/" class="link ph2 pv2 db black">
+            Sound Walk
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/20/servo-switch/" class="link ph2 pv2 db black">
+            Servo Switch
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/19/sign-intervention/" class="link ph2 pv2 db black">
+            Sign Research
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/18/week-1-experiments-in-p5-drawing/" class="link ph2 pv2 db black">
+            Experiments in P5 drawing
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/14/janet-cardiff-sound-walk/" class="link ph2 pv2 db black">
+            Janet Cardiff Sound Walk and Reading Response
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/13/48/" class="link ph2 pv2 db black">
+            Akira Poster Design Analysis
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/2017/09/11/what-is-interaction/" class="link ph2 pv2 db black">
+            What Is Interaction?
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy; 2018 
+  </a>
+  
+
+
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="dist/app.bundle.js" async></script>
+
+  </body>
+</html>
