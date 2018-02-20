@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Uncategorized
-date: 2017-09-25T19:43:14Z
+date: 2017-09-25
 guid: http://www.alden.life/?p=155
 id: 155
 title: Blowing on Confetti

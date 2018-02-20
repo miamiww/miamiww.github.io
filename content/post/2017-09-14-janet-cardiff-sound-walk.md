@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Sound and Video
-date: 2017-09-14T23:18:20Z
+date: 2017-09-14
 guid: http://www.alden.life/?p=63
 id: 63
 title: Janet Cardiff Sound Walk and Reading Response

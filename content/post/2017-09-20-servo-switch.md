@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-09-20T16:03:28Z
+date: 2017-09-20
 enclosure:
 - |
   http://www.alden.life/wp-content/uploads/2017/09/2017-09-19-14.42.04.mov

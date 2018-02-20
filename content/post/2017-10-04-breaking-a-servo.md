@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-10-04T15:34:20Z
+date: 2017-10-04
 guid: http://www.alden.life/?p=208
 id: 208
 title: Breaking A Servo?

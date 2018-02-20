@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Sound and Video
-date: 2017-10-02T00:55:17Z
+date: 2017-10-02
 guid: http://www.alden.life/?p=177
 id: 177
 title: Infomercial Brainstorming and Storyboard

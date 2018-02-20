@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Sound and Video
-date: 2017-10-20T15:03:11Z
+date: 2017-10-20
 guid: http://www.alden.life/?p=253
 id: 253
 title: Empathy Lense Kickstarter Campaign

@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-10-18T04:43:38Z
+date: 2017-10-18
 guid: http://www.alden.life/?p=245
 id: 245
 title: Making a Controller for My P5 Game

@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Computational Media
-date: 2017-09-18T19:06:11Z
+date: 2017-09-18
 guid: http://www.alden.life/?p=71
 id: 71
 title: Experiments in P5 drawing

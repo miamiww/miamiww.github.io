@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Visual Language
-date: 2017-09-27T02:23:17Z
+date: 2017-09-27
 guid: http://www.alden.life/?p=162
 id: 162
 title: Boarding Pass and Expressive Words

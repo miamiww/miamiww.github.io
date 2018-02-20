@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-10-25T19:18:34Z
+date: 2017-10-25
 guid: http://www.alden.life/?p=261
 id: 261
 title: Hi Five Machine

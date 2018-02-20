@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-11-15T19:28:42Z
+date: 2017-11-15
 guid: http://www.alden.life/?p=286
 id: 286
 title: Haunted Dollhouse Planning

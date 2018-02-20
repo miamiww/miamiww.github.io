@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Computational Media
-date: 2017-11-06T22:22:55Z
+date: 2017-11-06
 guid: http://www.alden.life/?p=281
 id: 281
 title: World Cheese Index

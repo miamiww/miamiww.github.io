@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Visual Language
-date: 2017-10-18T03:53:49Z
+date: 2017-10-18
 guid: http://www.alden.life/?p=238
 id: 238
 title: Business Card

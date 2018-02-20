@@ -2,7 +2,7 @@
 author: alden
 categories:
 - ElectronicText
-date: 2018-02-02T17:29:45Z
+date: 2018-02-02
 enclosure:
 - |
   https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/4648/9/248242106/898824744.mp4?token=1517606685-0x012eeffb845c6546839b82b0dc161d84cfdb7a8d

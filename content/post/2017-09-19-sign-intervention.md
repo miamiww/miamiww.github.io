@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Visual Language
-date: 2017-09-19T23:18:55Z
+date: 2017-09-19
 guid: http://www.alden.life/?p=122
 id: 122
 title: Sign Research

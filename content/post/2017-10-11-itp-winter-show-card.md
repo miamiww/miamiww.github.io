@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Visual Language
-date: 2017-10-11T14:30:41Z
+date: 2017-10-11
 guid: http://www.alden.life/?p=227
 id: 227
 title: ITP Winter Show Card

@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Computational Media
-date: 2017-12-11T19:53:28Z
+date: 2017-12-11
 guid: http://www.alden.life/?p=300
 id: 300
 title: Psychographic Categorization Neural Network Simulator 2000

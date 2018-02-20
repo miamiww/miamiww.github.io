@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Computational Media
-date: 2017-10-23T20:35:05Z
+date: 2017-10-23
 guid: http://www.alden.life/?p=255
 id: 255
 title: Circle Game with Tracking

@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Visual Language
-date: 2017-10-04T03:36:24Z
+date: 2017-10-04
 guid: http://www.alden.life/?p=198
 id: 198
 title: Personal Color Palette

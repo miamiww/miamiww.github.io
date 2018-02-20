@@ -2,7 +2,7 @@
 author: alden
 categories:
 - Physical Computing
-date: 2017-09-27T05:12:48Z
+date: 2017-09-27
 guid: http://www.alden.life/?p=166
 id: 166
 title: Subway Turnstile
