@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electronictext on </title>
+      <title>Electronictext on  </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
     <link>/categories/electronictext/</link>
-    <description>Recent content in Electronictext on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/electronictext/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <updated>Fri, 02 Feb 2018 00:00:00 UTC</updated>
     
     <item>
       <title>Ken Wark on Chantal Mouffe</title>
       <link>/2018/02/02/ken-wark-on-chantal-mouffe/</link>
-      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 UTC</pubDate>
       
       <guid>/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
       <description>For my transcription exercise I wanted to pick something that was
@@ -25,3 +24,4 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
     
   </channel>
 </rss>
+

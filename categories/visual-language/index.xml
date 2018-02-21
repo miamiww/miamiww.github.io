@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visual Language on </title>
+      <title>Visual Language on  </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
     <link>/categories/visual-language/</link>
-    <description>Recent content in Visual Language on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/visual-language/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <updated>Wed, 18 Oct 2017 00:00:00 UTC</updated>
     
     <item>
       <title>Business Card</title>
       <link>/2017/10/18/business-card/</link>
-      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/18/business-card/</guid>
       <description>Side A of the business card:
@@ -23,7 +22,7 @@ I really liked the hands and eyes that I had going in my show poster, so I decid
     <item>
       <title>ITP Winter Show Card</title>
       <link>/2017/10/11/itp-winter-show-card/</link>
-      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/11/itp-winter-show-card/</guid>
       <description>Initially I wanted to make something inspired by Tadanori Yokoo. I spent a lot of time futzing around with different elements but I ultimately decided what I liked was the simplest, a little line drawing reaching out to the show information, giving a sense of playfulness. I really like this color contrast but I think it might be a little distracting. I put a less contrast version on the bottom of the post.</description>
@@ -32,7 +31,7 @@ I really liked the hands and eyes that I had going in my show poster, so I decid
     <item>
       <title>Personal Color Palette</title>
       <link>/2017/10/04/personal-color-palette/</link>
-      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/04/personal-color-palette/</guid>
       <description>&amp;nbsp;
@@ -43,7 +42,7 @@ I took my color palette from my twitter avi (drawn by Norah Horwitz). From there
     <item>
       <title>Boarding Pass and Expressive Words</title>
       <link>/2017/09/27/boarding-pass-and-expressive-words/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/09/27/boarding-pass-and-expressive-words/</guid>
       <description>On first glance of a boarding pass I notice not just a jumble of information poorly organized, but too much information, a heaping mass of which obscures the information that the traveller is really am interested in when they have a pass in hand.
@@ -53,7 +52,7 @@ The date is unnecessary, a traveler would only be receiving this pass on the day
     <item>
       <title>Sign Research</title>
       <link>/2017/09/19/sign-intervention/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/09/19/sign-intervention/</guid>
       <description>I started out my sign research scouting by going to the Rob Rauschenberg show at MoMA. Rauschenberg makes copious use of street signage, here are a couple of examples:
@@ -64,7 +63,7 @@ Decontextualizing signs makes them jarring, bringing them much more to the foref
     <item>
       <title>Akira Poster Design Analysis</title>
       <link>/2017/09/13/48/</link>
-      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/09/13/48/</guid>
       <description>Visually striking and iconic* &amp;#8211; the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
@@ -73,3 +72,4 @@ The eye is immediately drawn by the image organization and the blue splash on hi
     
   </channel>
 </rss>
+

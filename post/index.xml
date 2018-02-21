@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
+      <title>Posts on  </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
     <link>/post/</link>
-    <description>Recent content in Posts on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <updated>Thu, 15 Feb 2018 00:00:00 UTC</updated>
     
     <item>
       <title>Peñabots, Digital Obfuscation, and Government Trolling</title>
       <link>/2018/02/15/312/</link>
-      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 UTC</pubDate>
       
       <guid>/2018/02/15/312/</guid>
       <description>In the first class I mentioned peñabots as an example of government social media manipulation. Rather than define them myself I&amp;#8217;ll lean on the Wikipedia page definition: &amp;#8220;the name given to what analysts believe to be a network of automated accounts on social media used by the Mexican government to spread pro-government propaganda and to marginalize dissenting opinions in social media&amp;#8221;. Though not the first institutionally-organized trolling operation they stand apart for their sophistication, their effectiveness at shutting down oppositional organizing, and their use in a nominally non-authoritarian government (although one with a deep history of media manipulation).</description>
@@ -22,7 +21,7 @@
     <item>
       <title>Ken Wark on Chantal Mouffe</title>
       <link>/2018/02/02/ken-wark-on-chantal-mouffe/</link>
-      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 UTC</pubDate>
       
       <guid>/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
       <description>For my transcription exercise I wanted to pick something that was
@@ -35,7 +34,7 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
     <item>
       <title>Psychographic Categorization Neural Network Simulator 2000</title>
       <link>/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
       <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one&amp;#8217;s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
@@ -44,7 +43,7 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
     <item>
       <title>Crypt vs Mausoleum</title>
       <link>/2017/11/20/crypt-vs-mausoleum/</link>
-      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/11/20/crypt-vs-mausoleum/</guid>
       <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a &amp;#8216;tap&amp;#8217; from a &amp;#8216;step&amp;#8217;, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
@@ -53,7 +52,7 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
     <item>
       <title>Make a Digital Public Space</title>
       <link>/2017/11/16/make-a-digital-public-space/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/11/16/make-a-digital-public-space/</guid>
       <description>Inspired by the near extinct website guestbook and completely extinct methods of phone phreaking, I wanted to make something that felt as unfinished and wide open with potential as the &amp;#8220;old&amp;#8221; web of 1992 &amp;#8211; 2001.
@@ -64,7 +63,7 @@ Communication between users in this space is possible but only through &amp;#822
     <item>
       <title>Haunted Dollhouse Planning</title>
       <link>/2017/11/15/haunted-dollhouse-planning/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/11/15/haunted-dollhouse-planning/</guid>
       <description>At this point I have gotten the basic Google home API working on my raspberry pi and have started manipulating the methods of interaction (changing the trigger word, changing the voices) and have started to work on building a specific Google home Action. Still to do is build the haunted dollhouse enclosure. Since the basic first interaction I want users to have with the haunted doll is to knock on the dollhouse door, I wanted to first set up a basic knock and open circuit.</description>
@@ -73,7 +72,7 @@ Communication between users in this space is possible but only through &amp;#822
     <item>
       <title>World Cheese Index</title>
       <link>/2017/11/06/world-cheese-index/</link>
-      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/11/06/world-cheese-index/</guid>
       <description>I really wanted to work with the twitter API and to show data in real time. I started working with the word cheese just to test it out and I ended up sticking with it throughout the process.
@@ -84,7 +83,7 @@ And see code here.</description>
     <item>
       <title>Haunted Dolls and Things</title>
       <link>/2017/11/01/haunted-dolls-and-things/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/11/01/haunted-dolls-and-things/</guid>
       <description>Recently I&amp;#8217;ve been thinking mostly &amp;#8211; but somewhat disjointedly &amp;#8211; about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI &amp;#8211; which frequently is embodied feminized labor &amp;#8211; disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
@@ -93,7 +92,7 @@ And see code here.</description>
     <item>
       <title>Button Game</title>
       <link>/2017/10/30/button-game/</link>
-      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/30/button-game/</guid>
       <description>I&amp;#8217;m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons&amp;#8230; a lot.
@@ -105,7 +104,7 @@ And you can play the game here.
     <item>
       <title>Hi Five Machine</title>
       <link>/2017/10/25/hi-five-machine/</link>
-      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/25/hi-five-machine/</guid>
       <description>For our midterm Ridwan and I thought it would be really funny to make a machine that claims to give a high five but actually fakes you out every time.
@@ -116,7 +115,7 @@ Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for 
     <item>
       <title>Circle Game with Tracking</title>
       <link>/2017/10/23/circle-game-with-tracking/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/23/circle-game-with-tracking/</guid>
       <description>&amp;nbsp;
@@ -128,7 +127,7 @@ I put a playable version of it here.</description>
     <item>
       <title>Empathy Lense Kickstarter Campaign</title>
       <link>/2017/10/20/empathy-lense-kickstarter-campaign/</link>
-      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/20/empathy-lense-kickstarter-campaign/</guid>
       <description>We&amp;#8217;d like to thank Jason, Rick, and most importantly of all, Archibald! Thanks to bensound.com for the use of his music.
@@ -138,7 +137,7 @@ I put a playable version of it here.</description>
     <item>
       <title>Business Card</title>
       <link>/2017/10/18/business-card/</link>
-      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/18/business-card/</guid>
       <description>Side A of the business card:
@@ -148,7 +147,7 @@ I really liked the hands and eyes that I had going in my show poster, so I decid
     <item>
       <title>Making a Controller for My P5 Game</title>
       <link>/2017/10/18/making-a-controller-for-my-p5-game/</link>
-      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/18/making-a-controller-for-my-p5-game/</guid>
       <description>(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
@@ -158,166 +157,13 @@ One of my P5 projects that I am the happiest with is an interactive poetry/anti-
     <item>
       <title>Circle Game</title>
       <link>/2017/10/16/circle-game/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 UTC</pubDate>
       
       <guid>/2017/10/16/circle-game/</guid>
       <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
 &amp;#8220;Points&amp;#8221; are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of &amp;#8220;cookie clicker&amp;#8221; type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
     </item>
     
-    <item>
-      <title>ITP Winter Show Card</title>
-      <link>/2017/10/11/itp-winter-show-card/</link>
-      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/10/11/itp-winter-show-card/</guid>
-      <description>Initially I wanted to make something inspired by Tadanori Yokoo. I spent a lot of time futzing around with different elements but I ultimately decided what I liked was the simplest, a little line drawing reaching out to the show information, giving a sense of playfulness. I really like this color contrast but I think it might be a little distracting. I put a less contrast version on the bottom of the post.</description>
-    </item>
-    
-    <item>
-      <title>You Suck</title>
-      <link>/2017/10/07/you-suck/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/10/07/you-suck/</guid>
-      <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
-
-You can see the code for that here.
-Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out &amp;#8220;You Suck&amp;#8221;. I thought that was pretty funny but we weren&amp;#8217;t sure how to get the actual drawing mechanism to work, i.</description>
-    </item>
-    
-    <item>
-      <title>Breaking A Servo?</title>
-      <link>/2017/10/04/breaking-a-servo/</link>
-      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/10/04/breaking-a-servo/</guid>
-      <description>I wanted to make a project that would display a dubiously motivational message each time I sat at my home office desk. To start off I used a HC-SR04 ping distance sensor and attached a pin with a message (in this case a pin I got at the art book fair) to a little SG90 micro servo motor. I initially tried to map the distance readings of the HC-SR04 to the angle of the servo motor, but it was too noisy and the servo jittered around quickly (you can see that code commented out below).</description>
-    </item>
-    
-    <item>
-      <title>Personal Color Palette</title>
-      <link>/2017/10/04/personal-color-palette/</link>
-      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/10/04/personal-color-palette/</guid>
-      <description>&amp;nbsp;
-I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
-&amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>Infomercial Brainstorming and Storyboard</title>
-      <link>/2017/10/02/infomercial-brainstorming-and-storyboard/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/10/02/infomercial-brainstorming-and-storyboard/</guid>
-      <description>Initial Ideas
-As you can see from the above picture Amitabh, Martin, and I had a few different ideas, but we settled on a device that takes the way in which online human communications are mediated via AI algorithms and replicates it in the real world. We debated for a while what form we wanted this to take &amp;#8211; either a consumer level device for facial recognition for emotion or an AI that determines political leanings.</description>
-    </item>
-    
-    <item>
-      <title>Boarding Pass and Expressive Words</title>
-      <link>/2017/09/27/boarding-pass-and-expressive-words/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/27/boarding-pass-and-expressive-words/</guid>
-      <description>On first glance of a boarding pass I notice not just a jumble of information poorly organized, but too much information, a heaping mass of which obscures the information that the traveller is really am interested in when they have a pass in hand.
-The date is unnecessary, a traveler would only be receiving this pass on the day of the flight. Origin and destinations are also unnecessary; we must assume that they have knowledge of their destination and current locations already in mind.</description>
-    </item>
-    
-    <item>
-      <title>Subway Turnstile</title>
-      <link>/2017/09/27/subway-turnstile/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/27/subway-turnstile/</guid>
-      <description>Since moving to New York I&amp;#8217;ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn&amp;#8217;t gotten the hang of swiping smoothly enough to avoid &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221;, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221; message, they were walking straight into the turnstile after doing it.</description>
-    </item>
-    
-    <item>
-      <title>Blowing on Confetti</title>
-      <link>/2017/09/25/blowing-on-confetti/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/25/blowing-on-confetti/</guid>
-      <description>I&amp;#8217;ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by &amp;#8220;blowing&amp;#8221; on it with the mouse.
-
-Right now they kind of jiggle around expectantly, this was to meet the &amp;#8220;one element that moves independently of the mouse&amp;#8221; part of the homework. Getting the confetti to move realistically when blown has been a pain, right now it jumps around semi-randomly, which gives a good imitation of a scattering effect but the motion is discontinuous and unnatural.</description>
-    </item>
-    
-    <item>
-      <title>Sound Walk</title>
-      <link>/2017/09/22/sound-walk/</link>
-      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/22/sound-walk/</guid>
-      <description>Episode 19 of the 4th season of Creature Feature, made by Shreiya and Alden. Please start on the 12th floor of the Tisch building, just outside of elevator bank A. And don&amp;#8217;t forget to walk slow and really take in your surroundings!</description>
-    </item>
-    
-    <item>
-      <title>Servo Switch</title>
-      <link>/2017/09/20/servo-switch/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/20/servo-switch/</guid>
-      <description>Pen Switch
-My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. 
-Servo Switch
-I really wanted to get my hands into programming the arduino so I next made a switch that involves stringing a resistor into the arm of a small servo motor and using the arduino to control the movements of the motor so that it completes a circuit and lights up an LED.</description>
-    </item>
-    
-    <item>
-      <title>Sign Research</title>
-      <link>/2017/09/19/sign-intervention/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/19/sign-intervention/</guid>
-      <description>I started out my sign research scouting by going to the Rob Rauschenberg show at MoMA. Rauschenberg makes copious use of street signage, here are a couple of examples:
-Decontextualizing signs makes them jarring, bringing them much more to the forefront of our consciousness than they occupy in their usual streetside homes.
-(*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli&amp;#8217;s sign I took &amp;#8211; what I have to say about it is that it is simple, effective, and purposeful **)</description>
-    </item>
-    
-    <item>
-      <title>Experiments in P5 drawing</title>
-      <link>/2017/09/18/week-1-experiments-in-p5-drawing/</link>
-      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
-      <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
-http://alpha.editor.p5js.org/alden/sketches/ByIzAYaq-
-Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background&amp;#8230; or a website background 🙂 I used for loops to avoid copy/pasting all my code:
-http://alpha.editor.p5js.org/alden/sketches/Hyzy-5p9-
-This led me to try to recreate this piece by Paul Nasca:</description>
-    </item>
-    
-    <item>
-      <title>Janet Cardiff Sound Walk and Reading Response</title>
-      <link>/2017/09/14/janet-cardiff-sound-walk/</link>
-      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/14/janet-cardiff-sound-walk/</guid>
-      <description>For several hours after I finished Her Long Black Hair, Janet Cardiff&amp;#8217;s Central Park sound walk combining field recording, found object and narrative techniques of film noir, I felt a heightened awareness of the world around me, a sense that both the aural and visual information I was consuming had hidden narratives, meanings unknown to me, entire words and lives just beyond the field of my comprehension. This sense of hidden but pulsating alive connectivity is the central goal of Cardiff&amp;#8217;s work: to create connections within time between the walker/listener and the spaces and strangers around them, and to create connections across time, between the walker/listener, the woman with black hair, Orpheus descending into Hades to rescue Eurydice, and Cardiff herself, connecting and condensing these moments of time and myth into a gem of experiential authenticity.</description>
-    </item>
-    
-    <item>
-      <title>Akira Poster Design Analysis</title>
-      <link>/2017/09/13/48/</link>
-      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/13/48/</guid>
-      <description>Visually striking and iconic* &amp;#8211; the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
-The eye is immediately drawn by the image organization and the blue splash on his jacket toward the figure in the center, bringing him front and center to the poster and indicating that he is, if not the lead character, at least central to the film.</description>
-    </item>
-    
-    <item>
-      <title>What Is Interaction?</title>
-      <link>/2017/09/11/what-is-interaction/</link>
-      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/11/what-is-interaction/</guid>
-      <description>Within ten minutes of using any screened device my left eye begins to strain and ache. My wrists hurt almost constantly and frequently I need to use wrist splints when typing in order to avoid the pain. When I go to sleep at night I have a dull ache in my neck and between my eyes, and when I wake up my first thought is to check my phone. Before thinking about coffee, before thinking about food, or work, or my day ahead, or my partner lying beside me, a light goes off in my brain, a synapse fires, indicating that it is seeking a dopamine reward for checking Twitter.</description>
-    </item>
-    
   </channel>
 </rss>
+
