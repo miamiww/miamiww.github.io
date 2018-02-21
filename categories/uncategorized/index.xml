@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Uncategorized on  </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Uncategorized on </title>
     <link>/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
     
+	<atom:link href="/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <updated>Mon, 25 Sep 2017 00:00:00 UTC</updated>
     
     <item>
       <title>Blowing on Confetti</title>
       <link>/2017/09/25/blowing-on-confetti/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/25/blowing-on-confetti/</guid>
       <description>I&amp;#8217;ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by &amp;#8220;blowing&amp;#8221; on it with the mouse.
@@ -22,4 +23,3 @@ Right now they kind of jiggle around expectantly, this was to meet the &amp;#822
     
   </channel>
 </rss>
-

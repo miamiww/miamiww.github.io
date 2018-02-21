@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Computational Media on  </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Computational Media on </title>
     <link>/categories/computational-media/</link>
+    <description>Recent content in Computational Media on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
     
+	<atom:link href="/categories/computational-media/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <updated>Mon, 11 Dec 2017 00:00:00 UTC</updated>
     
     <item>
       <title>Psychographic Categorization Neural Network Simulator 2000</title>
       <link>/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
       <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one&amp;#8217;s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
@@ -21,7 +22,7 @@
     <item>
       <title>Crypt vs Mausoleum</title>
       <link>/2017/11/20/crypt-vs-mausoleum/</link>
-      <pubDate>Mon, 20 Nov 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/20/crypt-vs-mausoleum/</guid>
       <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a &amp;#8216;tap&amp;#8217; from a &amp;#8216;step&amp;#8217;, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
@@ -30,7 +31,7 @@
     <item>
       <title>World Cheese Index</title>
       <link>/2017/11/06/world-cheese-index/</link>
-      <pubDate>Mon, 06 Nov 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/06/world-cheese-index/</guid>
       <description>I really wanted to work with the twitter API and to show data in real time. I started working with the word cheese just to test it out and I ended up sticking with it throughout the process.
@@ -41,7 +42,7 @@ And see code here.</description>
     <item>
       <title>Button Game</title>
       <link>/2017/10/30/button-game/</link>
-      <pubDate>Mon, 30 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/30/button-game/</guid>
       <description>I&amp;#8217;m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons&amp;#8230; a lot.
@@ -53,7 +54,7 @@ And you can play the game here.
     <item>
       <title>Circle Game with Tracking</title>
       <link>/2017/10/23/circle-game-with-tracking/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/23/circle-game-with-tracking/</guid>
       <description>&amp;nbsp;
@@ -65,7 +66,7 @@ I put a playable version of it here.</description>
     <item>
       <title>Circle Game</title>
       <link>/2017/10/16/circle-game/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/16/circle-game/</guid>
       <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
@@ -75,7 +76,7 @@ I put a playable version of it here.</description>
     <item>
       <title>You Suck</title>
       <link>/2017/10/07/you-suck/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/07/you-suck/</guid>
       <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
@@ -87,7 +88,7 @@ Katya then had the idea to make something that prompted the user to write someth
     <item>
       <title>Experiments in P5 drawing</title>
       <link>/2017/09/18/week-1-experiments-in-p5-drawing/</link>
-      <pubDate>Mon, 18 Sep 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
       <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
@@ -99,4 +100,3 @@ This led me to try to recreate this piece by Paul Nasca:</description>
     
   </channel>
 </rss>
-

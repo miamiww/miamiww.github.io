@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Digitalpractice on  </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Digitalpractice on </title>
     <link>/categories/digitalpractice/</link>
+    <description>Recent content in Digitalpractice on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
     
+	<atom:link href="/categories/digitalpractice/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <updated>Thu, 16 Nov 2017 00:00:00 UTC</updated>
     
     <item>
       <title>Make a Digital Public Space</title>
       <link>/2017/11/16/make-a-digital-public-space/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/16/make-a-digital-public-space/</guid>
       <description>Inspired by the near extinct website guestbook and completely extinct methods of phone phreaking, I wanted to make something that felt as unfinished and wide open with potential as the &amp;#8220;old&amp;#8221; web of 1992 &amp;#8211; 2001.
@@ -22,4 +23,3 @@ Communication between users in this space is possible but only through &amp;#822
     
   </channel>
 </rss>
-

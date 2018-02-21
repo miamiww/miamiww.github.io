@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Categories on  </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Categories on </title>
     <link>/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo -- gohugo.io</generator>
     
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
     
     <item>
       <title>Computational Media</title>
       <link>/categories/computational-media/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/computational-media/</guid>
       <description></description>
@@ -21,7 +21,7 @@
     <item>
       <title>Digitalpractice</title>
       <link>/categories/digitalpractice/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/digitalpractice/</guid>
       <description></description>
@@ -30,7 +30,7 @@
     <item>
       <title>Electronictext</title>
       <link>/categories/electronictext/</link>
-      <pubDate>Fri, 02 Feb 2018 00:00:00 UTC</pubDate>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/electronictext/</guid>
       <description></description>
@@ -39,7 +39,7 @@
     <item>
       <title>Future Scenarios</title>
       <link>/categories/future-scenarios/</link>
-      <pubDate>Thu, 15 Feb 2018 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/future-scenarios/</guid>
       <description></description>
@@ -48,7 +48,7 @@
     <item>
       <title>Physical Computing</title>
       <link>/categories/physical-computing/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 UTC</pubDate>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/physical-computing/</guid>
       <description></description>
@@ -57,7 +57,7 @@
     <item>
       <title>Sound and Video</title>
       <link>/categories/sound-and-video/</link>
-      <pubDate>Fri, 20 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/sound-and-video/</guid>
       <description></description>
@@ -66,7 +66,7 @@
     <item>
       <title>Uncategorized</title>
       <link>/categories/uncategorized/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/uncategorized/</guid>
       <description></description>
@@ -75,7 +75,7 @@
     <item>
       <title>Visual Language</title>
       <link>/categories/visual-language/</link>
-      <pubDate>Wed, 18 Oct 2017 00:00:00 UTC</pubDate>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/visual-language/</guid>
       <description></description>
@@ -83,4 +83,3 @@
     
   </channel>
 </rss>
-
