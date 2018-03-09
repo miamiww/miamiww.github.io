@@ -5,10 +5,20 @@
     <link>/post/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unepic Poem</title>
+      <link>/2018/03/09/unepic-poem/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/unepic-poem/</guid>
+      <description>When thinking of making my own poetic form I, in a fit of grandiose mania, decided that I would make my own form of generative epic poetry. Dactylic hexameter?&amp;hellip; yes! Alliteration?&amp;hellip; YES! Epithets?&amp;hellip; YES YES!! Heroic narrative defining the moral values of my society?&amp;hellip; YES YES YES!!!
+Well it didn&amp;rsquo;t really work out that well. The biggest problem is that narrative is really hard to pull off with generative and random-based methods.</description>
+    </item>
     
     <item>
       <title>Pig Texts</title>
