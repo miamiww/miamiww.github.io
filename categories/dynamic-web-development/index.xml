@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dynamic Web Development on </title>
+    <link>/categories/dynamic-web-development/</link>
+    <description>Recent content in Dynamic Web Development on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/dynamic-web-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Biometric Fortune Telling</title>
+      <link>/2018-03-09-biometric-fortunes/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018-03-09-biometric-fortunes/</guid>
+      <description>In keeping with my interests in human to machine learning interaction and in how individuals&amp;rsquo; identities and personal narratives are shaped by those interactions, I decided to make a biometric scanning application (game?) that gives you your fortune based on the information it scans from you. My interest in algorithmic thinking and machine learning decision-making is manifesting as fortune telling projects because of the amount of predictive faith machine learning has culturally engendered: statistical pattern recognition as the new oracles, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

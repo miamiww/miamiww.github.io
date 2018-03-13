@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018-03-09-biometric-fortunes/</loc>
+    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/03/09/unepic-poem/</loc>
     <lastmod>2018-03-09T00:00:00+00:00</lastmod>
   </url>
@@ -187,6 +192,12 @@
   <url>
     <loc>/categories/digitalpractice/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/dynamic-web-development/</loc>
+    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
