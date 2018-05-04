@@ -42,13 +42,13 @@
 
 <article>
 
-    <h1>Classic_Bad_Generative_Synths.wav</h1>
+    <h1>Welcome To</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-04-13T00:00:00Z">Apr 13, 2018</time>
+            <time class="post-date" datetime="2018-05-04T00:00:00Z">May 4, 2018</time>
         </li>
         
         
@@ -70,8 +70,11 @@
 </aside>
     
 
-    <p>For this assignment I fell off the generative text pathway and onto the well worn path of the media artist: bad generative music compositions with shiny new tools. On my Github feed I noticed that Rebecca Fiebrink had recently created a new repository called word2vec2osc and I realized that I could use word vectors plugged into Wekinator to train a bunch of sine wave generators to turn bodies of text into musical compositions. I started training my model by setting &ldquo;pleasant&rdquo; sounding tones to &ldquo;pleasant&rdquo; words like &ldquo;good&rdquo;, &ldquo;pleasant&rdquo;, &ldquo;coffee&rdquo;, &ldquo;comfortable&rdquo;, etc. and unpleasant words to unpleasant tones.
-<a href="https://vimeo.com/264356991"><img src="https://www.dropbox.com/s/7idtnxvr9ygawij/Screenshot%202018-04-13%2015.14.43.png?dl=0" alt="Word Synth" /></a></p>
+    <p>I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &lsquo;artist talk&rsquo; within the art labor economy. This discussion of the value of presence resonated strongly with me as I feel constant pulls on my attention and presence from all the devices and pressures for success and a thousand bits of regret for not doing enough or reminders or notifications in a constant blender of anxiety. My ideal product was a talk in which I become merely a vessel for an automated process that also directed the audience on how to interpret the automated talk I am giving.</p>
+
+<p><a href="http://www.e-flux.com/program/170589/double-u-s-book-launch-nbsp-duty-free-art-nbsp-and-supercommunity-at-the-guggenheim/"><img src="http://images.e-flux-systems.com/43924124-F0B7-4856-8353-33447CDBCF88.jpg,2000" alt="Duty Free Art" /></a>
+My first first step in the process was to take a
+build a corpus of various conference talks and try to automatically stitch them together</p>
 
 
 </article>
@@ -81,13 +84,9 @@
     <ul>
         
         <li>
-            <a href="/2018/03/19/three-video-projects/"><i class="fa fa-chevron-circle-left"></i> Three Projects</a>
+            <a href="/2018/04/13/word-vector-music/"><i class="fa fa-chevron-circle-left"></i> Classic_Bad_Generative_Synths.wav</a>
         </li>
         
-        
-        <li>
-            <a href="/2018/05/04/welcome-to.md">Welcome To <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
