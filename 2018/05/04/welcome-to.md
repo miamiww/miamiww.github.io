@@ -70,7 +70,7 @@
 </aside>
     
 
-    <p>[<img src="/static/images/1O3A0114.JPG" alt="Fast And Furious" />]
+    <p><img src="/images/1O3A0114.JPG" alt="Fast And Furious" />
 I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &lsquo;artist talk&rsquo; within the art labor economy. This discussion of the value of presence resonated with me as I feel constant pulls on my attention and presence from all the devices and pressures for success and a thousand bits of regret for not doing enough or reminders or notifications in a constant blender of anxiety. Blah blah blah everyone&rsquo;s phone is constantly demanding that they be in 18 places at once. My ideal product was a talk in which I become merely a vessel for an automated process that also directed the audience on how to interpret the automated talk I am giving.</p>
 
 <p><a href="http://www.e-flux.com/program/170589/double-u-s-book-launch-nbsp-duty-free-art-nbsp-and-supercommunity-at-the-guggenheim/"><img src="http://images.e-flux-systems.com/43924124-F0B7-4856-8353-33447CDBCF88.jpg,2000" alt="Duty Free Art" /></a>
@@ -97,8 +97,10 @@ not and templated to provide particicists
 <pre><code>The aurality of the present and the present and the
 present and the present and the present and the
 present and the projects of the present and the
-projection of the projection of the future of the 
+projection of the projection of the future of the
 </code></pre>
+
+<p>My real interest in this was in then using a reaction prediction neural network to instruct the audience into their interpretation of the piece. However I ended up s</p>
 
 
 </article>
