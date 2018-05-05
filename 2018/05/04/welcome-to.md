@@ -84,12 +84,20 @@ I can create and meet a set of established
 stereotypes of myself.
 </code></pre>
 
-<p>I also tried recurrent neural networks using the <a href="https://github.com/minimaxir/textgenrnn">textgennr</a> module.</p>
+<p>I also tried recurrent neural networks using the <a href="https://github.com/minimaxir/textgenrnn">textgennr</a> module, but the weird results were too weird and the less weird results weren&rsquo;t weird enough.</p>
 
 <pre><code>Junkant-is to be administering its makes endlycrace,
 its authenticstical extend the air of the decends,
 the practice of derks makes a precious for who does
 not and templated to provide particicists
+</code></pre>
+
+<p>or</p>
+
+<pre><code>The aurality of the present and the present and the
+present and the present and the present and the
+present and the projects of the present and the
+projection of the projection of the future of the 
 </code></pre>
 
 
