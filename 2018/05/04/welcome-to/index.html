@@ -65,13 +65,15 @@
 
         
 
-        <li>2 min read</li>
+        <li>3 min read</li>
     </ul>
 </aside>
     
 
     <p><img src="/images/1O3A0114.JPG" alt="Fast And Furious" />
-I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &lsquo;artist talk&rsquo; within the art labor economy. This discussion of the value of presence resonated with me as I feel constant pulls on my attention and presence from all the devices and pressures for success and a thousand bits of regret for not doing enough or reminders or notifications in a constant blender of anxiety. Blah blah blah everyone&rsquo;s phone is constantly demanding that they be in 18 places at once. My ideal product was a talk in which I become merely a vessel for an automated process that also directed the audience on how to interpret the automated talk I am giving.</p>
+I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &lsquo;artist talk&rsquo; within the art labor economy. This discussion of the value of presence resonated with me as I feel constant pulls on my attention and presence from all the devices and pressures for success and a thousand bits of regret for not doing enough or reminders or notifications in a constant blender of anxiety. Blah blah blah everyone&rsquo;s phone is constantly demanding that they be in 18 places at once. My ideal product was a talk in which I become merely a vessel for an automated process, and I feel as though I more or less accomplished this goal with this piece.</p>
+
+<p>If you don&rsquo;t want to read too much about the process and just want the good stuff, you can see an example of a generated slide deck <a href="https://docs.google.com/presentation/d/1FGxM85ikyp8bNPNWEgepR7e0oRgiek6f-uUo-fsyyMs/edit?usp=sharing">here</a>, or look over my code <a href="https://github.com/miamiww/ElectronicText/tree/master/final_project">here</a>. Of course a performance is only in the ephemeral doing.</p>
 
 <p><a href="http://www.e-flux.com/program/170589/double-u-s-book-launch-nbsp-duty-free-art-nbsp-and-supercommunity-at-the-guggenheim/"><img src="http://images.e-flux-systems.com/43924124-F0B7-4856-8353-33447CDBCF88.jpg,2000" alt="Duty Free Art" /></a>
 My first first step in the process was to build a corpus of various conference talks and stitch them together using markov chains of various character and word lengths. With my initial undertakings I tended to prefer 2 word chains.</p>
@@ -100,8 +102,9 @@ present and the projects of the present and the
 projection of the projection of the future of the
 </code></pre>
 
-<p>My real interest in this was in then using a <a href="https://github.com/minimaxir/reactionrnn">reaction prediction neural network</a> to build instructions for the audience&rsquo;s interpretation of the piece.
-<img src="/images/lilslidebot.gif" alt="slidebot" /></p>
+<p>My real interest in this was in then using a <a href="https://github.com/minimaxir/reactionrnn">reaction prediction neural network</a> to build instructions for the audience&rsquo;s interpretation of the piece. But I ended up getting swept up in what I can only refer to as Alden&rsquo;s Big Webdriver Moment of 2018, where I learned about webdrivers and wanted to use them for everything.
+<img src="/images/lilslidebot.gif" alt="slidebot" />
+Using a webdriver led me to start scraping slides from <a href="https://www.slideshare.net/">slideshare.net</a> to put them together into a presentation, and the audience direction pieces just didn&rsquo;t feel integrateable into the <a href="https://www.youtube.com/watch?v=gOa1fK5USXk">snappy/cheesy</a> direction I had started going into.</p>
 
 
 </article>
