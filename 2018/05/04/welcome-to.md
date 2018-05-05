@@ -65,7 +65,7 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
@@ -76,7 +76,20 @@ I have been thinking about a completely automated conference talk since I saw Hi
 <p><a href="http://www.e-flux.com/program/170589/double-u-s-book-launch-nbsp-duty-free-art-nbsp-and-supercommunity-at-the-guggenheim/"><img src="http://images.e-flux-systems.com/43924124-F0B7-4856-8353-33447CDBCF88.jpg,2000" alt="Duty Free Art" /></a>
 My first first step in the process was to build a corpus of various conference talks and stitch them together using markov chains of various character and word lengths. With my initial undertakings I tended to prefer 2 word chains.</p>
 
-<pre><code>
+<pre><code>Time’s unity is asymmetric: the past present can only
+be understood for what it was and wasn’t
+(qua condition and projection to the dead: parents
+and grandparents and so forth.
+I can create and meet a set of established
+stereotypes of myself.
+</code></pre>
+
+<p>I also tried recurrent neural networks using the <a href="https://github.com/minimaxir/textgenrnn">textgennr</a> module.</p>
+
+<pre><code>Junkant-is to be administering its makes endlycrace,
+its authenticstical extend the air of the decends,
+the practice of derks makes a precious for who does
+not and templated to provide particicists
 </code></pre>
 
 
