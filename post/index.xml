@@ -34,7 +34,7 @@
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/09/10/bad-pong/</guid>
-      <description></description>
+      <description>I really like gesture controls, nothing makes me feel more like a technopagan completing a ritual than controlling something on my screen just by waving my hands around, so I decided that I wanted to control the paddle in just such a manner. Initially in order to make some kind of gestural control system I wanted to put a camera on a raspberry pi and train it to recognize particular hand shapes, but that sounded like overkill and I missed the Arduino IDE too much not to take advantage of the opportunity to use it again.</description>
     </item>
     
     <item>
