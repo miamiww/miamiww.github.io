@@ -5,10 +5,37 @@
     <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2 Avatars</title>
+      <link>/2018/09/11/two-avatars/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/11/two-avatars/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Maps</title>
+      <link>/2018/09/11/bad-pong/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/11/bad-pong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bad Pong</title>
+      <link>/2018/09/10/bad-pong/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/10/bad-pong/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Welcome To</title>

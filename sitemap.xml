@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/09/11/two-avatars/</loc>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/09/11/bad-pong/</loc>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/09/10/bad-pong/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/05/04/welcome-to/</loc>
     <lastmod>2018-05-04T00:00:00+00:00</lastmod>
   </url>
@@ -189,7 +204,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -207,6 +222,12 @@
   <url>
     <loc>/categories/detourning/</loc>
     <lastmod>2018-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/digital-avatars/</loc>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -248,7 +269,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -264,8 +285,20 @@
   </url>
   
   <url>
+    <loc>/categories/temporary-expert/</loc>
+    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/uncategorized/</loc>
     <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/understanding-networks/</loc>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
