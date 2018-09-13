@@ -5,10 +5,20 @@
     <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Sep 2018 00:39:23 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 13 Sep 2018 14:33:27 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Localnet Adventure!! Reference Page</title>
+      <link>/post/localnet-adventure/</link>
+      <pubDate>Thu, 13 Sep 2018 14:33:27 -0400</pubDate>
+      
+      <guid>/post/localnet-adventure/</guid>
+      <description>You can download the slides here
+Some Useful Command Line Commands  man - opens the manual for a command pwd - prints the working directory, i.e. shows you where you are ls - lists the files and directories in a given directory. default is working directory cd - changes directory cat - prints the contents of a file echo - prints exactly what you give it ssh - secure shell, creates a secure shell connection to another machine touch - creates a file mkdir - makes a new directory rm - deletes a file (remove), or a directory when given the flag -r mv - moves a file to another directory, can be used to rename a file cp - copies a file nano - default command line text editor | - pipes the results of one command to another  In this exercise you will mostly be using ssh, ls, cat, and cd</description>
+    </item>
     
     <item>
       <title>Two Avatars</title>
