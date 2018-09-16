@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Temporary Expert on </title>
-    <link>/categories/temporary-expert/</link>
-    <description>Recent content in Temporary Expert on </description>
+    <title>Temporary Expert on Alden&#39;s ITP Home</title>
+    <link>http://blog.alden.website/categories/temporary-expert/</link>
+    <description>Recent content in Temporary Expert on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Tue, 11 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/temporary-expert/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.alden.website/categories/temporary-expert/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nation State Energy Policy</title>
-      <link>/2018/09/11/energy-map/</link>
+      <link>http://blog.alden.website/2018/09/11/energy-map/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/11/energy-map/</guid>
+      <guid>http://blog.alden.website/2018/09/11/energy-map/</guid>
       <description>https://vimeo.com/289321256
 That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON.</description>
     </item>

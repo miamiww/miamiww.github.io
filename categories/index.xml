@@ -1,137 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on </title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on </description>
+    <title>Categories on Alden&#39;s ITP Home</title>
+    <link>http://blog.alden.website/categories/</link>
+    <description>Recent content in Categories on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.alden.website/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Computational Media</title>
-      <link>/categories/computational-media/</link>
+      <link>http://blog.alden.website/categories/computational-media/</link>
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/computational-media/</guid>
+      <guid>http://blog.alden.website/categories/computational-media/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Detourning</title>
-      <link>/categories/detourning/</link>
+      <link>http://blog.alden.website/categories/detourning/</link>
       <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/detourning/</guid>
+      <guid>http://blog.alden.website/categories/detourning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Digital Avatars</title>
-      <link>/categories/digital-avatars/</link>
-      <pubDate>Tue, 11 Sep 2018 00:39:23 -0400</pubDate>
+      <link>http://blog.alden.website/categories/digital-avatars/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/digital-avatars/</guid>
+      <guid>http://blog.alden.website/categories/digital-avatars/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Digitalpractice</title>
-      <link>/categories/digitalpractice/</link>
+      <link>http://blog.alden.website/categories/digitalpractice/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/digitalpractice/</guid>
+      <guid>http://blog.alden.website/categories/digitalpractice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic Web Development</title>
-      <link>/categories/dynamic-web-development/</link>
+      <link>http://blog.alden.website/categories/dynamic-web-development/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/dynamic-web-development/</guid>
+      <guid>http://blog.alden.website/categories/dynamic-web-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Electronic Text</title>
-      <link>/categories/electronic-text/</link>
+      <link>http://blog.alden.website/categories/electronic-text/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/electronic-text/</guid>
+      <guid>http://blog.alden.website/categories/electronic-text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Electronictext</title>
-      <link>/categories/electronictext/</link>
+      <link>http://blog.alden.website/categories/electronictext/</link>
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/electronictext/</guid>
+      <guid>http://blog.alden.website/categories/electronictext/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Future Scenarios</title>
-      <link>/categories/future-scenarios/</link>
+      <link>http://blog.alden.website/categories/future-scenarios/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/future-scenarios/</guid>
+      <guid>http://blog.alden.website/categories/future-scenarios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Physical Computing</title>
-      <link>/categories/physical-computing/</link>
+      <link>http://blog.alden.website/categories/physical-computing/</link>
       <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/physical-computing/</guid>
+      <guid>http://blog.alden.website/categories/physical-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sound and Video</title>
-      <link>/categories/sound-and-video/</link>
+      <link>http://blog.alden.website/categories/sound-and-video/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/sound-and-video/</guid>
+      <guid>http://blog.alden.website/categories/sound-and-video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Temporary Expert</title>
-      <link>/categories/temporary-expert/</link>
+      <link>http://blog.alden.website/categories/temporary-expert/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/temporary-expert/</guid>
+      <guid>http://blog.alden.website/categories/temporary-expert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uncategorized</title>
-      <link>/categories/uncategorized/</link>
+      <link>http://blog.alden.website/categories/uncategorized/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/uncategorized/</guid>
+      <guid>http://blog.alden.website/categories/uncategorized/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding Networks</title>
-      <link>/categories/understanding-networks/</link>
+      <link>http://blog.alden.website/categories/understanding-networks/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/understanding-networks/</guid>
+      <guid>http://blog.alden.website/categories/understanding-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Language</title>
-      <link>/categories/visual-language/</link>
+      <link>http://blog.alden.website/categories/visual-language/</link>
       <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/visual-language/</guid>
+      <guid>http://blog.alden.website/categories/visual-language/</guid>
       <description></description>
     </item>
     
