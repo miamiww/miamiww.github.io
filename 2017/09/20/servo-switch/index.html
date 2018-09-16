@@ -27,6 +27,10 @@
              
       </ul>
       
+
+      <!-- isso -->
+        <script data-isso="http://alden.website:8181" src="http://alden.website:8181/js/embed.min.js"></script>
+      <!-- end isso -->
     </header>
 
     
@@ -43,6 +47,7 @@
 </nav>
 
     <main>
+
 
 
 
@@ -105,63 +110,12 @@
         
     </ul>
 </section>
-    
+<!-- begin comments //-->
+<section id="isso-thread">
 
-
-
-
-    <section class="comments-block">
-      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
 </section>
+<!-- end comments //-->
 
-<section id="disqus_thread"></section>
-
-<script>
-      (function () {
-            
-            
-            if (window.location.hostname == "localhost")
-                  return;
-
-            var disqus_loaded = false;
-            var disqus_shortname = '';
-            var disqus_button = document.getElementById("show-comments");
-
-            disqus_button.style.display = "";
-            disqus_button.addEventListener("click", disqus, false);
-
-            function disqus() {
-
-                  if (!disqus_loaded) {
-                        disqus_loaded = true;
-
-                        var e = document.createElement("script");
-                        e.type = "text/javascript";
-                        e.async = true;
-                        e.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-                        (document.getElementsByTagName("head")[0] ||
-                              document.getElementsByTagName("body")[0])
-                        .appendChild(e);
-
-                        
-                        document.getElementById("show-comments").style.display = "none";
-                  }
-            }
-
-            
-            var hash = window.location.hash.substr(1);
-            if (hash.length > 8) {
-                  if (hash.substring(0, 8) == "comment-") {
-                        disqus();
-                  }
-            }
-
-            
-            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
-                  disqus();
-            }
-      })();
-</script>
 
 
 
@@ -171,7 +125,7 @@
     <footer>
         <h6> | 
             Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.websiteindex.xml">Subscribe</a></h6>
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
     </footer>
 </div>
 <script src="/js/scripts.js"></script>
