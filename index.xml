@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Sep 2018 14:54:30 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 16 Sep 2018 20:39:25 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Talking Circle</title>
+      <link>http://blog.alden.website/post/hellocomp/eager_icon/</link>
+      <pubDate>Sun, 16 Sep 2018 20:39:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/hellocomp/eager_icon/</guid>
+      <description>In starting to make some kind of something that talks I wanted to emulate one of my favorite browser games (is it a game?) ClickClickClick. But I found that I didn&amp;rsquo;t know enough about &amp;ldquo;The DOM&amp;rdquo; to get much of my foot in the door without a bunch of research time. So instead I went an easier route, dipping into the familiar warmth of P5. I took a project that I had given a bit of a start to before, a little game about waiting around.</description>
+    </item>
     
     <item>
       <title>American Museum of Natural History</title>
