@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electronic Text on </title>
-    <link>/categories/electronic-text/</link>
-    <description>Recent content in Electronic Text on </description>
+    <title>Electronic Text on Alden&#39;s ITP Home</title>
+    <link>http://blog.alden.website/categories/electronic-text/</link>
+    <description>Recent content in Electronic Text on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/electronic-text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.alden.website/categories/electronic-text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unepic Poem</title>
-      <link>/2018/03/09/unepic-poem/</link>
+      <link>http://blog.alden.website/2018/03/09/unepic-poem/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/03/09/unepic-poem/</guid>
+      <guid>http://blog.alden.website/2018/03/09/unepic-poem/</guid>
       <description>When thinking of making my own poetic form I, in a fit of grandiose mania, decided that I would make my own form of generative epic poetry. Dactylic hexameter?&amp;hellip; yes! Alliteration?&amp;hellip; YES! Epithets?&amp;hellip; YES YES!! Heroic narrative defining the moral values of my society?&amp;hellip; YES YES YES!!!
 Well it didn&amp;rsquo;t really work out that well. The biggest problem is that narrative is really hard to pull off with generative and random-based methods.</description>
     </item>
     
     <item>
       <title>Pig Texts</title>
-      <link>/2018/02/22/pig-texts/</link>
+      <link>http://blog.alden.website/2018/02/22/pig-texts/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/02/22/pig-texts/</guid>
+      <guid>http://blog.alden.website/2018/02/22/pig-texts/</guid>
       <description>I&amp;rsquo;ve been working with my iMessage history in order to do a sentiment analysis over time. In doing so I decided to start trying to randomly generate new texts that would kind of sound like me, much like the kind of creepy post-death chatbot made by training a neural net on all of your messages. My results weren&amp;rsquo;t that&amp;hellip; good, but there was enough structure there to hint at real language.</description>
     </item>
     
