@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/tempexp/taxonomies-systems/</loc>
+    <lastmod>2018-09-17T23:32:01-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/hellocomp/eager_icon/</loc>
     <lastmod>2018-09-16T20:39:25-04:00</lastmod>
   </url>
@@ -219,7 +224,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2018-09-16T20:39:25-04:00</lastmod>
+    <lastmod>2018-09-17T23:32:01-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -297,7 +302,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2018-09-16T20:39:25-04:00</lastmod>
+    <lastmod>2018-09-17T23:32:01-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -314,7 +319,7 @@
   
   <url>
     <loc>http://blog.alden.website/categories/temporary-expert/</loc>
-    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-17T23:32:01-04:00</lastmod>
     <priority>0</priority>
   </url>
   
