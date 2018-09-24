@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Sep 2018 23:32:01 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 17:22:44 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Archives Made Easy</title>
+      <link>http://blog.alden.website/post/hellocomp/archive_made_easy/</link>
+      <pubDate>Mon, 24 Sep 2018 17:22:44 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
+      <description>Recently I&amp;rsquo;ve been reading a ton of books with names like &amp;ldquo;Cyber Dictionary: Your Guide To The Wired World&amp;rdquo; or &amp;ldquo;Net Chick: A Smart-Girl Guide to the Wired World&amp;rdquo;, hip and breezy internet guide books written between 1996-2000. This has led to me making a few strange archive tools around the Internet Archive&amp;rsquo;s Wayback Machine
+The one I made for Hello Computer this week, a voice controlled archive navigation system, can be found here but unfortunately because I don&amp;rsquo;t have HTTPS certification on my prototypes site Chrome will not allow you to access the microphone, so all you can see is the initial button.</description>
+    </item>
     
     <item>
       <title>Taxonomies Systems</title>
@@ -56,6 +66,16 @@ I worked with Nico and Kim doing 3D body scans with itSeez3D. We did a lot of sc
       <guid>http://blog.alden.website/post/localnet-adventure/</guid>
       <description>You can download the slides here
 Some Useful Command Line Commands  man - opens the manual for a command pwd - prints the working directory, i.e. shows you where you are ls - lists the files and directories in a given directory. default is working directory cd - changes directory cat - prints the contents of a file echo - prints exactly what you give it ssh - secure shell, creates a secure shell connection to another machine touch - creates a file mkdir - makes a new directory rm - deletes a file (remove), or a directory when given the flag -r mv - moves a file to another directory, can be used to rename a file cp - copies a file nano - default command line text editor | - pipes the results of one command to another  In this exercise you will mostly be using ssh, ls, cat, and cd</description>
+    </item>
+    
+    <item>
+      <title>Nation State Energy Policy</title>
+      <link>http://blog.alden.website/2018/09/11/energy-map/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.alden.website/2018/09/11/energy-map/</guid>
+      <description>https://vimeo.com/289321256
+That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON.</description>
     </item>
     
     <item>

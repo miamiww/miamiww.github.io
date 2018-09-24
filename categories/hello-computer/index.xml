@@ -6,10 +6,20 @@
     <description>Recent content in Hello Computer on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Sep 2018 20:39:25 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 17:22:44 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Archives Made Easy</title>
+      <link>http://blog.alden.website/post/hellocomp/archive_made_easy/</link>
+      <pubDate>Mon, 24 Sep 2018 17:22:44 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
+      <description>Recently I&amp;rsquo;ve been reading a ton of books with names like &amp;ldquo;Cyber Dictionary: Your Guide To The Wired World&amp;rdquo; or &amp;ldquo;Net Chick: A Smart-Girl Guide to the Wired World&amp;rdquo;, hip and breezy internet guide books written between 1996-2000. This has led to me making a few strange archive tools around the Internet Archive&amp;rsquo;s Wayback Machine
+The one I made for Hello Computer this week, a voice controlled archive navigation system, can be found here but unfortunately because I don&amp;rsquo;t have HTTPS certification on my prototypes site Chrome will not allow you to access the microphone, so all you can see is the initial button.</description>
+    </item>
     
     <item>
       <title>Talking Circle</title>
