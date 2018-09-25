@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/avatars/rig-me/</loc>
+    <lastmod>2018-09-25T15:07:58-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/tempexp/draft-guide/</loc>
     <lastmod>2018-09-25T14:42:10-04:00</lastmod>
   </url>
@@ -249,7 +254,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2018-09-25T14:42:10-04:00</lastmod>
+    <lastmod>2018-09-25T15:07:58-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -274,12 +279,6 @@
   <url>
     <loc>http://blog.alden.website/categories/detourning/</loc>
     <lastmod>2018-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.alden.website/categories/digital-avatars/</loc>
-    <lastmod>2018-09-17T22:50:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -320,6 +319,12 @@
   </url>
   
   <url>
+    <loc>http://blog.alden.website/categories/performative-avatars/</loc>
+    <lastmod>2018-09-25T15:07:58-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/categories/physical-computing/</loc>
     <lastmod>2017-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -327,7 +332,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2018-09-25T14:42:10-04:00</lastmod>
+    <lastmod>2018-09-25T15:07:58-04:00</lastmod>
     <priority>0</priority>
   </url>
   
