@@ -77,7 +77,7 @@
 
         
 
-        <li>7 min read</li>
+        <li>8 min read</li>
     </ul>
 </aside>
     
@@ -258,7 +258,56 @@ OrgTechRef:    https://rdap.arin.net/registry/entity/NETWO3685-ARIN
 
 <p>I became curious about these two Twitter employees, and I wanted to know why they had been added to the WhoIs record instead of leaving it with just the corporate accounts. What would happen if they quit? Would Twitter have to immediately update its record? Obviously the reasonable thing to do would be to call them but I chose instead to search for them online, but I began to feel a little weird and stopped once I found their LinkedIn profiles, birthdays, zip codes, and dating profiles.</p>
 
-<p>End Note: I did try to <code>nmap</code> things but never found any open ports. Guess the net&rsquo;s wild wild west days are over. Maybe it&rsquo;s time for this old console cowboy to hang up his hat.</p>
+<h3 id="the-at-school-analysis">The At School Analysis</h3>
+
+<p>The biggest difference between at home and at school is the NYU network, which for the most part would make similar handoffs to Level3 or Comcast that Time Warner was making. All that I found particularly interesting about NYU&rsquo;s routers was that it received its IPs via &lsquo;Direct Assignment&rsquo;, and that it had been registered all the way back in 1984!</p>
+
+<pre><code>NetRange:       128.122.0.0 - 128.122.255.255
+CIDR:           128.122.0.0/16
+NetName:        NYU-NET
+NetHandle:      NET-128-122-0-0-1
+Parent:         NET128 (NET-128-0-0-0-0)
+NetType:        Direct Assignment
+OriginAS:
+Organization:   New York University (NYU)
+RegDate:        1986-05-01
+Updated:        2017-11-27
+Comment:        Please query Merit's RADb for up to date information on allocations, routing policy, and contacts.
+Comment:
+Comment:        whois -h whois.radb.net
+Comment:
+Comment:        www.ra.net
+Ref:            https://rdap.arin.net/registry/ip/128.122.0.0
+
+
+OrgName:        New York University
+OrgId:          NYU
+Address:        726 Broadway, 8th Floor - ITS
+City:           New York
+StateProv:      NY
+PostalCode:     10003
+Country:        US
+RegDate:        1984-07-04
+Updated:        2017-11-27
+Ref:            https://rdap.arin.net/registry/entity/NYU
+
+
+OrgNOCHandle: COSI-ARIN
+OrgNOCName:   Communications Operations Services - ITS
+OrgNOCPhone:  +1-212-998-3444
+OrgNOCEmail:  noc-cosi-arin@nyu.edu
+OrgNOCRef:    https://rdap.arin.net/registry/entity/COSI-ARIN
+
+OrgAbuseHandle: OIS9-ARIN
+OrgAbuseName:   Office of Information Security
+OrgAbusePhone:  +1-212-998-3333
+OrgAbuseEmail:  abuse@nyu.edu
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/OIS9-ARIN
+</code></pre>
+
+<p>There was only one other point of difference, one that I have no explanation for. In going to FiveThirtyEight from the NYU network, instead of heading to Comcast and bouncing around forever, it goes to 60 Hudson, then leaves the domain of ARIN and hops <a href="https://www.ripe.net/">RIPE</a>, first to <a href="https://en.wikipedia.org/wiki/Tiscali">Tiscali International&rsquo;s</a> German servers and then to TeliaNet in Sweden. Why a blog written in New York is sending me to Sweden is A MYSTERY.</p>
+
+<p><strong>End Note</strong>: I did try to <code>nmap</code> things but never found any open ports. Guess the net&rsquo;s wild wild west days are over. Maybe it&rsquo;s time for this old console cowboy to hang up his hat.</p>
 
 <pre><code>Starting Nmap 7.70 ( https://nmap.org ) at 2018-09-17 00:24 EDT
 Nmap scan report for be61.nycynymy02h.nyc.rr.com (68.173.202.74)
