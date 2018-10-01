@@ -6,19 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Sep 2018 15:07:58 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 17:37:42 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Rig Me</title>
-      <link>http://blog.alden.website/post/avatars/rig-me/</link>
-      <pubDate>Tue, 25 Sep 2018 15:07:58 -0400</pubDate>
+      <title>Grant Gore</title>
+      <link>http://blog.alden.website/post/cabofwon/grant-gore/</link>
+      <pubDate>Fri, 28 Sep 2018 17:37:42 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/avatars/rig-me/</guid>
-      <description>All my rigged, texture, .obj files located here.
-Had a ton of fun with my body once I rigged it. I realized in this process that I need to rescan myself if I want a more real world vision of my body because I wore my glasses during my scan and they aren&amp;rsquo;t showing up super good on my body digitally. Whoops! Here are two of my favorite animations Scattershot (I&amp;rsquo;m very sleepy today), responses to the readings:</description>
+      <guid>http://blog.alden.website/post/cabofwon/grant-gore/</guid>
+      <description>The peculiarly named Grant Gore, a small triangular park at the intersection of Dean and Bedford in Crown Heights (&amp;lsquo;gore&amp;rsquo; being an obscure term for any small triangular park), is home to a truly massive bronze statue of Ulysses S Grant, Union hero of the Civil War and two term Reconstruction era president.
+On a crisp morning this week I went to take a look at the statue. I was intrigued by the short bit of history I had read about it and the Gilded Age high society club that had commissioned it, but I also went because I wanted to unpack the inexplicable warmth I feel towards Grant.</description>
     </item>
     
     <item>
@@ -506,6 +506,17 @@ The eye is immediately drawn by the image organization and the blue splash on hi
       
       <guid>http://blog.alden.website/2017/09/11/what-is-interaction/</guid>
       <description>Within ten minutes of using any screened device my left eye begins to strain and ache. My wrists hurt almost constantly and frequently I need to use wrist splints when typing in order to avoid the pain. When I go to sleep at night I have a dull ache in my neck and between my eyes, and when I wake up my first thought is to check my phone. Before thinking about coffee, before thinking about food, or work, or my day ahead, or my partner lying beside me, a light goes off in my brain, a synapse fires, indicating that it is seeking a dopamine reward for checking Twitter.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://blog.alden.website/post/avatars/rig-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.alden.website/post/avatars/rig-me/</guid>
+      <description>sc+++ title = &amp;ldquo;Rig Me&amp;rdquo; date = 2018-09-25T15:07:58-04:00 draft = false tags = [] categories = [&amp;ldquo;performative avatars&amp;rdquo;] +++
+All my rigged, texture, .obj files located here.
+Had a ton of fun with my body once I rigged it. I realized in this process that I need to rescan myself if I want a more real world vision of my body because I wore my glasses during my scan and they aren&amp;rsquo;t showing up super good on my body digitally.</description>
     </item>
     
   </channel>
