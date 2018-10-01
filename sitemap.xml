@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/hellocomp/uncanny-sandra/</loc>
+    <lastmod>2018-09-30T00:46:09-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/cabofwon/grant-gore/</loc>
     <lastmod>2018-09-28T17:37:42-04:00</lastmod>
   </url>
@@ -258,7 +263,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2018-09-28T17:37:42-04:00</lastmod>
+    <lastmod>2018-09-30T00:46:09-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -318,7 +323,7 @@
   
   <url>
     <loc>http://blog.alden.website/categories/hello-computer/</loc>
-    <lastmod>2018-09-24T17:22:44-04:00</lastmod>
+    <lastmod>2018-09-30T00:46:09-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -336,7 +341,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2018-09-28T17:37:42-04:00</lastmod>
+    <lastmod>2018-09-30T00:46:09-04:00</lastmod>
     <priority>0</priority>
   </url>
   
