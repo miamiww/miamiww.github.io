@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Physics Engine Rig</h1>
+    <h1>Adventure Continue</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-10-01T12:16:33-04:00">Oct 1, 2018</time>
+            <time class="post-date" datetime="2018-10-09T17:52:12-04:00">Oct 9, 2018</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/performative-avatars/">performative avatars</a>
+                    <a href="/categories/hello-computer/">hello computer</a>
                 
             </em>
         </li>
@@ -82,13 +82,11 @@
 </aside>
     
 
-    
+    <p>I tried to continue on my theme of making a colossal cave adventure clone for voice, thinking that this time using the webhook fulfillment it would be much clearer what to do. I did get it functioning, somewhat.
+<img src="/images/HelloComp/adventure_south.png" alt="" />
+Unfortunately going south here should get you into the forest. I encountered numerous other bugs, such as items not appearing in the rooms they should be in, and getting stuck in a room permanently. Also I noticed that whenever I quit the game and restarted it, it would start in the room I had left in. Curious&hellip;</p>
 
-<h2 id="placeholder-entry-i-am-sorry">Placeholder Entry I Am Sorry !!!!!</h2>
-
-<p>I really don&rsquo;t like <a href="https://hyperallergic.com/387090/jordan-wolfson-evades-the-politics-of-his-violent-images/">Jordan Wolfson and his work</a></p>
-
-<p><img src="/images/Avatars/jordanwolfson.jpg" alt="" /></p>
+<p>You can see all of the code <a href="https://github.com/miamiww/HelloComputer/tree/master/talk_adventure">here</a>. I think the last issue is because I used global variables to set up the &ldquo;current room&rdquo;, which I have reset when I &lsquo;quit&rsquo; properly, but that won&rsquo;t reset if I just exit out of the test window. I think really I should be using a &ldquo;world-object&rdquo; or something of the like, that keeps track of all the &lsquo;rooms&rsquo;, their states, geographic relationship to each other, and what they have in them. But that doesn&rsquo;t answer to me why you can get stuck in a room, and debugging on DialogFlow is a bit of a pain.</p>
 
 
 </article>
@@ -98,13 +96,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/hellocomp/uncanny-sandra/"><i class="fa fa-chevron-circle-left"></i> Uncanny Sandra</a>
+            <a href="http://blog.alden.website/post/avatars/physics-engine-rig/"><i class="fa fa-chevron-circle-left"></i> Physics Engine Rig</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/hellocomp/adventure-continue/">Adventure Continue <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

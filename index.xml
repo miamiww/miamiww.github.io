@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Oct 2018 12:16:33 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 09 Oct 2018 17:52:12 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adventure Continue</title>
+      <link>http://blog.alden.website/post/hellocomp/adventure-continue/</link>
+      <pubDate>Tue, 09 Oct 2018 17:52:12 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/hellocomp/adventure-continue/</guid>
+      <description>I tried to continue on my theme of making a colossal cave adventure clone for voice, thinking that this time using the webhook fulfillment it would be much clearer what to do. I did get it functioning, somewhat. Unfortunately going south here should get you into the forest. I encountered numerous other bugs, such as items not appearing in the rooms they should be in, and getting stuck in a room permanently.</description>
+    </item>
     
     <item>
       <title>Physics Engine Rig</title>
