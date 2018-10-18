@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</loc>
+    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/hellocomp/adventure-continue/</loc>
     <lastmod>2018-10-09T17:52:12-04:00</lastmod>
   </url>
@@ -268,7 +273,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2018-10-09T17:52:12-04:00</lastmod>
+    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -287,6 +292,12 @@
   <url>
     <loc>http://blog.alden.website/categories/computational-media/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alden.website/categories/computational-narrative/</loc>
+    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -346,7 +357,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2018-10-09T17:52:12-04:00</lastmod>
+    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
