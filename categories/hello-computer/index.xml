@@ -6,10 +6,19 @@
     <description>Recent content in Hello Computer on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Oct 2018 17:52:12 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 18:50:48 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leaf Town: Plant Communication Hub</title>
+      <link>http://blog.alden.website/post/hellocomp/plant-communication-hub/</link>
+      <pubDate>Fri, 19 Oct 2018 18:50:48 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/hellocomp/plant-communication-hub/</guid>
+      <description>All code for the project can be found on my Github here</description>
+    </item>
     
     <item>
       <title>Adventure Continue</title>
