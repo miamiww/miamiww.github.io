@@ -6,10 +6,20 @@
     <description>Recent content in Understanding Networks on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Sep 2018 22:07:07 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 22:56:25 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/understanding-networks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Network Packets</title>
+      <link>http://blog.alden.website/post/undernet/my-network-packets/</link>
+      <pubDate>Mon, 29 Oct 2018 22:56:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/undernet/my-network-packets/</guid>
+      <description>My network map was more or less what I expected to see. Here&amp;rsquo;s the map from Herbivore. Note that my public IP&amp;rsquo;s threat level is low.
+The TP-Link at 192.168.0.1 is, naturally, my router. The TP-Link at .100 is actually my wifi-enabled plug from the same manufacturer. The Amazon Technologies device is an Echo (running 64 bit Linux? I thought they ran &amp;lsquo;Amazon Fire&amp;rsquo; EDIT: looks like Fire OS has a Linux kernel), The Canon is a printer, the Pis are actually a single Pi connected via both wifi and ethernet.</description>
+    </item>
     
     <item>
       <title>Traced Routes</title>

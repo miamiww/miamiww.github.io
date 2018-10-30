@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 03:51:21 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 22:56:25 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Network Packets</title>
+      <link>http://blog.alden.website/post/undernet/my-network-packets/</link>
+      <pubDate>Mon, 29 Oct 2018 22:56:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/undernet/my-network-packets/</guid>
+      <description>My network map was more or less what I expected to see. Here&amp;rsquo;s the map from Herbivore. Note that my public IP&amp;rsquo;s threat level is low.
+The TP-Link at 192.168.0.1 is, naturally, my router. The TP-Link at .100 is actually my wifi-enabled plug from the same manufacturer. The Amazon Technologies device is an Echo (running 64 bit Linux? I thought they ran &amp;lsquo;Amazon Fire&amp;rsquo; EDIT: looks like Fire OS has a Linux kernel), The Canon is a printer, the Pis are actually a single Pi connected via both wifi and ethernet.</description>
+    </item>
     
     <item>
       <title>Trash Moods</title>
@@ -38,6 +48,15 @@ Propublica on Deadly Garbage Collection Mob and Garbage Space Debris More Space 
       <guid>http://blog.alden.website/post/tempexp/sandbox/</guid>
       <description>Does garbage conceal our dreams for the future? Is &amp;lsquo;throwing out&amp;rsquo; a hopeful act?  Do we remake ourselves with each discard? The Life Changing Magic of Throwing Out? What is &amp;ldquo;trash&amp;rdquo; culture? Junk food? Jerry Springer? Garbage / the lesser than.
 A cockroach literally, actually crawled across my monitor just now. Cleansing and purging. Removal.</description>
+    </item>
+    
+    <item>
+      <title>Self Curation Self Curated</title>
+      <link>http://blog.alden.website/post/cabofwon/self-curation-self-curated/</link>
+      <pubDate>Sun, 21 Oct 2018 23:08:40 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/cabofwon/self-curation-self-curated/</guid>
+      <description>A show based on my own biography? It&amp;rsquo;s almost too much to ask, my brain feels like it&amp;rsquo;s turning over trying to keep up with the flood of associations. There&amp;rsquo;s me as a young dancer, watching William Forsythe&amp;rsquo;s Improvisation Technologies, or working with Physical Education, or reading The Collected Stories of Lydia Davis. Going to Berghain with my sister and then reading Gender Trouble all the next day without sleeping. There&amp;rsquo;s me as a young gallerist flying to New York to see the Wynn Greenwood show that such and such person had curated with the New Museum.</description>
     </item>
     
     <item>
