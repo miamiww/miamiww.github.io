@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/undernet/RESTful-VJing/</loc>
+    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/undernet/my-network-packets/</loc>
     <lastmod>2018-10-29T22:56:25-04:00</lastmod>
   </url>
@@ -313,7 +318,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2018-10-29T22:56:25-04:00</lastmod>
+    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -397,7 +402,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2018-10-29T22:56:25-04:00</lastmod>
+    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -426,7 +431,7 @@
   
   <url>
     <loc>http://blog.alden.website/categories/understanding-networks/</loc>
-    <lastmod>2018-10-29T22:56:25-04:00</lastmod>
+    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   

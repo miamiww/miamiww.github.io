@@ -6,10 +6,19 @@
     <description>Recent content in Understanding Networks on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Oct 2018 22:56:25 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 22:46:34 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/understanding-networks/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RESTful VJing</title>
+      <link>http://blog.alden.website/post/undernet/RESTful-VJing/</link>
+      <pubDate>Mon, 12 Nov 2018 22:46:34 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/undernet/RESTful-VJing/</guid>
+      <description>Beverly and I decided to work on a quick VJing system. We started out doing research and interviewed a few people on the floor to ask them what they thought made for good VJing, and what made for bad VJing. The most consistent thing we heard was that the visuals should match the mood and timing of the music. Since beat syncing the visuals to the music might be hard with REST we decided to have two &amp;ldquo;modes&amp;rdquo; for the system, GIF mode and visuals mode.</description>
+    </item>
     
     <item>
       <title>My Network Packets</title>
