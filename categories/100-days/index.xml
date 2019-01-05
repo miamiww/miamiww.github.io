@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jan 2019 11:06:35 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 05 Jan 2019 15:46:52 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day 2</title>
+      <link>http://blog.alden.website/post/100days/Day-2/</link>
+      <pubDate>Sat, 05 Jan 2019 15:46:52 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-2/</guid>
+      <description>Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&amp;rsquo;d heard of them before.
+Joann Fabric&amp;rsquo;s Industrial Control System on 208.83.32.213 Siemens has a proprietary network protocol called S7 Communications that they use for their Programmable Logic Controllers (PLC), which they also provide a nice sales brochure for.</description>
+    </item>
     
     <item>
       <title>100 Days of Shodan Stories Day 1</title>
