@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jan 2019 16:59:25 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 12:08:21 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days of Shodan Stories Day 4</title>
+      <link>http://blog.alden.website/post/100days/Day-4/</link>
+      <pubDate>Mon, 07 Jan 2019 12:08:21 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-4/</guid>
+      <description>Today I saw that the fifth most searched for term on Shodan of the day was &amp;ldquo;dreambox&amp;rdquo;. What a name! I couldn&amp;rsquo;t resist! After a little digging I found that dreambox probably referred to a kind of linux-based television receiver, made by a German company with a truly fantastic logo. Cloned Dreambox Television Receiver on 84.39.177.219 I started out just searching on Shodan for &amp;ldquo;dreambox&amp;rdquo;, like so many others were doing today.</description>
+    </item>
     
     <item>
       <title>100 Days of Shodan Stories Day 3</title>
