@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Jan 2019 15:46:52 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jan 2019 16:59:25 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days of Shodan Stories Day 3</title>
+      <link>http://blog.alden.website/post/100days/Day-3/</link>
+      <pubDate>Sun, 06 Jan 2019 16:59:25 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-3/</guid>
+      <description>Since I didn&amp;rsquo;t do Minecraft servers yesterday I decided to do them today. First I read a little guide on how to set up a Minecraft server to get a sense of what they looked like.
+Les Chevaliers Royale Minecraft Server on 97.94.56.211 I actually don&amp;rsquo;t know much about Minecraft, I&amp;rsquo;ve never played it. I know it&amp;rsquo;s popular with a wide range of people, and that really dedicated players like to set up servers for group play, so I thought it might be interesting to look around for a server and figure out if I could find the people who were using it.</description>
+    </item>
     
     <item>
       <title>100 Days of Shodan Stories Day 2</title>
