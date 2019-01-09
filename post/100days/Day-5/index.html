@@ -1,0 +1,226 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-08T13:33:49-05:00">Jan 8, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>4 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I decided to go looking for <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> databases. I&rsquo;ve always loved SQL, it was one of the first &ldquo;programming languages&rdquo; I learned and was a big part of one of my first jobs.</p>
+
+<h3 id="institute-of-industrial-organic-chemistry-on-79-96-39-102">Institute of Industrial Organic Chemistry on 79.96.39.102</h3>
+
+<p>Checking with <a href="https://dev.mysql.com/doc/mysql-port-reference/en/mysql-ports-reference-tables.html">MySQL documents</a> I found that MySQL databases typically run off of port 3306. So I went on Shodan to look for things with port 3306. One of the first results I saw was from Poland, and being Polish I couldn&rsquo;t resist poking around a bit in the homeland.</p>
+
+<p>I started off looking at it with <code>nmap</code>.</p>
+
+<pre><code>👻🌵✨$ nmap 79.96.39.102
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-08 13:51 EST
+Nmap scan report for cloudserver060808.home.pl (79.96.39.102)
+Host is up (0.12s latency).
+Not shown: 915 filtered ports, 68 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+110/tcp  open  pop3
+143/tcp  open  imap
+443/tcp  open  https
+465/tcp  open  smtps
+587/tcp  open  submission
+990/tcp  open  ftps
+993/tcp  open  imaps
+995/tcp  open  pop3s
+1433/tcp open  ms-sql-s
+1443/tcp open  ies-lm
+3306/tcp open  mysql
+3690/tcp open  svn
+5432/tcp open  postgresql
+</code></pre>
+
+<p>Lots of ports open, it looks like this IP has a bunch of functions, including email (25, 110, 143, 465, 587, 993, 995), a webpage (80 and 443), and databases (all those ports with sql). Just based on the ports this looks like a corporate server for sure. Going to the IP in a browser confirms this&hellip;
+<img src="/images/100Days/Day5/IPO2.png" alt="" />
+The Institute of Industrial Organic Chemistry (IPO)! No I&rsquo;ve never heard of it before but their website is a delight of early 00s web design. They were formed in 1947 and have 50-100 employees, and act as a industry research institute to the chemical industry, providing independent studies on the efficacy and toxicology of newly developed chemical compounds. I assume that regulation prevents chemical development companies from doing their own reports on the safety of their newly developed products, so they hire companies like IPO to do the testing for them. IPO has an entry on <a href="https://www.crunchbase.com/organization/institute-of-industrial-organic-chemistry#section-overview">Crunchbase</a>:</p>
+
+<p><em>The Institute of Industrial Organic Chemistry (IPO), Branch Pszczyna is a leading research and development centre with more than 65 years of tradition which performs a wide variety of toxicological and ecotoxicological studies. The IPO conducts studies for companies worldwide, cooperates with both domestic and foreign research units as well as actively participates in the international EU and OECD research projects. The aim of the studies mentioned above is to evaluate possible harmful effects of various chemical substances on human health, animals and the natural environment. During the last 65 years the Institute has developed and established its position as one of the best-known research centers at home and abroad.</em></p>
+
+<p>According to <a href="http://www.ipo.waw.pl/ENG//">IPO&rsquo;s website</a> in addition to the primary work they do with <a href="https://en.wikipedia.org/wiki/Toxicology">toxicology</a> and <a href="https://en.wikipedia.org/wiki/Ecotoxicology">ecotoxicology</a> they do research on explosives, solid rocket fuels, pyrotechnics, and chemical weapons, though they have a specialization in static electricity hazards! For their ecotoxicological they do tests with birds, fish, aquatic organisms that aren&rsquo;t fish, bees, non-bee arthropods, earthworms, soil microorganisms, and plants. My mom studied chemistry in Poland and I started wondering if maybe she would have worked at a place like this had she stayed in the country. They have two offices, one in Warsaw and <a href="http://www.ipo-pszczyna.pl/pl/index">another in Pszczyna</a>, not too far away from where my family lives.</p>
+
+<p>I tried poking at all the ports, but didn&rsquo;t find anything out of the ordinary. Everything seems secure, although Shodan did tell me that their version of postgresql was out of date and had a variety of exploitable vulnerabilities. But I did notice that the DNS entry for this IP resolves to <code>cloudserver060808.home.pl</code>. That&rsquo;s not what their URL actually is for their website, it&rsquo;s <a href="http://www.ipo.waw.pl/">www.ipo.waw.pl</a>. A little interesting, their webhost is giving them a specific non-public url. Checking out <a href="https://www.united-internet.de/en/newsroom/press-releases/press-releases-detail/news/united-internet-acquires-polish-webhosting-market-leader-homepl-and-considers-ipo-in-applications-s.html">home.pl</a> I found it pretty easy to figure out the kind of plan that IPO had bought for their cloud server.
+<img src="/images/100Days/Day5/TheHost.png" alt="" />
+Even just iconographically it&rsquo;s easy to see this is the one: a cloud server with email, a website, and databases.</p>
+
+<p>What&rsquo;s the history for the three ring cylinder representing a database anyway? See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-4/"><i class="fa fa-chevron-circle-left"></i> 100 Days of Shodan Stories Day 4: Television in Spain, Firmware Hacking in Palestine, Linux Kernels, Clone Bombs, and 14 Years of Passion</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

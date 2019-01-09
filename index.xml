@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 12:08:21 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jan 2019 13:33:49 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</title>
+      <link>http://blog.alden.website/post/100days/Day-5/</link>
+      <pubDate>Tue, 08 Jan 2019 13:33:49 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-5/</guid>
+      <description>Today I decided to go looking for MySQL databases. I&amp;rsquo;ve always loved SQL, it was one of the first &amp;ldquo;programming languages&amp;rdquo; I learned and was a big part of one of my first jobs.
+Institute of Industrial Organic Chemistry on 79.96.39.102 Checking with MySQL documents I found that MySQL databases typically run off of port 3306. So I went on Shodan to look for things with port 3306. One of the first results I saw was from Poland, and being Polish I couldn&amp;rsquo;t resist poking around a bit in the homeland.</description>
+    </item>
     
     <item>
       <title>100 Days of Shodan Stories Day 4: Television in Spain, Firmware Hacking in Palestine, Linux Kernels, Clone Bombs, and 14 Years of Passion</title>
