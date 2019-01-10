@@ -89,7 +89,7 @@
 
 <h3 id="someone-trying-to-phish-me-on-146-120-89-201">Someone Trying to Phish Me on 146.120.89.201</h3>
 
-<p>I started out checking both номе.рф and xn&ndash;e1ance.xn&ndash;p1ai, which is the address the text message actually links to. Possibly because .рф and xn&ndash;p1ai seem like <a href="https://cctld.ru/en/">rare top level domains</a>, <code>nslookup</code> and <code>whois</code> didn&rsquo;t give me very interesting results. Apparently .xn&ndash;p1ai is an &ldquo;administrative group&rdquo; of .рф</p>
+<p>I started out checking both номе.рф and xn&ndash;e1ance.xn&ndash;p1ai, which is the address the text message actually links to. In case you are wondering, and don&rsquo;t want to read further, номе.рф is save to go to but xn&ndash;e1ance.xn&ndash;p1ai is definitely not. Possibly because .рф and xn&ndash;p1ai seem like <a href="https://cctld.ru/en/">rare top level domains</a>, <code>nslookup</code> and <code>whois</code> didn&rsquo;t give me very interesting results. Apparently .xn&ndash;p1ai is an &ldquo;administrative group&rdquo; of .рф</p>
 
 <pre><code>👻🌵✨$ whois xn--e1ance.xn--p1ai
 % IANA WHOIS server
@@ -191,7 +191,7 @@ traceroute to xn--e1ance.xn--p1ai (146.120.89.201), 64 hops max, 52 byte packets
 22  hosting18.ukrnames.com (146.120.89.201)  123.240 ms  123.425 ms  124.552 ms
 </code></pre>
 
-<p>I&rsquo;m sure that <a href="https://www.ukrnames.com/">ukrnames</a> is totally legit and aboveboard as a web hosting service but I couldn&rsquo;t help being reminded of a conference talk I had been to by <a href="https://radicalnetworks.org/archives/2017/participants/brannon-dorsey/">Brannon Dorsey</a> talking about how Ukranian hosting services were the only way to completely anonymously buy web hosting services via crypto currencies. This IP <a href="https://www.shodan.io/host/146.120.89.201">shows up on Shodan</a> being in the domain of <a href="http://alfatelecom.cz/">Alfa Telecom</a> in the Czech Republic. Using <code>nmap</code> reveals that they&rsquo;ve got a lot going on.</p>
+<p>I&rsquo;m sure that <a href="https://www.ukrnames.com/">ukrnames</a> is totally legit and aboveboard as a web hosting service but I couldn&rsquo;t help being reminded of a conference talk I had been to by <a href="https://radicalnetworks.org/archives/2017/participants/brannon-dorsey/">Brannon Dorsey</a> talking about how Ukranian hosting services were the only way to completely anonymously buy web hosting via crypto currencies. This IP <a href="https://www.shodan.io/host/146.120.89.201">shows up on Shodan</a> being in the domain of <a href="http://alfatelecom.cz/">Alfa Telecom</a> in the Czech Republic. Using <code>nmap</code> reveals that they&rsquo;ve got a lot going on.</p>
 
 <pre><code>👻🌵✨$ nmap -p- 146.120.89.201
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-10 15:04 EST

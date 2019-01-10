@@ -17,7 +17,7 @@
       <pubDate>Thu, 10 Jan 2019 15:19:23 -0500</pubDate>
       
       <guid>http://blog.alden.website/post/100days/Day-7/</guid>
-      <description>Someone tried to phish me yesterday via text from a Los Vegas phone number. Fortunately I was able to figure out their IP address and, yes, their IP is on Shodan. Someone Trying to Phish Me on 146.120.89.201 I started out checking both номе.рф and xn&amp;ndash;e1ance.xn&amp;ndash;p1ai, which is the address the text message actually links to. Possibly because .рф and xn&amp;ndash;p1ai seem like rare top level domains, nslookup and whois didn&amp;rsquo;t give me very interesting results.</description>
+      <description>Someone tried to phish me yesterday via text from a Los Vegas phone number. Fortunately I was able to figure out their IP address and, yes, their IP is on Shodan. Someone Trying to Phish Me on 146.120.89.201 I started out checking both номе.рф and xn&amp;ndash;e1ance.xn&amp;ndash;p1ai, which is the address the text message actually links to. In case you are wondering, and don&amp;rsquo;t want to read further, номе.рф is save to go to but xn&amp;ndash;e1ance.</description>
     </item>
     
     <item>
