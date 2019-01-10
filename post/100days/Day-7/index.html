@@ -1,0 +1,340 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Day 7: Scammers in the Czech Republic, Cyrillic TLDs, and Hacking the Hackers</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-10T15:19:23-05:00">Jan 10, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>5 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Someone tried to phish me yesterday via text from a Los Vegas phone number. Fortunately I was able to figure out their IP address and, yes, their IP is on Shodan.
+<img src="/images/100Days/Day7/Phisher.png" alt="" /></p>
+
+<h3 id="someone-trying-to-phish-me-on-146-120-89-201">Someone Trying to Phish Me on 146.120.89.201</h3>
+
+<p>I started out checking both номе.рф and xn&ndash;e1ance.xn&ndash;p1ai, which is the address the text message actually links to. Possibly because .рф and xn&ndash;p1ai seem like <a href="https://cctld.ru/en/">rare top level domains</a>, <code>nslookup</code> and <code>whois</code> didn&rsquo;t give me very interesting results. Apparently .xn&ndash;p1ai is an &ldquo;administrative group&rdquo; of .рф</p>
+
+<pre><code>👻🌵✨$ whois xn--e1ance.xn--p1ai
+% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.tcinet.ru
+
+domain:       рф
+domain-ace:   XN--P1AI
+
+organisation: Coordination Center for TLD RU
+address:      8 Marta street 1, bld 12
+address:      Moscow  127083
+address:      Russian Federation
+
+contact:      administrative
+name:         .xn--p1ai domain Administrative group
+organisation: Coordination Center for TLD RU
+address:      8 Marta street 1, bld 12
+address:      Moscow  127083
+address:      Russian Federation
+phone:        +7 495 730 29 71
+fax-no:       +7 495 730 29 68
+e-mail:       ru-adm@cctld.ru
+
+contact:      technical
+name:         Technical Center of Internet
+organisation: Technical Center of Internet
+address:      8 Marta street 1, bld 12
+address:      Moscow  127083
+address:      Russian Federation
+phone:        +7 495 730 29 69
+fax-no:       +7 495 730 29 68
+e-mail:       ru-tech@tcinet.ru
+
+nserver:      A.DNS.RIPN.NET 193.232.128.6 2001:678:17:0:193:232:128:6
+nserver:      B.DNS.RIPN.NET 194.85.252.62 2001:678:16:0:194:85:252:62
+nserver:      D.DNS.RIPN.NET 194.190.124.17 2001:678:18:0:194:190:124:17
+nserver:      E.DNS.RIPN.NET 193.232.142.17 2001:678:15:0:193:232:142:17
+nserver:      F.DNS.RIPN.NET 193.232.156.17 2001:678:14:0:193:232:156:17
+ds-rdata:     14585 8 2 96BFDB14DED2592146F371ECCC301305D6908042C614DB32ED87EB7D61FA8639
+
+whois:        whois.tcinet.ru
+
+status:       ACTIVE
+remarks:      Registration information: http://cctld.ru/en
+
+created:      2010-05-12
+changed:      2018-09-24
+source:       IANA
+
+% By submitting a query to RIPN's Whois Service
+% you agree to abide by the following terms of use:
+% http://www.ripn.net/about/servpol.html#3.2 (in Russian)
+% http://www.ripn.net/about/en/servpol.html#3.2 (in English).
+
+domain:        XN--E1ANCE.XN--P1AI
+nserver:       ns1.host.ukrnames.com.
+nserver:       ns2.host.ukrnames.com.
+state:         REGISTERED, DELEGATED, UNVERIFIED
+person:        Private Person
+registrar:     REGTIME-RF
+admin-contact: http://whois.webnames.ru/
+created:       2018-12-01T21:51:03Z
+paid-till:     2019-12-01T21:51:03Z
+free-date:     2020-01-02
+source:        TCI
+
+Last updated on 2019-01-10T21:01:31Z
+
+</code></pre>
+
+<p>Oddly I found that they both traced to the same IP address, 146.120.89.201, with a hostname of hosting18.ukrnames.com</p>
+
+<pre><code>➜  ~ traceroute номе.рф
+traceroute to xn--e1ance.xn--p1ai (146.120.89.201), 64 hops max, 52 byte packets
+ 1  10.17.0.2 (10.17.0.2)  2.449 ms  2.170 ms  2.905 ms
+ 2  nyugwa-new-vl902.net.nyu.edu (128.122.1.36)  3.163 ms  2.749 ms  2.719 ms
+ 3  ngfw-palo-vl1500.net.nyu.edu (192.168.184.228)  3.430 ms  3.860 ms  2.335 ms
+ 4  nyugwa-outside-ngfw-vl3080.net.nyu.edu (128.122.254.114)  3.515 ms  3.472 ms  3.301 ms
+ 5  nyunata-vl1000.net.nyu.edu (192.168.184.221)  3.641 ms  3.759 ms  3.862 ms
+ 6  nyugwa-vl1001.net.nyu.edu (192.76.177.202)  3.648 ms  3.584 ms  4.012 ms
+ 7  dmzgwb-ptp-nyugwa-vl3082.net.nyu.edu (128.122.254.111)  4.553 ms  3.974 ms  4.471 ms
+ 8  extgwb-ptp-dmzgwb.net.nyu.edu (128.122.254.70)  4.214 ms  3.900 ms  3.855 ms
+ 9  ix-xe-7-3-2-0.tcore2.nw8-new-york.as6453.net (64.86.62.13)  4.338 ms  3.025 ms  4.352 ms
+10  if-ae-0-2.tcore1.nw8-new-york.as6453.net (209.58.75.217)  101.840 ms  100.571 ms  104.496 ms
+11  if-ae-3-2.tcore1.n0v-new-york.as6453.net (216.6.90.72)  101.431 ms  101.857 ms  100.484 ms
+12  if-ae-2-2.tcore2.n0v-new-york.as6453.net (216.6.90.22)  103.265 ms  100.811 ms  101.136 ms
+13  if-ae-4-2.tcore2.l78-london.as6453.net (80.231.131.157)  101.201 ms  101.149 ms  101.890 ms
+14  if-ae-14-2.tcore2.av2-amsterdam.as6453.net (80.231.131.161)  101.837 ms  99.955 ms  103.644 ms
+15  if-ae-2-2.tcore1.av2-amsterdam.as6453.net (195.219.194.5)  101.624 ms  100.298 ms  102.170 ms
+16  if-ae-21-2.thar1.w1t-warsaw.as6453.net (195.219.188.26)  101.721 ms  100.463 ms  101.543 ms
+17  195.219.188.38 (195.219.188.38)  117.767 ms  116.471 ms  116.671 ms
+18  kh-kv.ett.ua (80.93.127.142)  125.322 ms  123.608 ms  123.810 ms
+19  maxnet.ett.ua (80.93.125.250)  125.603 ms  123.471 ms  126.480 ms
+20  ukrnames.maxnet.ua (79.171.125.210)  124.083 ms  124.304 ms  124.063 ms
+21  hn4-kh.ukrnames.com (146.120.89.200)  126.725 ms  125.446 ms  127.229 ms
+22  hosting18.ukrnames.com (146.120.89.201)  123.240 ms  123.425 ms  124.552 ms
+</code></pre>
+
+<p>I&rsquo;m sure that <a href="https://www.ukrnames.com/">ukrnames</a> is totally legit and aboveboard as a web hosting service but I couldn&rsquo;t help being reminded of a conference talk I had been to by <a href="https://radicalnetworks.org/archives/2017/participants/brannon-dorsey/">Brannon Dorsey</a> talking about how Ukranian hosting services were the only way to completely anonymously buy web hosting services via crypto currencies. This IP <a href="https://www.shodan.io/host/146.120.89.201">shows up on Shodan</a> being in the domain of <a href="http://alfatelecom.cz/">Alfa Telecom</a> in the Czech Republic. Using <code>nmap</code> reveals that they&rsquo;ve got a lot going on.</p>
+
+<pre><code>👻🌵✨$ nmap -p- 146.120.89.201
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-10 15:04 EST
+Nmap scan report for hosting18.ukrnames.com (146.120.89.201)
+Host is up (0.13s latency).
+Not shown: 65509 closed ports
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+25/tcp    open     smtp
+80/tcp    open     http
+81/tcp    open     hosts2-ns
+110/tcp   open     pop3
+143/tcp   open     imap
+443/tcp   open     https
+465/tcp   open     smtps
+587/tcp   open     submission
+993/tcp   open     imaps
+995/tcp   open     pop3s
+2077/tcp  open     tsrmagt
+2078/tcp  open     tpcsrvr
+2079/tcp  open     idware-router
+2080/tcp  open     autodesk-nlm
+2082/tcp  open     infowave
+2083/tcp  open     radsec
+2086/tcp  open     gnunet
+2087/tcp  open     eli
+2095/tcp  open     nbx-ser
+2096/tcp  open     nbx-dir
+3306/tcp  open     mysql
+7984/tcp  filtered unknown
+8984/tcp  filtered unknown
+9999/tcp  filtered abyss
+10050/tcp open     zabbix-agent
+
+Nmap done: 1 IP address (1 host up) scanned in 780.82 seconds
+</code></pre>
+
+<p>What is all this stuff? All this time I hadn&rsquo;t yet opened up these addresses in my browser because I was a little nervous about what I&rsquo;d find, so I checked them with curl instead.</p>
+
+<pre><code>👻🌵✨$ curl номе.рф
+&lt;html&gt;&lt;head&gt;&lt;META HTTP-EQUIV=&quot;refresh&quot; CONTENT=&quot;0;URL=/cgi-sys/defaultwebpage.cgi&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;
+👻🌵✨$ curl hosting18.ukrnames.com
+&lt;html&gt;&lt;head&gt;&lt;META HTTP-EQUIV=&quot;refresh&quot; CONTENT=&quot;0;URL=/cgi-sys/defaultwebpage.cgi&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;
+👻🌵✨$ curl xn--e1ance.xn--p1ai
+&lt;script language=&quot;JavaScript&quot;&gt;
+  window.location.href = &quot;https://nnxoe.topgirlshere.com/c/da57dc555e50572d?s1=22177&amp;s2=96501&amp;s3=new_1&amp;j1=1&amp;j3=1&quot;
+&lt;/script&gt;%                                                                    
+</code></pre>
+
+<p>Aha!! So номе.рф and hosting18.ukrnames.com both go to the same default nginx server page (if you can&rsquo;t tell from those results those domains auto redirect to cpanel&rsquo;s default page saying that perhaps that page&rsquo;s IP address had changed). But xn&ndash;e1ance.xn&ndash;p1ai is just a page with a script that auto redirects you to something called &ldquo;topgirlshere&rdquo;. Well I have a pretty good guess what lies down that road.</p>
+
+<p>But what is the endgame of this text message scam? And why do they have so much else going on with their server? And how can an IP have so many domains attatched to it? See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-6/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

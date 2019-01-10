@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jan 2019 18:19:08 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 15:19:23 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day 7: Scammers in the Czech Republic, Cyrillic TLDs, and Hacking the Hackers</title>
+      <link>http://blog.alden.website/post/100days/Day-7/</link>
+      <pubDate>Thu, 10 Jan 2019 15:19:23 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-7/</guid>
+      <description>Someone tried to phish me yesterday via text from a Los Vegas phone number. Fortunately I was able to figure out their IP address and, yes, their IP is on Shodan. Someone Trying to Phish Me on 146.120.89.201 I started out checking both номе.рф and xn&amp;ndash;e1ance.xn&amp;ndash;p1ai, which is the address the text message actually links to. Possibly because .рф and xn&amp;ndash;p1ai seem like rare top level domains, nslookup and whois didn&amp;rsquo;t give me very interesting results.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma</title>
