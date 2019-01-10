@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-09T18:19:08-05:00">Jan 9, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I decided to look for more industrial control systems, specifically <a href="https://us.mitsubishielectric.com/fa/en/products/controllers/programmable-controllers-melsec/melsec_q-series">Mitsubishi Q-Series logic controllers</a>.</p>
+
+<h3 id="yokohama-air-traffic-control-tower-on-133-34-157-13">Yokohama Air Traffic Control Tower on 133.34.157.13</h3>
+
+<p>Reading about them on Shodan it looks like the Q-Series logic controllers tend to run off ports 5006 or 5007. So I did a search for those open ports. Judging from the results it looks like the majority of these Mitsubishi controllers are in Japan, not surprising I suppose since Mitsubishi is a Japanese company. So I picked one of the first results. I&rsquo;ve been finding that <code>nmap</code> is a pretty good first go-to tool since, <code>host</code>, <code>whois</code>, and <code>nslookup</code> depend on DNS records, and quite a few things aren&rsquo;t on DNS.</p>
+
+<pre><code>👻🌵✨$ nmap -p- 133.34.157.13
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-09 20:32 EST
+Nmap scan report for 133.34.157.13
+Host is up (0.23s latency).
+Not shown: 65529 filtered ports
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+23/tcp    closed telnet
+80/tcp    open   http
+502/tcp   open   mbap
+5007/tcp  open   wsm-server-ssl
+30301/tcp open   unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 1431.86 seconds
+</code></pre>
+
+<p>One interestingly bit, port 502 is running mbap which is the <a href="https://en.wikipedia.org/wiki/Modbus">Modbus</a> protocol for <a href="https://en.wikipedia.org/wiki/Serial_communication">serial communication</a>.</p>
+
+<p>Very interestingly though port 80 is open even though I couldn&rsquo;t find anything about this IP on <code>nslookup</code>, meaning it&rsquo;s running something via http for a browser to interpret but doesn&rsquo;t have a URL. So taking a look via a browser&hellip;
+<img src="/images/100Days/Day6/DL8.png" alt="" />
+I was pretty dumbfounded by what I was looking at. Yokohama Air Control Tower&hellip; as in Air Traffic Control? After looking around quite a bit, near as I can tell this is indeed a data logger for the facility management system for an air traffic control tower in Yokohama. I couldn&rsquo;t really find much about an airport in Yokohama, it seems that there isn&rsquo;t a major airport but there is a small airfield for private or government flights. It has an airport code, <a href="https://www.world-airport-codes.com/japan/yokohama-7799.html">YOK</a>, but you can&rsquo;t book a flight there, and travel guides all recommend flying into Tokyo&rsquo;s Haneda airport. There&rsquo;s also heliports&hellip; English language sources are scarce and I&rsquo;m not sure what to search for in Japanese to find out more.
+<img src="/images/100Days/Day6/data.png" alt="" />
+But I can find out about the amount of power demand from this building&rsquo;s lighting and air conditioning. I&rsquo;m guessing that the other measurements have to do with water.
+<img src="/images/100Days/Day6/data2.png" alt="" />
+It seems like I could actually make changes to things here but I resisted the urge to hit too many buttons. But I did find that they had conveniently left the telnet login on this web app.
+<img src="/images/100Days/Day6/Telnet.png" alt="" />
+Whoops! Possibly that&rsquo;s why port 23 is closed.</p>
+
+<p>Looking at the other obvious info on this web app, <a href="http://www.m-system.com/english/index.html">MSYSTEM</a> is a manufacturer of a variety of data loggers and logic controllers, and the DL8 is their series of web-based data loggers.
+<img src="/images/100Days/Day6/MSeries.png" alt="" />
+So this wasn&rsquo;t what I had originally gone searching for, a Mitsubishi Q-Series. They must be using 5007 for something else.
+<img src="/images/100Days/Day6/MSeries2.png" alt="" />
+Sure looks familiar so this is definitely what is behind this IP.</p>
+
+<p>But why collect water quality levels in a seemingly nonexistent air traffic control tower? Who&rsquo;s really running this operation. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-5/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

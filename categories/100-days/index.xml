@@ -6,13 +6,23 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jan 2019 13:33:49 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 18:19:08 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</title>
+      <title>Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma</title>
+      <link>http://blog.alden.website/post/100days/Day-6/</link>
+      <pubDate>Wed, 09 Jan 2019 18:19:08 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-6/</guid>
+      <description>Today I decided to look for more industrial control systems, specifically Mitsubishi Q-Series logic controllers.
+Yokohama Air Traffic Control Tower on 133.34.157.13 Reading about them on Shodan it looks like the Q-Series logic controllers tend to run off ports 5006 or 5007. So I did a search for those open ports. Judging from the results it looks like the majority of these Mitsubishi controllers are in Japan, not surprising I suppose since Mitsubishi is a Japanese company.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</title>
       <link>http://blog.alden.website/post/100days/Day-5/</link>
       <pubDate>Tue, 08 Jan 2019 13:33:49 -0500</pubDate>
       
@@ -22,7 +32,7 @@ Institute of Industrial Organic Chemistry on 79.96.39.102 Checking with MySQL do
     </item>
     
     <item>
-      <title>100 Days of Shodan Stories Day 4: Television in Spain, Firmware Hacking in Palestine, Linux Kernels, Clone Bombs, and 14 Years of Passion</title>
+      <title>Shodan Stories Day 4: Television in Spain, Firmware Hacking in Palestine, Linux Kernels, Clone Bombs, and 14 Years of Passion</title>
       <link>http://blog.alden.website/post/100days/Day-4/</link>
       <pubDate>Mon, 07 Jan 2019 12:08:21 -0500</pubDate>
       
@@ -31,7 +41,7 @@ Institute of Industrial Organic Chemistry on 79.96.39.102 Checking with MySQL do
     </item>
     
     <item>
-      <title>100 Days of Shodan Stories Day 3: Playing Minecraft in Minnesota, Wasting Time with Catholic Teens</title>
+      <title>Shodan Stories Day 3: Playing Minecraft in Minnesota, Wasting Time with Catholic Teens</title>
       <link>http://blog.alden.website/post/100days/Day-3/</link>
       <pubDate>Sun, 06 Jan 2019 16:59:25 -0500</pubDate>
       
@@ -41,7 +51,7 @@ Les Chevaliers Royale Minecraft Server on 97.94.56.211 I actually don&amp;rsquo;
     </item>
     
     <item>
-      <title>100 Days of Shodan Stories Day 2: Joann Fabric&#39;s Sinister Plot</title>
+      <title>Shodan Stories Day 2: Joann Fabric&#39;s Sinister Plot</title>
       <link>http://blog.alden.website/post/100days/Day-2/</link>
       <pubDate>Sat, 05 Jan 2019 15:46:52 -0500</pubDate>
       
@@ -51,7 +61,7 @@ Joann Fabric&amp;rsquo;s Industrial Control System on 208.83.32.213 Siemens has 
     </item>
     
     <item>
-      <title>100 Days of Shodan Stories Day 1</title>
+      <title>Shodan Stories Day 1</title>
       <link>http://blog.alden.website/post/100days/Day-1/</link>
       <pubDate>Fri, 04 Jan 2019 11:06:35 -0500</pubDate>
       
