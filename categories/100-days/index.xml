@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Jan 2019 15:19:23 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jan 2019 16:55:45 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 8: Mining Etherium in Caracas</title>
+      <link>http://blog.alden.website/post/100days/Day-8/</link>
+      <pubDate>Fri, 11 Jan 2019 16:55:45 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-8/</guid>
+      <description>A couple of days ago I noticed some people searching on Shodan for &amp;ldquo;ETH: total speed&amp;rdquo;. That didn&amp;rsquo;t mean anything to me so I took note of it and today decided to dig in.
+An Etherium Miner or 186.90.40.229 Almost all the results I found for this search in Shodan were running off of port 3001 (the ones that weren&amp;rsquo;t were on 9001), and tended to be in Russia, South Korea, or Ukraine.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 7: Scammers in the Czech Republic, Cyrillic TLDs, and Hacking the Hackers</title>
