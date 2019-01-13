@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 9: I Got Rickrolled by an Irrigation System in Los Vegas</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-12T20:30:45-05:00">Jan 12, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>4 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>This is another one I found from looking at recent searches on Shodan. Someone searched for &ldquo;BlueSpray irrigation&rdquo; and I decided to follow their lead.</p>
+
+<h2 id="bluespray-wifi-enabled-irrigation-controller-or-maybe-somebody-s-pentesting-playground-on-71-52-48-61">BlueSpray Wifi-Enabled Irrigation Controller (or maybe somebody&rsquo;s pentesting playground) on 71.52.48.61</h2>
+
+<p><a href="https://www.bluespray.net/#home">BlueSpray</a> is a startup that makes an internet of things irrigation system for the consumer level (so for suburban lawns, not farms). If &ldquo;internet of things lawn sprinkler&rdquo; makes your eyes roll all the way back into your head well then this blog is for you. If however you feel like your current lawn watering system is leaving you high and dry and you&rsquo;d like the ease and convenience of lawn monitoring from anywhere and by anyone you can get started with BlueSpray by buying their <a href="https://www.amazon.com/BlueSpray-Zone-Wi-Fi-Watering-Control/dp/B00E7V8SSY/ref=pd_rhf_se_p_tnr_1">controller, only $250 on Amazon</a>.
+<img src="https://www.bluespray.net/images/connected.png" alt="" />
+Reading BlueSpray&rsquo;s website I noticed a couple of interesting things. The first is a <a href="https://bluespray.net/blogs/?p=59">blogpost from 2015</a> saying that in their newest firmware update they enabled static IPs for their devices. The second is this great advice that a lot of people out there don&rsquo;t seem to fully follow:
+<img src="/images/100Days/Day9/advice.png" alt="" />
+One of the first results I found for &ldquo;BlueSpray&rdquo; on Shodan was in Los Vegas, and I decided to look at that one because &ldquo;lawn watering in Los Vegas&rdquo; sounded to me like a great name for a third wave ska album.
+Visiting the device&rsquo;s IP in my browser (Shodan indicated that I should check port 8000, not the usual 80), I was, shall we say, surprised in a negative way.
+<img src="/images/100Days/Day9/RickRolled2.png" alt="" />
+If you don&rsquo;t immediately recognize the man in the picture, that is Rick Astley, mostly famous to me because of <a href="https://en.wikipedia.org/wiki/Rickrolling">RickRolling</a>, the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">horrible meme of yesteryear</a>.
+I had two immediate thoughts. First: I had clearly been RickRolled. It&rsquo;s been years, and I admit this with shame. The second: some Shodan hacker had gotten here first and replaced someone&rsquo;s lawn image with Rick Astley. BlueSpray lets you add your own lawn image and here they had just put in a direct to a picture of Rick.
+<img src="/images/100Days/Day9/source.png" alt="" />
+I looked around and found that I could probably futz with this lawn&rsquo;s water scheduling. I also found their watering history since last August. They didn&rsquo;t do any watering in December or January, maybe because of the winter. They had watering scheduled starting in February, starting with once a week, then moving to three times a week in spring and five times a week in summer.
+<img src="/images/100Days/Day9/HistoricalData2.png" alt="" />
+However my second conclusion started to break down when I used <code>nmap</code> on the IP.</p>
+
+<pre><code>➜  sandbox git:(master) ✗ nmap -p- 71.52.48.61
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-12 16:38 EST
+Nmap scan report for 71-52-48-61.lsv2.centurylink.net (71.52.48.61)
+Host is up (0.096s latency).
+Not shown: 65520 filtered ports
+PORT      STATE  SERVICE
+443/tcp   open   https
+2101/tcp  open   rtcm-sc104
+2106/tcp  closed ekshell
+7080/tcp  open   empowerid
+7443/tcp  open   oracleas-https
+7445/tcp  open   unknown
+7446/tcp  open   unknown
+7447/tcp  open   unknown
+8000/tcp  open   http-alt
+8080/tcp  open   http-proxy
+8090/tcp  open   opsmessaging
+8091/tcp  open   jamlink
+8443/tcp  open   https-alt
+9443/tcp  open   tungsten-https
+18922/tcp open   unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 262.49 seconds
+</code></pre>
+
+<p>That&rsquo;s a lot of ports open running a lot of services. And probing all of them in the browser yielded another theory.</p>
+
+<p>Checking the IP via 443 (just https, and yes Chrome gave me a warning that they didn&rsquo;t have a certificate) shows the login for a service called <a href="https://www.ubnt.com/unifi-video/unifi-nvr/">UniFi Video</a>, which is a service run by <a href="https://video.ubnt.com/">Ubiquiti Networks</a> and promised to be an internet of things total surveillance solution. Port 7080 shows the same thing.
+<img src="/images/100Days/Day9/unify443.png" alt="" />
+Port 8080 in a browser shows a login for <a href="https://www.universal-devices.com/">Universal Devices</a>, which makes iot products for home automation.
+<img src="/images/100Days/Day9/unidevices.png" alt="" />
+Port 8090 shows a login for a surveillance IP camera manufactured by <a href="https://www.foscam.com/">Foscam</a>.
+<img src="/images/100Days/Day9/foscam.png" alt="" />
+Port 8091 shows a login for something that I can&rsquo;t identify.
+<img src="/images/100Days/Day9/8091.png" alt="" />
+And 18922 actually redirects to a login for app.plex.tv, which looks like some kind of <a href="https://www.plex.tv/">media storage system that lets you watch your .avi movies from anywhere you want</a>.
+<img src="/images/100Days/Day9/Plex.png" alt="" />
+All the other ports that were open gave back my browser an empty response.</p>
+
+<p>Did I just stumble onto someone&rsquo;s IoT fortress with a ton of port forwarding? Or is this someone&rsquo;s phishing scam to collect logins? Or is this someone&rsquo;s test server for penetration testing a bunch of different IoT services? Or was this all an elaborate honeypot set up to rickroll hackers? I can&rsquo;t figure it out, but it definitely seems off. Weird that it looked like there was actual irrigation history in the sprinkler though. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-8/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 8: Mining Ethereum in Caracas, AMD GPUs, and Taking a Dip in the Nanopool</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

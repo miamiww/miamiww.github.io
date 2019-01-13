@@ -90,7 +90,7 @@
 
 <p>Almost all the results I found for this search in Shodan were running off of port 3001 (the ones that weren&rsquo;t were on 9001), and tended to be in Russia, South Korea, or Ukraine. I chose one of the first IPs I found, this one from Caracas in Venezuela. I was initially pretty confused by what I was looking at when visiting it in a browser.
 <img src="/images/100Days/Day8/ETH1.png" alt="" />
-What exactly is going on here? It looks like terminal output, but in a browser. Someone is tracking speeds of their 11 Radeon GPUs for discreet jobs, but even after googling &ldquo;ETH: total speed&rdquo; it wasn&rsquo;t totaly clear to me what I was seeing. This server had two other ports open: 2021 and 2022, but each of those just prompted logins when I tried to visit them.</p>
+What exactly is going on here? It looks like terminal output, but in a browser. Someone is tracking speeds of their 11 Radeon GPUs for discreet jobs, but even after googling &ldquo;ETH: total speed&rdquo; it wasn&rsquo;t totally clear to me what I was seeing. This server had two other ports open: 2021 and 2022, but each of those just prompted logins when I tried to visit them.</p>
 
 <pre><code>➜  sandbox git:(master) ✗ nmap 186.90.40.229 -Pn
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-11 17:00 EST
@@ -113,7 +113,7 @@ Nmap done: 1 IP address (1 host up) scanned in 31.90 seconds
 </code></pre>
 
 <p><img src="/images/100Days/Day8/nanopool.png" alt="" />
-Visiting nanopool.org it was suddenly so clear: ethereum mining! <em>of course!</em> After <a href="https://blockonomi.com/how-to-dual-mine-ethereum-and-sia/">reading a guide</a> about how to mine Ethereum it seems like miners join resource pools like nanopool in order to share their GPUs for greater overall reward, with only a small payout (1%) to the pool itself. And some of the <a href="https://github.com/nanopool">mining software on nanopool&rsquo;s github</a> had output screenshots that look just like the output I was seeing from my IP, meaning that it is likely running some of nanopool&rsquo;s mining software.
+Visiting nanopool.org it was suddenly so clear: ethereum mining! <em>of course!</em> After <a href="https://blockonomi.com/how-to-dual-mine-ethereum-and-sia/">reading a guide</a> about how to mine ethereum it seems like miners join resource pools like nanopool in order to share their GPUs for greater overall reward, with only a small payout (1%) to the pool itself. And some of the <a href="https://github.com/nanopool">mining software on nanopool&rsquo;s github</a> had output screenshots that look just like the output I was seeing from my IP, meaning that it is likely running some of nanopool&rsquo;s mining software.
 <img src="/images/100Days/Day8/nanopool2.png" alt="" />
 It seems like nanopool has quite the operation, with 44,226 miners, of which I had only found one.</p>
 
@@ -132,6 +132,10 @@ It seems like nanopool has quite the operation, with 44,226 miners, of which I h
             <a href="http://blog.alden.website/post/100days/Day-7/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 7: Scammers in the Czech Republic, Cyrillic TLDs, and Hacking the Hackers</a>
         </li>
         
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-9/">Shodan Stories Day 9: I Got Rickrolled by an Irrigation System in Los Vegas <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
         
     </ul>
 </section>

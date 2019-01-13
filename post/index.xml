@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jan 2019 16:55:45 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jan 2019 20:30:45 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 9: I Got Rickrolled by an Irrigation System in Los Vegas</title>
+      <link>http://blog.alden.website/post/100days/Day-9/</link>
+      <pubDate>Sat, 12 Jan 2019 20:30:45 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-9/</guid>
+      <description>This is another one I found from looking at recent searches on Shodan. Someone searched for &amp;ldquo;BlueSpray irrigation&amp;rdquo; and I decided to follow their lead.
+BlueSpray Wifi-Enabled Irrigation Controller (or maybe somebody&amp;rsquo;s pentesting playground) on 71.52.48.61 BlueSpray is a startup that makes an internet of things irrigation system for the consumer level (so for suburban lawns, not farms). If &amp;ldquo;internet of things lawn sprinkler&amp;rdquo; makes your eyes roll all the way back into your head well then this blog is for you.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 8: Mining Ethereum in Caracas, AMD GPUs, and Taking a Dip in the Nanopool</title>
