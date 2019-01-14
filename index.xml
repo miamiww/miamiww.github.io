@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jan 2019 20:30:45 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 20:08:21 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 10: Reading License Plates in Louisiana and Spying on Cops</title>
+      <link>http://blog.alden.website/post/100days/Day-10/</link>
+      <pubDate>Sun, 13 Jan 2019 20:08:21 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-10/</guid>
+      <description>I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: automatic license plate readers (ALPRs). These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 9: I Got Rickrolled by an Irrigation System in Los Vegas</title>
