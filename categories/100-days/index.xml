@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jan 2019 20:08:21 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 14:27:56 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 11: Machine Learning in Beijing and the Mysteries of 126 and 163</title>
+      <link>http://blog.alden.website/post/100days/Day-11/</link>
+      <pubDate>Mon, 14 Jan 2019 14:27:56 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-11/</guid>
+      <description>Today I went looking for MongoDB databases. I used MongoDB back in Shawn Van Every&amp;rsquo;s servers class, I remember feeling pretty cool using a NoSQL database. Shodan indicated that MongoDB tends to work off of port 27017 so that&amp;rsquo;s where I started looking.
+The Shell of Someone&amp;rsquo;s Machine Learning Blog on 35.185.145.24 I picked one of the first results I found on Shodan. According to Shodan it&amp;rsquo;s located in Singapore and hosted on Google Cloud services.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 10: Reading License Plates in Louisiana, the Bygone Days of Java Webapps, and Spying on Cops</title>
