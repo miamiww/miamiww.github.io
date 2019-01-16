@@ -54,7 +54,7 @@
 
 <article>
 
-    <h1>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in San Jose, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</h1>
+    <h1>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in St Louis, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</h1>
 
     
         <aside>
@@ -86,7 +86,7 @@
 
 <p>Today I saw a top search for something called &ldquo;GraphQL&rdquo;. Taking the bait on the unknown, I started looking.</p>
 
-<h2 id="a-startup-named-zipline-s-api-testing-staging-space-on-184-169-231-191">A Startup Named Zipline&rsquo;s API Testing Staging Space on 184.169.231.191</h2>
+<h2 id="a-startup-named-zipline-s-api-staging-space-on-184-169-231-191">A Startup Named Zipline&rsquo;s API Staging Space on 184.169.231.191</h2>
 
 <p>The first thing I noticed about GraphQL&rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because <a href="https://www.washingtonpost.com/news/capital-business/wp/2014/03/05/why-ashburn-va-is-the-center-of-the-internet/?noredirect=on&amp;utm_term=.aad8cd0d8ec8">Amazon has so many datacenters there</a>, and every GraphQL service seemed to be running on an <a href="https://aws.amazon.com/ec2/">Amazon EC2 instance</a>. After doing a little more Googling I found that <a href="https://en.wikipedia.org/wiki/GraphQL">GraphQL</a> is an API development tool and has two major IDEs: <a href="https://github.com/graphql/graphiql">GraphiQL</a> and <a href="https://www.prisma.io/blog/introducing-graphql-playground-f1e0a018f05d/">GraphQL Playground</a>. These IDEs run in the browser, much like Jupyter Notebooks, and, when running on an Amazon EC2 instance, allow you to test and develop your server&rsquo;s API&hellip; from anywhere. Unfortunately it seems that if you aren&rsquo;t careful that means that I can test and write your API from anywhere too! I picked one of the few IPs that wasn&rsquo;t in Ashburn, this one in San Jose, hoping that it would belong to a goofy startup.
 <img src="/images/100Days/Day12/graphql.png" alt="" />
@@ -108,7 +108,7 @@ Certificate:
 
 <p>You can see from that last line there that this certificate is under something called staging.zipline.co. Checking out zipline.co&hellip;
 <img src="/images/100Days/Day12/zipline.png" alt="" />
-Yes!! A goofy startup, just like I dreamed of. So what do they do?
+Yes!! A goofy startup, just like I dreamed of. According to their website they are located in St Louis, so the San Jose location must just be a datacenter. So what do they do?
 <img src="/images/100Days/Day12/ziplineabout.png" alt="" />
 Oh uh&hellip; okay
 <img src="/images/100Days/Day12/ziplineabout2.png" alt="" />
