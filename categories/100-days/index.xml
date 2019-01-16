@@ -18,7 +18,7 @@
       
       <guid>http://blog.alden.website/post/100days/Day-12/</guid>
       <description>Today I saw a top search for something called &amp;ldquo;GraphQL&amp;rdquo;. Taking the bait on the unknown, I started looking.
-A Startup Named Zipline&amp;rsquo;s API Staging Space on 184.169.231.191 The first thing I noticed about GraphQL&amp;rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because Amazon has so many datacenters there, and every GraphQL service seemed to be running on an Amazon EC2 instance.</description>
+A Startup Named Zipline&amp;rsquo;s API Staging Space on 184.169.231.191 The first thing I noticed about GraphQL&amp;rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because Amazon has so many datacenters there (leading it to be cheekily referred to as the &amp;ldquo;center of the internet&amp;rdquo;), and every GraphQL service seemed to be running on an Amazon EC2 instance.</description>
     </item>
     
     <item>
