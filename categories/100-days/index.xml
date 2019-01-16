@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 14:27:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jan 2019 20:20:27 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in San Jose, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</title>
+      <link>http://blog.alden.website/post/100days/Day-12/</link>
+      <pubDate>Tue, 15 Jan 2019 20:20:27 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-12/</guid>
+      <description>Today I saw a top search for something called &amp;ldquo;GraphQL&amp;rdquo;. Taking the bait on the unknown, I started looking.
+A Startup Named Zipline&amp;rsquo;s API Testing Staging Space on 184.169.231.191 The first thing I noticed about GraphQL&amp;rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because Amazon has so many datacenters there, and every GraphQL service seemed to be running on an Amazon EC2 instance.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 11: Machine Learning in Beijing and the Mysteries of 126 and 163</title>

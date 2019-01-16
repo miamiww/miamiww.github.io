@@ -1,0 +1,285 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in San Jose, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-15T20:20:27-05:00">Jan 15, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>5 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I saw a top search for something called &ldquo;GraphQL&rdquo;. Taking the bait on the unknown, I started looking.</p>
+
+<h2 id="a-startup-named-zipline-s-api-testing-staging-space-on-184-169-231-191">A Startup Named Zipline&rsquo;s API Testing Staging Space on 184.169.231.191</h2>
+
+<p>The first thing I noticed about GraphQL&rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because <a href="https://www.washingtonpost.com/news/capital-business/wp/2014/03/05/why-ashburn-va-is-the-center-of-the-internet/?noredirect=on&amp;utm_term=.aad8cd0d8ec8">Amazon has so many datacenters there</a>, and every GraphQL service seemed to be running on an <a href="https://aws.amazon.com/ec2/">Amazon EC2 instance</a>. After doing a little more Googling I found that <a href="https://en.wikipedia.org/wiki/GraphQL">GraphQL</a> is an API development tool and has two major IDEs: <a href="https://github.com/graphql/graphiql">GraphiQL</a> and <a href="https://www.prisma.io/blog/introducing-graphql-playground-f1e0a018f05d/">GraphQL Playground</a>. These IDEs run in the browser, much like Jupyter Notebooks, and, when running on an Amazon EC2 instance, allow you to test and develop your server&rsquo;s API&hellip; from anywhere. Unfortunately it seems that if you aren&rsquo;t careful that means that I can test and write your API from anywhere too! I picked one of the few IPs that wasn&rsquo;t in Ashburn, this one in San Jose, hoping that it would belong to a goofy startup.
+<img src="/images/100Days/Day12/graphql.png" alt="" />
+They were running the GraphiQL IDE on this IP, just off of port 443, the https port. Now you&rsquo;ll see there in that screencapture I was trying to figure out how to make a query in GraphQL, and I wasn&rsquo;t choosing &ldquo;topInfluencer&rdquo; at random. GraphiQL will either autocomplete or give suggestions for terms if you hit control+space, so I found it pretty easy to start figuring out a bit about their API based on the autosuggestions it was giving me. I had more help, this coming from the IP&rsquo;s SSL certificate (remember that this is running off of port 443, so it has an https certificate - which unfortunately for them wasn&rsquo;t working which gave me the idea to check it).</p>
+
+<pre><code>SSL Certificate
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            03:45:9e:6a:e3🆎8d:f2:90:d3:99:31:19:a9:e0:78:a3:e2
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Let's Encrypt, CN=Let's Encrypt Authority X3
+        Validity
+            Not Before: Nov  9 17:38:24 2018 GMT
+            Not After : Feb  7 17:38:24 2019 GMT
+        Subject: CN=*.staging.zipline.co
+</code></pre>
+
+<p>You can see from that last line there that this certificate is under something called staging.zipline.co. Checking out zipline.co&hellip;
+<img src="/images/100Days/Day12/zipline.png" alt="" />
+Yes!! A goofy startup, just like I dreamed of. So what do they do?
+<img src="/images/100Days/Day12/ziplineabout.png" alt="" />
+Oh uh&hellip; okay
+<img src="/images/100Days/Day12/ziplineabout2.png" alt="" />
+Yeah okay so they connect brands to influencers to hawk their wares on Youtube, Instagram etc. Armed with this knowledge I felt free to spend as much time as I needed to figure out how to make a successful API call. And I did! Zipline is helping influencers sell products like this:</p>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;products&quot;: [
+      {
+        &quot;name&quot;: &quot;Bikini Prep Package&quot;,
+        &quot;description&quot;: &quot;With this package I will be your all access coach for your bikini competition. We will always be in close contact and I will be available to you via text/phone and e-mail. I am very passionate about competing in the bikini division and if this is your first competition I will teach you everything there is to know about competing. I will help you decide which organization is best for you to compete in and I will help you decide on a show. I will provide your diet and exercise program. You will check in with me weekly via e-mail and provide me with weekly and sometimes bi-weekly progress pictures. I will make adjustments to your diet and exercise program as necessary. I will help you with your suit selection, and give my recommendations on your tan, hair and make-up (as I am also a licensed cosmetologist.) I will provide 2 posing lessons via skype. If you live local I will meet with you in person. Additional posing sessions are available for additional fees. If you live local I also recommend getting together with me weekly or bi-weekly for one on one training sessions (also at an additional fee.) I will provide you with your a peak week plan, as well as everything you need to know and do the day of your competition. I would love to be your coach, lets get started!&quot;,
+        &quot;price&quot;: 297,
+        &quot;opportunities&quot;: [],
+        &quot;orders&quot;: []
+      }
+    ]
+  }
+}
+</code></pre>
+
+<p>And uh like this:</p>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;products&quot;: [
+      {
+        &quot;name&quot;: &quot;Trumps Enemies&quot;,
+        &quot;description&quot;: &quot;How the Deep State is Undermining the Presidency&quot;,
+        &quot;price&quot;: 27,
+        &quot;summary&quot;: null,
+        &quot;videos&quot;: [
+          {
+            &quot;id&quot;: &quot;756&quot;,
+            &quot;description&quot;: &quot;&quot;
+          },
+          {
+            &quot;id&quot;: &quot;758&quot;,
+            &quot;description&quot;: &quot;&quot;
+          }
+        ],
+        &quot;opportunities&quot;: [],
+        &quot;orders&quot;: []
+      }
+    ]
+  }
+}
+</code></pre>
+
+<p>And um this:</p>
+
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;products&quot;: [
+      {
+        &quot;name&quot;: &quot;Dangerous&quot;,
+        &quot;description&quot;: &quot;\nThe liberal media machine did everything they could to keep this book out of your hands. Now, finally, Dangerous, the most controversy old book of the decade, is tearing down safe spaces everywhere&quot;,
+        &quot;price&quot;: 23,
+        &quot;summary&quot;: null,
+        &quot;sales&quot;: null,
+        &quot;videos&quot;: [],
+        &quot;opportunities&quot;: [
+          {
+            &quot;id&quot;: &quot;154&quot;,
+            &quot;topInfluencer&quot;: null,
+            &quot;amount&quot;: 10,
+            &quot;visibility&quot;: &quot;Public&quot;,
+            &quot;isPercentage&quot;: true,
+            &quot;isActive&quot;: true,
+            &quot;applicants&quot;: null,
+            &quot;applicantTotals&quot;: null
+          }
+        ],
+        &quot;orders&quot;: []
+      }
+    ]
+  }
+}
+</code></pre>
+
+<p>Read over that last description again. Is &ldquo;controversy old&rdquo; supposed to be&hellip; controversial?? Yeah so basically they&rsquo;re scum. And they&rsquo;re the kind of scum that leaves their API open with user accounts and emails visible. Whoops! See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-11/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 11: Machine Learning in Beijing and the Mysteries of 126 and 163</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
