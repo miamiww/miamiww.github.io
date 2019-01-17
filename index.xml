@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jan 2019 20:20:27 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jan 2019 14:37:54 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 13: Space X Email Server in Tokyo, No Not That Space X</title>
+      <link>http://blog.alden.website/post/100days/Day-13/</link>
+      <pubDate>Wed, 16 Jan 2019 14:37:54 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-13/</guid>
+      <description>In honor of my spending about six hours on an airplane today I decided to search Shodan for &amp;ldquo;satellite&amp;rdquo; and, giving myself over to fate, pick the first result without looking at it.
+The Email Server of a Long Defunct Conference at 163.44.163.77 Since I was inspired by the fact that my airplane is being serviced by satellite internet I was of course hoping that I would find the IP for a real actual space satellite, though I suspected I was more likely to find someone&amp;rsquo;s satellite internet router or satellite dish.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in St Louis, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</title>
