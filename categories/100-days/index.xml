@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jan 2019 14:37:54 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jan 2019 07:04:32 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 14</title>
+      <link>http://blog.alden.website/post/100days/Day-14/</link>
+      <pubDate>Thu, 17 Jan 2019 07:04:32 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-14/</guid>
+      <description>This is another find inspired by recent searches on Shodan. I saw searches &amp;ldquo;FHEM Home Automation&amp;rdquo; and I needed to know more.
+Fhem Home Automation Server on 85.190.248.171 Every single result for FHEM was from Germany. So I picked the first one and got going. Looking up FHEM first on Google I found that it is an open source server software for doing home automation, built in perl and meant to be run on any kind of full time 24&amp;frasl;7 computer, like a Raspberry Pi.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 13: Space X Email Server in Tokyo, No Not That Space X</title>

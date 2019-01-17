@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 14</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-17T07:04:32-08:00">Jan 17, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>4 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>This is another find inspired by recent searches on Shodan. I saw searches &ldquo;FHEM Home Automation&rdquo; and I needed to know more.</p>
+
+<h2 id="fhem-home-automation-server-on-85-190-248-171">Fhem Home Automation Server on 85.190.248.171</h2>
+
+<p>Every single result for FHEM was from Germany. So I picked the first one and got going. Looking up <a href="https://www.fhem.de/">FHEM</a> first on Google I found that it is an open source server software for doing home automation, built in perl and meant to be run on any kind of full time <sup>24</sup>&frasl;<sub>7</sub> computer, like a Raspberry Pi. It was made in Germany but has full English documentation.
+<img src="/images/100Days/Day14/fhem.png" alt="" />
+Since I read that the servers were telnet enabled I first tried connecting to this IP via telnet on port 23. It was closed, so then I did a port scan via <code>nmap</code>, and wound up getting some errors that I still don&rsquo;t fully understand.</p>
+
+<pre><code>➜  nmap 85.190.248.171
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-17 14:35 PST
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for 85.190.248.171
+Host is up (0.22s latency).
+Not shown: 997 closed ports
+PORT     STATE    SERVICE
+9/tcp    filtered discard
+5060/tcp open     sip
+8083/tcp open     us-srv
+
+Nmap done: 1 IP address (1 host up) scanned in 1771.98 seconds
+</code></pre>
+
+<p>I didn&rsquo;t get anywhere with 9 or 5060 but 8083 is hosting a web page and I could see it in the browser.
+<img src="/images/100Days/Day14/thehome.png" alt="" />
+Uh oh! No password on the telnet port? But what&rsquo;s the telnet port, since the usual one wasn&rsquo;t open? I went checking in the event logs to see if there were any clues.
+<img src="/images/100Days/Day14/telnetport.png" alt="" />
+Aha! So it&rsquo;s 7072. However when I tried to log in I got an immediate rejection, like the port had been configured to only accept connections from a specific IP. Maybe whatever machine this server is running on has a firewall that the server software isn&rsquo;t acknowledging. There is quite a bit of information in the web page though, and I quickly got a bit uncomfortable with how much access I seemed to have.
+<img src="/images/100Days/Day14/temperature.png" alt="" />
+<img src="/images/100Days/Day14/current.png" alt="" />
+I seemed to be able to access house data like temperature, power load, fan speeds, and more. And not just for the current day, but for every day, going back to April 19 2016 (though the graphic visualizations are only for the current day).
+<img src="/images/100Days/Day14/history.png" alt="" />
+It seems like this home has a PV panel also and was documenting how much power it generated. And I seemed to be able to uh turn it off? And not only that but I could seemingly do things like&hellip; turn off the lights in the house?
+<img src="/images/100Days/Day14/lights.png" alt="" />
+In taking that screenshot I accidentally clicked one of the lightbulbs on. I was suddenly struck with the idea that I&rsquo;d possibly just woken this person up, since it was the middle of the night in Germany. Needless to say, I decided to stop there. See you tomorrow.</p>
+
+<p>PS here&rsquo;s my traveling <code>traceroute</code>, from Cuties Coffee in Los Angeles to Vreden, Germany.</p>
+
+<pre><code>👻🌵🔮 $ traceroute 85.190.248.171
+traceroute to 85.190.248.171 (85.190.248.171), 64 hops max, 52 byte packets
+ 1  192.168.0.1 (192.168.0.1)  8.477 ms  3.167 ms  3.413 ms
+ 2  142.254.182.113 (142.254.182.113)  19.861 ms *  13.392 ms
+ 3  agg58.lsdwcaro01h.socal.rr.com (24.30.174.233)  13.529 ms  13.357 ms  21.556 ms
+ 4  agg21.lamrcadq01r.socal.rr.com (72.129.10.192)  17.601 ms  20.589 ms  22.920 ms
+ 5  agg28.lsancarc01r.socal.rr.com (72.129.9.0)  24.212 ms  28.416 ms  48.527 ms
+ 6  bu-ether26.lsancarc0yw-bcr00.tbone.rr.com (66.109.3.230)  24.408 ms  23.611 ms  22.001 ms
+ 7  bu-ether11.tustca4200w-bcr00.tbone.rr.com (66.109.6.5)  21.756 ms  21.032 ms
+    bu-ether45.chctilwc00w-bcr00.tbone.rr.com (107.14.19.36)  24.091 ms
+ 8  4.68.111.101 (4.68.111.101)  18.474 ms  26.681 ms  18.794 ms
+ 9  * * *
+10  ae0-3356.nyk10.core-backbone.com (4.35.80.194)  99.160 ms  102.602 ms  95.709 ms
+11  ae3-2072.ams10.core-backbone.com (80.255.15.165)  217.299 ms  164.564 ms  189.938 ms
+12  nl.ams01.epcan.de (81.95.15.142)  187.750 ms *  169.762 ms
+13  * * *
+14  85.190.248.171 (85.190.248.171)  194.505 ms !X  226.705 ms !X  194.739 ms !X
+</code></pre>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-13/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 13: Space X Email Server in Tokyo, No Not That Space X</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
