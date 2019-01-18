@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 07:04:32 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jan 2019 11:01:04 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 15: Deftly Avoiding Turning On A Stranger&#39;s Lights in Bologna, the Commercial Level ESP2866, Getting Too Close with WiGLE, and What&#39;s the Deal with Home Automation Anyway?</title>
+      <link>http://blog.alden.website/post/100days/Day-15/</link>
+      <pubDate>Fri, 18 Jan 2019 11:01:04 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-15/</guid>
+      <description>Another IoT home device today. At this point I&amp;rsquo;m picturing the people with these things basically having a Wallace and Gromit style lifestyle (note: I do have a wifi plug and yes this is my lifestyle). This one was inspired by another search I didn&amp;rsquo;t recognize, for &amp;ldquo;Sonoff&amp;rdquo;.
+A Sonoff wifi enabled plug on 87.20.184.148 Sonoff is a company that makes IoT plugs and switches, as well as a couple of models of IoT fans and light bulbs.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 14: Startling Strangers in Vreden, DIY Home Automation, and the German Word for Waking Up in the Middle of the Night with the Realization That You Left Your Server Unsecured</title>
@@ -18,7 +28,7 @@
       
       <guid>http://blog.alden.website/post/100days/Day-14/</guid>
       <description>This is another find inspired by recent searches on Shodan. I saw searches &amp;ldquo;FHEM Home Automation&amp;rdquo; and I needed to know more.
-Fhem Home Automation Server on 85.190.248.171 Every single result for FHEM was from Germany. So I picked the first one and got going. Looking up FHEM first on Google I found that it is an open source server software for doing home automation, built in perl and meant to be run on any kind of full time 24&amp;frasl;7 computer, like a Raspberry Pi.</description>
+Fhem Home Automation Server on 85.190.248.171 Every single result for FHEM was from Germany. So I picked the first one and got going. Looking up FHEM first on Google I found that it is an open source server software for doing home automation, built in perl and meant to be run on any kind of full time 24 /7 computer, like a Raspberry Pi.</description>
     </item>
     
     <item>
