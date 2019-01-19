@@ -6,13 +6,24 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Jan 2019 11:01:04 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jan 2019 18:43:52 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Shodan Stories Day 15: Deftly Avoiding Turning On A Stranger&#39;s Lights in Bologna, the Commercial Level ESP2866, Getting Too Close with WiGLE, and What&#39;s the Deal with Home Automation Anyway?</title>
+      <title>LocalNet Adventure LA!!  Reference Page</title>
+      <link>http://blog.alden.website/post/localnet-adventure-LA/</link>
+      <pubDate>Fri, 18 Jan 2019 18:43:52 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/localnet-adventure-LA/</guid>
+      <description>You can download the slides here
+Hey All! This page exists to supplement my LocalNet Adventure!! workshop with a lot of technical background that I don&amp;rsquo;t directly address in the workshop. Hopefully even if you&amp;rsquo;re a command line pro you&amp;rsquo;ll find something new here.
+References and Resources  American Artist’s Black Gooey Universe Dhruv Mehrota’s Othernet NYCMesh Dan Phiffer’s Occupy.here Wifi art of Third Space Collective France Telecom’s Minitel Alternate Reality Games (e.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 15: Deftly Avoiding Turning On A Stranger&#39;s Lights in Bologna, the Commercial Level ESP8266, Getting Too Close with WiGLE, and What&#39;s the Deal with Home Automation Anyway?</title>
       <link>http://blog.alden.website/post/100days/Day-15/</link>
       <pubDate>Fri, 18 Jan 2019 11:01:04 -0800</pubDate>
       

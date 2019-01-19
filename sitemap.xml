@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/localnet-adventure-LA/</loc>
+    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/100days/Day-15/</loc>
     <lastmod>2019-01-18T11:01:04-08:00</lastmod>
   </url>
@@ -409,7 +414,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2019-01-18T11:01:04-08:00</lastmod>
+    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -480,6 +485,12 @@
   </url>
   
   <url>
+    <loc>http://blog.alden.website/categories/los-angeles/</loc>
+    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/categories/performative-avatars/</loc>
     <lastmod>2018-09-17T22:50:19-04:00</lastmod>
     <priority>0</priority>
@@ -493,7 +504,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2019-01-18T11:01:04-08:00</lastmod>
+    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
     <priority>0</priority>
   </url>
   

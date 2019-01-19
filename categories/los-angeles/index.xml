@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Los Angeles on Alden&#39;s ITP Home</title>
+    <link>http://blog.alden.website/categories/los-angeles/</link>
+    <description>Recent content in Los Angeles on Alden&#39;s ITP Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jan 2019 18:43:52 -0800</lastBuildDate>
+    
+	<atom:link href="http://blog.alden.website/categories/los-angeles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LocalNet Adventure LA!!  Reference Page</title>
+      <link>http://blog.alden.website/post/localnet-adventure-LA/</link>
+      <pubDate>Fri, 18 Jan 2019 18:43:52 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/localnet-adventure-LA/</guid>
+      <description>You can download the slides here
+Hey All! This page exists to supplement my LocalNet Adventure!! workshop with a lot of technical background that I don&amp;rsquo;t directly address in the workshop. Hopefully even if you&amp;rsquo;re a command line pro you&amp;rsquo;ll find something new here.
+References and Resources  American Artist’s Black Gooey Universe Dhruv Mehrota’s Othernet NYCMesh Dan Phiffer’s Occupy.here Wifi art of Third Space Collective France Telecom’s Minitel Alternate Reality Games (e.</description>
+    </item>
+    
+  </channel>
+</rss>
