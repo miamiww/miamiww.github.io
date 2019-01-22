@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 12:43:31 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 23:35:30 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 18: Defaced Server in Walnut, Hacking in a Nutshell, These Jokes Don&#39;t Write Themselves!</title>
+      <link>http://blog.alden.website/post/100days/Day-18/</link>
+      <pubDate>Mon, 21 Jan 2019 23:35:30 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-18/</guid>
+      <description>In what I hope will become an infrequently regular feature I decided today to look for an already hacked server that had been defaced. I had found one in the process of defacement on my very first day, but the fully defaced ones are interesting largely because of the tags left by the hackers themselves. I&amp;rsquo;m a little nervous about drawing attention to myself by publishing hacker tags in plaintext (easily found via Google alerts) so I&amp;rsquo;ll mostly be doing that via images.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 17: An ATM in Perm, Russia and Just How Much Market Capture Does Windows 2000 Have Anyway?</title>

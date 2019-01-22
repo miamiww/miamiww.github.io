@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 18: Defaced Server in Walnut, Hacking in a Nutshell, These Jokes Don&#39;t Write Themselves!</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-21T23:35:30-08:00">Jan 21, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>In what I hope will become an infrequently regular feature I decided today to look for an already hacked server that had been defaced. I had found one in the process of defacement on my very first day, but the fully defaced ones are interesting largely because of the tags left by the hackers themselves. I&rsquo;m a little nervous about drawing attention to myself by publishing hacker tags in plaintext (easily found via Google alerts) so I&rsquo;ll mostly be doing that via images. Maybe I&rsquo;ll figure out a better way around this problem.</p>
+
+<h2 id="a-hacked-server-on-198-13-117-201">A Hacked Server on 198.13.117.201</h2>
+
+<p>Shodan has a blog post on looking for hacked servers and they recommended starting off with the easy route: searching for &ldquo;hacked by&rdquo;, as many hackers leave tags on the servers they take over. I did so and went with one of the first results, this one in Walnut, California.
+<img src="/images/100Days/Day18/hacked.png" alt="" />
+Looks like it got completely had. Shodan indicates that it had been running services off of ports 21, 25, 53, 80, 143, 443, 465, 993, 995, 2082, 2083, 2086, and 2087. I was wary of doing my own port scan or any pentesting because I didn&rsquo;t want to draw any attention to the IP address of my friend&rsquo;s apartment, so I just went with what Shodan gave me, which is usually a little short of what I can find myself but c&rsquo;est la vie. Given those ports it looks as though it was a typical webpage and email server with cPanel as the hosting interface. I really wanted to know about where the hackers had found the exploit, but I didn&rsquo;t want to poke around too much. Maybe being overly cautious.</p>
+
+<p>So who is this group?
+<img src="/images/100Days/Day18/thunders.png" alt="" />
+Looks like they are defunct as of this moment, having called it quits back in November. I&rsquo;m a little stunned that they are on Facebook, but I suppose just about everyone is so why not them. Their page was full of exploit logs and past hacked pages, none of which are still up as defaced pages. Which raised the question, why was this one still up? This group stopped a few months ago so this page must have been around for awhile defaced like this. Had no one noticed? There was no DNS record for it so maybe the website owner just shifted their url to a new server and left this one to rot. But why not cancel the hosting?  I tried to look for more clues. The html of their defacement page had a few easter eggs of just swearing at me for looking at their code but also had a hidden youtube video link, however it seems like that video no longer exists. The links that they put in their page all had data loggers via a restful API to monitor clickthroughs but I couldn&rsquo;t tell where it was pointing toward. I think it might be a no go, I couldn&rsquo;t find any info on what this used to be, not in DNS and not in WhoIS. Possibly I could go onto their exploit list and check all the links to see which one this one goes to, but there are just too many links for that, they were very busy.</p>
+
+<p>It looks like this group was fairly prolific and successful run between July 2017 and November 2018, and was even able to hack into <a href="https://latesthackingnews.com/2018/05/16/costa-rica-government-websites-hacked-by-pakistani-hackers/">Costa Rican government websites</a> and some <a href="https://www.financialexpress.com/india-news/pakistani-group-hacks-i-t-dept-website-for-irs-officers/606398/">IRS webservices</a>. Their motivation seems to be both to sow general chaos and to strike out against those that they see as against Pakistani interests and values.</p>
+
+<p>Yeesh, black hats give me the heebie jeebies. If this website goes down you&rsquo;ll know why. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-17/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 17: An ATM in Perm, Russia and Just How Much Market Capture Does Windows 2000 Have Anyway?</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
