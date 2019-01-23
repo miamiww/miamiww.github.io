@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Jan 2019 23:35:30 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 22:59:41 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 19: Never Trust Me With The WiFi</title>
+      <link>http://blog.alden.website/post/100days/Day-19/</link>
+      <pubDate>Tue, 22 Jan 2019 22:59:41 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-19/</guid>
+      <description>Today I&amp;rsquo;m staying with a friend whose partner has a pretty serious media server set up (with 64TB! of content), and I thought I&amp;rsquo;d take a look to see if I could find it on Shodan. And sure enough I could!
+My Friend&amp;rsquo;s Media Server on 104.172.240.189 So I had previously seen a Plex service running on an IP back on day 9, but I didn&amp;rsquo;t investigate it too much because at the time I was focused on the irrigation system.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 18: Defaced Server in Walnut, Hacking in a Nutshell, These Jokes Don&#39;t Write Themselves!</title>

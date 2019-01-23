@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="alden" />
+  <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.53" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Nation State Energy Policy</h1>
+    <h1>Shodan Stories Day 19: Never Trust Me With The WiFi</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-09-11T00:00:00Z">Sep 11, 2018</time>
+            <time class="post-date" datetime="2019-01-22T22:59:41-08:00">Jan 22, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/temporary-expert/">temporary expert</a>
+                    <a href="/categories/100-days/">100 days</a>
                 
             </em>
         </li>
@@ -77,18 +77,41 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
-    <p><a href="https://vimeo.com/289321256"><img src="/images/lightbulb.png" alt="*bulb" /></a>
-<a href="https://vimeo.com/289321256">https://vimeo.com/289321256</a></p>
+    
 
-<p>That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON. Some government regulators are more effective at enforcing this directive than others, but for nearly all federal regulators energy reliability is the top goal (the prime directive for the others is abusing their authority as regulators to enrich themselves). All state visions are totalizing visions, and all state visions leave things out. What is lost in this particular vision? Climate change? Keeping ratepayer costs low? It would almost certainly be cheaper and less carbon intensive to have occasional blackouts, as peak energy demand is usually met by throwing oil into giant fires. The answer depends on the state and the region, the regulators and the strictness of enforcement.</p>
+<p>Today I&rsquo;m staying with a friend whose partner has a pretty serious media server set up (with 64TB! of content), and I thought I&rsquo;d take a look to see if I could find it on Shodan. And sure enough I could!</p>
 
-<p>One map:
-<a href="https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641">https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641</a></p>
+<h2 id="my-friend-s-media-server-on-104-172-240-189">My Friend&rsquo;s Media Server on 104.172.240.189</h2>
+
+<p>So I had previously seen a <a href="https://www.plex.tv/">Plex</a> service running on an IP back on day 9, but I didn&rsquo;t investigate it too much because at the time I was focused on the irrigation system. When my friend was telling me about his setup it took quite a while to put two and two together and to realize that I had previously seen this service. <a href="https://en.wikipedia.org/wiki/Plex_(software)">Plex servers</a> are typically run on port 32400, and require an account and login to access, as Plex ties each individual server back to its own service via a client ID that it connects to when you visit the server&rsquo;s port in the browser. He gave me a pretty decent explanation but I still didn&rsquo;t fully follow how it both exists as a streaming web service and as the software for a self-hosted media server. Seems like a weird business model. But at least I got to see one in the flesh.</p>
+
+<p>I did a port scan and did pen test everything (no vulnerabilities), but realized I felt a little too weird talking about everything on his network since I was able to verify it all by being on the network myself. It&rsquo;s one thing to make guesses about strangers, it&rsquo;s another to list all the things you see in your friend&rsquo;s house.</p>
+
+<p>That being said here are the results of <code>nmap</code>. You can see the media server down at 32400. Most everything else I was able to tie to something I saw on the network.</p>
+
+<pre><code>👻🌵🔮 $ nmap -p- 104.172.240.189
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-23 00:44 PST
+Nmap scan report for cpe-104-172-240-189.socal.res.rr.com (104.172.240.189)
+Host is up (0.030s latency).
+Not shown: 65528 closed ports
+PORT      STATE SERVICE
+548/tcp   open  afp
+631/tcp   open  ipp
+8200/tcp  open  trivnet1
+20005/tcp open  btx
+28392/tcp open  unknown
+32400/tcp open  plex
+33344/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 6.18 seconds
+</code></pre>
+
+<p>Please don&rsquo;t hack my friend. See you tomorrow.</p>
 
 
 </article>
@@ -98,13 +121,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/2018/09/11/energy-map/"><i class="fa fa-chevron-circle-left"></i> Nation State Energy Policy</a>
+            <a href="http://blog.alden.website/post/100days/Day-18/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 18: Defaced Server in Walnut, Hacking in a Nutshell, These Jokes Don&#39;t Write Themselves!</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/localnet-adventure/">Localnet Adventure!! Reference Page <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
@@ -158,35 +177,6 @@
             
             if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
                   disqus();
-            }
-      })();
-</script>
-
-
-<!-- begin comments //-->
-
-    
-
-
-
-<!-- end comments //-->
-
-
-
-
-
-
-</main>
-    <footer>
-        <h6> | 
-            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
-</body>
-
-</html> disqus();
             }
       })();
 </script>
