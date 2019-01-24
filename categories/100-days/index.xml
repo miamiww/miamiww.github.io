@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jan 2019 22:59:41 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 12:45:18 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 20: υηκηοωη ιδεηեτγ in France, Private Telephone Exchanges, Network Attached Storage, and Getting Lost in the Matrix</title>
+      <link>http://blog.alden.website/post/100days/Day-20/</link>
+      <pubDate>Wed, 23 Jan 2019 12:45:18 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-20/</guid>
+      <description>Oh what a tangled web we weave. I&amp;rsquo;m not really sure what&amp;rsquo;s going on with this one or how I got here, I wanted to explore a search I had seen on Shodan called &amp;ldquo;3cx servers bcn&amp;rdquo; but now I&amp;rsquo;m trapped in a digital hall of mirrors. 3CX is a private telephone exchange that sometimes runs over VoIP, and has servers that typically tend to run on 5001.
+υηκηοωη ιδεηեτγ on 62.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 19: Never Trust Me With The WiFi</title>
