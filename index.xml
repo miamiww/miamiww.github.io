@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jan 2019 12:45:18 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jan 2019 21:45:24 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 21: POWERful Plates in Fargo, Digital Signage, Unsecured Pis, and the Cold Cold Midwest Winter</title>
+      <link>http://blog.alden.website/post/100days/Day-21/</link>
+      <pubDate>Thu, 24 Jan 2019 21:45:24 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-21/</guid>
+      <description>Today I saw someone searching for &amp;ldquo;Screenly OSE&amp;rdquo; and actually gave a description for their search saying &amp;ldquo;screenly ose for the pi, think of a billboard system&amp;rdquo;. So I gave it a go.
+A Raspberry Pi Digital Sign on 140.186.23.181 Screenly is a software for doing digital signage off of a Raspberry Pi. They have a &amp;ldquo;Pro&amp;rdquo; version for quite a bit of money ($20/month minumum but up to $800/month) and also an open source edition, which is what OSE stands for.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 20: υηκηοωη ιδεηեτγ in France, Private Telephone Exchanges, Network Attached Storage, and Getting Lost in the Matrix</title>
