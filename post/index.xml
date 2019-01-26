@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jan 2019 21:45:24 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jan 2019 22:33:00 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 22: Eating Cow Fighting Squid in Yuchan Province</title>
+      <link>http://blog.alden.website/post/100days/Day-22/</link>
+      <pubDate>Fri, 25 Jan 2019 22:33:00 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-22/</guid>
+      <description>I saw someone&amp;rsquo;s search for &amp;ldquo;Synology DiskStation&amp;rdquo; and even given our little foray into Synology back on day 20 I was ready to dive back into the world of the globe&amp;rsquo;s premier network attached storage maker.
+A Prototype of a Taiwanese Farm&amp;rsquo;s Website on 114.34.78.222 The DiskStation promises &amp;ldquo;personal cloud storage&amp;rdquo; which to me sounds just like a personal server you connect to the internet, but maybe I&amp;rsquo;m just old fashioned.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 21: POWERful Plates in Fargo, Digital Signage, Unsecured Pis, and the Cold Cold Midwest Winter</title>

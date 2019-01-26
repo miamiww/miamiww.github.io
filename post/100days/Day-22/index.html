@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="alden" />
+  <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.53" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Nation State Energy Policy</h1>
+    <h1>Shodan Stories Day 22: Eating Cow Fighting Squid in Yuchan Province</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-09-11T00:00:00Z">Sep 11, 2018</time>
+            <time class="post-date" datetime="2019-01-25T22:33:00-05:00">Jan 25, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/temporary-expert/">temporary expert</a>
+                    <a href="/categories/100-days/">100 days</a>
                 
             </em>
         </li>
@@ -77,18 +77,37 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
-    <p><a href="https://vimeo.com/289321256"><img src="/images/lightbulb.png" alt="*bulb" /></a>
-<a href="https://vimeo.com/289321256">https://vimeo.com/289321256</a></p>
+    
 
-<p>That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON. Some government regulators are more effective at enforcing this directive than others, but for nearly all federal regulators energy reliability is the top goal (the prime directive for the others is abusing their authority as regulators to enrich themselves). All state visions are totalizing visions, and all state visions leave things out. What is lost in this particular vision? Climate change? Keeping ratepayer costs low? It would almost certainly be cheaper and less carbon intensive to have occasional blackouts, as peak energy demand is usually met by throwing oil into giant fires. The answer depends on the state and the region, the regulators and the strictness of enforcement.</p>
+<p>I saw someone&rsquo;s search for &ldquo;Synology DiskStation&rdquo; and even given our little foray into <a href="https://www.synology.com/en-us">Synology</a> back on day 20 I was ready to dive back into the world of the globe&rsquo;s premier network attached storage maker.</p>
 
-<p>One map:
-<a href="https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641">https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641</a></p>
+<h2 id="a-prototype-of-a-taiwanese-farm-s-website-on-114-34-78-222">A Prototype of a Taiwanese Farm&rsquo;s Website on 114.34.78.222</h2>
+
+<p><a href="https://www.synology.com/en-us/products/DS119j">The DiskStation promises &ldquo;personal cloud storage&rdquo;</a> which to me sounds just like a personal server you connect to the internet, but maybe I&rsquo;m just old fashioned. It looks like they typically are used just for storing files and having them be remotely accessible or streamable, but that some of the models are capable of hosting web servers as well. Since webservers typically have fun interesting content I thought I&rsquo;d find a DiskStation with a webserver attached and first one I found like that is in Taiwan.
+<img src="/images/100Days/Day22/fruit.png" alt="" />
+Looking around before using google translate I was able to determine that it was some kind of unfinished website about food with a lot of focus on fish.
+<img src="/images/100Days/Day22/fish.png" alt="" />
+There was a fair bit of content here but then a lot of stock lorem ipsum content.
+<img src="/images/100Days/Day22/fruits.png" alt="" />
+I thought using Google translate would help but it did not.
+<img src="/images/100Days/Day22/translate.png" alt="" />
+Google translate also seemed to be translating what must have been &ldquo;trout&rdquo; to &ldquo;squid&rdquo;. I guess there&rsquo;s still room for humans in the translation pipeline after all.</p>
+
+<p>I did a port scan and saw that port 5000 was also open. I checked it and it was just the remote login for the DiskStation.
+<img src="/images/100Days/Day22/login.png" alt="" /></p>
+
+<p>Finally I was able to find some contact info nestled in the original page.
+<img src="/images/100Days/Day22/contact.png" alt="" />
+Googling that email address led me to the <a href="https://www.coa.gov.tw/fpiss/index.php?page=5&amp;category=f">Taiwanese government&rsquo;s agriculture homepage</a>, where I was able to find the email address associated with a farm and fishery in <a href="https://en.wikipedia.org/wiki/Yilan_County,_Taiwan">Yilan County</a>.
+<img src="https://eng.taiwan.net.tw/att/1/big_scenic_spots/pic_11548_9.jpg" alt="" />
+Yilan County looks obscenely beautiful, even given the slant of your typical tourist photo set. Grassy cliffs and mountains leading right up to the ocean, valleys with sloping graceful hills, rocky subtropical beaches with palm trees and sawgrass.</p>
+
+<p>Being a farmer there must be a true joy. But why do they have this defunct website sitting around on an at-home server, seemingly since 2013? See you tomorrow.</p>
 
 
 </article>
@@ -98,13 +117,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/2018/09/11/energy-map/"><i class="fa fa-chevron-circle-left"></i> Nation State Energy Policy</a>
+            <a href="http://blog.alden.website/post/100days/Day-21/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 21: POWERful Plates in Fargo, Digital Signage, Unsecured Pis, and the Cold Cold Midwest Winter</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/localnet-adventure/">Localnet Adventure!! Reference Page <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
@@ -158,35 +173,6 @@
             
             if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
                   disqus();
-            }
-      })();
-</script>
-
-
-<!-- begin comments //-->
-
-    
-
-
-
-<!-- end comments //-->
-
-
-
-
-
-
-</main>
-    <footer>
-        <h6> | 
-            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
-</body>
-
-</html> disqus();
             }
       })();
 </script>
