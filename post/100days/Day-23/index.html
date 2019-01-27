@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 23: Super Mediocrity in Albuquerque, Wifi Garage Doors, WebIOPi, and the Great Xylophone Saga of 2015</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-26T11:14:58-05:00">Jan 26, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today&rsquo;s was a true delight, a real moment of striking gold, of finding something so beautifully weird that I can barely contain my excitement in writing this. Truly the spice of life, this. I started off wanting to find a wifi connected garage door, and I read that garage door openers are a common application of <a href="http://webiopi.trouch.com/">WebIOPi</a>, which is a toolkit for Raspberry Pis to turn them into common IoT products via their <a href="https://www.raspberrypi.org/documentation/usage/gpio/">GPIO pins</a>. Essentially, the Pi will run a little web app and then you can customize the functionality of the web app to control the GPIO pins in order to run motors, turn lights on and off, open garage doors, etc.</p>
+
+<h2 id="supermediocre-on-73-26-38-233">SuperMediocre on 73.26.38.233</h2>
+
+<p>I read that most WebIOPi-running Pis will declare themselves as such, so I just searched on Shodan for &ldquo;WebIOPi&rdquo;. I had to go through a lot before I found a garage door related one, but I did eventually find one in Albuquerque, New Mexico.
+<img src="/images/100Days/Day23/garage.png" alt="" />
+You don&rsquo;t seem to be able to actually control the garage doors from here. Rather it seems to be recording the status of two garage doors, based on automatically determining the percent open of each door. You can also see the garage doors&rsquo; open status history and set a PIN, which doesn&rsquo;t seem to impact anything on the page though possibly will make it a little difficult for the door owners to get into their garage in the morning.</p>
+
+<p>I thought that maybe that would be it and that it would be a rather quick day, but I checked the HTML of the page that this Pi was hosting just to see if I could find any clues to how it worked. I found that when you toggled on the &ldquo;Display Video&rdquo; box it attempted to stream a video though it appeared that that video was blank. Checking the video source quickly made me forget about the garage doors.
+<img src="/images/100Days/Day23/html.png" alt="" />
+&ldquo;supermediocre.org&rdquo;&hellip; that&rsquo;s extremely specific! And fairly unusual. I went to it immediately.
+<img src="/images/100Days/Day23/thefamily.png" alt="" />
+Aaaaaaaaaah!!!
+<img src="/images/100Days/Day23/rich.png" alt="" />
+Do you share in my joy in this moment? supermediocre.org is a WordPress blog made by <a href="https://www.youtube.com/watch?v=YzSVmsrJEzk">a man to document building a xylophone with his son</a>. Normally I don&rsquo;t like to publish peoples&rsquo; names but in the context of a very public-facing blog I think getting your name out is almost the point. In case you were anxious about it, yes they completed the xylophone.
+<img src="/images/100Days/Day23/xylocomplete.png" alt="" />
+Turns out building a xylophone is really hard. The daughter of the family made a little documentary that I watched that went in depth about the process and wow I would not want to do it. Their work was eventually featured in <a href="https://www.popularmechanics.com/">Popular Mechanics</a> (you can read the full issue that features the xylophone <a href="https://archive.org/stream/Popular_Mechanics_September_2016_USA/Popular_Mechanics_September_2016_USA_djvu.txt">on the Internet Archive</a>).
+<img src="/images/100Days/Day23/popmech.jpg" alt="" /></p>
+
+<p>I did find that yes they had a camera observing their garage door and a bit else besides, but let&rsquo;s not worry about that right now. Imagine building your own xylophone. Imagine what you&rsquo;d need, the resources, the tools, the knowhow, the <em>time</em>. Imagine smoking a cigar in your garage, beaming with pride, a pride and joy so overflowing that you decide to make a blog about your family so the whole world can see it.</p>
+
+<p>Most people never get that. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-22/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 22: Raising Cow Fighting Squid in Yilan</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
