@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 24: Watching the News in Cheongju, IPTime Routers, Synology Yet Again, and TVheadend</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-27T17:16:00-05:00">Jan 27, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I saw a search just for &ldquo;TVheadend&rdquo; and I thought it looked like a weird name so I decided to investigate.</p>
+
+<h2 id="tvheadened-server-on-125-181-166-200">TVheadened Server on 125.181.166.200</h2>
+
+<p><a href="https://tvheadend.org/">TVheadend</a> is an open source streaming server and recorder for streaming television on Linux, FreeBSD, or Android machines. I believe it works by intercepting television input and putting it into streamable format, which means that the machine running this server would need some kind of cable or radio tv receiver (maybe even a Dreambox 😄). It seemed like 50% of all the TVheadend servers were running in Korea, so I decided to pick a Korean one. Most of them had passwords to prevent viewing the server port but I managed to find one that did not.
+<img src="/images/100Days/Day24/tvheadend.png" alt="" />
+It looked a little bit like the TV Guide channel I remember watching when I was home from school sick growing up. I remember just staring at the channel names scrolling by, an infinite expanse of boredom ahead of me. I tried to use Google translate here but it didn&rsquo;t do too good of a job. There were options for configuring at the top and those little orange bars in the column to the left are some kind of progress bar, but most of the rest remained untranslated. There were little icons at the left of each row that looked like TVs with a play button and I found that yes, clicking on one did indeed start playing TV.
+<img src="/images/100Days/Day24/morningnews1.png" alt="" />
+After looking around I realized that each row is a distinct &ldquo;stream&rdquo;, but in this case the server owner had only chosen to stream three stations,
+<a href="https://en.wikipedia.org/wiki/Seoul_Broadcasting_System">SBS</a>,
+<a href="https://en.wikipedia.org/wiki/KBS1">KBS1</a>, and
+<a href="https://en.wikipedia.org/wiki/Munhwa_Broadcasting_Corporation">MBS</a>
+and that each row was a different streaming source of one of those networks. After watching all three for a little bit I found that they were all playing the morning news and all on relatively similar topics.
+<img src="/images/100Days/Day24/morningnews2.png" alt="" />
+Those topics were boy bands, the weather, <a href="https://www.scmp.com/news/china/diplomacy/article/2181455/xi-jinping-accepts-offer-visit-pyongyang-says-north-korea-state">Xi Jingping&rsquo;s possible meeting with Kim Jong Un</a>, and <a href="https://www.japantimes.co.jp/news/2019/01/27/national/south-korea-defense-chief-lambastes-japan-alleged-flybys-near-naval-ships-orders-stern-action/">Japanese patrol planes getting too close to South Korean warships</a>.
+<img src="/images/100Days/Day24/morningnews3.png" alt="" />
+I wanted to figure out what kind of device was running this, so I took a look at the other ports Shodan had indicated were open, 443 and 5001. HTTPs was running what looks awfully like a <a href="http://blog.e-nnov.fr/en/synology-dsm-en/webstation/">Synology Web Station default page</a>. It looks like Synology products have become very popular as a means to host ones one website or web services, because this is maybe the third time I&rsquo;ve run into them.
+<img src="/images/100Days/Day24/synologyA.png" alt="" />
+Port 5001 confirmed it, as it looks exactly like the logins for <a href="https://www.synology.com/en-us/solution/what_is_nas">Synology Network Attached Storage</a> devices I&rsquo;d seen in the past.
+<img src="/images/100Days/Day24/synologyB.png" alt="" /></p>
+
+<p>Interesting, so it appears that this TV stream is running off of a Synology NAS. I noticed one other interesting thing though, which is that the SSL certificate for 443 was registred to &ldquo;cheolsoon.com&rdquo;. Checking that host I found that I had been on cheolsoon.com all along!</p>
+
+<pre><code>➜  sandbox git:(master) ✗ host cheolsoon.com
+cheolsoon.com is an alias for cholsoon.iptime.org.
+cholsoon.iptime.org has address 125.181.166.200
+</code></pre>
+
+<p>What&rsquo;s that iptime.org thing you ask? Well <a href="http://iptime.com/iptime/">IPtime is a popular manufacturer of routers in Korea</a>, and apparently they allow you to easily <a href="http://blog.kr.dnsever.com/?p=349">set up a CNAME via their URL to set up a URL for your own router</a>, hence the cholsoon.iptime.org. From there it&rsquo;s pretty easy to give that URL an alias, in this case cheolsoon.com. So this TV streamer then is running a Synology Desk Station in their home in order to stream TV and possibly host a website in the future, and their home router is an IPtime model.
+<img src="/images/100Days/Day24/IPtime.png" alt="" /></p>
+
+<p>Sounds like a pretty sweet setup! See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-23/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 23: Super Mediocrity in Albuquerque, Wifi Garage Doors, WebIOPi, and the Great Xylophone Saga of 2015</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
