@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jan 2019 17:16:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 16:34:22 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 25: Helping Strangers in Singapore</title>
+      <link>http://blog.alden.website/post/100days/Day-25/</link>
+      <pubDate>Mon, 28 Jan 2019 16:34:22 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-25/</guid>
+      <description>Today I saw someone searching for &amp;ldquo;SingTel&amp;rdquo;, and had given a description of the search saying &amp;ldquo;what? no auth? W o a h&amp;rdquo;. Pretty compelling stuff, so I gave it a search myself. The actual query was a little more complicated, &amp;ldquo;Server: Arcadyan httpd 1.0 200 OK org:&amp;ldquo;Singtel Fibre Broadband&amp;rdquo; &amp;ldquo;.
+An Unsecured Router on 219.74.62.124 Every result for the search was in Singapore, which I realized is because Singtel is one of the largest ISPs and mobile network providers in Singapore.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 24: Watching the News in Cheongju, IPTime Routers, Synology Yet Again, and TVheadend</title>
