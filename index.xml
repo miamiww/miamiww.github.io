@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Jan 2019 16:34:22 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 22:22:18 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ</title>
+      <link>http://blog.alden.website/post/100days/Day-26/</link>
+      <pubDate>Tue, 29 Jan 2019 22:22:18 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-26/</guid>
+      <description>The other day I saw someone on Shodan searching for &amp;ldquo;udpxy&amp;rdquo;, and I couldn&amp;rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &amp;ldquo;200 OK&amp;rdquo; to the search and only return successful connections. So I did.
+A Udpxy Server on 5.136.117.163 There were only two results, both in Russia, so I picked the one that seemed a little more interesting, from Tomsk, Siberia.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 25: Helping Strangers in Singapore</title>
