@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 27: A Connoisseur of Sorts in Shenzen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-30T00:04:46-05:00">Jan 30, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Saw somebody doing a search for &ldquo;twonky&rdquo;. What a name! I had to find out about it.</p>
+
+<h2 id="a-twonky-media-server-on-14-155-113-144">A Twonky Media Server on 14.155.113.144</h2>
+
+<p><a href="http://www.lynxtechnology.com/twonky-overview">Twonky is one of many personal media servers</a> I&rsquo;ve now run into, meant to run either <a href="https://twonky.com/index.html">on a network attached storage device or on a computer.</a> The purpose I assume is to be able to stream your media from any devices on your network without having to worry about storying them locally (so if you&rsquo;ve stolen a lot of blueray movie rips from bittorent and want to watch them on your phone or something). It looks like Twonky has had a <a href="https://en.wikipedia.org/wiki/TwonkyMedia_server">fairly rambunctious ownership history</a>, and was formerly known as TwonkyMedia, and then split off as just Twonky but TwonkyMedia existed under German ownership as a competitor to Townky until the German company went under and TwonkyMedia became unsupported. Goodbye TwonkyMedia, may you go off into the long dark night of unsupported but likely still used niche consumer grade software.</p>
+
+<p>Anyway I picked the first IP I saw that had a real result, this one in Shenzen China. Generally Twonky seems to be meant for local networks only so I had to wade through a quite a few dead ends, but some enterprising users set up port forwarding so that the whole internet could see. Twonky seemingly tends to run a webapp on port 9000 as a default, so I visited that port in my browser.
+<img src="/images/100Days/Day27/twonky.png" alt="" />
+Interesting song to photo/movie ratio there. Must not be much into music. I wonder what they are into?
+<img src="/images/100Days/Day27/bangin.png" alt="" />
+Hmmm.</p>
+
+<p><img src="/images/100Days/Day27/wankit.png" alt="" />
+I see.
+<img src="/images/100Days/Day27/hornydoc.png" alt="" />
+<font size="50">🧐</font>
+<img src="/images/100Days/Day27/pissing.png" alt="" />
+<font size="50">🧐🧐🧐</font></p>
+
+<p>They also have some like regular movies making for some truly delightful juxtapositions.
+<img src="/images/100Days/Day27/readyplayerone.png" alt="" /></p>
+
+<p>So it&rsquo;s like 95% porn. Someone put their porn stash out there for all the world to see without realizing at all what they were doing. It kind of sucks to be honest, because what little content isn&rsquo;t porn or blueray movie rips seems to be personal photos and videos. This is running on some kind of network attached storage device (okay so I figured out the device - it&rsquo;s a <a href="https://support.wdc.com/knowledgebase/answer.aspx?h=p1&amp;ID=19493&amp;lang=en&amp;p=207">Western Digital 2 Go device in the My Cloud Home line, the ssl certificate gave it away</a> that this server software has wider access to than just the media files being hosted.
+<img src="/images/100Days/Day27/filesystem.png" alt="" />
+You have access here to the entire file system of the device. The part I blocked out was the person&rsquo;s name, which they are using as their home folder.</p>
+
+<p>So you can download any file on the device, explore the file system, upload your own files.</p>
+
+<p><a href="https://www.youtube.com/watch?v=O4foeo3oY-E">Hachi machi</a>. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-26/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

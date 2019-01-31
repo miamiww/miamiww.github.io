@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jan 2019 22:22:18 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jan 2019 00:04:46 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 27: A Connoisseur of Sorts in Shenzen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</title>
+      <link>http://blog.alden.website/post/100days/Day-27/</link>
+      <pubDate>Wed, 30 Jan 2019 00:04:46 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-27/</guid>
+      <description>Saw somebody doing a search for &amp;ldquo;twonky&amp;rdquo;. What a name! I had to find out about it.
+A Twonky Media Server on 14.155.113.144 Twonky is one of many personal media servers I&amp;rsquo;ve now run into, meant to run either on a network attached storage device or on a computer. The purpose I assume is to be able to stream your media from any devices on your network without having to worry about storying them locally (so if you&amp;rsquo;ve stolen a lot of blueray movie rips from bittorent and want to watch them on your phone or something).</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ</title>
