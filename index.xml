@@ -6,13 +6,23 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jan 2019 00:04:46 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 17:12:07 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Shodan Stories Day 27: A Connoisseur of Sorts in Shenzen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</title>
+      <title>Shodan Stories Day 28: Joining the Electric World in Darmstadt</title>
+      <link>http://blog.alden.website/post/100days/Day-28/</link>
+      <pubDate>Thu, 31 Jan 2019 17:12:07 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-28/</guid>
+      <description>Today I saw someone searching for &amp;ldquo;turbines&amp;rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.
+B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 27: A Connoisseur of Sorts in Shenzhen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</title>
       <link>http://blog.alden.website/post/100days/Day-27/</link>
       <pubDate>Wed, 30 Jan 2019 00:04:46 -0500</pubDate>
       

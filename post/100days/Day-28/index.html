@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 28: Joining the Electric World in Darmstadt</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-01-31T17:12:07-05:00">Jan 31, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I saw someone searching for &ldquo;turbines&rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.</p>
+
+<h2 id="b-i-a-vertriebs-gmbh-on-82-165-151-127">B-I-A Vertriebs GmbH on 82.165.151.127</h2>
+
+<p>I ended up deciding on the web server run by a German wholesaler for electricity parts named <a href="http://www.biaonline.com/">B-I-A Vertriebs</a>. There seemed to be some other interesting results but this company had one very compelling trump card that cleanly explains whatever success they have in the area of industrial electric parts and devices.
+<img src="/images/100Days/Day28/electricworld.png" alt="" />
+A truly awe inspiring mascot and tagline. What is this creature? Is it&hellip; a dog? An ewok? An old man? What&rsquo;s going on with it&rsquo;s right arm. Is it s seal? Is it dressed as an electrician? Do I really want to join the electric world? What will happen to me if I do?</p>
+
+<p>This creature is a true joy. The company itself seems to be running an extensive business selling wiring, cabling, plugs, fuseboxes, couplers, measuring devices, signals, lamps, telephone jacks, etc, etc. All the invisible bits and bobs that keep this modern electric world humming along.
+<img src="/images/100Days/Day28/types.png" alt="" />
+They also provide technical diagrams, datasheets, and circuit diagrams for many of their devices. I found myself getting really enjoyably lost in their website, poking around, finding things I&rsquo;d never heard of before (<a href="https://en.wikipedia.org/wiki/Cable_gland">cable glands?</a>).
+<img src="/images/100Days/Day28/productrange.png" alt="" />
+I got to wondering what their warehouse must look like. They provide a helpful map of the whole country of Germany to give you context of where it is.
+<img src="/images/100Days/Day28/germany.png" alt="" />
+Thankfully they also gave an address so I could see it on Google maps.
+<img src="/images/100Days/Day28/area.png" alt="" />
+ENHANCE
+<img src="/images/100Days/Day28/warehouse.png" alt="" />
+It&rsquo;s in a little industrial area of Darmstadt, itself an industrial city, given the title by the German government of &ldquo;City Of Science&rdquo;. Darmstadt has quite a busy industry of chemical and physics research, and is home to quite a few research universities and institutions. The city <a href="https://en.wikipedia.org/wiki/Darmstadtium">even has an element named after it</a>!</p>
+
+<p>I&rsquo;d love to visit. Maybe B-I-A would even give me a tour. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-27/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 27: A Connoisseur of Sorts in Shenzhen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
