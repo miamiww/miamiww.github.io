@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jan 2019 17:12:07 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 01 Feb 2019 23:01:04 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 29: Crypto World in Santa Monica, Trello Boards, Tokenization, and the Vectorialists</title>
+      <link>http://blog.alden.website/post/100days/Day-29/</link>
+      <pubDate>Fri, 01 Feb 2019 23:01:04 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-29/</guid>
+      <description>I saw someone searching for &amp;ldquo;ICO&amp;rdquo;. At first I thought maybe it had something to do with the groundbreaking 2001 indie game, but after browsing some links I realized that no, it meant &amp;ldquo;Initial Coin Offering&amp;rdquo;, and yes this is another crypto thing.
+CoinCircle&amp;rsquo;s ICOStats Tracker on 165.227.6.170 Most of the results on Shodan are websites and webservers, but I found one running on Digital Ocean that&amp;rsquo;s just a web app running on port 3000.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 28: Joining the Electric World in Darmstadt</title>

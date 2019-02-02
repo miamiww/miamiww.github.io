@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 28: Joining the Electric World in Darmstadt</h1>
+    <h1>Shodan Stories Day 29: Crypto World in Santa Monica, Trello Boards, Tokenization, and the Vectorialists</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-01-31T17:12:07-05:00">Jan 31, 2019</time>
+            <time class="post-date" datetime="2019-02-01T23:01:04-05:00">Feb 1, 2019</time>
         </li>
         
         
@@ -84,27 +84,26 @@
 
     
 
-<p>Today I saw someone searching for &ldquo;turbines&rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.</p>
+<p>I saw someone searching for &ldquo;ICO&rdquo;. At first I thought maybe it had something to do with the <a href="https://en.wikipedia.org/wiki/Ico">groundbreaking 2001 indie game</a>, but after browsing some links I realized that no, it meant <a href="https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp">&ldquo;Initial Coin Offering&rdquo;</a>, and yes this is another crypto thing.</p>
 
-<h2 id="b-i-a-vertriebs-gmbh-on-82-165-151-127">B-I-A Vertriebs GmbH on 82.165.151.127</h2>
+<h2 id="coincircle-s-icostats-tracker-on-165-227-6-170">CoinCircle&rsquo;s ICOStats Tracker on 165.227.6.170</h2>
 
-<p>I ended up deciding on the web server run by a German wholesaler for electricity parts named <a href="http://www.biaonline.com/">B-I-A Vertriebs</a>. There seemed to be some other interesting results but this company had one very compelling trump card that cleanly explains whatever success they have in the area of industrial electric parts and devices.
-<img src="/images/100Days/Day28/electricworld.png" alt="" />
-A truly awe inspiring mascot and tagline. What is this creature? Is it&hellip; a dog? An ewok? An old man? What&rsquo;s going on with it&rsquo;s right arm. Is it s seal? Is it dressed as an electrician? Do I really want to join the electric world? What will happen to me if I do?</p>
+<p>Most of the results on Shodan are websites and webservers, but I found one running on Digital Ocean that&rsquo;s just a web app running on port 3000.
+<img src="/images/100Days/Day29/icostats.png" alt="" />
+The app is called ICO Stats, and appears to collect and display real time information about a whole lot of different &ldquo;coins&rdquo;. Digital coins, digital tokens, digital assets, what are these things? I believe I have a fairly decent grasp of the mechanics of creating them, but what I don&rsquo;t understand is how the market works and how value is being assigned. Is the demand just entirely speculation?
+<img src="/images/100Days/Day29/performers.png" alt="" />
+Look at that! There&rsquo;s a coin called NXT whose value has increased <em>173940%</em> in the past 4 years. That means that if you bought a single dollar of NXT in 2013 you would now have nearly <em>one hundred and seventy four thousand dollars</em> worth of it now. Crypto world feels like an entirely different vision of reality, one that makes me queasy and filled with disgust.</p>
 
-<p>This creature is a true joy. The company itself seems to be running an extensive business selling wiring, cabling, plugs, fuseboxes, couplers, measuring devices, signals, lamps, telephone jacks, etc, etc. All the invisible bits and bobs that keep this modern electric world humming along.
-<img src="/images/100Days/Day28/types.png" alt="" />
-They also provide technical diagrams, datasheets, and circuit diagrams for many of their devices. I found myself getting really enjoyably lost in their website, poking around, finding things I&rsquo;d never heard of before (<a href="https://en.wikipedia.org/wiki/Cable_gland">cable glands?</a>).
-<img src="/images/100Days/Day28/productrange.png" alt="" />
-I got to wondering what their warehouse must look like. They provide a helpful map of the whole country of Germany to give you context of where it is.
-<img src="/images/100Days/Day28/germany.png" alt="" />
-Thankfully they also gave an address so I could see it on Google maps.
-<img src="/images/100Days/Day28/area.png" alt="" />
-ENHANCE
-<img src="/images/100Days/Day28/warehouse.png" alt="" />
-It&rsquo;s in a little industrial area of Darmstadt, itself an industrial city, given the title by the German government of &ldquo;City Of Science&rdquo;. Darmstadt has quite a busy industry of chemical and physics research, and is home to quite a few research universities and institutions. The city <a href="https://en.wikipedia.org/wiki/Darmstadtium">even has an element named after it</a>!</p>
+<p>It didn&rsquo;t take me long to figure out who had created this tracker application.  First I found their <a href="https://trello.com/">Trello board</a>, the last addition to which was yesterday.
+<img src="/images/100Days/Day29/trello.png" alt="" />
+From there I found linked the <a href="https://github.com/CoinCircle/icostats">github</a>, and that led me to <a href="https://coincircle.com/">Coin Circle</a>.
+<img src="/images/100Days/Day29/coin.png" alt="" />
+Coin Circle is a company(?) that will help you tokenize your assets to decentralize your chain of trusts and connect you with savvy accredited buyers on the digital platforms of tomorrow, today. Or maybe it&rsquo;s just only on their digitally decentralized platform based distributed ledger system.
+<img src="/images/100Days/Day29/tokenize.png" alt="" /></p>
 
-<p>I&rsquo;d love to visit. Maybe B-I-A would even give me a tour. See you tomorrow.</p>
+<p>I&rsquo;m making fun, but I&rsquo;m genuinely against what they are doing. Maybe my futurevision is a little clouded but to what end are we creating this additional layer of abstraction? Who benefits from the tokenization of an asset? Who loses? Who has control? The &ldquo;market&rdquo;?
+<img src="/images/100Days/Day29/roguegallery.png" alt="" />
+Probably just people like this rogues gallery. See you tomorrow.</p>
 
 
 </article>
@@ -114,13 +113,9 @@ It&rsquo;s in a little industrial area of Darmstadt, itself an industrial city, 
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-27/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 27: A Connoisseur of Sorts in Shenzhen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</a>
+            <a href="http://blog.alden.website/post/100days/Day-28/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 28: Joining the Electric World in Darmstadt</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-29/">Shodan Stories Day 29: Crypto World in Santa Monica, Trello Boards, Tokenization, and the Vectorialists <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
