@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Feb 2019 23:01:04 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 22:37:32 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 30: Automating Buildings in Copenhagen, the BAS SCADA Industry, Expandable Controllers, Cloriūs, KeRo, and O&amp;J CTS A/S</title>
+      <link>http://blog.alden.website/post/100days/Day-30/</link>
+      <pubDate>Sat, 02 Feb 2019 22:37:32 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-30/</guid>
+      <description>Today I decided to go looking for SCADA systems. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&amp;rsquo;ll let the man himself, Carl Gould, take it away.   SCADA Building Automation System on 80.71.129.61 Not really sure how to find one, I just searched on Shodan for &amp;ldquo;SCADA&amp;rdquo; hoping to reap rewards with little research.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 29: Crypto World in Santa Monica, Trello Boards, Tokenization, and the Vectorialists</title>
