@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Feb 2019 22:37:32 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 21:23:52 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 31: Youth Volunteering in Guri, ePrinting, Jetdirect, Requiem for a Hewlett Packard, the State of Civil Society, and Hand Massages for the Elderly</title>
+      <link>http://blog.alden.website/post/100days/Day-31/</link>
+      <pubDate>Sun, 03 Feb 2019 21:23:52 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-31/</guid>
+      <description>I saw a search on Shodan for &amp;ldquo;Jetdirect&amp;rdquo; with the tagline &amp;ldquo;unsecured printers&amp;rdquo;. I&amp;rsquo;d recently heard a story about fans of the Youtuber PewDiePie using Shodan to hack into 50,000 printers to print messages about him so I thought maybe I could take a look and see maybe how they had done it.
+HP Officejet Pro 8100 N811a on 121.161.211.66 Shodan showed 18,000 results for Jetdirect, with a plurality of them being in Korea.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 30: Automating Buildings in Copenhagen, the BAS SCADA Industry, Expandable Controllers, Cloriūs, KeRo, and O&amp;J CTS A/S</title>
