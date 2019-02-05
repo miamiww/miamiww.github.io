@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Feb 2019 21:23:52 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 17:27:29 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 32: Red Lion Industrial Controls in a Remote US Location, Riding the XetaWave, the AirLink ACEmanager, Tank Batteries, and the Stack Overflow Answer that Launched 6000 Redirects</title>
+      <link>http://blog.alden.website/post/100days/Day-32/</link>
+      <pubDate>Mon, 04 Feb 2019 17:27:29 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-32/</guid>
+      <description>Today I decided to go looking for for industrial control systems made by a company called Red Lion Controls. Red Lion makes controllers, touch screen operation panels, and a few other things besides. Reading Shodan I found that I could find them by searching for devices using port 789, which is the default port that Red Lion&amp;rsquo;s software uses to communicate.
+A Red Lion Controller on 166.167.27.6 I just went with the first result, this one somewhere in the US on a Verizon wireless mobile network, and immediately got sucked into figuring out whatever was going on with it.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 31: Youth Volunteering in Guri, ePrinting, Jetdirect, Requiem for a Hewlett Packard, the State of Civil Society, and Hand Massages for the Elderly</title>
