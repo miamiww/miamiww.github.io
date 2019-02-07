@@ -1,0 +1,239 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 34: Listening to La Merde in Bonneuil-sur-marne, Logitech Servers, the Squeezebox, and Becoming the Ghost in the Wifi Connected Radio</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-06T01:21:02-05:00">Feb 6, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>4 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>As many of my days now start, I began my morning by looking through the recent searches on Shodan. I found one for <a href="https://www.logitech.com/en-us">Logitech devices</a> that looked kind of interesting and dove in.</p>
+
+<h2 id="logitech-media-server-on-82-64-23-201">Logitech Media Server on 82.64.23.201</h2>
+
+<p>I no longer remember why I picked this particular device since I did my searching in the morning and am writing at night. I think I was impressed by the number of ports it had open. Maybe I was interested because it is in a <a href="https://en.wikipedia.org/wiki/Bonneuil-sur-Marne">Paris suburb</a>. Shodan indicated that it had a Logitech device running a web server on port 9000, but had several other ports open with different types of services.
+<img src="/images/100Days/Day34/firstlook.png" alt="" />
+I opened up port 9000 in my browser and gave myself a couple of seconds to figure out what I was seeing. Clearly it was a media server of some kind. After poking around a bit I realized that it was just for audio! Phew no more porn.
+<img src="/images/100Days/Day34/genres.png" alt="" />
+The owner had about 45000 tracks on the server, with all the usual genres. I think I had about that many back at the height of my torrenting teen years.
+<img src="/images/100Days/Day34/merde.png" alt="" />
+I found that I could download any of the mp3s, but couldn&rsquo;t steam them even though there were little &ldquo;play&rdquo; buttons next to all of them. I downloaded this album by a bizarre Fench comedy musician <a href="https://fr.wikipedia.org/wiki/Didier_Super">Didier Super</a>. It was a cover album of French pop classics. It was really bad. Reading about it I found that he just made it to fulfill a four album contract, which might explain the bad music and pretty gross cover art.</p>
+
+<p>I decided to Google the big word in the upper right corner, &ldquo;Squeezebox&rdquo;.
+<img src="/images/100Days/Day34/squeezebox.png" alt="" />
+Uh oh! Had I just been playing tracks on someone&rsquo;s Wifi radio?? What time was it there? Breathing a sigh of relief as I realized it was in the middle of the day - hopefully the owner was out. If an internet-connected radio starts randomly playing tracks in an empty apartment does it make a sound?</p>
+
+<p>Googling a little further <a href="http://wiki.slimdevices.com/index.php/Connecting_remotely">I found a guide for how to set up port forwarding for these devices</a> although it <em>strongly</em> advised not to.
+<img src="/images/100Days/Day34/softsqueeze.png" alt="" />
+Looking a little deeper on the web app though I found that it was running something called <a href="http://softsqueeze.sourceforge.net/">SoftSqueeze</a> - which is actually an emulator for the Squeezebox firmware to run on any kind of common consumer level computer.</p>
+
+<p>I decided to do an <code>nmap</code> to get a feel for what else is going on.</p>
+
+<pre><code>➜  ~ nmap -p- 82.64.23.201
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-02-06 01:26 EST
+Nmap scan report for sub-82-64-23-201.proxad.net (82.64.23.201)
+Host is up (0.19s latency).
+Not shown: 65517 filtered ports
+PORT      STATE  SERVICE
+80/tcp    open   http
+443/tcp   open   https
+554/tcp   open   rtsp
+1935/tcp  open   rtmp
+3483/tcp  open   slim-devices
+8000/tcp  open   http-alt
+8080/tcp  open   http-proxy
+8125/tcp  open   unknown
+8210/tcp  open   unknown
+8215/tcp  open   unknown
+8220/tcp  open   unknown
+8221/tcp  closed unknown
+8222/tcp  closed unknown
+8224/tcp  open   unknown
+9000/tcp  open   cslistener
+15567/tcp open   unknown
+20040/tcp open   unknown
+25320/tcp open   unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 449.77 seconds
+</code></pre>
+
+<p><img src="/images/100Days/Day34/reolink.png" alt="" />
+The <sup>80</sup>&frasl;<sub>443</sub> webservers were running a login for something called <a href="https://reolink.com">Reolink</a>, which seems to be some kind of home surveillance/ip camera system. Port 554 was running a real time streaming application, which I thought was maybe the surveillance cams, but I couldn&rsquo;t login to it (though I did confirm that it was streaming video). The port 1935 was <a href="https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol">another media stream</a>. 8000 was some kind of <a href="https://en.wikipedia.org/wiki/SOAP">SOAP</a> service (we&rsquo;ll get back to 3483 in a second).</p>
+
+<p><img src="/images/100Days/Day34/rancher.png" alt="" />
+8080 was running a login for <a href="https://rancher.com/">Rancher</a>, which is a service for running multiple clusters of <a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/">Kubernetes containers</a>. At some point I want to spend a day diving into containers, but today is not that day. Suffice it to say that this raised a lot of questions for me that I was unable to answer.</p>
+
+<p>All the other ports were impenetrable. Back to 3848, I read on the guide to setting up port forwarding for you Squeezebox that you would need to forward both ports 3848 and 9000 because the Squeezebox uses both of them. The <a href="https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml">IANA port registry</a> that <code>nmap</code> uses says that that port is for &lsquo;slim-devices&rsquo;, not &lsquo;squeezeboxes&rsquo;, so I looked it up. It turns out that <a href="https://en.wikipedia.org/wiki/Slim_Devices">Slim Devices</a> was the name of the company that first made the Squeezebox way back in 2001, before it was acquired by Logitech in 2006.</p>
+
+<p>Why does IANA still have ports named after companies and services that haven&rsquo;t been around in over 10 years? See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-33/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 33: Propaganda in Pyongyang</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

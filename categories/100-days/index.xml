@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 20:55:59 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 06 Feb 2019 01:21:02 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 34: Listening to La Merde in Bonneuil-sur-marne, Logitech Servers, the Squeezebox, and Becoming the Ghost in the Wifi Connected Radio</title>
+      <link>http://blog.alden.website/post/100days/Day-34/</link>
+      <pubDate>Wed, 06 Feb 2019 01:21:02 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-34/</guid>
+      <description>As many of my days now start, I began my morning by looking through the recent searches on Shodan. I found one for Logitech devices that looked kind of interesting and dove in.
+Logitech Media Server on 82.64.23.201 I no longer remember why I picked this particular device since I did my searching in the morning and am writing at night. I think I was impressed by the number of ports it had open.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 33: Propaganda in Pyongyang</title>
