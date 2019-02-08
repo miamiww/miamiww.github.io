@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 35: Library Kiosks in Duchesne, Session Management Solutions, and True Friendship</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-07T00:16:01-05:00">Feb 7, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Saw an amazing search on Shodan today: someone searched for &ldquo;kiosk&rdquo; with the comment &ldquo;lotta cool stuff&rdquo;. Lotta cool stuff! How could I resist.</p>
+
+<h2 id="a-library-kiosk-management-system-on-104-239-140-99">A Library Kiosk Management System on 104.239.140.99</h2>
+
+<p>Most of the kiosks seemed to be library kiosks, I even found one from my alma mater&rsquo;s library! I ended up going with the first one that I couldn&rsquo;t immediately figure out the purpose of. It was running some kind of web server on port 3000.
+<img src="/images/100Days/Day35/firstlook.png" alt="" />
+It seemed to be a scheduling application. It was running the same service on 3001 with different patron names.
+<img src="/images/100Days/Day35/secondlook.png" alt="" />
+Rather than rack my brain for possibilities though I just Googled the service - <a href="https://libki.org/">Libki Kiosk Management System</a>.
+<img src="/images/100Days/Day35/libki.png" alt="" />
+So Libki is a system for booking time on computers - more or less, meant for libraries and computer labs.</p>
+
+<p>Now I knew that the system I was looking at was running on a cloud server, but I wanted to know where the actual computers that were being booked were. So I checked it with <code>host</code> to see if anything showed up.</p>
+
+<pre><code>👻🌵🔮 $ host 104.239.140.99
+99.140.239.104.in-addr.arpa domain name pointer duchesne-libki.bywatersolutions.com.
+</code></pre>
+
+<p>Looks like the IP address is for the domain name duchesne-libki.bywatersolutions.com.
+<img src="/images/100Days/Day35/bywatersolutions.png" alt="" /></p>
+
+<p>Looking at <a href="https://bywatersolutions.com/">ByWater Solutions&rsquo;s website</a> I found that they were actually the makers of Libki, among other software solutions aimed at the library market. The owners seemed really sweet. Maybe I&rsquo;m just feeling hormonal but when I checked their website&rsquo;s WhoIS record and saw that it had one of the owner&rsquo;s real name and personal email address on it I got kind of choked up. So innocent!
+<img src="/images/100Days/Day35/theguys.png" alt="" />
+By why were they running their own session managing at their company? For testing? Or because they all share computers?</p>
+
+<p>Looking a little harder at the url though, I had an insight: <em>duchesne</em>-libki. Duchesne, as we all know, is the name of a county in Utah. Counties typically have libraries in them. And in fact there is a Duchesne County Library in Duchesne county. And <em>in fact</em> the Duchesne County Library uses Libki.
+<img src="http://www.duchesne.utah.gov/wp-content/uploads/2017/01/Duchesne-Branch-crop.jpg" alt="" />
+How do I know that they use Libki? I checked the <a href="https://www.duchesne.utah.gov/wp-content/uploads/2017/01/2015-09-Duchesne-County-Library-Board-Meeting-Minutes.pdf">Duchesne County Library Board Meeting Minutes of September 17, 2015</a>, which clearly states the following:</p>
+
+<p><em>Libki – Patron computer management system is now functioning at both libraries to allow reservations for time
+slots on the computers</em></p>
+
+<p><img src="/images/100Days/Day35/meetingminutes.png" alt="" />
+Two libraries! That explains the two systems, on 3000 and 3001.</p>
+
+<p>Thank you, public records, and thank you libraries, for championing public space in an age of its retraction from daily life. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-34/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 34: Listening to La Merde in Bonneuil-sur-marne, Logitech Servers, the Squeezebox, and Becoming the Ghost in the Wifi Connected Radio</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
