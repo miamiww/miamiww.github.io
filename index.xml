@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Feb 2019 00:16:01 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 08 Feb 2019 22:40:09 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 36: A Sick Beard in Hilversum, Usenet Is Still Around, Torrenting SuperUsers, and How Much of the Internet Is Just People Trying to Watch TV?</title>
+      <link>http://blog.alden.website/post/100days/Day-36/</link>
+      <pubDate>Fri, 08 Feb 2019 22:40:09 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-36/</guid>
+      <description>The Shodan recent searches is a well that never runs dry. Today I saw someone searching for &amp;ldquo;Sickbeard&amp;rdquo;. What could that possibly be??
+Sickbeard TV on 85.145.200.210 The search was named Sickbeard but the actual search was for &amp;ldquo;CherryPy/3.2.0rc1 This resource can be found at&amp;rdquo;. Looking into it, CherryPy is a python based framework for running webapps. It looks useful and I think I&amp;rsquo;ll log it into my toolkit for a later project.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 35: Library Kiosks in Duchesne, Session Management Solutions, and True Friendship</title>

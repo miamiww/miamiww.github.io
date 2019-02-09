@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 36: A Sick Beard in Hilversum, Usenet Is Still Around, Torrenting SuperUsers, and How Much of the Internet Is Just People Trying to Watch TV?</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-08T22:40:09-05:00">Feb 8, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>The Shodan recent searches is a well that never runs dry. Today I saw someone searching for &ldquo;Sickbeard&rdquo;. What could that possibly be??</p>
+
+<h2 id="sickbeard-tv-on-85-145-200-210">Sickbeard TV on 85.145.200.210</h2>
+
+<p>The search was named Sickbeard but the actual search was for &ldquo;CherryPy/3.2.0rc1 This resource can be found at&rdquo;. Looking into it, <a href="https://cherrypy.org/">CherryPy</a> is a python based framework for running webapps. It looks useful and I think I&rsquo;ll log it into my toolkit for a later project. But on with Sickbeard, I decided to go for the first result I found as it is in the Netherlands and I was hoping for interesting Netherlands TV. Yes TV! I did a brief Googling and found that Sickbeard was some kind of TV thing but didn&rsquo;t dive that deep yet.
+<img src="/images/100Days/Day36/sickbeard.png" alt="" />
+This server was running the Sickbeard webapp on port 7071. I was immediately dissapointed to see that the first TV show listed was The Big Bang Theory. Like come on. Game of Thrones?? Everybody Loves Raymond??? What a letdown. At least they&rsquo;re watching The O.C.
+<img src="/images/100Days/Day36/tv.png" alt="" />
+Unlike a lot of systems like this that I&rsquo;ve found I couldn&rsquo;t interact with any of the media in any way, it seems to be a management system for downloads rather than a media streaming server.</p>
+
+<p>Actually reading about <a href="http://sickbeard.com/index.html">Sickbeard on its website</a> I found that it actually has an extremely niche use-case. Sickbeard monitors posts in <a href="https://en.wikipedia.org/wiki/Usenet">Usenet newsgroups</a> dedicated to TV show torrents, grabs the torrent files for the list of shows you&rsquo;ve given it, and then gives those torrent files over to a torrent client.</p>
+
+<p>Watching TV shows for free was a hell of a lot harder back in my day. The good old days, when you&rsquo;d have to set up a <a href="https://en.wikipedia.org/wiki/Seedbox">Seedbox</a> just to have a good enough ratio to get on some 1337 Torrenting message board, and then beg and plead for people to upload the version of <a href="https://en.wikipedia.org/wiki/Naruto">Naruto</a> subbed by your favorite subbing group, you know, the one that used Real Swears, and then sit and wait for 19 hours while the episode downloaded with the one uploader probably on a DSL modem somewhere in the Balkans. Those were truly the days of miracle and wonder.</p>
+
+<p>I&rsquo;m kidding, I never watched Naruto. I was more into <a href="https://en.wikipedia.org/wiki/Bleach_(TV_series)">Bleach</a>. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-35/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 35: Library Kiosks in Duchesne, Session Management Solutions, and True Friendship</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

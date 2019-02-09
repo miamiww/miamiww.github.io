@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/100days/Day-36/</loc>
+    <lastmod>2019-02-08T22:40:09-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/100days/Day-35/</loc>
     <lastmod>2019-02-07T00:16:01-05:00</lastmod>
   </url>
@@ -508,13 +513,13 @@
   
   <url>
     <loc>http://blog.alden.website/categories/100-days/</loc>
-    <lastmod>2019-02-07T00:16:01-05:00</lastmod>
+    <lastmod>2019-02-08T22:40:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2019-02-07T00:16:01-05:00</lastmod>
+    <lastmod>2019-02-08T22:40:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -526,7 +531,7 @@
   
   <url>
     <loc>http://blog.alden.website/categories/</loc>
-    <lastmod>2019-02-07T00:16:01-05:00</lastmod>
+    <lastmod>2019-02-08T22:40:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -604,7 +609,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2019-02-07T00:16:01-05:00</lastmod>
+    <lastmod>2019-02-08T22:40:09-05:00</lastmod>
     <priority>0</priority>
   </url>
   
