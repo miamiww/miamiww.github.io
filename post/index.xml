@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Feb 2019 21:50:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Feb 2019 12:11:44 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 38: A Clothing Store in Moscow</title>
+      <link>http://blog.alden.website/post/100days/Day-38/</link>
+      <pubDate>Sun, 10 Feb 2019 12:11:44 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-38/</guid>
+      <description>A quick cam day today because I&amp;rsquo;m a busy bee. I found a search awhile back for &amp;ldquo;Auther: Steven Wu&amp;rdquo;. Yes with the typo. It seems that Steven Wu wrote some server software for networked cameras back in maybe 2009 that is now used in a few different camera brands, all of which allow for snapshots to be taken without a password even if the video feed itself requires a password.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 37: Minitel</title>
