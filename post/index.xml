@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Feb 2019 22:40:09 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 09 Feb 2019 21:50:14 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 37: Minitel</title>
+      <link>http://blog.alden.website/post/100days/Day-37/</link>
+      <pubDate>Sat, 09 Feb 2019 21:50:14 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-37/</guid>
+      <description>Oh Minitel. I never expected to find you, here on the very World Wide Web that killed you.
+3614 TEASER emulator on 62.210.93.204 I saw a recent search on Shodan for &amp;ldquo;ttyd terminal shell&amp;rdquo;. ttyd is a service for sharing your Terminal over the web, meaning that an insecure ttyd server would mean total access over someone&amp;rsquo;s computer (assuming they were porting root). I decided to take a look. Of the 12 results most were just named &amp;lsquo;ttyd - terminal&amp;rsquo; and most of those were inactive, but one stood out.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 36: A Sick Beard in Hilversum, Usenet Is Still Around, Torrenting SuperUsers, and How Much of the Internet Is Just People Trying to Watch TV?</title>
