@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Feb 2019 12:11:44 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 20:29:49 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 39: More TV Torrenting in Toronto, Reckless API Key Exposure, Sonarr, Radarr, Jackett, Ombi, and Deluge</title>
+      <link>http://blog.alden.website/post/100days/Day-39/</link>
+      <pubDate>Mon, 11 Feb 2019 20:29:49 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-39/</guid>
+      <description>Saw a search just for &amp;ldquo;gmail.com&amp;rdquo;, I assume to look for anyone who put their email address into their service. I decided to take a look.
+A Torrenting Operation on 162.157.129.215 I like this search because it&amp;rsquo;s device and service agnostic. I ended up just picking the first result and running with it, this one in Toronto. It turned out that the email address that brought me there belonged to the developer of a bittorent client named Deluge.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 38: A Clothing Store in Moscow</title>
