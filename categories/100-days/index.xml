@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Feb 2019 20:29:49 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 12 Feb 2019 17:20:20 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 40: Blue_7 in Beijing, GGGG, Evading Government Censures, Server Login Lists, Abandoned Blogs, Shadow Socks, Telegram Chat Rooms, and the Mystery of Using URLs as Passwords</title>
+      <link>http://blog.alden.website/post/100days/Day-40/</link>
+      <pubDate>Tue, 12 Feb 2019 17:20:20 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-40/</guid>
+      <description>I spent so long trying to figure out what I found today that I&amp;rsquo;ve forgotten how I found it. I think it was from someone&amp;rsquo;s search for &amp;ldquo;USB&amp;rdquo;, but I&amp;rsquo;m now unable to recreate the search.
+A Mystery on 118.24.95.11 However I discovered this IP, I first arrived at what looked like a normal blog on port 8083. There is a very ~hacker~ image of a guy in ad hoody as the author&amp;rsquo;s picture.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 39: More TV Torrenting in Toronto, Reckless API Key Exposure, Sonarr, Radarr, Jackett, Ombi, and Deluge</title>
