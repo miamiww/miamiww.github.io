@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Feb 2019 17:20:20 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 13 Feb 2019 23:19:12 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 41: Mining for Innovation in Abu Dhabi, Trapped in the Multiverse of Project Validation, Haunted by the Lightbulb of Ideas, Tasked with an Eternity of Teamwork Communication Adjustment</title>
+      <link>http://blog.alden.website/post/100days/Day-41/</link>
+      <pubDate>Wed, 13 Feb 2019 23:19:12 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-41/</guid>
+      <description>I saw someone searching for &amp;ldquo;snapchat&amp;rdquo; today. &amp;ldquo;YOLO&amp;rdquo;, I said to myself, and dived in.
+Fujairah Innovation Mine on 83.111.19.71 The search was in fact pulling up some of Snapchat&amp;rsquo;s production servers. Those were fairly boring however, though I did find something a little more interesting. This is a website for an organization called Fujairah Innovation Mine, which seems to be a typical tech startup incubator. The website was was running on port 7548 of the IP, so it clearly couldn&amp;rsquo;t be the official version.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 40: Blue_7 in Beijing, GGGG, Evading Government Censures, Server Login Lists, Abandoned Blogs, Shadow Socks, Telegram Chat Rooms, and the Mystery of Using URLs as Passwords</title>

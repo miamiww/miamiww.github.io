@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="alden" />
+  <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.53" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Nation State Energy Policy</h1>
+    <h1>Shodan Stories Day 41: Mining for Innovation in Abu Dhabi, Trapped in the Multiverse of Project Validation, Haunted by the Lightbulb of Ideas, Tasked with an Eternity of Teamwork Communication Adjustment</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-09-11T00:00:00Z">Sep 11, 2018</time>
+            <time class="post-date" datetime="2019-02-13T23:19:12-05:00">Feb 13, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/temporary-expert/">temporary expert</a>
+                    <a href="/categories/100-days/">100 days</a>
                 
             </em>
         </li>
@@ -77,18 +77,24 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
-    <p><a href="https://vimeo.com/289321256"><img src="/images/lightbulb.png" alt="*bulb" /></a>
-<a href="https://vimeo.com/289321256">https://vimeo.com/289321256</a></p>
+    
 
-<p>That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON. Some government regulators are more effective at enforcing this directive than others, but for nearly all federal regulators energy reliability is the top goal (the prime directive for the others is abusing their authority as regulators to enrich themselves). All state visions are totalizing visions, and all state visions leave things out. What is lost in this particular vision? Climate change? Keeping ratepayer costs low? It would almost certainly be cheaper and less carbon intensive to have occasional blackouts, as peak energy demand is usually met by throwing oil into giant fires. The answer depends on the state and the region, the regulators and the strictness of enforcement.</p>
+<p>I saw someone searching for &ldquo;snapchat&rdquo; today. &ldquo;YOLO&rdquo;, I said to myself, and dived in.</p>
 
-<p>One map:
-<a href="https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641">https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641</a></p>
+<h2 id="fujairah-innovation-mine-on-83-111-19-71">Fujairah Innovation Mine on 83.111.19.71</h2>
+
+<p>The search was in fact pulling up some of Snapchat&rsquo;s production servers. Those were fairly boring however, though I did find something a little more interesting.
+<img src="/images/100Days/Day41/firstlook.png" alt="" />
+This is a website for an organization called Fujairah Innovation Mine, which seems to be a typical tech startup incubator. The website was was running on port 7548 of the IP, so it clearly couldn&rsquo;t be the official version. I found that it was running the exact same website on port 80 though, so maybe this one was just for testing. And then I did an <code>nmap</code>, and I found it was running the same exact website on port 81, and port 82, and port 83, 84, and port 1000, and port 1200, and port 1234, and port 2000, and port 5985, and port 8000, and port 23000, and port 61199, and well you get the idea. If every open port was running a web server running this website then there seem to be least 65,000 iterations of the same exact website. Yes <em>65,000</em>. No I didn&rsquo;t check them all, though I checked about 100 and they were all running it. Yes that&rsquo;s almost every possible port. No they weren&rsquo;t redirects. And no there were no differences between any of them as far as I could tell.
+<img src="/images/100Days/Day41/mine.png" alt="" />
+Why??? What could even cause this???? I couldn&rsquo;t find any answer. I almost sent them an email but didn&rsquo;t know how to explain myself.</p>
+
+<p>Well I guess I deserve this for saying yesterday that some mysteries are better left unsolved. See you tomorrow.</p>
 
 
 </article>
@@ -98,13 +104,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/2018/09/11/energy-map/"><i class="fa fa-chevron-circle-left"></i> Nation State Energy Policy</a>
+            <a href="http://blog.alden.website/post/100days/Day-40/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 40: Blue_7 in Beijing, GGGG, Evading Government Censures, Server Login Lists, Abandoned Blogs, Shadow Socks, Telegram Chat Rooms, and the Mystery of Using URLs as Passwords</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/localnet-adventure/">Localnet Adventure!! Reference Page <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
@@ -158,35 +160,6 @@
             
             if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
                   disqus();
-            }
-      })();
-</script>
-
-
-<!-- begin comments //-->
-
-    
-
-
-
-<!-- end comments //-->
-
-
-
-
-
-
-</main>
-    <footer>
-        <h6> | 
-            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
-</body>
-
-</html> disqus();
             }
       })();
 </script>
