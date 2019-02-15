@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, </h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-14T22:41:11-05:00">Feb 14, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>I saw that someone was searching for quite a few different types of AV receivers today. I decided to look into one of their searches, this one for Yamaha receiver.</p>
+
+<h2 id="yamaha-av-recievers-on-90-149-252-214">Yamaha AV Recievers on 90.149.252.214</h2>
+
+<p>I&rsquo;m not sure what the typical use-case for remote control of an AV receiver is. Maybe if you run a cafe and you want to make sure your untrustworthy employees don&rsquo;t make the music too loud while you&rsquo;re out? I&rsquo;m sure it&rsquo;s incredibly useful in certain situations, but I can&rsquo;t think of any off the top of my head. All of the Yamaha ones were running a webserver off port 80, so I picked one in Norway and took a look.
+<img src="/images/100Days/Day42/firstlook.png" alt="" />
+Amazing, I have complete control over the volume. I&rsquo;m also capable of flipping the &ldquo;PARTY MODE&rdquo; switch, likely with dire consequences for the immediate surroundings of this device. I could also turn the device off, but that would probably also cut off my connection. There&rsquo;s also a settings button.
+<img src="/images/100Days/Day42/settings.png" alt="" />
+Great, all the goodies. Probably the worst thing someone could do right off the bat is brick it, but if they had a malicious version of the firmware they could install that as well. Looks like this is a RX-A1030 model.
+<img src="/images/100Days/Day42/discontinued.png" alt="" />
+Which is now discontinued. A hymn for those lost, firmware eternally waiting for the next upgrade, never to arrive. I found the user manual, trying to understand why someone would want a device with remote internet control, but it was 150 pages, and I&rsquo;ve got like a life to live.</p>
+
+<p>I did decide to give it an <code>nmap</code> to see if I could find anything else about it.</p>
+
+<pre><code>👻🌵🔮 $ nmap 90.149.252.214
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-02-14 22:40 EST
+Nmap scan report for 214.90-149-252.nextgentel.com (90.149.252.214)
+Host is up (0.12s latency).
+Not shown: 995 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+1024/tcp  open  kdm
+1900/tcp  open  upnp
+8080/tcp  open  http-proxy
+50000/tcp open  ibm-db2
+
+Nmap done: 1 IP address (1 host up) scanned in 76.96 seconds
+</code></pre>
+
+<p>1024 is <a href="https://www.apple.com/airplay/">Apple Airplay</a>. That <a href="https://www.varonis.com/blog/what-is-upnp/">UPnP is open is a little unnerving</a>, and I couldn&rsquo;t find any reason why the receiver would need that service, though it seems that, <a href="https://forum.kodi.tv/showthread.php?tid=199774">based on some forum posts I found</a>, people configure it to talk over that port to connect to their media servers. Risky when you&rsquo;re putting that all over the internet! 50000 is a mystery, <a href="https://blog.webernetz.net/yamaha-r-n500-network-receiver-port-scan/">probably not one worth solving</a>.</p>
+
+<p>Delightfully 8080 is a webserver running a single, beautiful page.
+<img src="/images/100Days/Day42/presentationpage.png" alt="" />
+PRESENTATION PAGE. Completely blank other than that.</p>
+
+<p>If only all websites were so well thought out. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-41/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 41: Mining for Innovation in Abu Dhabi, Trapped in the Multiverse of Project Validation, Haunted by the Lightbulb of Ideas, Tasked with an Eternity of Teamwork Communication Adjustment</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Feb 2019 23:19:12 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 22:41:11 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, </title>
+      <link>http://blog.alden.website/post/100days/Day-42/</link>
+      <pubDate>Thu, 14 Feb 2019 22:41:11 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-42/</guid>
+      <description>I saw that someone was searching for quite a few different types of AV receivers today. I decided to look into one of their searches, this one for Yamaha receiver.
+Yamaha AV Recievers on 90.149.252.214 I&amp;rsquo;m not sure what the typical use-case for remote control of an AV receiver is. Maybe if you run a cafe and you want to make sure your untrustworthy employees don&amp;rsquo;t make the music too loud while you&amp;rsquo;re out?</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 41: Mining for Innovation in Abu Dhabi, Trapped in the Multiverse of Project Validation, Haunted by the Lightbulb of Ideas, Tasked with an Eternity of Teamwork Communication Adjustment</title>
