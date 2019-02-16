@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 25: Helping Strangers in Singapore</h1>
+    <h1>Shodan Stories Day 43: Jamming Out in Centerville, Bundesliga Fans, and the Discreet Charm of the Presentation Page</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-01-28T16:34:22-05:00">Jan 28, 2019</time>
+            <time class="post-date" datetime="2019-02-15T21:50:06-05:00">Feb 15, 2019</time>
         </li>
         
         
@@ -77,31 +77,48 @@
 
         
 
-        <li>3 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
     
 
-<p>Today I saw someone searching for &ldquo;SingTel&rdquo;, and had given a description of the search saying &ldquo;what? no auth? W o a h&rdquo;. Pretty compelling stuff, so I gave it a search myself. The actual query was a little more complicated, &ldquo;Server: Arcadyan httpd 1.0 200 OK org:&ldquo;Singtel Fibre Broadband&rdquo; &ldquo;.</p>
+<p>I decided to double dip on AV receivers since someone was going so deep on them the past few days. Today I decided to look at <a href="https://www.pioneerelectronics.com/PUSA/">Pioneer</a>.</p>
 
-<h2 id="an-unsecured-router-on-219-74-62-124">An Unsecured Router on 219.74.62.124</h2>
+<h2 id="pioneer-av-receiver-on-167-142-82-87">Pioneer AV Receiver on 167.142.82.87</h2>
 
-<p>Every result for the search was in Singapore, which I realized is because <a href="https://en.wikipedia.org/wiki/Singtel">Singtel is one of the largest ISPs and mobile network providers in Singapore.</a> I figured out that the search was for routers that had been provided by Singtel to its customers, probably for some kind of monthly fee and a huge installation cost (important PSA: never use the ISPs router! buy your own!). Shockingly the default on the routers seemed to be to have no password and to have the router configuration page accessible via the static IP address.
-<img src="/images/100Days/Day25/therouter.png" alt="" /></p>
+<p>I mostly know pioneer as a manufacturer of <a href="https://www.pioneerdj.com/en-us/product/player/cdj-2000nxs2/black/overview/">CDJs</a>, and had no idea that they had a diverse product line beyond DJ equipment. They make bike equipment and accessories, a wide variety of audio equipment, and some kinds of computer electronics. I found a Pioneer AV receiver in Ohio, in a small town just north of Cincinnati, Shodan indicated it was just running a webserver on port 80.
+<img src="/images/100Days/Day43/firstlook.png" alt="" />
+Nothing too interesting, although they named the device <a href="https://en.wikipedia.org/wiki/Eintracht_Frankfurt">Eintracht Frankfurt</a>, I assume after the German soccer team. There is a link to the owner&rsquo;s Pandora account but it&rsquo;s through a login. However there is the option to upload the firmware, a pretty damming security hole. I also found that this is a VSX-1023 model.
+<img src="/images/100Days/Day43/vsx.png" alt="" />
+Looks like it&rsquo;s still made! You can buy one for just $400</p>
 
-<p>Meaning that I could&hellip; see the WiFi network name and password, see what devices were connected to the network, set up port forwarding, turn their computer into a botnet, spy on all of their traffic, etc. Least interestingly I could find out that their router model was a <a href="https://www.singtel.com/personal/support/broadband/routers-ont/arcadyan-ac-plus-guide">&ldquo;Singtel WiFi Gigabit Router AC Plus&rdquo;</a>. Now I didn&rsquo;t want to do any of that, so I decided to do something nice instead. I saw that their router uptime was only a little over an hour, and I realized that nobody else had likely gotten here before me, but that once they started arriving things would go bad for whoever owned this. So I set a password on the device.
-<img src="/images/100Days/Day25/password.png" alt="" />
-I checked what the WiFi password was and set it to that, thinking that that would likely be their first guess if prompted with a password request that they were not expecting. Most people never check this configuration page after setting up their router anyway, and this way hopefully they never will have to.</p>
+<p>I decided to check on <code>nmap</code></p>
 
-<p>I couldn&rsquo;t entirely help myself from poking around though, and I found that this router showed what other WiFi networks were in the vicinity so that you could pick the best channel on which to run your own network. Now the WiFi network they had was a fairly bland default, but I did notice a couple of networks that weren&rsquo;t so bland.
-<img src="/images/100Days/Day25/signals.png" alt="" />
-I decided to check for amknet and LaiFamily in <a href="https://wigle.net/">WiGLE</a>, and found that there was just one lat-longitude combination that had both of those networks in Singapore.
-<img src="/images/100Days/Day25/thehome.png" alt="" />
-And here it is via Google Maps. The router&rsquo;s in one of those buildings.</p>
+<pre><code>👻🌵🔮 $ nmap 167.142.82.87
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-02-15 22:13 EST
+Stats: 0:00:02 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Nmap scan report for blfd-4-167-142-82-87.dsl.netins.net (167.142.82.87)
+Host is up (0.066s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+1024/tcp open  kdm
+1900/tcp open  upnp
+8080/tcp open  http-proxy
 
-<p>Looks nice. They&rsquo;re right by a country club. See you tomorrow.</p>
+Nmap done: 1 IP address (1 host up) scanned in 78.23 seconds
+</code></pre>
+
+<p>The https page isn&rsquo;t actually showing anything and 1024 is Apple Play again. 1900 is probably for integration with miscellaneous types of media services.</p>
+
+<p>Shockingly though, and truly inexplicable for me, the 8080 port is running the exact same webservice as the Yamaha device from yesterday.
+<img src="/images/100Days/Day43/presentation.png" alt="" />
+PRESENTATION PAGE. Again! These are from different manufacturers! I can&rsquo;t find anything about this except for <a href="https://www.avsforum.com/forum/90-receivers-amps-processors/1456710-official-pioneer-sc-1222-k-owners-thread-4.html">similarly confused people on forums</a>. I read the manual, looked in source code search engines, I&rsquo;ve done everything I could think of. I feel like I&rsquo;m trapped in a Buñuel film.</p>
+
+<p>Maybe everything I find after this will have a PRESENTATION PAGE. Maybe I&rsquo;ll wake up tomorrow and the New York Times headline will be PRESENTATION PAGE and I&rsquo;ll end up getting PRESENTATION PAGE on my tombstone. See you tomorrow.</p>
 
 
 </article>
@@ -111,13 +128,9 @@ And here it is via Google Maps. The router&rsquo;s in one of those buildings.</p
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-24/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 24: Watching the News in Cheongju, IPTime Routers, Synology Yet Again, and TVheadend</a>
+            <a href="http://blog.alden.website/post/100days/Day-42/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, and Incredible Web Design</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-26/">Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

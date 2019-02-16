@@ -6,13 +6,23 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Feb 2019 22:41:11 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 15 Feb 2019 21:50:06 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, </title>
+      <title>Shodan Stories Day 43: Jamming Out in Centerville, Bundesliga Fans, and the Discreet Charm of the Presentation Page</title>
+      <link>http://blog.alden.website/post/100days/Day-43/</link>
+      <pubDate>Fri, 15 Feb 2019 21:50:06 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-43/</guid>
+      <description>I decided to double dip on AV receivers since someone was going so deep on them the past few days. Today I decided to look at Pioneer.
+Pioneer AV Receiver on 167.142.82.87 I mostly know pioneer as a manufacturer of CDJs, and had no idea that they had a diverse product line beyond DJ equipment. They make bike equipment and accessories, a wide variety of audio equipment, and some kinds of computer electronics.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, and Incredible Web Design</title>
       <link>http://blog.alden.website/post/100days/Day-42/</link>
       <pubDate>Thu, 14 Feb 2019 22:41:11 -0500</pubDate>
       
