@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 44: Dealing with the Devil in Quebec, Repetitive Jetpack Death, Dr. Cheetos&#39; Pain Chamber, Ludum Dare 43, Unity Web GL, and What Happened to Dave?</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-16T20:51:47-05:00">Feb 16, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Saw a great search today, this for <a href="https://unity3d.com/">Unity Engine Web Players</a>. Unity is a hugely popular 3D game engine, primarily used for making video games but has a wide range of applications, including workflow simulation, architectural prototyping, and filmmaking. Typically Unity outputs run as stand alone applications, but it also has the ability to output applications for the web via <a href="https://en.wikipedia.org/wiki/WebGL">Web GL</a>.</p>
+
+<h2 id="unity-web-gl-on-52-15-155-102">Unity Web GL on 52.15.155.102</h2>
+
+<p>There were about 600 results for this search and I picked the first result I found. It was just running an HTTPS webserver on 443.
+<img src="/images/100Days/Day44/firstlook.png" alt="" />
+Cute! It&rsquo;s a seemingly really simple game called &ldquo;Project Jetpack&rdquo;. You have to navigate a little jetpack-wearing person through a bunch of planks all floating in space. Touching anything but the safe beginning and ending pads yields a gratuitous and immediate death.
+<img src="/images/100Days/Day44/level2die.png" alt="" />
+I ended up getting to about level 8 or 9 but it got too hard for me once the planks started moving all over the place. I died many many times along the way with my little Lego-esque avatar spewing heaps of pixelated blood.</p>
+
+<p>I could see from <code>host</code> that this was an <a href="https://aws.amazon.com/ec2/">Amazon EC2 instance</a>, and I assumed that someone in the middle of developing this game put it up there to quickly make it accessible for &ldquo;user testing&rdquo;.</p>
+
+<pre><code>➜  ~ host 52.15.155.102
+102.155.15.52.in-addr.arpa domain name pointer ec2-52-15-155-102.us-east-2.compute.amazonaws.com.
+</code></pre>
+
+<p>Checking the SSL certificate revealed something interesting.
+<img src="/images/100Days/Day44/https.png" alt="" />
+&ldquo;drcheetos.hopto.org&rdquo;, an extremely legit url, doesn&rsquo;t seem to exist as a web page. &ldquo;hopto.org&rdquo; is the page for a business that allows you to have a dynamic IP address connected to a URL of the structure <em>myurl</em>.hopto.org.
+<img src="/images/100Days/Day44/hopto.png" alt="" />
+So clearly Dr Cheetos had been a customer of theirs and likely reused an old SSL certificate for their Amazon EC2 server.</p>
+
+<p>Dr Cheetos was not hard to track down.
+<img src="/images/100Days/Day44/ludumdare.png" alt="" />
+They have a profile on <a href="https://ldjam.com/">Ludum Dare</a>, perhaps the most storied and famous <a href="https://en.wikipedia.org/wiki/Game_jam">game jam</a> competitions in the world. They participated in the 43rd game jam, not with Project Jetpack, but with a game called My Little Daily Sacrifice.
+<img src="/images/100Days/Day44/mydailysacrifice.png" alt="" />
+<img src="/images/100Days/Day44/mydailysacrifice2.png" alt="" />
+It&rsquo;s a management-type game where you have to hire people for your company so that you can uh sacrifice them and hand their soul over to satan, all while trying to get enough money together to hire a lawyer to wrangle you out of this raw deal. Satan seems to demand about one soul a day on average so it&rsquo;s a lot of turnover. All your little cute pixel graphics employees sit at their desks making you money but when you sacrifice an employee their physical body is turned into a puff of black smoke as satan drags their eternal soul down to hell for eons of unimaginable suffering and torment. Talk about a case of the Mondays! None of the other employees ever seem to notice anything happening or worry about their cubicle neighbors being blinked out of existence. Seemingly the only consequence is that the murdered employee doesn&rsquo;t make you any money anymore so you&rsquo;ll need to hire someone new to keep profits moving.</p>
+
+<p>I guess in this economy you take whatever job you can get. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-43/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 43: Jamming Out in Centerville, Bundesliga Fans, and the Discreet Charm of the Presentation Page</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
