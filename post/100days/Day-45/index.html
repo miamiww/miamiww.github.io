@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 45: Filferro in Empuriabrava, .NET Games, eMule, Pokémon Armageddon, and the Joy Only Known to Those Who Keep Their Campsites Cow Free</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-17T17:56:03-05:00">Feb 17, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Another day another search. Today I found a shared search for &ldquo;emule&rdquo;. &ldquo;What&rsquo;s an emule?&rdquo; I asked myself, and dove into the search.</p>
+
+<h2 id="an-emule-on-87-216-176-220">An eMule on 87.216.176.220</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/EMule">eMule</a> is an &ldquo;electronic mule&rdquo;, duh. It&rsquo;s a kind of peer to peer software, different from bittorent, but I&rsquo;m not sure exactly how. Every explanation I&rsquo;ve found on how it works is a bit over my head, or at least over my attention span. It seemed like eMule was mostly popular in Europe, and I picked a result in Spain with eMule running on port 8000.
+<img src="/images/100Days/Day45/firstlook.png" alt="" />
+eMule has a truly incredible mascot. Unfortunately there is not a ton to do with eMule since it requires a login. I did find, however, that this IP was also running a normal web page on port 80, with the domain name &ldquo;filferro.cat&rdquo;.</p>
+
+<pre><code>➜  ~ host filferro.cat
+filferro.cat has address 87.216.176.220
+</code></pre>
+
+<p><img src="/images/100Days/Day45/filfero.png" alt="" />
+This appears to be the portfolio page of a very unusual indie game designer. Someone who eschews easy out of the box game engines, common programming tools, and newfangled gameplay mechanics. No, this person prefers to get back to the basics, back to the real, making Windows XP games with <a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET</a> and <a href="https://en.wikipedia.org/wiki/Visual_Basic">Visual Basic</a>
+<img src="/images/100Days/Day45/pokemon.png" alt="" />
+That game description is in Catalan but I&rsquo;ll translate for you.</p>
+
+<blockquote>
+<p><strong>Introduction</strong></p>
+
+<p>Coming from the outer space, fearless foreigners dressed in Pokémon attempts to live in peace and freedom and, above all, respectful of the constitution of our beloved planet Earth. The World Government, headed by the insigne Josep Maria Asnar, sends you with a clear mission: to destroy the aliens - Pokémon &hellip; because as our constitution says: &ldquo;Everyone who is against the constitution is an alien - Pokémon &ldquo;</p>
+
+<p><strong>Technical characteristics</strong></p>
+
+<p>Game of ships where it will be necessary to end the aliens - Pokémon. The game has been developed in Visual Basic ™ (it is installed with the Visual Basic ™ dll ) and is accompanied by the source code.
+You can save and retrieve games and set the game.</p>
+</blockquote>
+
+<p>Yes you play as a space shuttle and your goal is to shoot little invading Pokemon sprites with your space shuttle laser gun.</p>
+
+<p>There is also a game named Wet Camps.
+<img src="http://87.216.176.220/images/games/Campes.jpg" alt="" /></p>
+
+<blockquote>
+<p>Wet camps</p>
+
+<p><em>Based on real events!</em>
+The rain has become the enemy of the camps.
+Tents are shattered and you will need to go from colonies!
+Perhaps with the help of an umbrella we can save the situation &hellip;</p>
+</blockquote>
+
+<p>There are about a dozen all equally delightful games, with varying levels of copyright infringement, from a game about picking mushrooms that&rsquo;s a knockoff of <a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)">Minesweeper</a> (don&rsquo;t pick the poisonous ones!) to a truly bonkers version of Tetris.
+<img src="http://87.216.176.220/images/games/ifn-Tris.jpg" alt="" /></p>
+
+<p>My favorite my actually be another one of their camping based games, this one named, in what I can only hope is a nod to Game of Thrones, Game of Cows.
+<img src="http://87.216.176.220/images/games/Tifa.png" alt="" /></p>
+
+<blockquote>
+<p><strong>Introduction</strong></p>
+
+<p><em>Based on real events!</em></p>
+
+<p>Our friends, cows do not understand rental or camping contracts, nor do they know that it is a relaxation (even if it is splendid). It is necessary, then, to stomach them without slicing the stores or tamping us into the campsite.
+We invite you to an exciting adventure, after some cows &ldquo;bojes&rdquo; &hellip;</p>
+
+<p><strong>Technical characteristics</strong></p>
+
+<p>It is about pushing the cows out of the campsite.</p>
+</blockquote>
+
+<p>Truly back to basics stuff here. Video games stripped down to their bare elements: cows, falling blocks, Pokémon. Seeing these games brought back memories of playing Minesweeper for <em>hours</em> as a child, of eating a grilled cheese on a rainy day and just sitting and playing Oregon Trail and <em>fucking Minesweeper</em> all afternoon. How have we strayed so far from the light?</p>
+
+<p>See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-44/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 44: Dealing with the Devil in Quebec, Repetitive Jetpack Death, Dr. Cheetos&#39; Pain Chamber, Ludum Dare 43, Unity Web GL, and What Happened to Dave?</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

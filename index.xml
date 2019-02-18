@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Feb 2019 20:51:47 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 17:56:03 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 45: Filferro in Empuriabrava, .NET Games, eMule, Pokémon Armageddon, and the Joy Only Known to Those Who Keep Their Campsites Cow Free</title>
+      <link>http://blog.alden.website/post/100days/Day-45/</link>
+      <pubDate>Sun, 17 Feb 2019 17:56:03 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-45/</guid>
+      <description>Another day another search. Today I found a shared search for &amp;ldquo;emule&amp;rdquo;. &amp;ldquo;What&amp;rsquo;s an emule?&amp;rdquo; I asked myself, and dove into the search.
+An eMule on 87.216.176.220 eMule is an &amp;ldquo;electronic mule&amp;rdquo;, duh. It&amp;rsquo;s a kind of peer to peer software, different from bittorent, but I&amp;rsquo;m not sure exactly how. Every explanation I&amp;rsquo;ve found on how it works is a bit over my head, or at least over my attention span.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 44: Dealing with the Devil in Quebec, Repetitive Jetpack Death, Dr. Cheetos&#39; Pain Chamber, Ludum Dare 43, Unity Web GL, and What Happened to Dave?</title>
