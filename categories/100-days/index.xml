@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 17:56:03 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 10:37:03 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing</title>
+      <link>http://blog.alden.website/post/100days/Day-46/</link>
+      <pubDate>Mon, 18 Feb 2019 10:37:03 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-46/</guid>
+      <description>Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&amp;rsquo;s a GPON you wonder? Let&amp;rsquo;s find out together.
+VNPT GPON ONT on 14.161.15.80 GPON stands for Gigabit Passive Optical Network. Though the real details of how they work escape me, it seems that they are a commonly used device by ISPs to separate out cable traffic between customers, frequently referred to as the &amp;ldquo;last mile&amp;rdquo; between the ISP and the end customer.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 45: Filferro in Empuriabrava, .NET Games, eMule, Pokémon Armageddon, and the Joy Only Known to Those Who Keep Their Campsites Cow Free</title>
@@ -17,8 +27,8 @@
       <pubDate>Sun, 17 Feb 2019 17:56:03 -0500</pubDate>
       
       <guid>http://blog.alden.website/post/100days/Day-45/</guid>
-      <description>Another day another search. Today I found a shared search for &amp;ldquo;emule&amp;rdquo;. &amp;ldquo;What&amp;rsquo;s an emule?&amp;rdquo; I asked myself, and dove into the search.
-An eMule on 87.216.176.220 eMule is an &amp;ldquo;electronic mule&amp;rdquo;, duh. It&amp;rsquo;s a kind of peer to peer software, different from bittorent, but I&amp;rsquo;m not sure exactly how. Every explanation I&amp;rsquo;ve found on how it works is a bit over my head, or at least over my attention span.</description>
+      <description>Another day another search. Today I found a shared search for &amp;ldquo;emule&amp;rdquo;. &amp;ldquo;What&amp;rsquo;s an emule?&amp;rdquo; I asked myself, and dove in.
+An eMule on 87.216.176.220 eMule is an &amp;ldquo;electronic mule&amp;rdquo;, duh. It&amp;rsquo;s a kind of peer to peer software, different from bittorent, but I&amp;rsquo;m not sure exactly how. Every explanation I&amp;rsquo;ve found on how it works is a bit over my head, or at least over my attention span. It seemed like eMule was mostly popular in Europe, and I picked a result in Spain with eMule running on port 8000.</description>
     </item>
     
     <item>

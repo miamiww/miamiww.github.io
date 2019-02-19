@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-18T10:37:03-05:00">Feb 18, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&rsquo;s a GPON you wonder? Let&rsquo;s find out together.</p>
+
+<h2 id="vnpt-gpon-ont-on-14-161-15-80">VNPT GPON ONT on 14.161.15.80</h2>
+
+<p>GPON stands for <a href="https://www.multicominc.com/solutions/technologies/gpon/">Gigabit Passive Optical Network</a>. Though the real details of how they work escape me, it seems that they are a commonly used device by ISPs to separate out cable traffic between customers, frequently referred to as the &ldquo;last mile&rdquo; between the ISP and the end customer. If you could follow your internet line out of your apartment you&rsquo;d might find that it attaches to one of these. They look like beefier home routers. I picked the first result I found on Shodan, this one from Vietnam.
+<img src="/images/100Days/Day46/firstlook.png" alt="" />
+It was running a web login on port 80. The title of the login page indicated that it was a GPON ONT, ONT standing for Optical Network Terminal, which I think means its a device to login to a GPON, again the descriptions online were deeply technical and assumed a lot of knowledge that I don&rsquo;t have. It was also running a telnet server on 23, and interestingly a DNS server on 53. That makes sense if it has to figure out where to send traffic. I decided to check <code>host</code>.</p>
+
+<pre><code>➜  ~ host 14.161.15.80
+80.15.161.14.in-addr.arpa domain name pointer static.vnpt.vn.
+</code></pre>
+
+<p>static.vnpt.vn, interestingly, does not follow back to the IP.</p>
+
+<pre><code>➜  ~ host static.vnpt.vn
+static.vnpt.vn has address 203.162.0.78
+</code></pre>
+
+<p><a href="https://en.wikipedia.org/wiki/VNPT">VNPT</a> is the second biggest company in Vietnam, a government-owned telecom giant that services the country. Again it makes sense that an ISP is running this GPON.
+<img src="/images/100Days/Day46/vnptb.png" alt="" />
+I have a hunch that VNPT has just given static.vnpt.vn to all of its static IPs that it wants to keep track of, which would explain why I can&rsquo;t get back to the original IP address from the url.</p>
+
+<p>I at least half confirmed this with <code>traceroute</code>. As you can see the last six IPs are all under static.vnpt.vn</p>
+
+<pre><code>➜  ~ traceroute 14.161.15.80
+traceroute to 14.161.15.80 (14.161.15.80), 64 hops max, 52 byte packets
+ 1  104.156.210.168 (104.156.210.168)  17.293 ms  21.589 ms  16.476 ms
+ 2  104.156.210.145 (104.156.210.145)  25.862 ms  20.676 ms  14.890 ms
+ 3  be5032.rcr24.jfk01.atlas.cogentco.com (38.140.161.137)  21.255 ms  18.065 ms  19.201 ms
+ 4  be2897.ccr42.jfk02.atlas.cogentco.com (154.54.84.213)  8.790 ms  32.817 ms  16.971 ms
+ 5  be3496.ccr31.jfk10.atlas.cogentco.com (154.54.0.142)  21.532 ms  23.978 ms  16.530 ms
+ 6  sprint.jfk10.atlas.cogentco.com (154.54.12.22)  18.141 ms  19.024 ms  16.820 ms
+ 7  144.232.25.231 (144.232.25.231)  30.889 ms  25.545 ms  43.399 ms
+ 8  144.232.14.7 (144.232.14.7)  24.993 ms  26.360 ms  23.946 ms
+ 9  144.232.13.195 (144.232.13.195)  41.530 ms  46.226 ms
+    144.232.15.19 (144.232.15.19)  45.781 ms
+10  144.232.22.142 (144.232.22.142)  59.395 ms  65.012 ms  75.958 ms
+11  144.232.13.83 (144.232.13.83)  94.575 ms  104.589 ms
+    144.232.22.229 (144.232.22.229)  71.012 ms
+12  144.232.13.83 (144.232.13.83)  88.236 ms  79.454 ms
+    144.232.22.163 (144.232.22.163)  84.890 ms
+13  sl-vnpti-936487-0.sprintlink.net (144.223.54.186)  248.406 ms  257.803 ms
+    144.232.22.163 (144.232.22.163)  92.586 ms
+14  static.vnpt.vn (113.171.44.114)  283.990 ms  252.060 ms  314.919 ms
+15  static.vnpt.vn (113.171.44.106)  260.108 ms
+    static.vnpt.vn (113.171.48.142)  306.117 ms
+    static.vnpt.vn (113.171.7.34)  305.441 ms
+16  * static.vnpt.vn (113.171.48.218)  346.234 ms *
+17  static.vnpt.vn (14.161.15.80)  258.466 ms * *
+</code></pre>
+
+<p>I tried to figure out what the device looked like. I went around on their website for awhile before ending up on <a href="http://www.vnpt-technology.vn/ViewDetailContentAction?categoryId=56&amp;contentId=304">this page</a>.
+<img src="/images/100Days/Day46/vnpta.png" alt="" />
+If you take a very close look at the bottom right of that image, you&rsquo;ll see that it is discussing GPONs. Let&rsquo;s take a closer look of the image of that device.
+<img src="/images/100Days/Day46/GW240.png" alt="" />
+Yes! It&rsquo;s called an iGate, model GW240, with the words &ldquo;GPON Optical Network Terminal&rdquo; written on its side.</p>
+
+<p>Like I said, beefier router. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-45/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 45: Filferro in Empuriabrava, .NET Games, eMule, Pokémon Armageddon, and the Joy Only Known to Those Who Keep Their Campsites Cow Free</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
