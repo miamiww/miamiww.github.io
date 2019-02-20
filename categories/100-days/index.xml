@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 10:37:03 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Feb 2019 23:37:04 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 47: Looking at Feet in Tokyo</title>
+      <link>http://blog.alden.website/post/100days/Day-47/</link>
+      <pubDate>Tue, 19 Feb 2019 23:37:04 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-47/</guid>
+      <description>I&amp;rsquo;m busy preparing for a trip today and running errands so a quick one today. I found another Steven Wu webcam entirely by accident, just browsing Shodan&amp;rsquo;s webserver snapshots (see day 38 if Steven Wu doesn&amp;rsquo;t ring a bell). I like the Steven Wu cameras. The very simple interface, the snapshot approach. Feels right.
+IP Camera on 110.5.43.249 Specifically what interested me about this webcam was its area of focus.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing</title>
