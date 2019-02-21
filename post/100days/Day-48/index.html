@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 47: Looking at Feet in Tokyo</h1>
+    <h1>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and </h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-02-19T23:37:04-05:00">Feb 19, 2019</time>
+            <time class="post-date" datetime="2019-02-20T15:47:18-05:00">Feb 20, 2019</time>
         </li>
         
         
@@ -84,21 +84,29 @@
 
     
 
-<p>I&rsquo;m busy preparing for a trip today and running errands so a quick one today. I found another Steven Wu webcam entirely by accident, just browsing Shodan&rsquo;s webserver snapshots (see day 38 if Steven Wu doesn&rsquo;t ring a bell). I like the Steven Wu cameras. The very simple interface, the snapshot approach. Feels right.</p>
+<p>Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.</p>
 
-<h2 id="ip-camera-on-110-5-43-249">IP Camera on 110.5.43.249</h2>
+<h2 id="a-woodchem-production-plant-on-154-126-209-18">A Woodchem Production Plant on 154.126.209.18</h2>
 
-<p>The camera&rsquo;s webserver is running on port 81. Specifically what interested me about this webcam was its area of focus.
-<img src="/images/100Days/Day47/firstlook.png" alt="" />
-Why would anyone want a video feed of this specific angle of this sidewalk? If it&rsquo;s a security camera it won&rsquo;t help much if you can&rsquo;t see most peoples&rsquo; faces. Maybe it&rsquo;s a camera for pedestrian appreciation.
-<img src="/images/100Days/Day47/feet.png" alt="" />
-Wouldn&rsquo;t that be nice. Maybe there is a walking club, or a shoe appreciation society. Maybe a group lives in this area and they wear little tags on their shoes, and their friends and relatives check in on this camera hoping to catch a glimpse of a familiar foot.
-<img src="/images/100Days/Day47/feet2.png" alt="" />
-Maybe it&rsquo;s a researcher, an urban planner, doing a study on pedestrian traffic, just on this particular sidewalk. There might be a data logger attached, the data could be capture via other means, but the research team thought it&rsquo;d be cute if they could check in and peep at their spot of pavement.
-<img src="/images/100Days/Day47/feet3.png" alt="" />
-Maybe, though, it&rsquo;s just someone&rsquo;s driveway. Maybe the camera got bent, and nobody&rsquo;s checked it in awhile. Maybe a homeowner set it up years ago and forgot about it, the house has been sold, the new owners don&rsquo;t know the IP. No eager shoe enthusiasts. No one hoping to spot their friends and relatives. No wistful researchers.
-<img src="/images/100Days/Day47/feet4.png" alt="" />
-We&rsquo;ll never know. See you tomorrow.</p>
+<p>I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa.
+<img src="/images/100Days/Day48/firstlook.png" alt="" />
+On port 80 it was running a login for a <a href="https://www.dahuasecurity.com/">Dahua</a> Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!) but in researching them I also found that their products are infamous for <a href="https://www.hackread.com/bashlite-malware-linux-iot-ddos-botnet/">being used for botnets</a>.</p>
+
+<p>There was also a service running on port 1723, I couldn&rsquo;t tell exactly what it was but in the banner it said:</p>
+
+<pre><code>Firmware: 1
+Hostname: Woodchem-production-plant-CRS
+Vendor: MikroTik
+</code></pre>
+
+<p><a href="https://mikrotik.com/">MikroTik</a> is a manufacturer of routers and other network devices that is <a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/over-200-000-mikrotik-routers-compromised-in-cryptojacking-campaign">also well known</a> for <a href="https://www.zdnet.com/article/thousands-of-mikrotik-routers-are-snooping-on-user-traffic/">getting hacked</a>. So not the best sourcing from this possible woodchem production factory.
+Woodchem by the way both seems to be <a href="http://www.woodchem.fr/en/">a conference</a> about the wood products industry and a <a href="https://www.kap.co.za/portfolio-posts/producing-at-higher-volumes/">company that has invested in South Africa</a>. After reading a few different press releases I think this factory that I found is likely in Piet Retief, run by a company called <a href="http://www.safripol.com/">Safripol</a>, which is a subsidiary of KAP Industrial Holdings Limited, a large industrial multinational.
+<img src="/images/100Days/Day48/safripol.png" alt="" />
+There were several wood related factories in Piet Retief, as its main industry is timber, but I was able to figure out that it&rsquo;s probably this one, as seen from Google maps.
+<img src="/images/100Days/Day48/factory.png" alt="" />
+Their main output is urea-formaldehyde resin, which is then used in the manufacture of processed woods like particle boards.</p>
+
+<p>I wonder where those particle boards go? See you tomorrow.</p>
 
 
 </article>
@@ -108,13 +116,9 @@ We&rsquo;ll never know. See you tomorrow.</p>
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-46/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing</a>
+            <a href="http://blog.alden.website/post/100days/Day-47/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 47: Looking at Feet in Tokyo</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-48/">Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and  <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

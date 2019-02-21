@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Feb 2019 23:37:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 15:47:18 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and </title>
+      <link>http://blog.alden.website/post/100days/Day-48/</link>
+      <pubDate>Wed, 20 Feb 2019 15:47:18 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-48/</guid>
+      <description>Kind of a weird one today. I didn&amp;rsquo;t like any of the searches I&amp;rsquo;d seen so I decided to search for anything that had &amp;ldquo;production plant&amp;rdquo; in the title.
+A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 47: Looking at Feet in Tokyo</title>
