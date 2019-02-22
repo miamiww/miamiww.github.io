@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board</h1>
+    <h1>Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-02-20T15:47:18-05:00">Feb 20, 2019</time>
+            <time class="post-date" datetime="2019-02-21T22:23:45-08:00">Feb 21, 2019</time>
         </li>
         
         
@@ -84,29 +84,36 @@
 
     
 
-<p>Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.</p>
+<p>Another boring day on the shared searches. I decided to search for IPs with &ldquo;dev environment&rdquo; in the title, hoping to find something good.</p>
 
-<h2 id="a-woodchem-production-plant-on-154-126-209-18">A Woodchem Production Plant on 154.126.209.18</h2>
+<h2 id="ace-attorney-online-on-163-172-128-52">Ace Attorney Online on 163.172.128.52</h2>
 
-<p>I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa.
-<img src="/images/100Days/Day48/firstlook.png" alt="" />
-On port 80 it was running a login for a <a href="https://www.dahuasecurity.com/">Dahua</a> Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!) but in researching them I also found that their products are infamous for <a href="https://www.hackread.com/bashlite-malware-linux-iot-ddos-botnet/">being used for botnets</a>.</p>
+<p>Many of the results were pretty interesting and I think it&rsquo;s a fruitful search overall, but one result in France stood out to me.
+<img src="/images/100Days/Day49/firstlook.png" alt="" />
+It&rsquo;s the &ldquo;developer environment&rdquo; for a webpage running on port 8080 dedicated to fan-made versions of the popular <a href="https://en.wikipedia.org/wiki/Ace_Attorney">Ace Attorney</a> games. In each Ace Attorney game you play as a lawyer who has to &ldquo;solve the case&rdquo;, they seem to be a bit adventure and a bit puzzle solving with very low legal realism. In some ways it&rsquo;s an inversion of a detective story, the game is usually won once you present evidence that you&rsquo;ve uncovered that proves your client&rsquo;s innocence. From Wikipedia:</p>
 
-<p>There was also a service running on port 1723, I couldn&rsquo;t tell exactly what it was but in the banner it said:</p>
+<blockquote>
+<p>The story follows Phoenix Wright, a rookie defense attorney who attempts to have his clients declared &ldquo;not guilty&rdquo;.</p>
+</blockquote>
 
-<pre><code>Firmware: 1
-Hostname: Woodchem-production-plant-CRS
-Vendor: MikroTik
-</code></pre>
+<p>There have been 11 official versions of this game but on this website they&rsquo;ve made way more, using all the assets from the official games to make their own, and sometimes make their own assets. Well I should say, they are doing that on the real version of the website, on port 80. 8080 is a little sparse, I think they just use it to test the formatting of the page without any of the user-generated content.
+<img src="/images/100Days/Day49/empty.png" alt="" />
+<img src="/images/100Days/Day49/full.png" alt="" /></p>
 
-<p><a href="https://mikrotik.com/">MikroTik</a> is a manufacturer of routers and other network devices that is <a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/over-200-000-mikrotik-routers-compromised-in-cryptojacking-campaign">also well known</a> for <a href="https://www.zdnet.com/article/thousands-of-mikrotik-routers-are-snooping-on-user-traffic/">getting hacked</a>. So not the best sourcing from this possible woodchem production factory.
-Woodchem by the way both seems to be <a href="http://www.woodchem.fr/en/">a conference</a> about the wood products industry and a <a href="https://www.kap.co.za/portfolio-posts/producing-at-higher-volumes/">company that has invested in South Africa</a>. After reading a few different press releases I think this factory that I found is likely in Piet Retief, run by a company called <a href="http://www.safripol.com/">Safripol</a>, which is a subsidiary of KAP Industrial Holdings Limited, a large industrial multinational.
-<img src="/images/100Days/Day48/safripol.png" alt="" />
-There were several wood related factories in Piet Retief, as its main industry is timber, but I was able to figure out that it&rsquo;s probably this one, as seen from Google maps.
-<img src="/images/100Days/Day48/factory.png" alt="" />
-Their main output is urea-formaldehyde resin, which is then used in the manufacture of processed woods like particle boards.</p>
+<p>On the top you see the developer page, on the bottom is the live page.
+<img src="/images/100Days/Day49/forums.png" alt="" /></p>
 
-<p>I wonder where those particle boards go? See you tomorrow.</p>
+<p>There&rsquo;s also forums (both in french and in english) and of course, the games themselves.
+<img src="/images/100Days/Day49/girl.png" alt="" />
+<img src="/images/100Days/Day49/wright.png" alt="" />
+<img src="/images/100Days/Day49/gavin.png" alt="" />
+<img src="/images/100Days/Day49/mia.png" alt="" /></p>
+
+<p>I played them a bunch. They&rsquo;re all over the map in terms of quality, some are just bizarre fanfictions, some try to be &ldquo;real&rdquo; games. I&rsquo;m amazed by the dedication, many of them have multiple installments and their own mini franchises. Some of them say they were in development for <em>over seven years</em>! It seems like a really passionate community.
+<img src="/images/100Days/Day49/reddit.png" alt="" />
+I found some stuff about it on Reddit. Seems like it&rsquo;s got a pretty big following among the Ace Attorney Fandom. The game assets are pretty simple so it makes sense that it&rsquo;d be easy to remix like this.</p>
+
+<p>Attorney Online, the other site mentioned, looks pretty interesting also. But that&rsquo;s for another time. See you tomorrow.</p>
 
 
 </article>
@@ -116,13 +123,9 @@ Their main output is urea-formaldehyde resin, which is then used in the manufact
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-47/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 47: Looking at Feet in Tokyo</a>
+            <a href="http://blog.alden.website/post/100days/Day-48/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-49/">Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

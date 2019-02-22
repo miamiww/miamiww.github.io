@@ -6,13 +6,23 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 15:47:18 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 21 Feb 2019 22:23:45 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and </title>
+      <title>Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris</title>
+      <link>http://blog.alden.website/post/100days/Day-49/</link>
+      <pubDate>Thu, 21 Feb 2019 22:23:45 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-49/</guid>
+      <description>Another boring day on the shared searches. I decided to search for IPs with &amp;ldquo;dev environment&amp;rdquo; in the title, hoping to find something good.
+Ace Attorney Online on 163.172.128.52 Many of the results were pretty interesting and I think it&amp;rsquo;s a fruitful search overall, but one result in France stood out to me. It&amp;rsquo;s the &amp;ldquo;developer environment&amp;rdquo; for a webpage running on port 8080 dedicated to fan-made versions of the popular Ace Attorney games.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board</title>
       <link>http://blog.alden.website/post/100days/Day-48/</link>
       <pubDate>Wed, 20 Feb 2019 15:47:18 -0500</pubDate>
       
