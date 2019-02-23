@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Feb 2019 22:23:45 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Feb 2019 10:36:25 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 50: Pondering a Loading Bay in Saint Petersburg</title>
+      <link>http://blog.alden.website/post/100days/Day-50/</link>
+      <pubDate>Fri, 22 Feb 2019 10:36:25 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-50/</guid>
+      <description>To celebrate my 50th day and the fact that there haven&amp;rsquo;t been any interesting new searches the past few days, I went to find an open RTSP video stream from an IP camera.
+Security Camera on 85.143.138.242 Unfortunately after searching for awhile I only found one open stream, from Russia, and it wasn&amp;rsquo;t particularly interesting. Definitely a warehouse or factory or some kind of industrial building. If only I could make out that sign in the upper corner.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris</title>
