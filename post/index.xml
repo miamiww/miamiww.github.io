@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Feb 2019 10:36:25 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 07:29:11 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala</title>
+      <link>http://blog.alden.website/post/100days/Day-51/</link>
+      <pubDate>Sat, 23 Feb 2019 07:29:11 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-51/</guid>
+      <description>A quick webcam day as I was busy with a conference most of the day.
+A Yawcam on 85.224.37.79 This time I went looking for &amp;ldquo;yawcam&amp;rdquo;, a webcam server software whose name stands for Yet Another Webcam. Like most free DIY webcam servers the default seems to be &amp;ldquo;completely insecure&amp;rdquo;, and I found quite a few interesting cameras, but chose one in Sweden that was running on port 8888. I love this because this person has so clearly come up with the exact perfect hack for their needs.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 50: Pondering a Loading Bay in Saint Petersburg</title>

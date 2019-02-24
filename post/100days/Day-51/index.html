@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 50: Pondering a Loading Bay in Saint Petersburg</h1>
+    <h1>Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-02-22T10:36:25-08:00">Feb 22, 2019</time>
+            <time class="post-date" datetime="2019-02-23T07:29:11-08:00">Feb 23, 2019</time>
         </li>
         
         
@@ -77,23 +77,34 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
     
 
-<p>To celebrate my 50th day and the fact that there haven&rsquo;t been any interesting new searches the past few days, I went to find an open RTSP video stream from an IP camera.</p>
+<p>A quick webcam day as I was busy with a conference most of the day.</p>
 
-<h2 id="security-camera-on-85-143-138-242">Security Camera on 85.143.138.242</h2>
+<h2 id="a-yawcam-on-85-224-37-79">A Yawcam on 85.224.37.79</h2>
 
-<p>Unfortunately after searching for awhile I only found one open stream, from Russia, and it wasn&rsquo;t particularly interesting.
-<img src="/images/100Days/Day50/snow.jpeg" alt="" />
-Definitely a warehouse or factory or some kind of industrial building. If only I could make out that sign in the upper corner. Since I was getting this stream via RTSP on my VLC player I didn&rsquo;t have any of the usual web server clues to go on, and none of their other ports were accessible (only 554, the typical RTSP port was open).</p>
+<p>This time I went looking for <a href="https://www.yawcam.com/">&ldquo;yawcam&rdquo;</a>, a webcam server software whose name stands for Yet Another Webcam.
+<img src="/images/100Days/Day51/yawcam.png" alt="" /></p>
 
-<p>There wasn&rsquo;t any activity on the camera after a few minutes and well sometimes you get the feeling that life&rsquo;s either too short or too long to be staring at snowy Russian loading bays.
-See you tomorrow.</p>
+<p>Like most free DIY webcam servers the default seems to be &ldquo;completely insecure&rdquo;, and I found quite a few interesting cameras, but chose one in Sweden that was running on port 8888.
+<img src="/images/100Days/Day51/weather.png" alt="" />
+I love this because this person has so clearly come up with the exact perfect hack for their needs. Why do they remotely need to see the temperature and weather of this room I do not know, but they are able to from wherever they might be. In the background however I see what seems to be a child&rsquo;s room, a guess I make only because of the stuffed animal on the floor.</p>
+
+<p>Greater questions arise. Is this actually the indoor temperature? There is an image of a raincloud on it and the word FORECAST (you typically don&rsquo;t get an indoor forecast), but these temperatures don&rsquo;t seem to be the forecast for Uppsala Sweden, where it&rsquo;s a fair bit colder than 15C for the next few days. On the bottom the device has the name &ldquo;Anticimex&rdquo;. Anticimex is a <a href="https://en.wikipedia.org/wiki/Anticimex">multinational pest control company</a>, which doesn&rsquo;t seem like they should be manufacturing temperature sensors.
+<img src="/images/100Days/Day51/thermostat.png" alt="" />
+It looks like in Sweden&rsquo;s Anticimex retailer <em>does</em> have different kind of temperature sensors, but no weather forecast device, and nothing that looks just like this.</p>
+
+<p>Maybe it&rsquo;s just an older model? Using the <a href="https://web.archive.org/web/20180105091953/https://shop.anticimex.com/vatten-och-fukt/digitalfuktmatare">Internet Archive</a> I was able to track down this exact device, a multi zone weather station made in conjunction with <a href="https://store.oregonscientific.com/us/">Oregon Scientific</a>.
+<img src="/images/100Days/Day51/older.png" alt="" /></p>
+
+<p>No explanation for why it calls it a &ldquo;forecast&rdquo;, but it seems to be for measuring multiple rooms in your house, coming with several sensors and the one digital display.</p>
+
+<p>I guess it wasn&rsquo;t such a quick one after all. See you tomorrow.</p>
 
 
 </article>
@@ -103,13 +114,9 @@ See you tomorrow.</p>
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-49/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris</a>
+            <a href="http://blog.alden.website/post/100days/Day-50/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 50: Pondering a Loading Bay in Saint Petersburg</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-51/">Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
