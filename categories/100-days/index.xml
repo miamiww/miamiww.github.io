@@ -6,13 +6,23 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Feb 2019 07:29:11 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 23:48:26 -0800</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala</title>
+      <title>Shodan Stories Day 52: The Littleborough Losers in Ramsgate, Having a Few Pints with the Lads, Fantasy Football Since 1995, Rick&#39;s Footy Challenge, and Wayne Rooney the True Ledge</title>
+      <link>http://blog.alden.website/post/100days/Day-52/</link>
+      <pubDate>Sun, 24 Feb 2019 23:48:26 -0800</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-52/</guid>
+      <description>I saw an amazing search on Shodan today, it was just named &amp;ldquo;self-explanatory&amp;rdquo; and the search was just for the word &amp;ldquo;losers&amp;rdquo;. How could I say no?
+Littleborough Losers on 94.7.201.171 The results were pretty varied, there&amp;rsquo;s apparently a sex kink that has to do with being dominated and called a loser and so quite a few results were communities related to that, but I found a result in England that more closely fits my particular kink: 90s web design.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala, Yawcam, and Multinational Pest Control</title>
       <link>http://blog.alden.website/post/100days/Day-51/</link>
       <pubDate>Sat, 23 Feb 2019 07:29:11 -0800</pubDate>
       
