@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 53: Just a Highway Sign in Los Angeles</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-02-25T19:46:10-05:00">Feb 25, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>I had a red eye flight last night and am deliriously sleepy, and somewhere in this state bubbled up a strong desire to find an electronic highway billboard and read what it said remotely. I read <a href="https://www.skylineproducts.com/">Skyline</a> makes internet connected billboards and use port 161. So I got searching.</p>
+
+<h2 id="a-skyline-sign-on-173-4-137-205">A Skyline Sign on 173.4.137.205</h2>
+
+<p>Skyline manufactures quite a few different kinds of signs, but all of them are related to car transit.
+<img src="/images/100Days/Day53/skyline.png" alt="" /></p>
+
+<p>I found a few dozen results, all of them in the US, and I picked one in Los Angeles, with the thought that as the center of American car culture LA might have some interesting signs.</p>
+
+<p>On port 161 the IP was running a service that used the <a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">Simple Network Management Protocol</a>. I installed a set of <a href="http://snmplabs.com/snmpclitools/snmpget.html">SNMP Python tools</a> to try and see if I could make a request for the contents of the sign, but given my aforementioned sleep deprivation addled state I couldn&rsquo;t figure out how to make it work. I could definitely connect, but then had no idea what kind of flags to use etc and none of the examples I was seeing would work. Maybe it just was refusing me as I wasn&rsquo;t authenticated, who knows. It was also running telnet servers on 23 and 2332, but both of those require logins.
+<img src="/images/100Days/Day53/acemanager.png" alt="" />
+On 9091 and 9443 it was running a login for a <a href="https://www.sierrawireless.com/">Sierra Wireless</a> <a href="https://www.sierrawireless.com/resources/QtrlyNewsletters/Announcements/AceWare_Mar08_Announce/AceWare_Mar08_announce.html">Acemanager AirLink</a> login. If you remember from back on day 32, the Sierra Wireless AirLink is a rugged router for remote outdoor locations.
+<img src="/images/100Days/Day53/behind.png" alt="" />
+That makes sense given that it&rsquo;s a road sign of some kind. I was able to find the contentless xml of what&rsquo;s past the login screen. Even if I could log in, it doesn&rsquo;t look like there would be any clues about what the sign actually said.</p>
+
+<p>I went back and futzed with the SNMP a bit more, but realized that it&rsquo;s not reaching out into the world and reading some random digital street sign that I needed. What I needed was a nap. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-52/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 52: The Littleborough Losers in Ramsgate, Having a Few Pints with the Lads, Fantasy Football Since 1995, Rick&#39;s Footy Challenge, and Wayne Rooney the True Ledge</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
