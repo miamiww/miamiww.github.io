@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</loc>
+    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/100days/Day-53/</loc>
     <lastmod>2019-02-25T19:46:10-05:00</lastmod>
   </url>
@@ -604,7 +609,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2019-02-25T19:46:10-05:00</lastmod>
+    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -694,7 +699,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2019-02-25T19:46:10-05:00</lastmod>
+    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -712,6 +717,12 @@
   <url>
     <loc>http://blog.alden.website/categories/temporary-expert/</loc>
     <lastmod>2018-12-17T18:31:31-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alden.website/categories/thesis/</loc>
+    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
