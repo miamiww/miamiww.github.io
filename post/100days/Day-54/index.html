@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Future&#39;s Market at the Schemers, Scammers, and Subverters Symposium</h1>
+    <h1>Shodan Stories Day 54: Pumping Your Own in Saint-Denis</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-02-26T14:36:07-05:00">Feb 26, 2019</time>
+            <time class="post-date" datetime="2019-02-26T19:43:36-05:00">Feb 26, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/thesis/">thesis</a>
+                    <a href="/categories/100-days/">100 days</a>
                 
             </em>
         </li>
@@ -77,25 +77,57 @@
 
         
 
-        <li>2 min read</li>
+        <li>3 min read</li>
     </ul>
 </aside>
     
 
-    <p>This past weekend I was speaking at the <a href="http://schemersscammers.club/">Schemers, Scammers, and Subverters Symposium</a> in Portland, OR, and I asked the organizers if I could also run a prototype of my thesis at the event. Obviously I didn&rsquo;t describe it as such to them, in keeping with the spirit of the event I said that I had a fully polished performance ready named &ldquo;Future&rsquo;s Market&rdquo;. As part of the conference they were also running a market called &ldquo;The Totally Honest Barter Bazaar&rdquo;, and they told me I could take up a little corner of the room in order to hawk my wares.</p>
+    
 
-<p><img src="/images/Thesis/FutureMarket.JPG" alt="" />
-I quickly lasercut a little sign a few hours before my flight and then came up with a menu of things to sell while in the air.
-<img src="/images/Thesis/forsale.png" alt="" />
-Customers who bought an identity reassignment were asked to choose a new name for themselves and then given a list of new attributes rated on a 1 to 10 scale, and a series of likes and dislikes. I printed out this new information on a receipt so that they could keep their new identity with them in their wallet and refer to it whenever they felt like they needed to be reminded of who they were.
-<img src="/images/Thesis/identity.JPG" alt="" />
-Customers purchasing a BioNetic Scrying would get their biometric information scanned by me via a webcam and then used to predict a future scenario for them. Unfortunately I was having trouble getting this process to work last minute and had to say that it was sold out.
-<img src="/images/Thesis/timeline.JPG" alt="" />
-A TimeLine Switching Service was the most drastic and involved of my offerings. Anyone purchasing this would be moved to the next universe over in the multiverse. In this I was inspired by believers of the <a href="https://mandelaeffect.com/">Mandela Effect</a>. How it works exactly is a trade secret of course :) but I had purchasers close their eyes, visualize what they hate most in the world, and then press the button. Voila, the magic of the box moves heaven and earth, very literally.</p>
+<p>I read this <a href="https://www.ericzhang.me/gas-station-atgs-exposed-to-public/">old blog post from 2015</a> talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.</p>
 
-<p>I ended up making a little over $30, not including trades with other sellers at the bazaar. Additionally I had quite a few earnest conversations with my customers about their identity, their view of themselves, and how they think about their future and project themselves into it.
-<img src="/images/Thesis/feedback.jpg" alt="" />
-Here is some testimonial from one of my satisfied customers.</p>
+<h2 id="automated-tank-gauge-on-81-248-205-246">Automated Tank Gauge on 81.248.205.246</h2>
+
+<p>Based on that blog post it seemed that the best thing to search for was &ldquo;I20100&rdquo;. I immediately found several thousand results and yes all of them seemed to be accessible. I picked one in Réunion thinking that it would probably be the only time I would find something from there given its tiny population. Following what the blog post indicated I should do, I used <code>netcat</code> to connect to one of the ports and print out a status report from the gauges.</p>
+
+<pre><code>➜  ~ nc -v 81.248.205.246 10001
+found 0 associations
+found 1 connections:
+     1:	flags=82&lt;CONNECTED,PREFERRED&gt;
+	outif ipsec0
+	src 10.6.6.182 port 61602
+	dst 81.248.205.246 port 10001
+	rank info not available
+	TCP aux info available
+
+Connection to 81.248.205.246 port 10001 [tcp/scp-config] succeeded!
+^AI20100
+
+I20100
+    27-02-19  7:23
+
+845645 TOTAL CAMELIA
+BVD DORET ST DENIS  
+
+
+
+INVENT INTERNE          
+
+CUVE PRODUIT             VOLUME TC VOLUME   CREUX     HAUT      EAU      TEMP
+  1  SP R2.1 25M3          9576         0    14528   1015.4      0.0    30.69
+  2  GO R3.1 30M3         23361         0     5609   1790.2      0.0    32.54
+</code></pre>
+
+<p>Aha, so I have what seems like an address: <em>845645 TOTAL CAMELIA
+BVD DORET ST DENIS</em>.</p>
+
+<p>In addition I get a report on the amount of oil in each of two tanks. Reading <a href="https://www.ericzhang.me/wp-content/uploads/2015/01/576013-635.pdf">an English language manual</a> I learn that cuve is the tank number, produit (product in english) is the name of the tank, volume is the amount of oil in the tank at the current temperature, tc volume is what the volume would be at 60F degrees, creux (ullage in English) is the amount of space in the tank not taken up by oil, haut is the oil height, eau is the amount of water in the tank, and temp is just the current temperature. It seems as though the TC Volume measure is not working, but they have no water in them (which I think is good), and still have plenty of oil in them, although tank 1 is over half empty.
+<img src="/images/100Days/Day54/address.png" alt="" />
+That is indeed an address, though the number is a bit of a red herring, as I now believe it is the internal numbering system for gas pump company in Rénion and other places called <a href="https://en.wikipedia.org/wiki/Total_Gas_%26_Power">Total</a>. As near as I can tell the station is on Blvd. Doret in Saint-Denis, though I still have not been able to figure out what Camelia means..
+<img src="/images/100Days/Day54/station.png" alt="" />
+And here it is! The Google maps car didn&rsquo;t go down this street, but Total itself had uploaded an image of this location.</p>
+
+<p>Looks like they have an actual deli counter with sandwiches. When was the last time you got sandwiches at a gas station? See you tomorrow.</p>
 
 
 </article>
@@ -105,13 +137,9 @@ Here is some testimonial from one of my satisfied customers.</p>
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-53/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 53: Just a Highway Sign in Los Angeles</a>
+            <a href="http://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/"><i class="fa fa-chevron-circle-left"></i> Future&#39;s Market at the Schemers, Scammers, and Subverters Symposium</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-54/">Shodan Stories Day 54: Pumping Your Own in Saint-Denis <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

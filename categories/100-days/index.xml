@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Feb 2019 19:46:10 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 26 Feb 2019 19:43:36 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 54: Pumping Your Own in Saint-Denis</title>
+      <link>http://blog.alden.website/post/100days/Day-54/</link>
+      <pubDate>Tue, 26 Feb 2019 19:43:36 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-54/</guid>
+      <description>I read this old blog post from 2015 talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.
+Automated Tank Gauge on 81.248.205.246 Based on that blog post it seemed that the best thing to search for was &amp;ldquo;I20100&amp;rdquo;. I immediately found several thousand results and yes all of them seemed to be accessible.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 53: Just a Highway Sign in Los Angeles</title>
