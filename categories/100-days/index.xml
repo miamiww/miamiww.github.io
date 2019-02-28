@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Feb 2019 19:43:36 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 13:39:11 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 55: Dancing with Skunks and Annotating Goats in Fremont, Ornamental Hermits, Gopherspace, and the Mysteries of Time</title>
+      <link>http://blog.alden.website/post/100days/Day-55/</link>
+      <pubDate>Wed, 27 Feb 2019 13:39:11 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-55/</guid>
+      <description>Some Cisco routers say &amp;ldquo;SAN FRANCISCO&amp;rdquo; when telneting into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&amp;rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.
+An Ornamental Hermit on 74.207.243.202 What caught my eye on this IP was that Shodan was indicating that it was running gopher on port 70.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 54: Pumping Your Own in Saint-Denis</title>
