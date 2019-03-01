@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Feb 2019 13:39:11 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2019 12:01:30 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 56: Buying Souvenirs in Bethlehem, Schneider Electric spaceLYnk, EXIF Data, and Does It Count as a Pilgrimage If You Are Just Remotely Opening and Closing Gates via a Store&#39;s Insecure SCADA System?</title>
+      <link>http://blog.alden.website/post/100days/Day-56/</link>
+      <pubDate>Thu, 28 Feb 2019 12:01:30 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-56/</guid>
+      <description>I saw a search today for someone looking for spaceLYnk logic controllers, a kind of logic controller for SCADA systems made by Schneider Electric (SCADA, if you remember from day 30, stands for supervisory control and data acquisition).
+spaceLYnk SCADA System on 213.6.102.238 There were quite a few results from all over the place, but I noticed that most of them didn&amp;rsquo;t have visualizations of the system. So I picked one that had the whole system mapped out, in Palestine.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 55: Dancing with Skunks and Annotating Goats in Fremont, Ornamental Hermits, Gopherspace, and the Mysteries of Time</title>
