@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Feb 2019 12:01:30 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 17:30:12 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 57: Shodaning Myself, Ye Olde Telnet Service, and the Weather Underground</title>
+      <link>http://blog.alden.website/post/100days/Day-57/</link>
+      <pubDate>Fri, 01 Mar 2019 17:30:12 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-57/</guid>
+      <description>Yes today I Shodaned myself. Nothing shows up for my full name, thankfully, but &amp;ldquo;alden&amp;rdquo; has a lot of results.
+The Weather Underground on 35.160.169.47 I picked a result in Boardman, Oregon, largely because of how charming it was. It&amp;rsquo;s just a telnet server, running on port 23 and mirrored on port 3000. You almost never see telnet anymore these days, since it&amp;rsquo;s been primarily replaced with the much more secure ssh.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 56: Buying Souvenirs in Bethlehem, Schneider Electric spaceLYnk, EXIF Data, and Does It Count as a Pilgrimage If You Are Just Remotely Opening and Closing Gates via a Store&#39;s Insecure SCADA System?</title>

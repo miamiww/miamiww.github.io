@@ -1,0 +1,285 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 57: Shodaning Myself, Ye Olde Telnet Service, and the Weather Underground</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-01T17:30:12-05:00">Mar 1, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>4 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Yes today I Shodaned myself. Nothing shows up for my full name, thankfully, but &ldquo;alden&rdquo; has a lot of results.</p>
+
+<h2 id="the-weather-underground-on-35-160-169-47">The Weather Underground on 35.160.169.47</h2>
+
+<p>I picked a result in Boardman, Oregon, largely because of how charming it was. It&rsquo;s just a <a href="https://en.wikipedia.org/wiki/Telnet">telnet</a> server, running on port 23 and mirrored on port 3000. You almost never see telnet anymore these days, since it&rsquo;s been primarily replaced with the much more secure ssh. Here I am loggin in via <code>netcat</code></p>
+
+<pre><code>➜  sandbox git:(master) ✗ nc 35.160.169.47 23
+------------------------------------------------------------------------------
+*               Welcome to THE WEATHER UNDERGROUND telnet service!            *
+------------------------------------------------------------------------------
+*                                                                            *
+*   National Weather Service information provided by Alden Electronics, Inc. *
+*    and updated each minute as reports come in over our data feed.          *
+*                                                                            *
+*   **Note: If you cannot get past this opening screen, you must use a       *
+*   different version of the &quot;telnet&quot; program--some of the ones for IBM      *
+*   compatible PC's have a bug that prevents proper connection.              *
+*                                                                            *
+*           comments: jmasters@wunderground.com                              *
+------------------------------------------------------------------------------
+
+Press Return to continue:
+
+</code></pre>
+
+<p><a href="https://www.wunderground.com/">The Weather Underground</a>! I&rsquo;d actually heard of them before, they were the first weather service attached to the internet for the use of the public. Apparently it <a href="https://en.wikipedia.org/wiki/Weather_Underground_(weather_service)#History">started as a telnet service</a> back in 1991, became a fairly successful weather company and highly visited website by the mid 00s, and is now owned by IBM. But the telnet service stays on. I like that.</p>
+
+<p>And now I see why this result came up when I searched for my name, it&rsquo;s provided by <a href="http://www.alden.com/">Alden Electronics</a>, a manufacturer of all kinds of weather related gadgets.
+<img src="/images/100Days/Day57/aelectronics.png" alt="" />
+I&rsquo;d come across them before, because they own alden.com, a domain name that I&rsquo;d clearly benefit from more. Figuring I&rsquo;d give the old telnet service a spin I checked the forecast for New York City.</p>
+
+<pre><code>Press Return for menu
+or enter 3 letter forecast city code-- NYC
+Weather Conditions at 04:51 PM EST on 01 Mar 2019 for New York JFK, NY.
+Temp(F)    Humidity(%)    Wind(mph)    Pressure(in)    Weather
+========================================================================
+  36          73%         EAST at 7       30.28      Overcast
+
+Forecast for New York, NY
+421 PM EST Fri Mar 1 2019
+
+...Winter Weather Advisory in effect until noon EST Saturday...
+
+.Tonight...Sleet, snow. Snow and sleet accumulation of 2 to
+4 inches. Lows in the lower 30s. Northeast winds 10 to 15 mph.
+Chance of precipitation near 100 percent.
+.Saturday...Cloudy. A chance of rain and snow in the morning,
+then a slight chance of light rain and light snow in the
+afternoon. Highs around 40. North winds 10 to 15 mph with gusts
+up to 25 mph. Chance of precipitation 40 percent.
+.Saturday night...Mostly cloudy. Lows in the lower 30s. West
+winds 5 to 10 mph.
+.Sunday...Partly sunny in the morning, then mostly cloudy with
+rain likely in the afternoon. Highs in the lower 40s. Northwest
+winds 5 to 10 mph, becoming southeast in the afternoon. Chance of
+rain 60 percent.
+   Press Return to continue, M to return to menu, X to exit:
+</code></pre>
+
+<p>Snow tonight! I hadn&rsquo;t realized. There&rsquo;s actually a fair bit you can do.</p>
+
+<pre><code>WEATHER UNDERGROUND MAIN MENU
+******************************
+1) U.S. forecasts and climate data
+2) Canadian forecasts
+3) Current weather observations
+4) Ski conditions
+5) Long-range forecasts
+6) Latest earthquake reports
+7) Severe weather
+8) Hurricane advisories
+9) Weather summary for the past month
+10) International data
+11) Marine forecasts and observations
+12) Ultraviolet light forecast
+X) Exit program
+C) Change scrolling to screen
+H) Help and information for new users
+?) Answers to all your questions
+  Selection:?
+
+WEATHER UNDERGROUND HELP AND INFORMATION MENU
+---------------------------------------------
+1) How to connect
+2) How the Weather Underground works
+3) How to set up your own telnet service
+M) Return to main menu
+X) Exit program
+  Selection:3
+
+No data available.
+/wx/data/DAT/help3.doc
+WEATHER UNDERGROUND HELP AND INFORMATION MENU
+---------------------------------------------
+1) How to connect
+2) How the Weather Underground works
+3) How to set up your own telnet service
+M) Return to main menu
+X) Exit program
+  Selection:
+</code></pre>
+
+<p>Unfortunately some of their help pages have gone missing. I&rsquo;d have loved their guide on how to set up your own telnet service, but I might have been the first person to check that in several years. I&rsquo;m not surprised it&rsquo;s gotten lost somehow.</p>
+
+<p>I guess I&rsquo;ll have to find some other guide. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-56/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 56: Buying Souvenirs in Bethlehem, Schneider Electric spaceLYnk, EXIF Data, and Does It Count as a Pilgrimage If You Are Just Remotely Opening and Closing Gates via a Store&#39;s Insecure SCADA System?</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
