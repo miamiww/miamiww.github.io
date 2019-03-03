@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2019 17:30:12 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 02 Mar 2019 22:09:27 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 58: Climbing the Global Cyber Vandalism Ladder in Westminster, Crypto Airdrops, and the Shady Underworld of Monetized Link Shortening Services</title>
+      <link>http://blog.alden.website/post/100days/Day-58/</link>
+      <pubDate>Sat, 02 Mar 2019 22:09:27 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-58/</guid>
+      <description>Today I felt like going for another hacked website, so I again searched for &amp;ldquo;hacked by&amp;rdquo; on Shodan like I did all the way back on day 18.
+A Hacked Server on 94.76.219.226 There were so many results, I picked the first one I got, in the UK. It had ftp and ssh running, as well as email and the usual 80 and 443 webservers. It also had a cPanel login page running, cPanel being, in my experience, the most miserable way to run a webhost backend.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 57: Shodaning Myself, Ye Olde Telnet Service, and the Weather Underground</title>
