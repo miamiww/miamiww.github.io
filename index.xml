@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Mar 2019 22:09:27 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2019 16:42:04 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 59: High Precision Instruments in Bosnia and Herzegovina, Leica Geosystems Satellite Receivers, and Our Story of 80 Years of Mergers and Acquisitions</title>
+      <link>http://blog.alden.website/post/100days/Day-59/</link>
+      <pubDate>Sun, 03 Mar 2019 16:42:04 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-59/</guid>
+      <description>A plethora of good shared searches on Shodan today. I decided to go with satellite receiver web interfaces, thinking that after my attempts back on day 13 this would be about as close to a real satellite as I could get.
+Leica Satellite Receiver on 212.39.114.78 I chose a result in Bosnia and Herzegovina. It was running email ports and a webserver on port 80, so I took a look at the webserver.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 58: Climbing the Global Cyber Vandalism Ladder in Westminster, Crypto Airdrops, and the Shady Underworld of Monetized Link Shortening Services</title>
