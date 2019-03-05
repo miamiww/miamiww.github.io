@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Mar 2019 16:42:04 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 17:20:55 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models</title>
+      <link>http://blog.alden.website/post/100days/Day-60/</link>
+      <pubDate>Mon, 04 Mar 2019 17:20:55 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-60/</guid>
+      <description>I saw a search for &amp;ldquo;prison phones&amp;rdquo; and gosh if that isn&amp;rsquo;t a lure I don&amp;rsquo;t know what is. The search was just for &amp;ldquo;encartele&amp;rdquo;, and doing some Googling I found that Encartele is a major player in the United States inmate phone service industry. I think this ad will explain what that means:   An Encartele Prison Phone on 66.112.68.130 So Encartele charges inmates and their families artificially high phone rates and give paybacks to the wardens running the prisons.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 59: High Precision Instruments in Bosnia and Herzegovina, Leica Geosystems Satellite Receivers, and Our Story of 80 Years of Mergers and Acquisitions</title>
