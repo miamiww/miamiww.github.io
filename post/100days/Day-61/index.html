@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 61: Printing Skulls in Springfield, Tautulli Plex, and OctoPrint</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-05T14:00:02-05:00">Mar 5, 2019</time>
+        </li>
+        
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today&rsquo;s episode is again taken off of the recent searches. I saw someone searching for &ldquo;octoprint -login -authenticate&rdquo;, and decided I&rsquo;d take a look. Turns out <a href="https://octoprint.org/">OctoPrint</a> is a web interface for 3D printers that let you remotely monitor and control your in progress jobs.
+<img src="/images/100Days/Day61/octoprint.png" alt="" />
+So I&rsquo;d be finding 3D printers, a whole dimension up from the paper printer I found back on day 31.</p>
+
+<h2 id="a-wanhao-duplicator-i3-3d-printer-on-173-17-200-211">A Wanhao Duplicator i3 3D Printer on 173.17.200.211</h2>
+
+<p>I just went with the first result, in Springfield, Missouri. It was running on something on 3 ports, 8181, 9001, and 9002. 9002 was a <a href="https://www.plex.tv/">Plex media server</a> login, which you may remember from days 9, 19, and a couple of others. 8181 was a login for <a href="https://tautulli.com/">Tautulli</a>, which I learned is a web application to monitor your Plex server&rsquo;s performance.</p>
+
+<p>9001 had good stuff though, a webserver running the OctoPrint web interface.</p>
+
+<p><img src="/images/100Days/Day61/firstlook.png" alt="" />
+And it had a webcam attached so that you could remotely monitor your jobs!
+<img src="/images/100Days/Day61/webcam.png" alt="" />
+Given what I see here I think it&rsquo;s a Wanhao Duplicator i3, since that printer also has a open off white bed.
+<img src="/images/100Days/Day61/wanhao.png" alt="" />
+I don&rsquo;t have a whole lot of control over the printer with this panel, but I do have a whole lot of information.
+<img src="/images/100Days/Day61/history.png" alt="" />
+I can see that the last print was all the way back in August, to print skull.gcode, and that there were over a thousand prints that happened before that. Why haven&rsquo;t there been any new ones in the past several months? It&rsquo;s hard to believe that these dates could be wrong. My theory right now is that this printer was sold and the new owner just now set it up. Seems a bit weird though, not sure if that is a good theory.
+<img src="/images/100Days/Day61/success.png" alt="" />
+I can also see the past print data. Looks like whoever was printing here had more success than I have had 3D printing.</p>
+
+<p>I could also download the last print job, which if you remember, was named <em>skull.gcode</em>. It comes as a format called <a href="https://en.wikipedia.org/wiki/G-code">gcode</a>, which is a language used to send controls to automated machine tools. It looks a bit like <a href="https://en.wikipedia.org/wiki/Assembly_language">assembly</a>, albeit much more human-readable. Take a guess what this sample of code is doing:</p>
+
+<pre><code>G1 X79.492 Y109.773 E0.85725
+G1 X79.329 Y109.857 E0.86285
+G1 X78.641 Y110.657 E0.89504
+M106 S255
+G1 X78.593 Y110.714 E0.89895
+G1 X78.208 Y110.343 E0.92686
+G1 X78.064 Y110.102 E0.94153
+M106 S193.8
+G1 X78.050 Y109.983 E0.94518
+G1 X78.194 Y108.143 E1.00153
+G1 X78.490 Y106.693 E1.04670
+G1 X79.093 Y104.222 E1.12433
+G1 X79.197 Y103.774 E1.13835
+G1 X79.213 Y103.621 E1.14304
+G1 X79.639 Y102.607 E1.17663
+G1 X80.104 Y102.234 E1.19484
+G1 X80.183 Y102.242 E1.19726
+G1 X80.543 Y102.362 E1.20885
+</code></pre>
+
+<p>That&rsquo;s right moving the extruder nozzle through the x-y plane while printing the object. I think the parts beginning with E changes the extruder nozzle diameter. It&rsquo;s excruciating stuff, and skull.gcode had almost a million lines of it. I wanted to see what it looked like, and while you can convert gcode to more commonly seen 3D object files pretty easily and then open it in your 3D software of choice, I didn&rsquo;t have the time for that. Instead I used <a href="http://gcode.ws/">an online gcode analyzer</a> to visualize it.</p>
+
+<p>And here it is!
+<img src="/images/100Days/Day61/skull.png" alt="" /></p>
+
+<p>It&rsquo;s a skull. I don&rsquo;t know what I was expecting. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-60/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
