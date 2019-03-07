@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 14:00:02 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2019 21:17:39 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 62: Night at the Kino in Winnenden</title>
+      <link>http://blog.alden.website/post/100days/Day-62/</link>
+      <pubDate>Wed, 06 Mar 2019 21:17:39 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-62/</guid>
+      <description>Today I wanted to find a webcam but not because I needed an easy target, but rather so that I could find a webcam that would lead me to its precise location. I mulled about in Shodan&amp;rsquo;s image viewer until I found an interesting result, and lo and behold, it&amp;rsquo;s another webcam server made by Steven Wu (see days 38 and 47 if that name doesn&amp;rsquo;t ring a bell). Thank you, Steven Wu, for your really terribly insecure webcam server.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 61: Printing Skulls in Springfield, Tautulli Plex, and OctoPrint</title>
