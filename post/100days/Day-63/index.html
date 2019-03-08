@@ -1,0 +1,226 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 63: Securities Trading in Hong Kong, Ghidra vs IDA Pro, and the Ever Popular Java Debugger Exploit</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-07T21:20:35-05:00">Mar 7, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>There&rsquo;s been a lot of hubbub in the infosec world the past couple of days because the NSA released one of their reverse engineering tools, <a href="https://www.wired.com/story/nsa-ghidra-open-source-tool/">Ghidra, as an open source toolkit</a>. This is huge news because the closest tool in functionality, <a href="https://www.hex-rays.com/products/ida/">IDA Pro</a>, is $1200 a year for a license, but also raised a question: would you trust software from the NSA, even if it&rsquo;s hosted on Github?
+<img src="/images/100Days/Day63/Ghidra.png" alt="" />
+I&rsquo;m starting with this preamble because of a default setting in Ghidra. If you run the software in &ldquo;debug mode&rdquo;, by default it starts running a server on port 18001 that allows anyone to make a <a href="https://www.zdnet.com/article/nsa-release-ghidra-a-free-software-reverse-engineering-toolkit/">tcp connection and execute code remotely over the internet</a>. Whoops?</p>
+
+<h2 id="global-mastermind-securities-on-202-82-115-202">Global Mastermind Securities on 202.82.115.202</h2>
+
+<p>I ran a search on Shodan for anything running port 18001. Turns out that&rsquo;s a great way to find everything that has every port open running a service on every port, like the website I found on day 41. I looked through all 500 results and I&rsquo;m not sure I found anyone who was running Ghidra insecurely. I was expecting to see a result that looked like a &ldquo;<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/introclientissues005.html">Java Debug Wire Protocol</a>&rdquo; service, which is a Java debugger, but nothing with 18001 looked like it was doing a Java debugger. But I did find a few interesting things.</p>
+
+<p>One of the IP addresses not running a mirrored service on every port was running a webserver on 80 and 443, and then the 18001 service. Both of the webservers gave 403 no authentication errors, but 443 did have an ssl certificate with a domain name attached.
+<img src="/images/100Days/Day63/ssl.png" alt="" /></p>
+
+<p>Let&rsquo;s check that url real quick.</p>
+
+<pre><code>➜  ~ host trade.globalmsec.com
+trade.globalmsec.com has address 202.82.115.239
+</code></pre>
+
+<p>It&rsquo;s not quite the IP address we are looking at, but it&rsquo;s close. Now checking all the nearby IPs, all the IP addresses between 202.82.115.193 and 202.82.115.235 are 403 forbiddens with ssl certificates set to names that sound like online trade platforms. Here&rsquo;s a list of a few of my favorites:</p>
+
+<blockquote>
+<p>www.onlinetrade.hss.com.hk</p>
+
+<p>online.gwfg.com.hk</p>
+
+<p>ayers.com.hk</p>
+
+<p>www.kuentaisec.com.hk</p>
+
+<p>etrade.shunloongsec.com</p>
+
+<p>etrade2.ccnew.com.hk</p>
+
+<p>etrade.conrad-is.com.hk</p>
+</blockquote>
+
+<p>Now as far as I can tell these are all under the provenance of separate, distinct companies. So why are all of these financial trading services lumped together in the same IP range? I have no idea. Maybe they are all running out of the same server farm in the Hong Kong stock exchange.</p>
+
+<p>Getting back to our original IP address, I checked out globalmsec.com
+<img src="/images/100Days/Day63/globalmsec.png" alt="" />
+They seem like a lovely financial services company. Just look at that skyline! With a name like Global Mastermind, how can you not just give them all your investment capital? Now what really caught my attention though is the little &ldquo;Online Trade Login&rdquo; in the top right corner. So I clicked.
+<img src="/images/100Days/Day63/trade.png" alt="" />
+Aha! The url I want. And now I know probably what I need to append to the IP address to get around the 403, all that /mts.web/ stuff.
+<img src="/images/100Days/Day63/ip.png" alt="" />
+And there you go. Interestingly this doesn&rsquo;t work for 202.82.115.239, which instead claims to belong to ayers.com.hk.</p>
+
+<p>So maybe there is a conspiracy after all. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-62/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 62: Night at the Kino in Winnenden</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

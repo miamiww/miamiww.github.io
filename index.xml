@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2019 21:17:39 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 21:20:35 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 63: Securities Trading in Hong Kong, Ghidra vs IDA Pro, and the Ever Popular Java Debugger Exploit</title>
+      <link>http://blog.alden.website/post/100days/Day-63/</link>
+      <pubDate>Thu, 07 Mar 2019 21:20:35 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-63/</guid>
+      <description>There&amp;rsquo;s been a lot of hubbub in the infosec world the past couple of days because the NSA released one of their reverse engineering tools, Ghidra, as an open source toolkit. This is huge news because the closest tool in functionality, IDA Pro, is $1200 a year for a license, but also raised a question: would you trust software from the NSA, even if it&amp;rsquo;s hosted on Github? I&amp;rsquo;m starting with this preamble because of a default setting in Ghidra.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 62: Night at the Kino in Winnenden</title>
