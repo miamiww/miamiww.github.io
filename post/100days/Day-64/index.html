@@ -1,0 +1,224 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 64: Pro DJing in Antofagasta, Iomega NAS, and a Torrenting Minimalist</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-08T22:55:18-05:00">Mar 8, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I saw a search for <a href="https://en.wikipedia.org/wiki/LenovoEMC">Iomega (now Lenovo EMC)</a> Network Attached Storage, probably because <a href="https://support.lenovo.com/us/en/solutions/len-24224">these devices have been show to have huge security flaws</a> (or the novelty of finding devices that still have &ldquo;Iomega&rdquo; written into their cookie code even after the brand had been incorporated into Lenovo). But I thought it would be a nice change from all of the Synology NAS we&rsquo;ve been seeing.</p>
+
+<h2 id="lenovo-emc-nas-on-190-161-190-19">Lenovo EMC NAS on 190.161.190.19</h2>
+
+<p>I picked a result in Chile, but looked at quite a few results before picking this one. They all are running webservers on 443 and they all look exactly like this.
+<img src="/images/100Days/Day64/firstlook.png" alt="" />
+Yes they all of these same three images! The three ideal landscapes, I guess. I really want to know who at Iomega (now LenovoEMC) made the design choice to include a little three image slideshow in every device. And then who picked out the images?
+<img src="/images/100Days/Day64/torrent.png" alt="" />
+What got my attention was that this NAS was sharing a single folder just called &ldquo;Torrent&rdquo;, which, I think it is pretty safe to assume refers to bittorenting.
+<img src="/images/100Days/Day64/files.png" alt="" />
+Let&rsquo;s take a peak inside. It&rsquo;s someone using a mac because they have .DS_Store (and .AppleDesktop). All of the folders are empty, except for DOWNLOAD.
+<img src="/images/100Days/Day64/djaypro.png" alt="" />
+Amazingly it looks like all they have been torrenting is the same DJ software over and over again. They first downloaded it November of 2018 and have either been making a copy every couple of weeks since then or have been downloading it multiple times. It doesn&rsquo;t really make sense. Where&rsquo;s the 30GB of FLAC music? The porn? The James Cameron&rsquo;s Avatar blueray rips?
+<img src="/images/100Days/Day64/djay.png" alt="" />
+DJay Pro is also bad and <a href="https://www.theverge.com/2017/12/12/16764040/djay-pro-2-software-ai-automix-algoriddim">gimmicky</a>. I don&rsquo;t get it.</p>
+
+<p>Just to confirm that this is still torrenting I thought I&rsquo;d check the typical bittorrent port, 6881.</p>
+
+<pre><code>👻🌵🔮 $ nmap -A -p 6881 190.161.190.19
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-08 23:34 EST
+Nmap scan report for pc-19-190-161-190.cm.vtr.net (190.161.190.19)
+Host is up (0.0012s latency).
+
+PORT     STATE    SERVICE            VERSION
+6881/tcp filtered bittorrent-tracker
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.58 seconds
+
+👻🌵🔮 $ nc -v 190.161.190.19 6881
+found 0 associations
+found 1 connections:
+     1: flags=82&lt;CONNECTED,PREFERRED&gt;
+        outif ipsec0
+        src 10.6.6.83 port 57027
+        dst 190.161.190.19 port 6881
+        rank info not available
+        TCP aux info available
+
+Connection to 190.161.190.19 port 6881 [tcp/*] succeeded!
+^C
+</code></pre>
+
+<p>Yup it&rsquo;s still running! I wonder how many GB of DJay Pro 2 they&rsquo;ve uploaded. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-63/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 63: Securities Trading in Hong Kong, Ghidra vs IDA Pro, and the Ever Popular Insecure Java Debugger</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
