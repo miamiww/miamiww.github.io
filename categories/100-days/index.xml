@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 22:55:18 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 23:45:45 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 65: My Wifi Enabled Smart Projector Helped Me Rekindle My Marriage&#39;s Lost Spark in Beijing</title>
+      <link>http://blog.alden.website/post/100days/Day-65/</link>
+      <pubDate>Sat, 09 Mar 2019 23:45:45 -0500</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-65/</guid>
+      <description>Today I wanted to find any kind of Alexa-compatible device, be it WiFi plug, smart bulb, or whatever, so I searched in Shodan for &amp;ldquo;alexa&amp;rdquo;. After looking at the results for awhile I found that there was a particular type of object that showed up that I thought was worth looking into further, what looked like a &amp;ldquo;smart projector&amp;rdquo;.
+Optoma on 54.223.86.54 The actual search I used to narrow down on the projectors was &amp;ldquo;alxtest/alexa&amp;rdquo;, which was part of the name in the webserver these projectors were running.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 64: Pro DJing in Antofagasta, Iomega NAS, and a Torrenting Minimalist</title>

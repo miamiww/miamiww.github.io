@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 65: My Wifi Enabled Smart Projector Helped Me Rekindle My Marriage&#39;s Lost Spark in Beijing</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-09T23:45:45-05:00">Mar 9, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I wanted to find any kind of Alexa-compatible device, be it WiFi plug, smart bulb, or whatever, so I searched in Shodan for &ldquo;alexa&rdquo;. After looking at the results for awhile I found that there was a particular type of object that showed up that I thought was worth looking into further, what looked like a &ldquo;smart projector&rdquo;.</p>
+
+<h2 id="optoma-on-54-223-86-54">Optoma on 54.223.86.54</h2>
+
+<p>The actual search I used to narrow down on the projectors was &ldquo;alxtest/alexa&rdquo;, which was part of the name in the webserver these projectors were running. There were only 8, and I picked one in Beijing. It was only running webservers, the typical <sup>80</sup>&frasl;<sub>443</sub> pair.
+<img src="/images/100Days/Day65/firstlook.png" alt="" />
+I obviously couldn&rsquo;t get any farther past this point, but I did experience one other thing on this page.
+<img src="/images/100Days/Day65/cookies.png" alt="" />
+A cookies warning banner! Since when have these types of device logins involved cookies. It&rsquo;s making me wonder if maybe this is actually running off of Optoma&rsquo;s servers, and you can control your device via their server, which sends out commands to your projector. Seems crazy, but who knows anymore, Optoma might really need to put that tracker your browser.</p>
+
+<p>So what kind of projector is this anyway? One that connects to the internet, clearly, and made by Optoma. It seems like Optoma is, at the moment, the only mainstream projector manufacturer making &ldquo;smart&rdquo; projectors, and they only have a few in their smart line. Narrowing it down further by publicity as a proxy for market share (one projector has <a href="https://www.optoma.com/us/optoma-delivers-first-home-theater-projector-compatible-with-google-assistant-and-amazon-alexa/#">many more press releases by Optoma than the others</a>) this is likely an <a href="https://www.optoma.com/us/product/uhd51a/">Optoma UHD51A</a>
+<img src="/images/100Days/Day65/optoma.png" alt="" />
+This seems totally absurd to me. A voice enabled projector. Where&rsquo;s all the cords? Struggling with a VGA cable? A projector, by its complexity and its specificity, is an inherently anti-consumer product, and &ldquo;home theater&rdquo; marketed projectors tend to lack the quality or the functionality of &ldquo;professional&rdquo; models. It&rsquo;s got too many controls and too many features for a voice interface to really work out. Are you going to call out the kerning you want every time? Plus, this ad is just bonkers.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/b_CU-wUEp1g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+What&rsquo;s the real angle here? To fill that niche market of smart home devotees with $1500 to spend on a new projector? To collect viewing metadata to feed into Optoma&rsquo;s growing stash of personality profiles?</p>
+
+<p>Maybe they&rsquo;re just out there to save marriages and make &ldquo;the game&rdquo; a little more fun. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-64/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 64: Pro DJing in Antofagasta, Iomega NAS, and a Torrenting Minimalist</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
