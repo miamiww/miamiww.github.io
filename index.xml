@@ -6,10 +6,21 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2019 23:45:45 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2019 16:17:35 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 66: Making Cement in Tuban</title>
+      <link>http://blog.alden.website/post/100days/Day-66/</link>
+      <pubDate>Sun, 10 Mar 2019 16:17:35 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-66/</guid>
+      <description>Today I saw a search just for everything that&amp;rsquo;s a customer of PT Telkom Indonesia, an Indonesian ISP.
+Tuban Cement Factory on 180.250.182.241 I ended up picking the first result because I saw on Shodan, in the town of Tuban on Java, that it was running this warning on the telnet port, 23.
+***************************************************************************** PT Holcim Indonesia Tbk Astinet Router to STO Kerek Tuban Plant WARNING: This is a private system.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 65: My Wifi Enabled Smart Projector Helped Me Rekindle My Marriage&#39;s Lost Spark in Beijing</title>
