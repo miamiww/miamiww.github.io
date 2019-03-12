@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-11T22:41:52-04:00">Mar 11, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>I saw a great search on Shodan the other day, one just for <a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache Webservers</a>. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&rsquo;s still among the most popular servers today; it&rsquo;s estimated that 20% of all current websites are running Apache.
+<a href="https://news.netcraft.com/archives/2019/01/24/january-2019-web-server-survey.html"><img src="https://news.netcraft.com/wp-content/uploads/2018/12/wpid-wss-share.png" alt="" /></a>
+So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache.</p>
+
+<h2 id="an-apache-server-on-181-229-222-94">An Apache Server on 181.229.222.94</h2>
+
+<p>With so much to go on, I decided to pick just the first result I found, in Argentina.
+<img src="/images/100Days/Day67/firstlook.png" alt="" />
+A classic page. The ol&rsquo; &ldquo;Index of /&rdquo; directory list. I remember seeing one of these for the first time maybe 20 years ago. I spent a good portion of the day trying to find any kind of scholarship, history, or journalism about this kind of directory page, but I couldn&rsquo;t find anything. If you know of anything like this please send it my way.</p>
+
+<p>The little folders are directories and the &ldquo;?&ldquo;s are files. M leads to an empty array, and PU leads to an access page.
+<img src="/images/100Days/Day67/access.png" alt="" />
+I downloaded one of the PU rar files and found that it had an entire PHP server and web page inside of it. When I tried to host it locally however, I found that it was full of errors and couldn&rsquo;t actually run. Maybe someone was scrambling to finish a web development job and never got it together. I didn&rsquo;t know enough PHP (or wanted to take the time to know) to figure out how to read the pages that I did have, but it included all of the images that the server was hosting, including this one.
+<img src="/images/100Days/Day67/Fondo8.jpg" alt="" />
+I couldn&rsquo;t really figure out what was going on here, and I had more important things to look at anyway. TsT I couldn&rsquo;t get into but VA and VAweb are just great.
+<img src="/images/100Days/Day67/VA.png" alt="" />
+VA opened up this truly amazing website for a podiatrist in Buenos Aires. Look at all those colors of text. I can&rsquo;t read a single word of the pink text. That logo is just beautiful. Unfortunately it seems like they aren&rsquo;t actually using this website, because I looked them up on Google and found that their <a href="http://www.viviana-arias.com/">website looks like this</a>:
+<img src="/images/100Days/Day67/VAReal.png" alt="" />
+Amazingly that&rsquo;s also what the VAweb directory opens, which leads me to a theory that this index is the development area for a web designer to stage and showcase websites. By the way, if you didn&rsquo;t go to the page and see it in real life immediately, those images are an embedded flash animation.
+<img src="/images/100Days/Day67/maps2.png" alt="" />
+Here it is in Google maps. The plant is the same, but it just doesn&rsquo;t look right without all the text scrawled in front of it. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-66/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 66: Making Cement in Tuban</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

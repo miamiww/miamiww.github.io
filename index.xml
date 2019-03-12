@@ -6,10 +6,19 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 16:17:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 22:41:52 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index</title>
+      <link>http://blog.alden.website/post/100days/Day-67/</link>
+      <pubDate>Mon, 11 Mar 2019 22:41:52 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-67/</guid>
+      <description>I saw a great search on Shodan the other day, one just for Apache Webservers. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&amp;rsquo;s still among the most popular servers today; it&amp;rsquo;s estimated that 20% of all current websites are running Apache.  So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 66: Making Cement in Tuban</title>
