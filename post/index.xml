@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2019 22:41:52 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2019 23:32:29 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 68: A Construction Site in Northern Illinois</title>
+      <link>http://blog.alden.website/post/100days/Day-68/</link>
+      <pubDate>Tue, 12 Mar 2019 23:32:29 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-68/</guid>
+      <description>Busy today so I found an IP camera. This time I got one of my all time favorites, an AXIS camera, this one with a 4K resolution and 700° pan/tilt control.
+AXIS Q6128-E Network Camera on 107.85.76.185 Shodan couldn&amp;rsquo;t identify where it was beyond &amp;ldquo;United States&amp;rdquo;, and I found that was likely because it was connected to the network via a mobile Sierra AirLink router, the kind we&amp;rsquo;ve seen several times now.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index</title>
