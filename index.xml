@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Mar 2019 23:32:29 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 22:18:19 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 70: Engineering Consulting in Tangier, WampServer, CORS the Silent Killer, and You&#39;ll Always Have a Job with PHP</title>
+      <link>http://blog.alden.website/post/100days/Day-70/</link>
+      <pubDate>Thu, 14 Mar 2019 22:18:19 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-70/</guid>
+      <description>Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.
+WampServer on 197.230.101.90 I&amp;rsquo;m not sure what force compelled me to type 197.230.101.90, but it was indeed in Shodan and looked like it was running a website (80 and 443 were serving HTTP) and SQL databases (3306, the mySQL database port and 5432, the PostgreSQL port were both running).</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 68: A Construction Site in Northern Illinois</title>
