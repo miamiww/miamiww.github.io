@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Mar 2019 22:18:19 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 22:13:53 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 71: Transfering Files in Moscow, Macommet, and Open Source Mirrors</title>
+      <link>http://blog.alden.website/post/100days/Day-71/</link>
+      <pubDate>Fri, 15 Mar 2019 22:13:53 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-71/</guid>
+      <description>Today I just wanted to find a working public FTP server. So I searched &amp;ldquo;FTP&amp;rdquo;, and went with the first result I found, this one in Moscow.
+FTP Server on 195.128.64.25 FTP seems like an ancient technology but I had a job just a few years ago where we would use it all of the time, and I frequently use it to move files to my servers when I can&amp;rsquo;t be bothered to remember the correct scp syntax.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 70: Engineering Consulting in Tangier, WampServer, CORS the Silent Killer, and You&#39;ll Always Have a Job with PHP</title>
