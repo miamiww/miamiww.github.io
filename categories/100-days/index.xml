@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 22:13:53 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 23:06:33 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</title>
+      <link>http://blog.alden.website/post/100days/Day-73/</link>
+      <pubDate>Sun, 17 Mar 2019 23:06:33 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-73/</guid>
+      <description>I recently read about something called Jenkins, &amp;ldquo;the leading open source automation server&amp;rdquo;. The name and the logo reminded me of the now long gone Ask Jeeves, a search engine that I used when I was first getting online back in the 90s.
+Jenkins Automation Server on 52.73.234.8 I just searched for &amp;ldquo;Jenkins&amp;rdquo; and looked around until I found a result without a login. It was in Ashburn, Virginia which almost certainly meant it was running on AWS in the giant Amazon server facility there.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 71: Transfering Files in Moscow, Macommet, and Open Source Mirrors</title>

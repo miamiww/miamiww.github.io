@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="alden" />
+  <meta name="author" content="" />
   <meta name="generator" content="Hugo 0.53" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Nation State Energy Policy</h1>
+    <h1>Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2018-09-11T00:00:00Z">Sep 11, 2018</time>
+            <time class="post-date" datetime="2019-03-17T23:06:33-04:00">Mar 17, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/temporary-expert/">temporary expert</a>
+                    <a href="/categories/100-days/">100 days</a>
                 
             </em>
         </li>
@@ -77,18 +77,35 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
-    <p><a href="https://vimeo.com/289321256"><img src="/images/lightbulb.png" alt="*bulb" /></a>
-<a href="https://vimeo.com/289321256">https://vimeo.com/289321256</a></p>
+    
 
-<p>That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON. Some government regulators are more effective at enforcing this directive than others, but for nearly all federal regulators energy reliability is the top goal (the prime directive for the others is abusing their authority as regulators to enrich themselves). All state visions are totalizing visions, and all state visions leave things out. What is lost in this particular vision? Climate change? Keeping ratepayer costs low? It would almost certainly be cheaper and less carbon intensive to have occasional blackouts, as peak energy demand is usually met by throwing oil into giant fires. The answer depends on the state and the region, the regulators and the strictness of enforcement.</p>
+<p>I recently read about something called <a href="https://jenkins.io/">Jenkins</a>, &ldquo;the leading open source automation server&rdquo;. The name and the logo reminded me of the now long gone <a href="https://en.wikipedia.org/wiki/Ask.com">Ask Jeeves</a>, a search engine that I used when I was first getting online back in the 90s.</p>
 
-<p>One map:
-<a href="https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641">https://graphcommons.com/graphs/dbabd3f8-5ed7-4da9-bd19-e883defd6641</a></p>
+<h2 id="jenkins-automation-server-on-52-73-234-8">Jenkins Automation Server on 52.73.234.8</h2>
+
+<p>I just searched for &ldquo;Jenkins&rdquo; and looked around until I found a result without a login. It was in Ashburn, Virginia which almost certainly meant it was running on AWS in the <a href="https://www.datacenters.com/amazon-aws-ashburn">giant Amazon server facility there</a>.
+Checking <code>host</code> confirms that it&rsquo;s running on an AWS EC2.</p>
+
+<pre><code>👻🌵🔮 $ host 52.73.234.8
+8.234.73.52.in-addr.arpa domain name pointer ec2-52-73-234-8.compute-1.amazonaws.com.
+</code></pre>
+
+<p>It was running one thing, a webserver on port 8080.
+<img src="/images/100Days/Day73/firstlook.png" alt="" />
+So Jenkins is for&hellip; automating&hellip; stuff. I didn&rsquo;t really have the time to understand it fully. But it looks here like they were attempting to test out several different applications for <a href="https://www.samsung.com/us/mobile/galaxy/">Samsung Galaxy phones</a>.
+<img src="/images/100Days/Day73/variables.png" alt="" />
+I couldn&rsquo;t run anything myself but I was able to see a lot of information about these apps.
+<img src="/images/100Days/Day73/yaral.png" alt="" />
+The one named &ldquo;yuvalisGod&rdquo; was pretty confusing to me, until I realized that &ldquo;yuval&rdquo; was the name of one of the users of this server.
+<img src="/images/100Days/Day73/names.png" alt="" />
+Given all of this I was able to figure out pretty definitively that this server belonged to the Tel Aviv office of a company named <a href="https://www.perfecto.io/">Perfecto Mobile</a>.</p>
+
+<p>They had various API keys exposed and if I were a black hat I&rsquo;d probably be able to do a lot of damage. Shows the importance of having infosec as part of your devops. See you tomorrow.</p>
 
 
 </article>
@@ -98,13 +115,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/2018/09/11/energy-map/"><i class="fa fa-chevron-circle-left"></i> Nation State Energy Policy</a>
+            <a href="http://blog.alden.website/post/100days/Day-71/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 71: Transfering Files in Moscow, Macommet, and Open Source Mirrors</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/localnet-adventure/">Localnet Adventure!! Reference Page <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
@@ -158,35 +171,6 @@
             
             if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
                   disqus();
-            }
-      })();
-</script>
-
-
-<!-- begin comments //-->
-
-    
-
-
-
-<!-- end comments //-->
-
-
-
-
-
-
-</main>
-    <footer>
-        <h6> | 
-            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
-    </footer>
-</div>
-<script src="/js/scripts.js"></script>
-</body>
-
-</html> disqus();
             }
       })();
 </script>
