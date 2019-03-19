@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 23:06:33 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2019 10:45:46 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 74: Charging My Car in Heraklion</title>
+      <link>http://blog.alden.website/post/100days/Day-74/</link>
+      <pubDate>Tue, 19 Mar 2019 10:45:46 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-74/</guid>
+      <description>Today I saw a search for &amp;ldquo;charging station&amp;rdquo; and I thought I would take a look.
+Electric Car Charging Station on 62.103.74.118 There seemed to be a variety of brands of devices that showed up, but all of them were charging stations for electric cars. I ended up picking one in Greece with no authentication. It was running a webserver on port 10000. I love this. It&amp;rsquo;s a dashboard for an electric vehicle charging station made by Etrel, a Slovenian maker of such charging stations (here&amp;rsquo;s the manual).</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</title>

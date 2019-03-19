@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</h1>
+    <h1>Shodan Stories Day 74: Charging My Car in Heraklion</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-03-17T23:06:33-04:00">Mar 17, 2019</time>
+            <time class="post-date" datetime="2019-03-19T10:45:46-04:00">Mar 19, 2019</time>
         </li>
         
         
@@ -84,28 +84,23 @@
 
     
 
-<p>I recently read about something called <a href="https://jenkins.io/">Jenkins</a>, &ldquo;the leading open source automation server&rdquo;. The name and the logo reminded me of the now long gone <a href="https://en.wikipedia.org/wiki/Ask.com">Ask Jeeves</a>, a search engine that I used when I was first getting online back in the 90s.</p>
+<p>Today I saw a search for &ldquo;charging station&rdquo; and I thought I would take a look.</p>
 
-<h2 id="jenkins-automation-server-on-52-73-234-8">Jenkins Automation Server on 52.73.234.8</h2>
+<h2 id="electric-car-charging-station-on-62-103-74-118">Electric Car Charging Station on 62.103.74.118</h2>
 
-<p>I just searched for &ldquo;Jenkins&rdquo; and looked around until I found a result without a login. It was in Ashburn, Virginia which almost certainly meant it was running on AWS in the <a href="https://www.datacenters.com/amazon-aws-ashburn">giant Amazon server facility there</a>.
-Checking <code>host</code> confirms that it&rsquo;s running on an AWS EC2.</p>
+<p>There seemed to be a variety of brands of devices that showed up, but all of them were charging stations for electric cars. I ended up picking one in Greece with no authentication. It was running a webserver on port 10000.
+<img src="/images/100Days/Day74/firstlook.png" alt="" />
+I love this. It&rsquo;s a dashboard for an electric vehicle charging station made by <a href="http://etrel.com/">Etrel</a>, a Slovenian maker of such charging stations (here&rsquo;s the <a href="https://www.zielony-dom.pl/wp-content/uploads/2019/03/Etrel-INCH-User-manual-EN.pdf">manual</a>).
+<img src="https://www.phytec.eu/fileadmin/user_upload/images/content/2.Projects/ETREL-charging-station.jpg" alt="" />
+They look slick. Very modern. Unfortunately not very secure, as the default is to have no password on the web interface.
+<img src="/images/100Days/Day74/settings.png" alt="" />
+I could add my own password, or change the maximum current of the charger. Most interestingly for me I could see the usage history in kWh.
+<img src="/images/100Days/Day74/recentuse.png" alt="" />
+That&rsquo;s pretty low. Like barely anything low. According to a <a href="https://www.greencarreports.com/news/1082737_electric-car-efficiency-forget-mpge-it-should-be-miles-kwh">guide I read</a> the average electric car uses about 3.4 kWh per mile. So that means that the roughly .15 kWh/day this charger has been using in the past week is likely just the &ldquo;vampire draw&rdquo; of having the vehicle plugged in without any real use.
+<img src="/images/100Days/Day74/2018.png" alt="" />
+Looking at the annual usage it seemed like the vehicle probably hadn&rsquo;t been used since April 2018. Before that it was showing usage (with quite a few spikes and then seeming non-use) since 2016.</p>
 
-<pre><code>👻🌵🔮 $ host 52.73.234.8
-8.234.73.52.in-addr.arpa domain name pointer ec2-52-73-234-8.compute-1.amazonaws.com.
-</code></pre>
-
-<p>It was running one thing, a webserver on port 8080.
-<img src="/images/100Days/Day73/firstlook.png" alt="" />
-So Jenkins is for&hellip; automating&hellip; stuff. I didn&rsquo;t really have the time to understand it fully. But it looks here like they were attempting to test out several different applications for <a href="https://www.samsung.com/us/mobile/galaxy/">Samsung Galaxy phones</a>.
-<img src="/images/100Days/Day73/variables.png" alt="" />
-I couldn&rsquo;t run anything myself but I was able to see a lot of information about these apps.
-<img src="/images/100Days/Day73/yaral.png" alt="" />
-The one named &ldquo;yuvalisGod&rdquo; was pretty confusing to me, until I realized that &ldquo;yuval&rdquo; was the name of one of the users of this server.
-<img src="/images/100Days/Day73/names.png" alt="" />
-Given all of this I was able to figure out pretty definitively that this server belonged to the Tel Aviv office of a company named <a href="https://www.perfecto.io/">Perfecto Mobile</a>.</p>
-
-<p>They had various API keys exposed and if I were a black hat I&rsquo;d probably be able to do a lot of damage. Shows the importance of having infosec as part of your devops. See you tomorrow.</p>
+<p>Since it is on Crete, an island in the Mediterranean, there aren&rsquo;t particularly large distances to travel, so I understand the light and inconsistent usage. Seems a little strange though. See you tomorrow.</p>
 
 
 </article>
@@ -115,13 +110,9 @@ Given all of this I was able to figure out pretty definitively that this server 
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-71/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 71: Transfering Files in Moscow, Macommet, and Open Source Mirrors</a>
+            <a href="http://blog.alden.website/post/100days/Day-73/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-74/">Shodan Stories Day 74: Charging My Car in Heraklion <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>
