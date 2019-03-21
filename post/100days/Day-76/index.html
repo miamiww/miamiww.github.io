@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 76: Conference Calls in Noida</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-21T16:17:26-04:00">Mar 21, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today <a href="https://www.rapid7.com/db/modules/exploit/unix/polycom_hdx_auth_bypass">I read about insecure video conferencing systems</a> made by <a href="https://www.polycom.com/">Polycom</a>, and Googled up a Shodan query to find them. The query was &ldquo;polycom command shell&rdquo;.</p>
+
+<h2 id="polycom-conference-calling-system-on-14-143-72-118">Polycom Conference Calling System on 14.143.72.118</h2>
+
+<p>The results were all video conferencing devices that had open telnet ports, but I ultimately chose one in India that was runnign a webserver as well, so that I could have something more interesting to take pictures of.</p>
+
+<p>Checking the telnet port first:</p>
+
+<pre><code>👻🌵🔮 $ nc 14.143.72.118 23 -v
+found 0 associations
+found 1 connections:
+     1: flags=82&lt;CONNECTED,PREFERRED&gt;
+        outif ipsec0
+        src 10.6.6.4 port 65263
+        dst 14.143.72.118 port 23
+        rank info not available
+        TCP aux info available
+
+Connection to 14.143.72.118 port 23 [tcp/telnet] succeeded!
+!
+Polycom Command Shell
+XCOM host:    localhost port: 4121
+TTY name:     /dev/pts/0
+Session type: telnet
+2019-03-21 20:32:58 DEBUG avc: pc[0]: XCOM:INFO:server_thread_handler: new conn [conn: 0x4c900468] [sock: 6] [thread: 0x11f71dc8] [TID: 3344]
+2019-03-21 20:32:58 DEBUG avc: pc[0]: uimsg: [R: telnet /tmp/apiasynclisteners/psh0 /dev/pts/0]
+2019-03-21 20:32:58 DEBUG avc: pc[0]: appcom: register_api_session pSession=0x13332088
+2019-03-21 20:32:58 DEBUG avc: pc[0]: appcom: about to call sendJavaMessageEx
+2019-03-21 20:32:58 DEBUG jvm: pc[0]: UI: xcom-api: ClientManager: createSession(type: telnet sess: 21617)
+2019-03-21 20:32:58 DEBUG jvm: pc[0]: UI: xcom-api: ClientManager: createSession current open sessions count= 2
+2019-03-21 20:32:58 DEBUG avc: pc[0]: appcom: session 21617 registered
+</code></pre>
+
+<p>I didn&rsquo;t want to spend a bunch of time figuring out how to look around here so I exited the connection and went to the webserver.</p>
+
+<p><img src="/images/100Days/Day76/firstlook.png" alt="" />
+I found pretty quickly that I could make any calls I wanted, see the entire call history, and even, maybe most troublingly, monitor any call in progress.
+<img src="/images/100Days/Day76/recent.png" alt="" />
+A lot of the calls seemed to be within-network, which made me think that this could be an office&rsquo;s conference room phone for conference calling, as in my time in offices we&rsquo;d frequently call a coworker mid-meeting to ask them some questions.
+<img src="/images/100Days/Day76/monitor.png" alt="" />
+I don&rsquo;t understand not putting any password or authentication on this kind of system. I took a look at the security settings and it seems like they had chosen to set the security to &ldquo;minimal&rdquo;. Why? I can&rsquo;t image that it was the default.</p>
+
+<p>The last phone number called was an <a href="https://www.airtel.in/">Airtel India</a> phone number, and I was tempted to call it so I could figure out whose phone I was looking at, but it seemed unwise and also too difficult. I hate phone calls. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-75/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 75: Powerful Routing in Karachi</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

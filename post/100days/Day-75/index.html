@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 75: Powerful Routing in Karachi</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-20T20:22:27-04:00">Mar 20, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today&rsquo;s the kind of day where I just don&rsquo;t remember how I found the IP I decided to write about. The dangers of looking in the morning and writing at night.</p>
+
+<h2 id="voip-wimax-gateway-on-115-167-115-93">VoIP WiMAX Gateway on 115.167.115.93</h2>
+
+<p>Today&rsquo;s just a router. Well not &ldquo;just&rdquo; I router I suppose, it&rsquo;s a powerful router.
+<img src="/images/100Days/Day75/firstlook.png" alt="" />
+The configuration page was running on port 8080, but fortunately for them they had a password and it wasn&rsquo;t a default.</p>
+
+<p>The router is a Gigaset SX686, which as far as I can tell is a &ldquo;high performance&rdquo; router for VoIP. It was manufactured by <a href="https://www.sagemcom.com/">Sagemcom</a>, a French telecom.
+<img src="/images/100Days/Day75/gigaset.png" alt="" />
+Sagemcom has a typical business model for a telecom these days, heavily advertising its smart city and iot branches alongside their core comptetency of manufacturing residential networking equipment.
+<img src="/images/100Days/Day75/diverse.png" alt="" />
+I figured out that this router was probably supplied to the user by the ISP, <a href="http://qubee.com.pk/join-in/">Qubee</a>, since Qubee advertises that they supply Sagemcom equipment.</p>
+
+<p>They also advertise using the term &ldquo;big data&rdquo; in a wave I&rsquo;ve never seen before.
+<img src="/images/100Days/Day75/youtube.png" alt="" />
+Qubee is the Pakistani brand name for the broadband of a Dutch multinational company named <a href="https://en.wikipedia.org/wiki/Augere">Augere</a>. They also serve broadband in Bangladesh, and apparently had plans to expand to Uganda and Rwanda in 2011 according to some old press releases but as of today I couldn&rsquo;t find any sign that they succeeded in that expansion.</p>
+
+<p>See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-74/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 74: Charging My Car in Heraklion</a>
+        </li>
+        
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-76/">Shodan Stories Day 76: Conference Calls in Noida <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

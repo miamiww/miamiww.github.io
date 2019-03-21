@@ -6,10 +6,30 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2019 10:45:46 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 21 Mar 2019 16:17:26 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 76: Conference Calls in Noida</title>
+      <link>http://blog.alden.website/post/100days/Day-76/</link>
+      <pubDate>Thu, 21 Mar 2019 16:17:26 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-76/</guid>
+      <description>Today I read about insecure video conferencing systems made by Polycom, and Googled up a Shodan query to find them. The query was &amp;ldquo;polycom command shell&amp;rdquo;.
+Polycom Conference Calling System on 14.143.72.118 The results were all video conferencing devices that had open telnet ports, but I ultimately chose one in India that was runnign a webserver as well, so that I could have something more interesting to take pictures of.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 75: Powerful Routing in Karachi</title>
+      <link>http://blog.alden.website/post/100days/Day-75/</link>
+      <pubDate>Wed, 20 Mar 2019 20:22:27 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-75/</guid>
+      <description>Today&amp;rsquo;s the kind of day where I just don&amp;rsquo;t remember how I found the IP I decided to write about. The dangers of looking in the morning and writing at night.
+VoIP WiMAX Gateway on 115.167.115.93 Today&amp;rsquo;s just a router. Well not &amp;ldquo;just&amp;rdquo; I router I suppose, it&amp;rsquo;s a powerful router. The configuration page was running on port 8080, but fortunately for them they had a password and it wasn&amp;rsquo;t a default.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 74: Charging My Car in Heraklion</title>
