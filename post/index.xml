@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Mar 2019 16:17:26 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2019 20:17:53 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 77: Compressing Natural Gas in West Virginia</title>
+      <link>http://blog.alden.website/post/100days/Day-77/</link>
+      <pubDate>Fri, 22 Mar 2019 20:17:53 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-77/</guid>
+      <description>Today I saw a search on Shodan just for &amp;ldquo;compressor station&amp;rdquo;. Turns out that compressor stations are facilities for compressing natural gas so that it can be transported through a pipeline, and that a natural gas pipeline will frequently have many compressor stations to help keep things moving.
+Natural Gas Compressor Station on 184.13.121.30 There were only 8 results, and I chose one in Fairmont, West Virginia because it was using Red Lion Controls, just like the oil field I found on day 32.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 76: Conference Calls in Noida</title>

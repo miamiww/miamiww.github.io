@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 77: Compressing Natural Gas in West Virginia</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-22T20:17:53-04:00">Mar 22, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Today I saw a search on Shodan just for &ldquo;compressor station&rdquo;. Turns out that <a href="https://en.wikipedia.org/wiki/Compressor_station">compressor stations</a> are facilities for compressing natural gas so that it can be transported through a pipeline, and that a natural gas pipeline will frequently have many compressor stations to help keep things moving.</p>
+
+<h2 id="natural-gas-compressor-station-on-184-13-121-30">Natural Gas Compressor Station on 184.13.121.30</h2>
+
+<p>There were only 8 results, and I chose one in Fairmont, West Virginia because it was using <a href="https://www.redlion.net/">Red Lion Controls</a>, just like the oil field I found on day 32. It was running the Red Lion protocol on port 789, and two webservers on 8081 and 8083. The 8081 webserver gives a 401 no authentication error.</p>
+
+<pre><code>HTTP/1.1 401 Unauthorized
+Content-Type: text/html
+WWW-Authenticate: Basic realm=&quot;AR Midstream: Goff Compressor Station&quot;,
+Cache-Control: no-cache, no-store
+Connection: Keep-Alive
+Content-Length: 435
+</code></pre>
+
+<p>That&rsquo;s where the &ldquo;compressor station&rdquo; result comes in. With a little Googling I found that <a href="https://dep.wv.gov/daq/Documents/September%202017%20Applications/033-00187_APPL_G35-D107F.pdf">the Goff compressor station is in Harrison county West Virginia</a>. In fact I found out quite a bit about it. In West Virginia all pipeline permitting is part of the public record, including the exact GPS coordinates of the facility.
+<img src="/images/100Days/Day77/maps.png" alt="" />
+This is as close as I could get to it on Google maps, it&rsquo;s just down that road. I&rsquo;d have imagined that there would be more of a to-do about it, like a more serious gate, but then I checked the date on the maps image and found that it was from all the way back in 2009. The facility was only permitted in 2017. Who knows what lay behind this road in 2009. I found a blog post from a guy <a href="http://www.frackcheckwv.net/2018/09/22/fullstream-goff-connector-pipeline-is-a-sneaking-snake-on-the-wv-landscape/">investigating the pipeline in 2018</a>, and he said that he went to about this very area and found two guards, so I assume things have changed.</p>
+
+<p>The permitting all indicated that the facility is owned by a company called <a href="https://www.arsenalresources.com/operations/midstream/">Arsenal Midstream</a>, and the webserver on 8083 confirmed that. It is the same kind of data logger interface we saw for Red Lion on day 32.
+<img src="/images/100Days/Day77/firstlook.png" alt="" />
+I believe that DeHy means dehydration, in this case a process called <a href="https://en.wikipedia.org/wiki/Glycol_dehydration">glycol dehydration</a>, which is used to remove water from natural gas so that it can be processed, compressed, and added to a pipeline. The logs all had to do with things like pump control, temperature, water percentage, flow rates. You know, typical things.
+<img src="/images/100Days/Day77/remoteview.png" alt="" />
+The remote view was this login that I can assume is also on a physical screen out there in the West Virginia woods.</p>
+
+<p>While I&rsquo;m not able to really do anything, that I am able to get logs from the station seems a little troubling. But maybe the convenience in this case is worth it: you can share the logging and management widely so that if something goes wrong you can easily share data with a repair crew quickly without needing to get them authorization. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-76/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 76: Conference Calls in Noida</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
