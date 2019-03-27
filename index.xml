@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Mar 2019 12:52:22 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2019 22:10:13 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 79: Controlling the Climate in Constanta, Legacy Browser Extensions, Windows Virtual Machines, Reliable Old Internet Explorer, and Java Applet Deep Hell</title>
+      <link>http://blog.alden.website/post/100days/Day-79/</link>
+      <pubDate>Mon, 25 Mar 2019 22:10:13 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-79/</guid>
+      <description>Real tough one today. I found a search for Siemen&amp;rsquo;s Saphir HVAC control systems, and four hours later I was installing a Windows virtual machine.
+HVAC SCADA System on 5.2.229.60 The search itself was for &amp;ldquo;wince Content-Length: 12581&amp;rdquo;. Many of the results on Shodan were in Romania, and so I picked one in Romania. It was running a webserver on 80. This is a pretty cool design for a SCADA opening page.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 78: The Ol&#39; Unix Nostalgia in the Netherlands, Fortune | Cowsay, and the Mysteries of Tranquility Quidor</title>

@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 79: Controlling the Climate in Constanta, Legacy Browser Extensions, Windows Virtual Machines, Reliable Old Internet Explorer, and Java Applet Deep Hell</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-03-25T22:10:13-04:00">Mar 25, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>3 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Real tough one today. I found a search for <a href="https://www.downloads.siemens.com/download-center/d/SAPHIR-ACX32-Hardware-Description_29538_hq-en.pdf?mandator=ic_bt&amp;segment=HQ&amp;fct=downloadasset&amp;pos=download&amp;id1=29538">Siemen&rsquo;s Saphir HVAC control systems</a>, and four hours later I was installing a Windows virtual machine.</p>
+
+<h2 id="hvac-scada-system-on-5-2-229-60">HVAC SCADA System on 5.2.229.60</h2>
+
+<p>The search itself was for &ldquo;wince Content-Length: 12581&rdquo;. Many of the results on Shodan were in Romania, and so I picked one in Romania. It was running a webserver on 80.
+<img src="/images/100Days/Day79/firstlook.png" alt="" />
+This is a pretty cool design for a SCADA opening page. It looks a bit like a crossword. Only the Open RMS and Open Treeview links were active.
+<img src="/images/100Days/Day79/rms.png" alt="" />
+The remote monitoring system gave me a lot of access.
+<img src="/images/100Days/Day79/config.png" alt="" />
+I could change the password, change what access rights were for different users, upload my own files, upload my own programs, set up my own monitoring.
+<img src="/images/100Days/Day79/processes.png" alt="" />
+<img src="/images/100Days/Day79/files.png" alt="" />
+That&rsquo;s all well and good. I decided to check out treeview, and that&rsquo;s where the trouble began.
+<img src="/images/100Days/Day79/treeview.png" alt="" />
+Lots of tantalizing things to click on. I really wanted to see those statistics. But whatever I clicked on I got the following error.
+<img src="/images/100Days/Day79/java.png" alt="" />
+Now, most modern browsers have gotten rid of java <a href="https://jaxenter.com/clock-ticking-java-browser-plugin-will-deprecated-soon-131546.html">many years ago</a>, the one exception being good old Internet Explorer. Naturally IE only runs on Windows, and I&rsquo;m sure you get where this is going at this point. Before I tried installing Windows, however, I tried several other more sensible options.</p>
+
+<ol>
+<li><p>I tried this weird thing that Microsoft lets you do where you <a href="http://osxdaily.com/2015/10/19/use-internet-explorer-11-mac-os-x-easy/#comments">Remote Desktop to access Internet Explorer 11 from Windows but atop OS X</a>. I stopped because I didn&rsquo;t want to have to make a Microsoft account.</p></li>
+
+<li><p>I installed Java 8 Developer Kit (very outdated) so that I could get a program called <a href="https://superuser.com/questions/1394999/how-do-i-run-java-applets">appletviewer</a> that would allow me to download Java applets meant for a browser from their source and run them in their own Java runtime. Unfortunately even though I could download and run the applet, it was requesting data which my local applet didn&rsquo;t know how to find, so it didn&rsquo;t display anything.</p></li>
+
+<li><p>I installed a four year old version of Firefox that allowed java plugins. It nearly worked.
+<img src="/images/100Days/Day79/java2.png" alt="" />
+However, it gave me an error because my Java security settings were too high to run applets from an unknown source. It said I could whitelist the source or change my security settings in the Java Control Panel. Where is the Java Control Panel? It hasn&rsquo;t existed in the last 3 versions of OSX. I then tried to change the security settings via editing Java&rsquo;s own configuration files, but couldn&rsquo;t find where it was setting them.</p></li>
+
+<li><p>I tried installing an old version of Firefox on my Kali Linux VM. I couldn&rsquo;t remember the right <code>tar</code> flags I needed to install it, and didn&rsquo;t have the confidence that I wouldn&rsquo;t encounter the same problem as I had on OSX, so I didn&rsquo;t end up trying too hard.</p></li>
+
+<li><p>I downloaded a Windows VM. The download took two hours, and by the time it was done the host wasn&rsquo;t up anymore. I don&rsquo;t know why it would have gone down considering that it was the control system for what I assume was a building&rsquo;s HVAC, but now we&rsquo;ll never know.</p></li>
+</ol>
+
+<p>Lesson learned: always have Windows already installed. See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-78/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 78: The Ol&#39; Unix Nostalgia in the Netherlands, Fortune | Cowsay, and the Mysteries of Tranquility Quidor</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>
