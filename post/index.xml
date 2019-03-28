@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Mar 2019 22:10:13 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2019 11:26:26 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 80: Managing Apartment Security in Bangkok, IoT Defacements, and My Wifi Video Door Lock Makes Me More Safe Because It Lets Anyone Remotely Monitor My Home For Intruders</title>
+      <link>http://blog.alden.website/post/100days/Day-80/</link>
+      <pubDate>Wed, 27 Mar 2019 11:26:26 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-80/</guid>
+      <description>Today I saw a search for &amp;ldquo;comelit multi apartment gateway&amp;rdquo;. Sounded pretty interesting so I jumped in. The query was &amp;ldquo;input_box==true window.open reboot.html&amp;rdquo;
+Apartment Door Lock Management System on 184.82.206.184 Comelit is a manufacturer of IoT video doorbells and locks. This search seemed to be showing up the configuation pages for apartment owners and supers, who assumedly had either retrofited all of the apartments in their building to have these wifi locks or had built a new building with them.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 79: Controlling the Climate in Constanta, Legacy Browser Extensions, Windows Virtual Machines, Reliable Old Internet Explorer, and Java Applet Deep Hell</title>
