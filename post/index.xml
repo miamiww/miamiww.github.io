@@ -6,10 +6,30 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Mar 2019 11:26:26 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 31 Mar 2019 20:28:55 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 82: Monitoring Modbus Logic Controllers in Wroclaw</title>
+      <link>http://blog.alden.website/post/100days/Day-82/</link>
+      <pubDate>Sun, 31 Mar 2019 20:28:55 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-82/</guid>
+      <description>Saw a search today for &amp;ldquo;Modbus Gateway&amp;rdquo;. I wasn&amp;rsquo;t sure what that would be exactly so I thought I&amp;rsquo;d take a look.
+Modbus Gateway on 82.143.179.14 Modbus is a protocol for communication over serial developed in 1979, originally meant for logic controllers, but now with wide use across industrial electronic devices. A modbus gateway is a device for connecting modbus devices into IP networks (sometimes the internet), typically so that they can be remotely monitored.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 81: Microwave Access in Ghaziabad</title>
+      <link>http://blog.alden.website/post/100days/Day-81/</link>
+      <pubDate>Sun, 31 Mar 2019 12:54:32 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-81/</guid>
+      <description>Today a search for &amp;ldquo;unprotected WiMAX towers&amp;rdquo;. The word tower was pretty tantalizing. The actual search was for &amp;ldquo;OX253P&amp;rdquo;.
+WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 80: Managing Apartment Security in Bangkok, IoT Defacements, and My Wifi Video Door Lock Makes Me More Safe Because It Lets Anyone Remotely Monitor My Home For Intruders</title>

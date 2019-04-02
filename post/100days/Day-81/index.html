@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 80: Managing Apartment Security in Bangkok, IoT Defacements, and My Wifi Video Door Lock Makes Me More Safe Because It Lets Anyone Remotely Monitor My Home For Intruders</h1>
+    <h1>Shodan Stories Day 81: Microwave Access in Ghaziabad</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-03-27T11:26:26-04:00">Mar 27, 2019</time>
+            <time class="post-date" datetime="2019-03-31T12:54:32-04:00">Mar 31, 2019</time>
         </li>
         
         
@@ -77,29 +77,24 @@
 
         
 
-        <li>2 min read</li>
+        <li>1 min read</li>
     </ul>
 </aside>
     
 
     
 
-<p>Today I saw a search for &ldquo;comelit multi apartment gateway&rdquo;. Sounded pretty interesting so I jumped in. The query was &ldquo;input_box==true window.open reboot.html&rdquo;</p>
+<p>Today a search for &ldquo;unprotected WiMAX towers&rdquo;. The word tower was pretty tantalizing. The actual search was for &ldquo;OX253P&rdquo;.</p>
 
-<h2 id="apartment-door-lock-management-system-on-184-82-206-184">Apartment Door Lock Management System on 184.82.206.184</h2>
+<h2 id="wimax-tower-on-117-244-48-33">WiMAX Tower on 117.244.48.33</h2>
 
-<p><a href="https://www.comelitgroup.com/en-us/">Comelit</a> is a manufacturer of IoT video doorbells and locks. This search seemed to be showing up the configuation pages for apartment owners and supers, who assumedly had either retrofited all of the apartments in their building to have these wifi locks or had built a new building with them. This is a system meant for the apartment overseer, not the apartment dwellers. There were about 70 results and I picked one in Thailand.
-<img src="/images/100Days/Day80/password.png" alt="" /></p>
+<p><a href="https://en.wikipedia.org/wiki/WiMAX">WiMAX</a> is a communication standard meant to give <a href="https://en.wikipedia.org/wiki/Last_mile">last mile</a> wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE. It works much in the same way as cell towers, and frequently <a href="https://gizmodo.com/giz-explains-how-cell-towers-work-5177322">WiMAX and cell towers are bundled into one</a>. It&rsquo;s not used much in North America, because there was so much existing copper infrastructure, but it&rsquo;s popular in many other countries. All the results in my search were from India, so I picked one at random.</p>
 
-<p>On the apartments tab I could look at all of the apartments, and could see from the description that I wasn&rsquo;t the first person here. Toxic Mask had been here before.
-<img src="/images/100Days/Day80/firstlook.png" alt="" />
-We can talk about TM in a second, first just look at how much access this system gives me.
-<img src="/images/100Days/Day80/codes.png" alt="" />
-I can see the room numbers and <em>door unlock codes</em> for every apartment in the building. I can make changes to those codes, <em>locking people out of their apartments</em>. I could do that for every apartment, change the password on this configuration system, and cause mayhem for ~100 people likely for hours. What is the benefit of having your doors connected to the internet?</p>
+<p>It was running <a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP</a> on port 161 and a webserver on 80.
+<img src="/images/100Days/Day81/firstlook.png" alt="" />
+I believe this is actually someone&rsquo;s home antenna, and not a tower. Judging from the <a href="https://fccid.io/I88OX253P/User-Manual/User-Manual-1403055">user manual</a> the default password is admin/admin. But of course I didn&rsquo;t try it :)</p>
 
-<p>I found TM on <a href="https://defacer.id">defacer.id</a>, the website that ranks web site vandals based on their defacements. <a href="https://defacer.id/archive/attacker/toxic-mask">His page on the site</a> indicates they&rsquo;ve vandalized 1249 websites since starting in 2017.
-<img src="/images/100Days/Day80/toxicmask.png" alt="" />
-This is their vandal tag. Looks way more impressive than the one one the lock gateway, but I guess that IoT configuration pages don&rsquo;t give you too much to work off of. See you tomorrow.</p>
+<p>See you tomorrow.</p>
 
 
 </article>
@@ -109,12 +104,12 @@ This is their vandal tag. Looks way more impressive than the one one the lock ga
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-79/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 79: Controlling the Climate in Constanta, Legacy Browser Extensions, Windows Virtual Machines, Reliable Old Internet Explorer, and Java Applet Deep Hell</a>
+            <a href="http://blog.alden.website/post/100days/Day-80/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 80: Managing Apartment Security in Bangkok, IoT Defacements, and My Wifi Video Door Lock Makes Me More Safe Because It Lets Anyone Remotely Monitor My Home For Intruders</a>
         </li>
         
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-81/">Shodan Stories Day 81: Microwave Access in Ghaziabad <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="http://blog.alden.website/post/100days/Day-82/">Shodan Stories Day 82: Monitoring Modbus Logic Controllers in Wroclaw <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>
