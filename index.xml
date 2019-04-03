@@ -6,10 +6,20 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2019 20:28:55 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 23:44:25 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 83: Logging In In Koshigaya</title>
+      <link>http://blog.alden.website/post/100days/Day-83/</link>
+      <pubDate>Tue, 02 Apr 2019 23:44:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-83/</guid>
+      <description>Today I saw a search for the Microsoft Remote Desktop protocol. The search was for &amp;ldquo;\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00&amp;rdquo;. ]
+Microsoft Remote Desktop on 124.146.236.44 There were several hundred thousand results, showing just how popular the remote desktop protocol is. I remember using it quite often in a job I had several years ago. Initially I thought of looking for my old company&amp;rsquo;s system but that seemed kind of like a weird thing to be doing.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 82: Monitoring Modbus Logic Controllers in Wroclaw</title>
