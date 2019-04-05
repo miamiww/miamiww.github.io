@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Alden&#39;s ITP Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.53" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Alden&rsquo;s ITP Home</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+
+      <!-- isso -->
+        
+      <!-- end isso -->
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="http://alden.website">
+                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+
+<article>
+
+    <h1>Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-04-04T21:43:37-04:00">Apr 4, 2019</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/100-days/">100 days</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>1 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>There&rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&rsquo;m just catching up with them. Today I looked into one for <a href="https://www.raspberrypi.org/">Raspberry Pis</a> running SSH that was just &ldquo;port:22 &ldquo;raspbian&rdquo;&ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.</p>
+
+<h2 id="a-raspberry-pi-on-178-12-106-221">A Raspberry Pi on 178.12.106.221</h2>
+
+<p>I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443. All that webserver was hosting though was the word &ldquo;home&rdquo;.
+<img src="/images/100Days/Day85/firstlook.png" alt="" />
+The SSL certificate though had a bit more information.
+<img src="/images/100Days/Day85/ssl.png" alt="" />
+home.jedemenge-it.de does indeed resolve to our IP address. jedemenge-it.de is entirely different however, so I think that the home. is a <a href="https://www.pickaweb.co.uk/kb/cname-can-use-domain/">CNAME</a>.</p>
+
+<pre><code>👻🌵🔮 $ host jedemenge-it.de
+jedemenge-it.de has address 95.143.172.176
+jedemenge-it.de mail is handled by 1 lupus.uberspace.de.
+</code></pre>
+
+<p>jedemenge-it.de itself is someone&rsquo;s personal website, almost certainly the owner of the Pi.</p>
+
+<p><img src="/images/100Days/Day85/website.png" alt="" />
+Looks like they do freelance web development and design. Pretty fun. And they are hosted by a company called UBER SPACE, which might be the best/worst webhost name I&rsquo;ve seen.</p>
+
+<p>See you tomorrow.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://blog.alden.website/post/100days/Day-83/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 83: Logging In In Koshigaya</a>
+        </li>
+        
+        
+    </ul>
+</section>
+
+    <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = '';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
+
+
+<!-- begin comments //-->
+
+    
+
+
+
+<!-- end comments //-->
+
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

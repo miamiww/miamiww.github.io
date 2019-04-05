@@ -6,10 +6,20 @@
     <description>Recent content in 100 Days on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Apr 2019 23:44:25 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 21:43:37 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</title>
+      <link>http://blog.alden.website/post/100days/Day-85/</link>
+      <pubDate>Thu, 04 Apr 2019 21:43:37 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-85/</guid>
+      <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
+A Raspberry Pi on 178.12.106.221 I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 83: Logging In In Koshigaya</title>
