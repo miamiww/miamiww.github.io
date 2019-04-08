@@ -6,10 +6,30 @@
     <description>Recent content on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2019 21:43:37 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 00:14:00 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 88: The Internet Feels Empty in Caoya</title>
+      <link>http://blog.alden.website/post/100days/Day-88/</link>
+      <pubDate>Mon, 08 Apr 2019 00:14:00 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-88/</guid>
+      <description>I&amp;rsquo;ve been feeling exhausted the past week, so I decided to take a couple of easy days reaching out to some webcams. I was hoping to see some people, looking at chiller stations all day can make you feel you a little lonely.
+Internet Camera on 122.117.120.153 I found an IP in Taiwan that had two different cameras, one on 8000 and one on 9000. It seems to be in an internet cafe.</description>
+    </item>
+    
+    <item>
+      <title>Shodan Stories Day 86: Graphing Databases in Sydney</title>
+      <link>http://blog.alden.website/post/100days/Day-86/</link>
+      <pubDate>Fri, 05 Apr 2019 18:04:01 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-86/</guid>
+      <description>About a week ago I saw a search for &amp;ldquo;dgraph&amp;rdquo; and I thought today I would take a look. Dgraph is a kind of graph database, which is a kind of NoSQL database with a graph-like structure of nodes and edges. The search was for &amp;ldquo;Dgraph Ratel Dashboard&amp;rdquo;.
+Dgraph Server on 13.210.169.101 There were only 5 results, all either in China or Australia, and so I picked one in Australia because Dgraph is based in Sydney.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</title>

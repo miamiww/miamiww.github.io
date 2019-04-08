@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</h1>
+    <h1>Shodan Stories Day 86: Graphing Databases in Sydney</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-04-04T21:43:37-04:00">Apr 4, 2019</time>
+            <time class="post-date" datetime="2019-04-05T18:04:01-04:00">Apr 5, 2019</time>
         </li>
         
         
@@ -84,27 +84,17 @@
 
     
 
-<p>There&rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&rsquo;m just catching up with them. Today I looked into one for <a href="https://www.raspberrypi.org/">Raspberry Pis</a> running SSH that was just &ldquo;port:22 &ldquo;raspbian&rdquo;&ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.</p>
+<p>About a week ago I saw a search for &ldquo;dgraph&rdquo; and I thought today I would take a look. <a href="https://dgraph.io/">Dgraph</a> is a kind of <a href="https://en.wikipedia.org/wiki/Graph_database">graph database</a>, which is a kind of NoSQL database with a graph-like structure of nodes and edges. The search was for &ldquo;Dgraph Ratel Dashboard&rdquo;.</p>
 
-<h2 id="a-raspberry-pi-on-178-12-106-221">A Raspberry Pi on 178.12.106.221</h2>
+<h2 id="dgraph-server-on-13-210-169-101">Dgraph Server on 13.210.169.101</h2>
 
-<p>I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443. All that webserver was hosting though was the word &ldquo;home&rdquo;.
-<img src="/images/100Days/Day85/firstlook.png" alt="" />
-The SSL certificate though had a bit more information.
-<img src="/images/100Days/Day85/ssl.png" alt="" />
-home.jedemenge-it.de does indeed resolve to our IP address. jedemenge-it.de is entirely different however, so I think that the home. is a <a href="https://www.pickaweb.co.uk/kb/cname-can-use-domain/">CNAME</a>.</p>
+<p>There were only 5 results, all either in China or Australia, and so I picked one in Australia because Dgraph is based in Sydney. It was running the Dgraph dashboard on port 8081.
+<img src="/images/100Days/Day86/firstlook.png" alt="" />
+There wasn&rsquo;t actually a lot I could do here. It didn&rsquo;t ask me for authentication or anything, there just wasn&rsquo;t any data. All of the results I found seemed this way actually.</p>
 
-<pre><code>👻🌵🔮 $ host jedemenge-it.de
-jedemenge-it.de has address 95.143.172.176
-jedemenge-it.de mail is handled by 1 lupus.uberspace.de.
-</code></pre>
+<p>According to an <a href="https://techcrunch.com/2017/12/19/dgraph-raises-3m-for-its-open-source-distributed-graph-database-hits-1-0-release/">article I read, Dgraph seems to be reasonably popular</a>, so I assume that I only found these few results because anyone who actually has data has better secured their system so that they don&rsquo;t show up on Shodan.</p>
 
-<p>jedemenge-it.de itself is someone&rsquo;s personal website, almost certainly the owner of the Pi.</p>
-
-<p><img src="/images/100Days/Day85/website.png" alt="" />
-Looks like they do freelance web development and design. Pretty fun. And they are hosted by a company called UBER SPACE, which might be the best/worst webhost name I&rsquo;ve seen.</p>
-
-<p>See you tomorrow.</p>
+<p>Good thinking on their part. See you tomorrow.</p>
 
 
 </article>
@@ -114,12 +104,12 @@ Looks like they do freelance web development and design. Pretty fun. And they ar
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-83/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 83: Logging In In Koshigaya</a>
+            <a href="http://blog.alden.website/post/100days/Day-85/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</a>
         </li>
         
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-86/">Shodan Stories Day 86: Graphing Databases in Sydney <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="http://blog.alden.website/post/100days/Day-88/">Shodan Stories Day 88: The Internet Feels Empty in Caoya <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>
