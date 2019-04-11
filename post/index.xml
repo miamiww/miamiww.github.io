@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alden&#39;s ITP Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 00:14:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2019 22:51:25 -0400</lastBuildDate>
     
 	<atom:link href="http://blog.alden.website/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shodan Stories Day 91: Collecting Workforce Biometrics in Mumbai, GPS Tagging My Employee Assets to Ensure Payroll Compliance, and Using Watermarked Stock Footage in Your Deployed Product Means Never Having To Say You&#39;re Sorry</title>
+      <link>http://blog.alden.website/post/100days/Day-91/</link>
+      <pubDate>Wed, 10 Apr 2019 22:51:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/100days/Day-91/</guid>
+      <description>Today I just went looking for AWS servers.
+AWS EC2 Instance on 35.154.190.199 The first one I found, in India, seemed pretty interesting. It had ssh running on port 22 and on 80 a webserver that just hosted a login. But this login page had a 15 second video loop with a giant watermark saying POND 5 on it. Turns out that POND 5 is a stock image/footage company and the fact that this video still has a giant watermark means that it certainly was not paid for.</description>
+    </item>
     
     <item>
       <title>Shodan Stories Day 88: The Internet Feels Empty in Caoya</title>
