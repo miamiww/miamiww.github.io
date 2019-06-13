@@ -54,13 +54,13 @@
 
 <article>
 
-    <h1>Shodan Stories Day 93: Poking the BusyBox in Camboriu</h1>
+    <h1>Shodan Workshop Resource List</h1>
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-04-12T22:22:42-04:00">Apr 12, 2019</time>
+            <time class="post-date" datetime="2019-06-13T16:19:25-04:00">Jun 13, 2019</time>
         </li>
         
         
@@ -69,7 +69,7 @@
             <em>
                 
                     
-                    <a href="/categories/100-days/">100 days</a>
+                    <a href="/categories/workshops/">workshops</a>
                 
             </em>
         </li>
@@ -77,20 +77,60 @@
 
         
 
-        <li>1 min read</li>
+        <li>2 min read</li>
     </ul>
 </aside>
     
 
     
 
-<p>Today I saw someone&rsquo;s search for <a href="https://busybox.net/">BusyBox&rsquo;s</a>, the query was &ldquo;port:9000 ash&rdquo;. BusyBox is a kind of GNU-lite system for embedded boards, allowing you to telnet into a shell that has most of the usual tools you get in Linux. It seems like it gets used in modems and stuff.</p>
+<p><a href="https://www.youtube.com/watch?v=K7Hn1rPQouU"><img src="https://accelerator-origin.kkomando.com/wp-content/uploads/2017/10/hacker.jpg" alt="" /></a></p>
 
-<h2 id="a-busybox-on-191-186-195-10">A BusyBox on 191.186.195.10</h2>
+<p>Welcome! This is a list of resources to supplement my &ldquo;Basic Hacking in 2019 with Shodan&rdquo; workshop.</p>
 
-<p>I picked the very first result, in Brazil. So it&rsquo;s not very interesting in some senses, it&rsquo;s just running a telnet port on 9000. But you can connect and look around and stuff. It&rsquo;s all read-only. Trying to figure out what it was exactly got me on this <a href="https://rdot.org/forum/archive/index.php/t-6-p-14.html">Russian linux forum</a> which is really not where I want to be.</p>
+<p>First it&rsquo;s very important to take care of yourself out there when you start poking around. I recommend a VPN to hide who you are a bit and some kind of browser tools to prevent someone from running malicious code in your browser.</p>
 
-<p>See you tomorrow.</p>
+<p>My favorite VPN is <a href="https://nordvpn.com/">Nord</a>, and I use the <a href="https://github.com/gorhill/uMatrix">uMatrix</a> browser extension in all my browsers to control what code my browsers are running.</p>
+
+<h2 id="online-tools">Online Tools</h2>
+
+<ul>
+<li><a href="https://www.shodan.io/">Shodan</a> - search engine for anything connected to the internet!</li>
+<li><a href="https://publicwww.com/">PublicWWW</a> - search engine for websites&rsquo; source code!</li>
+<li><a href="https://wigle.net/">Wigle</a> - search engine for wifi networks!</li>
+</ul>
+
+<h2 id="command-line-tools">Command Line Tools</h2>
+
+<ul>
+<li><p><code>host</code> - gives you the IP address of any domain name by querring your <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">DNS of choice</a></p></li>
+
+<li><p><code>whois</code> - queries the <a href="https://whois.icann.org/en">WhoIs database</a> to get a variety of information about a domain or IP address</p></li>
+
+<li><p><code>nslookup</code> - similar to <code>host</code></p></li>
+
+<li><p><code>ping</code> - sends packets to an address to see if you get a response, good for checking if a host is up</p></li>
+
+<li><p><code>nc</code> - known as &ldquo;<a href="http://netcat.sourceforge.net/">netcat</a>&rdquo;, swiss army knife of creating network connections</p></li>
+
+<li><p><code>telnet</code> - can create a tcp connection between you and someone else, very insecure and now almost entirely replaced by <code>nc</code></p></li>
+
+<li><p><code>traceroute</code> - prints every server between you and a desired address</p></li>
+
+<li><p><code>nmap</code> - a powerful and dangerous port scanner <a href="https://nmap.org/">read more here</a></p></li>
+
+<li><p><code>ssh</code> - create a secure shell connection, a way of logging into a remote computer over the command line</p></li>
+
+<li><p><code>ftp</code> - file transfer protocol, method of transfering files</p></li>
+</ul>
+
+<h2 id="gui-software">GUI Software</h2>
+
+<ul>
+<li><a href="https://www.wireshark.org/">Wireshark</a> - packet sniffing tool</li>
+<li><a href="https://github.com/samatt/herbivore">Herbivore</a> - simpler but buggy packet sniffer</li>
+<li><a href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer</a> - way of connecting to <a href="https://en.wikipedia.org/wiki/Virtual_Network_Computings">VNC servers</a></li>
+</ul>
 
 
 </article>
@@ -100,13 +140,9 @@
     <ul>
         
         <li>
-            <a href="http://blog.alden.website/post/100days/Day-91/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 91: Collecting Workforce Biometrics in Mumbai, GPS Tagging My Employee Assets to Ensure Payroll Compliance, and Using Watermarked Stock Footage in Your Deployed Product Means Never Having To Say You&#39;re Sorry</a>
+            <a href="http://blog.alden.website/post/100days/Day-93/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 93: Poking the BusyBox in Camboriu</a>
         </li>
         
-        
-        <li>
-            <a href="http://blog.alden.website/post/Workshops/shodan-tips/">Shodan Workshop Resource List <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
         
     </ul>
 </section>

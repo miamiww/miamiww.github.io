@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.alden.website/post/Workshops/shodan-tips/</loc>
+    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.alden.website/post/100days/Day-93/</loc>
     <lastmod>2019-04-12T22:22:42-04:00</lastmod>
   </url>
@@ -774,7 +779,7 @@
   
   <url>
     <loc>http://blog.alden.website/</loc>
-    <lastmod>2019-04-12T22:22:42-04:00</lastmod>
+    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -864,7 +869,7 @@
   
   <url>
     <loc>http://blog.alden.website/post/</loc>
-    <lastmod>2019-04-12T22:22:42-04:00</lastmod>
+    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -906,6 +911,12 @@
   <url>
     <loc>http://blog.alden.website/categories/visual-language/</loc>
     <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.alden.website/categories/workshops/</loc>
+    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
     <priority>0</priority>
   </url>
   

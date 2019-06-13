@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops on Alden&#39;s ITP Home</title>
+    <link>http://blog.alden.website/categories/workshops/</link>
+    <description>Recent content in Workshops on Alden&#39;s ITP Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Jun 2019 16:19:25 -0400</lastBuildDate>
+    
+	<atom:link href="http://blog.alden.website/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shodan Workshop Resource List</title>
+      <link>http://blog.alden.website/post/Workshops/shodan-tips/</link>
+      <pubDate>Thu, 13 Jun 2019 16:19:25 -0400</pubDate>
+      
+      <guid>http://blog.alden.website/post/Workshops/shodan-tips/</guid>
+      <description>Welcome! This is a list of resources to supplement my &amp;ldquo;Basic Hacking in 2019 with Shodan&amp;rdquo; workshop.
+First it&amp;rsquo;s very important to take care of yourself out there when you start poking around. I recommend a VPN to hide who you are a bit and some kind of browser tools to prevent someone from running malicious code in your browser.
+My favorite VPN is Nord, and I use the uMatrix browser extension in all my browsers to control what code my browsers are running.</description>
+    </item>
+    
+  </channel>
+</rss>
