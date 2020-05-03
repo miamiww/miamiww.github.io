@@ -1,88 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models - Alden&#39;s Blog Home</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models" />
+<meta property="og:description" content="I saw a search for &ldquo;prison phones&rdquo; and gosh if that isn&rsquo;t a lure I don&rsquo;t know what is. The search was just for &ldquo;encartele&rdquo;, and doing some Googling I found that Encartele is a major player in the United States inmate phone service industry. I think this ad will explain what that means:   An Encartele Prison Phone on 66.112.68.130 So Encartele charges inmates and their families artificially high phone rates and give paybacks to the wardens running the prisons." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.alden.website/post/100days/Day-60/" /><meta property="article:published_time" content="2019-03-04T17:20:55-05:00"/>
+<meta property="article:modified_time" content="2019-03-04T17:20:55-05:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models"/>
+<meta name="twitter:description" content="I saw a search for &ldquo;prison phones&rdquo; and gosh if that isn&rsquo;t a lure I don&rsquo;t know what is. The search was just for &ldquo;encartele&rdquo;, and doing some Googling I found that Encartele is a major player in the United States inmate phone service industry. I think this ad will explain what that means:   An Encartele Prison Phone on 66.112.68.130 So Encartele charges inmates and their families artificially high phone rates and give paybacks to the wardens running the prisons."/>
 
-<html lang="en-us">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="http://blog.alden.website/css/main.css" />
+</head><body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://blog.alden.website/">Alden&#39;s Blog Home</a>
+    </div>
+    <link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
 
-<head>
-  <title>Alden&#39;s ITP Home</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="" />
-  <meta name="generator" content="Hugo 0.53" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-<link href="http://alden.website/images/flower.png" rel="icon" type="image/x-icon">
-</head>
+	<nav>
+		
+		<a href="http://alden.website">Alden&#39;s main site</a>
+		
+		<a href="/categories">Categories</a>
+		
+	</nav>
+</header>
 
-<body>
-  <div id="container">
-    <header>
-      <h1>
-                <a href="/">Alden&rsquo;s ITP Home</a>
-            </h1>
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models</h1>
+			<div class="meta">Posted on Mar 4, 2019</div>
+		</div>
+		
 
-      <ul id="social-media">
-             
-      </ul>
-      
-
-      <!-- isso -->
-        
-      <!-- end isso -->
-    </header>
-
-    
-<nav>
-    <ul>
-        
-        <li>
-            <a class="" href="http://alden.website">
-                <i class="fa-li fa  fa-lg"></i><span>Alden&#39;s main site</span>
-            </a>
-        </li>
-        
-    </ul>
-</nav>
-
-    <main>
-
-
-
-
-
-<article>
-
-    <h1>Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models</h1>
-
-    
-        <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2019-03-04T17:20:55-05:00">Mar 4, 2019</time>
-        </li>
-        
-        
-        <li>
-            Categories: 
-            <em>
-                
-                    
-                    <a href="/categories/100-days/">100 days</a>
-                
-            </em>
-        </li>
-        
-
-        
-
-        <li>3 min read</li>
-    </ul>
-</aside>
-    
-
-    
+		<section class="body">
+			
 
 <p>I saw a search for &ldquo;prison phones&rdquo; and gosh if that isn&rsquo;t a lure I don&rsquo;t know what is. The search was just for &ldquo;encartele&rdquo;, and doing some Googling I found that <a href="https://www.encartele.net/">Encartele</a> is a major player in the United States inmate phone service industry. I think this ad will explain what that means:
 
@@ -119,100 +76,22 @@ Apparently regulatory oversight of the inmate phone industry has been politicall
 
 <p>My guess is it&rsquo;s also to convince their customers - prison wardens - that they are sensible, right headed anti-regulationists, just like any red blooded American should be. I started trying to go down two avenues, read more Encartele promotional documents and read the actual FCC regulations on the industry such as they are, but I started feeling so fatigued. It&rsquo;s godawful and it&rsquo;s only a tiny tiny part of a terrible incarceration system. See you tomorrow.</p>
 
+		</section>
 
-</article>
-
-
-<section class="post-nav">
-    <ul>
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-59/"><i class="fa fa-chevron-circle-left"></i> Shodan Stories Day 59: High Precision Instruments in Bosnia and Herzegovina, Leica Geosystems Satellite Receivers, and Our Story of 80 Years of Mergers and Acquisitions</a>
-        </li>
-        
-        
-        <li>
-            <a href="http://blog.alden.website/post/100days/Day-61/">Shodan Stories Day 61: Printing Skulls in Springfield, Tautulli Plex, and OctoPrint <i class="fa fa-chevron-circle-right"></i> </a>
-        </li>
-        
-    </ul>
-</section>
-
-    <section class="comments-block">
-      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
-</section>
-
-<section id="disqus_thread"></section>
-
-<script>
-      (function () {
-            
-            
-            if (window.location.hostname == "localhost")
-                  return;
-
-            var disqus_loaded = false;
-            var disqus_shortname = '';
-            var disqus_button = document.getElementById("show-comments");
-
-            disqus_button.style.display = "";
-            disqus_button.addEventListener("click", disqus, false);
-
-            function disqus() {
-
-                  if (!disqus_loaded) {
-                        disqus_loaded = true;
-
-                        var e = document.createElement("script");
-                        e.type = "text/javascript";
-                        e.async = true;
-                        e.src = "//" + "blogalden" + ".disqus.com/embed.js";
-                        (document.getElementsByTagName("head")[0] ||
-                              document.getElementsByTagName("body")[0])
-                        .appendChild(e);
-
-                        
-                        document.getElementById("show-comments").style.display = "none";
-                  }
-            }
-
-            
-            var hash = window.location.hash.substr(1);
-            if (hash.length > 8) {
-                  if (hash.substring(0, 8) == "comment-") {
-                        disqus();
-                  }
-            }
-
-            
-            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
-                  disqus();
-            }
-      })();
-</script>
-
-
-<!-- begin comments //-->
-
-    
-
-
-
-<!-- end comments //-->
-
-
-
-
-
-
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
 </main>
-    <footer>
-        <h6> | 
-            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="http://blog.alden.website/index.xml">Subscribe</a></h6>
+<footer>
+    <hr>⚡️
+        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
-</div>
-<script src="/js/scripts.js"></script>
-</body>
-
+    
+    
+    
+    </div>
+    </body>
 </html>
