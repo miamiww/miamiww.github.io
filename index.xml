@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alden&#39;s Blog Home</title>
-    <link>http://blog.alden.website/</link>
+    <link>https://blog.alden.website/</link>
     <description>Recent content on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Jun 2019 16:19:25 -0400</lastBuildDate>
     
-	<atom:link href="http://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Shodan Workshop Resource List</title>
-      <link>http://blog.alden.website/post/Workshops/shodan-tips/</link>
+      <link>https://blog.alden.website/post/Workshops/shodan-tips/</link>
       <pubDate>Thu, 13 Jun 2019 16:19:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/Workshops/shodan-tips/</guid>
+      <guid>https://blog.alden.website/post/Workshops/shodan-tips/</guid>
       <description>Welcome! This is a list of resources to supplement my &amp;ldquo;Basic Hacking in 2019 with Shodan&amp;rdquo; workshop.
 First it&amp;rsquo;s very important to take care of yourself out there when you start poking around. I recommend a VPN to hide who you are a bit and some kind of browser tools to prevent someone from running malicious code in your browser.
 My favorite VPN is Nord, and I use the uMatrix browser extension in all my browsers to control what code my browsers are running.</description>
@@ -24,209 +24,209 @@ My favorite VPN is Nord, and I use the uMatrix browser extension in all my brows
     
     <item>
       <title>Shodan Stories Day 93: Poking the BusyBox in Camboriu</title>
-      <link>http://blog.alden.website/post/100days/Day-93/</link>
+      <link>https://blog.alden.website/post/100days/Day-93/</link>
       <pubDate>Fri, 12 Apr 2019 22:22:42 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-93/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-93/</guid>
       <description>Today I saw someone&amp;rsquo;s search for BusyBox&amp;rsquo;s, the query was &amp;ldquo;port:9000 ash&amp;rdquo;. BusyBox is a kind of GNU-lite system for embedded boards, allowing you to telnet into a shell that has most of the usual tools you get in Linux. It seems like it gets used in modems and stuff.
 A BusyBox on 191.186.195.10 I picked the very first result, in Brazil. So it&amp;rsquo;s not very interesting in some senses, it&amp;rsquo;s just running a telnet port on 9000.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 91: Collecting Workforce Biometrics in Mumbai, GPS Tagging My Employee Assets to Ensure Payroll Compliance, and Using Watermarked Stock Footage in Your Deployed Product Means Never Having To Say You&#39;re Sorry</title>
-      <link>http://blog.alden.website/post/100days/Day-91/</link>
+      <link>https://blog.alden.website/post/100days/Day-91/</link>
       <pubDate>Wed, 10 Apr 2019 22:51:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-91/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-91/</guid>
       <description>Today I just went looking for AWS servers.
 AWS EC2 Instance on 35.154.190.199 The first one I found, in India, seemed pretty interesting. It had ssh running on port 22 and on 80 a webserver that just hosted a login. But this login page had a 15 second video loop with a giant watermark saying POND 5 on it. Turns out that POND 5 is a stock image/footage company and the fact that this video still has a giant watermark means that it certainly was not paid for.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 88: The Internet Feels Empty in Caoya</title>
-      <link>http://blog.alden.website/post/100days/Day-88/</link>
+      <link>https://blog.alden.website/post/100days/Day-88/</link>
       <pubDate>Mon, 08 Apr 2019 00:14:00 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-88/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-88/</guid>
       <description>I&amp;rsquo;ve been feeling exhausted the past week, so I decided to take a couple of easy days reaching out to some webcams. I was hoping to see some people, looking at chiller stations all day can make you feel you a little lonely.
 Internet Camera on 122.117.120.153 I found an IP in Taiwan that had two different cameras, one on 8000 and one on 9000. It seems to be in an internet cafe.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 86: Graphing Databases in Sydney</title>
-      <link>http://blog.alden.website/post/100days/Day-86/</link>
+      <link>https://blog.alden.website/post/100days/Day-86/</link>
       <pubDate>Fri, 05 Apr 2019 18:04:01 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-86/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-86/</guid>
       <description>About a week ago I saw a search for &amp;ldquo;dgraph&amp;rdquo; and I thought today I would take a look. Dgraph is a kind of graph database, which is a kind of NoSQL database with a graph-like structure of nodes and edges. The search was for &amp;ldquo;Dgraph Ratel Dashboard&amp;rdquo;.
 Dgraph Server on 13.210.169.101 There were only 5 results, all either in China or Australia, and so I picked one in Australia because Dgraph is based in Sydney.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 85: Hosting on Raspberry Pis in Arnstadt, CNAME Record Trails, and &#39;Home&#39; Automation</title>
-      <link>http://blog.alden.website/post/100days/Day-85/</link>
+      <link>https://blog.alden.website/post/100days/Day-85/</link>
       <pubDate>Thu, 04 Apr 2019 21:43:37 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-85/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-85/</guid>
       <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
 A Raspberry Pi on 178.12.106.221 I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 83: Logging In In Koshigaya</title>
-      <link>http://blog.alden.website/post/100days/Day-83/</link>
+      <link>https://blog.alden.website/post/100days/Day-83/</link>
       <pubDate>Tue, 02 Apr 2019 23:44:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-83/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-83/</guid>
       <description>Today I saw a search for the Microsoft Remote Desktop protocol. The search was for &amp;ldquo;\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00&amp;rdquo;. ]
 Microsoft Remote Desktop on 124.146.236.44 There were several hundred thousand results, showing just how popular the remote desktop protocol is. I remember using it quite often in a job I had several years ago. Initially I thought of looking for my old company&amp;rsquo;s system but that seemed kind of like a weird thing to be doing.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 82: Monitoring Modbus Logic Controllers in Wroclaw</title>
-      <link>http://blog.alden.website/post/100days/Day-82/</link>
+      <link>https://blog.alden.website/post/100days/Day-82/</link>
       <pubDate>Sun, 31 Mar 2019 20:28:55 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-82/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-82/</guid>
       <description>Saw a search today for &amp;ldquo;Modbus Gateway&amp;rdquo;. I wasn&amp;rsquo;t sure what that would be exactly so I thought I&amp;rsquo;d take a look.
 Modbus Gateway on 82.143.179.14 Modbus is a protocol for communication over serial developed in 1979, originally meant for logic controllers, but now with wide use across industrial electronic devices. A modbus gateway is a device for connecting modbus devices into IP networks (sometimes the internet), typically so that they can be remotely monitored.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 81: Microwave Access in Ghaziabad</title>
-      <link>http://blog.alden.website/post/100days/Day-81/</link>
+      <link>https://blog.alden.website/post/100days/Day-81/</link>
       <pubDate>Sun, 31 Mar 2019 12:54:32 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-81/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-81/</guid>
       <description>Today a search for &amp;ldquo;unprotected WiMAX towers&amp;rdquo;. The word tower was pretty tantalizing. The actual search was for &amp;ldquo;OX253P&amp;rdquo;.
 WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 80: Managing Apartment Security in Bangkok, IoT Defacements, and My Wifi Video Door Lock Makes Me More Safe Because It Lets Anyone Remotely Monitor My Home For Intruders</title>
-      <link>http://blog.alden.website/post/100days/Day-80/</link>
+      <link>https://blog.alden.website/post/100days/Day-80/</link>
       <pubDate>Wed, 27 Mar 2019 11:26:26 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-80/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-80/</guid>
       <description>Today I saw a search for &amp;ldquo;comelit multi apartment gateway&amp;rdquo;. Sounded pretty interesting so I jumped in. The query was &amp;ldquo;input_box==true window.open reboot.html&amp;rdquo;
 Apartment Door Lock Management System on 184.82.206.184 Comelit is a manufacturer of IoT video doorbells and locks. This search seemed to be showing up the configuation pages for apartment owners and supers, who assumedly had either retrofited all of the apartments in their building to have these wifi locks or had built a new building with them.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 79: Controlling the Climate in Constanta, Legacy Browser Extensions, Windows Virtual Machines, Reliable Old Internet Explorer, and Java Applet Deep Hell</title>
-      <link>http://blog.alden.website/post/100days/Day-79/</link>
+      <link>https://blog.alden.website/post/100days/Day-79/</link>
       <pubDate>Mon, 25 Mar 2019 22:10:13 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-79/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-79/</guid>
       <description>Real tough one today. I found a search for Siemen&amp;rsquo;s Saphir HVAC control systems, and four hours later I was installing a Windows virtual machine.
 HVAC SCADA System on 5.2.229.60 The search itself was for &amp;ldquo;wince Content-Length: 12581&amp;rdquo;. Many of the results on Shodan were in Romania, and so I picked one in Romania. It was running a webserver on 80. This is a pretty cool design for a SCADA opening page.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 78: The Ol&#39; Unix Nostalgia in the Netherlands, Fortune | Cowsay, and the Mysteries of Tranquility Quidor</title>
-      <link>http://blog.alden.website/post/100days/Day-78/</link>
+      <link>https://blog.alden.website/post/100days/Day-78/</link>
       <pubDate>Sat, 23 Mar 2019 12:52:22 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-78/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-78/</guid>
       <description>Today I&amp;rsquo;ve been trying to write a paper about the waste industry and garbage, so I decided to search on Shodan just for the word &amp;ldquo;garbage&amp;rdquo; and see what I get.
 Telnet Service on 62.133.200.27 There were about 100 results, most of them garbage themselves. But I found one in the Netherlands that perplexed me. It showed up in my Shodan search because Shodan had gotten the following response on port 7777:</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 77: Compressing Natural Gas in West Virginia</title>
-      <link>http://blog.alden.website/post/100days/Day-77/</link>
+      <link>https://blog.alden.website/post/100days/Day-77/</link>
       <pubDate>Fri, 22 Mar 2019 20:17:53 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-77/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-77/</guid>
       <description>Today I saw a search on Shodan just for &amp;ldquo;compressor station&amp;rdquo;. Turns out that compressor stations are facilities for compressing natural gas so that it can be transported through a pipeline, and that a natural gas pipeline will frequently have many compressor stations to help keep things moving.
 Natural Gas Compressor Station on 184.13.121.30 There were only 8 results, and I chose one in Fairmont, West Virginia because it was using Red Lion Controls, just like the oil field I found on day 32.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 76: Conference Calls in Noida</title>
-      <link>http://blog.alden.website/post/100days/Day-76/</link>
+      <link>https://blog.alden.website/post/100days/Day-76/</link>
       <pubDate>Thu, 21 Mar 2019 16:17:26 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-76/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-76/</guid>
       <description>Today I read about insecure video conferencing systems made by Polycom, and Googled up a Shodan query to find them. The query was &amp;ldquo;polycom command shell&amp;rdquo;.
 Polycom Conference Calling System on 14.143.72.118 The results were all video conferencing devices that had open telnet ports, but I ultimately chose one in India that was runnign a webserver as well, so that I could have something more interesting to take pictures of.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 75: Powerful Routing in Karachi</title>
-      <link>http://blog.alden.website/post/100days/Day-75/</link>
+      <link>https://blog.alden.website/post/100days/Day-75/</link>
       <pubDate>Wed, 20 Mar 2019 20:22:27 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-75/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-75/</guid>
       <description>Today&amp;rsquo;s the kind of day where I just don&amp;rsquo;t remember how I found the IP I decided to write about. The dangers of looking in the morning and writing at night.
 VoIP WiMAX Gateway on 115.167.115.93 Today&amp;rsquo;s just a router. Well not &amp;ldquo;just&amp;rdquo; I router I suppose, it&amp;rsquo;s a powerful router. The configuration page was running on port 8080, but fortunately for them they had a password and it wasn&amp;rsquo;t a default.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 74: Charging My Car in Heraklion</title>
-      <link>http://blog.alden.website/post/100days/Day-74/</link>
+      <link>https://blog.alden.website/post/100days/Day-74/</link>
       <pubDate>Tue, 19 Mar 2019 10:45:46 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-74/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-74/</guid>
       <description>Today I saw a search for &amp;ldquo;charging station&amp;rdquo; and I thought I would take a look.
 Electric Car Charging Station on 62.103.74.118 There seemed to be a variety of brands of devices that showed up, but all of them were charging stations for electric cars. I ended up picking one in Greece with no authentication. It was running a webserver on port 10000. I love this. It&amp;rsquo;s a dashboard for an electric vehicle charging station made by Etrel, a Slovenian maker of such charging stations (here&amp;rsquo;s the manual).</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 73: Automating Application Testing in Tel-Aviv, Jenkins, and Extremely Secure Devops</title>
-      <link>http://blog.alden.website/post/100days/Day-73/</link>
+      <link>https://blog.alden.website/post/100days/Day-73/</link>
       <pubDate>Sun, 17 Mar 2019 23:06:33 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-73/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-73/</guid>
       <description>I recently read about something called Jenkins, &amp;ldquo;the leading open source automation server&amp;rdquo;. The name and the logo reminded me of the now long gone Ask Jeeves, a search engine that I used when I was first getting online back in the 90s.
 Jenkins Automation Server on 52.73.234.8 I just searched for &amp;ldquo;Jenkins&amp;rdquo; and looked around until I found a result without a login. It was in Ashburn, Virginia which almost certainly meant it was running on AWS in the giant Amazon server facility there.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 71: Transfering Files in Moscow, Macommet, and Open Source Mirrors</title>
-      <link>http://blog.alden.website/post/100days/Day-71/</link>
+      <link>https://blog.alden.website/post/100days/Day-71/</link>
       <pubDate>Fri, 15 Mar 2019 22:13:53 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-71/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-71/</guid>
       <description>Today I just wanted to find a working public FTP server. So I searched &amp;ldquo;FTP&amp;rdquo;, and went with the first result I found, this one in Moscow.
 FTP Server on 195.128.64.25 FTP seems like an ancient technology but I had a job just a few years ago where we would use it all of the time, and I frequently use it to move files to my servers when I can&amp;rsquo;t be bothered to remember the correct scp syntax.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 70: Engineering Consulting in Tangier, WampServer, CORS the Silent Killer, and You&#39;ll Always Have a Job with PHP</title>
-      <link>http://blog.alden.website/post/100days/Day-70/</link>
+      <link>https://blog.alden.website/post/100days/Day-70/</link>
       <pubDate>Thu, 14 Mar 2019 22:18:19 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-70/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-70/</guid>
       <description>Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.
 WampServer on 197.230.101.90 I&amp;rsquo;m not sure what force compelled me to type 197.230.101.90, but it was indeed in Shodan and looked like it was running a website (80 and 443 were serving HTTP) and SQL databases (3306, the mySQL database port and 5432, the PostgreSQL port were both running).</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 68: A Construction Site in Northern Illinois</title>
-      <link>http://blog.alden.website/post/100days/Day-68/</link>
+      <link>https://blog.alden.website/post/100days/Day-68/</link>
       <pubDate>Tue, 12 Mar 2019 23:32:29 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-68/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-68/</guid>
       <description>Busy today so I found an IP camera. This time I got one of my all time favorites, an AXIS camera, this one with a 4K resolution and 700° pan/tilt control.
 AXIS Q6128-E Network Camera on 107.85.76.185 Shodan couldn&amp;rsquo;t identify where it was beyond &amp;ldquo;United States&amp;rdquo;, and I found that was likely because it was connected to the network via a mobile Sierra AirLink router, the kind we&amp;rsquo;ve seen several times now.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index</title>
-      <link>http://blog.alden.website/post/100days/Day-67/</link>
+      <link>https://blog.alden.website/post/100days/Day-67/</link>
       <pubDate>Mon, 11 Mar 2019 22:41:52 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-67/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-67/</guid>
       <description>I saw a great search on Shodan the other day, one just for Apache Webservers. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&amp;rsquo;s still among the most popular servers today; it&amp;rsquo;s estimated that 20% of all current websites are running Apache.  So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 66: Making Cement in Tuban</title>
-      <link>http://blog.alden.website/post/100days/Day-66/</link>
+      <link>https://blog.alden.website/post/100days/Day-66/</link>
       <pubDate>Sun, 10 Mar 2019 16:17:35 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-66/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-66/</guid>
       <description>Today I saw a search just for everything that&amp;rsquo;s a customer of PT Telkom Indonesia, an Indonesian ISP.
 Tuban Cement Factory on 180.250.182.241 I ended up picking the first result because I saw on Shodan, in the town of Tuban on Java, that it was running this warning on the telnet port, 23.
 ***************************************************************************** PT Holcim Indonesia Tbk Astinet Router to STO Kerek Tuban Plant WARNING: This is a private system.</description>
@@ -234,511 +234,511 @@ Tuban Cement Factory on 180.250.182.241 I ended up picking the first result beca
     
     <item>
       <title>Shodan Stories Day 65: My Wifi Enabled Smart Projector Helped Me Rekindle My Marriage&#39;s Lost Spark in Beijing</title>
-      <link>http://blog.alden.website/post/100days/Day-65/</link>
+      <link>https://blog.alden.website/post/100days/Day-65/</link>
       <pubDate>Sat, 09 Mar 2019 23:45:45 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-65/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-65/</guid>
       <description>Today I wanted to find any kind of Alexa-compatible device, be it WiFi plug, smart bulb, or whatever, so I searched in Shodan for &amp;ldquo;alexa&amp;rdquo;. After looking at the results for awhile I found that there was a particular type of object that showed up that I thought was worth looking into further, what looked like a &amp;ldquo;smart projector&amp;rdquo;.
 Optoma on 54.223.86.54 The actual search I used to narrow down on the projectors was &amp;ldquo;alxtest/alexa&amp;rdquo;, which was part of the name in the webserver these projectors were running.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 64: Pro DJing in Antofagasta, Iomega NAS, and a Torrenting Minimalist</title>
-      <link>http://blog.alden.website/post/100days/Day-64/</link>
+      <link>https://blog.alden.website/post/100days/Day-64/</link>
       <pubDate>Fri, 08 Mar 2019 22:55:18 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-64/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-64/</guid>
       <description>Today I saw a search for Iomega (now Lenovo EMC) Network Attached Storage, probably because these devices have been show to have huge security flaws (or the novelty of finding devices that still have &amp;ldquo;Iomega&amp;rdquo; written into their cookie code even after the brand had been incorporated into Lenovo). But I thought it would be a nice change from all of the Synology NAS we&amp;rsquo;ve been seeing.
 Lenovo EMC NAS on 190.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 63: Securities Trading in Hong Kong, Ghidra vs IDA Pro, and the Ever Popular Insecure Java Debugger</title>
-      <link>http://blog.alden.website/post/100days/Day-63/</link>
+      <link>https://blog.alden.website/post/100days/Day-63/</link>
       <pubDate>Thu, 07 Mar 2019 21:20:35 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-63/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-63/</guid>
       <description>There&amp;rsquo;s been a lot of hubbub in the infosec world the past couple of days because the NSA released one of their reverse engineering tools, Ghidra, as an open source toolkit. This is huge news because the closest tool in functionality, IDA Pro, is $1200 a year for a license, but also raised a question: would you trust software from the NSA, even if it&amp;rsquo;s hosted on Github? I&amp;rsquo;m starting with this preamble because of a default setting in Ghidra.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 62: Night at the Kino in Winnenden</title>
-      <link>http://blog.alden.website/post/100days/Day-62/</link>
+      <link>https://blog.alden.website/post/100days/Day-62/</link>
       <pubDate>Wed, 06 Mar 2019 21:17:39 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-62/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-62/</guid>
       <description>Today I wanted to find a webcam but not because I needed an easy target, but rather so that I could find a webcam that would lead me to its precise location. I mulled about in Shodan&amp;rsquo;s image viewer until I found an interesting result, and lo and behold, it&amp;rsquo;s another webcam server made by Steven Wu (see days 38 and 47 if that name doesn&amp;rsquo;t ring a bell). Thank you, Steven Wu, for your really terribly insecure webcam server.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 61: Printing Skulls in Springfield, Tautulli Plex, and OctoPrint</title>
-      <link>http://blog.alden.website/post/100days/Day-61/</link>
+      <link>https://blog.alden.website/post/100days/Day-61/</link>
       <pubDate>Tue, 05 Mar 2019 14:00:02 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-61/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-61/</guid>
       <description>Today&amp;rsquo;s episode is again taken off of the recent searches. I saw someone searching for &amp;ldquo;octoprint -login -authenticate&amp;rdquo;, and decided I&amp;rsquo;d take a look. Turns out OctoPrint is a web interface for 3D printers that let you remotely monitor and control your in progress jobs. So I&amp;rsquo;d be finding 3D printers, a whole dimension up from the paper printer I found back on day 31.
 A Wanhao Duplicator i3 3D Printer on 173.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 60: The Private Prison Industrial Complex in Houston, Encartele Phones, Bonkers Advertisements, Inmate Surveillance, and Predatory Business Models</title>
-      <link>http://blog.alden.website/post/100days/Day-60/</link>
+      <link>https://blog.alden.website/post/100days/Day-60/</link>
       <pubDate>Mon, 04 Mar 2019 17:20:55 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-60/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-60/</guid>
       <description>I saw a search for &amp;ldquo;prison phones&amp;rdquo; and gosh if that isn&amp;rsquo;t a lure I don&amp;rsquo;t know what is. The search was just for &amp;ldquo;encartele&amp;rdquo;, and doing some Googling I found that Encartele is a major player in the United States inmate phone service industry. I think this ad will explain what that means:   An Encartele Prison Phone on 66.112.68.130 So Encartele charges inmates and their families artificially high phone rates and give paybacks to the wardens running the prisons.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 59: High Precision Instruments in Bosnia and Herzegovina, Leica Geosystems Satellite Receivers, and Our Story of 80 Years of Mergers and Acquisitions</title>
-      <link>http://blog.alden.website/post/100days/Day-59/</link>
+      <link>https://blog.alden.website/post/100days/Day-59/</link>
       <pubDate>Sun, 03 Mar 2019 16:42:04 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-59/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-59/</guid>
       <description>A plethora of good shared searches on Shodan today. I decided to go with satellite receiver web interfaces, thinking that after my attempts back on day 13 this would be about as close to a real satellite as I could get.
 Leica Satellite Receiver on 212.39.114.78 I chose a result in Bosnia and Herzegovina. It was running email ports and a webserver on port 80, so I took a look at the webserver.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 58: Climbing the Global Cyber Vandalism Ladder in Westminster, Crypto Airdrops, and the Shady Underworld of Monetized Link Shortening Services</title>
-      <link>http://blog.alden.website/post/100days/Day-58/</link>
+      <link>https://blog.alden.website/post/100days/Day-58/</link>
       <pubDate>Sat, 02 Mar 2019 22:09:27 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-58/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-58/</guid>
       <description>Today I felt like going for another hacked website, so I again searched for &amp;ldquo;hacked by&amp;rdquo; on Shodan like I did all the way back on day 18.
 A Hacked Server on 94.76.219.226 There were so many results, I picked the first one I got, in the UK. It had ftp and ssh running, as well as email and the usual 80 and 443 webservers. It also had a cPanel login page running, cPanel being, in my experience, the most miserable way to run a webhost backend.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 57: Shodaning Myself, Ye Olde Telnet Service, and the Weather Underground</title>
-      <link>http://blog.alden.website/post/100days/Day-57/</link>
+      <link>https://blog.alden.website/post/100days/Day-57/</link>
       <pubDate>Fri, 01 Mar 2019 17:30:12 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-57/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-57/</guid>
       <description>Yes today I Shodaned myself. Nothing shows up for my full name, thankfully, but &amp;ldquo;alden&amp;rdquo; has a lot of results.
 The Weather Underground on 35.160.169.47 I picked a result in Boardman, Oregon, largely because of how charming it was. It&amp;rsquo;s just a telnet server, running on port 23 and mirrored on port 3000. You almost never see telnet anymore these days, since it&amp;rsquo;s been primarily replaced with the much more secure ssh.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 56: Buying Souvenirs in Bethlehem, Schneider Electric spaceLYnk, EXIF Data, and Does It Count as a Pilgrimage If You Are Just Remotely Opening and Closing Gates via a Store&#39;s Insecure SCADA System?</title>
-      <link>http://blog.alden.website/post/100days/Day-56/</link>
+      <link>https://blog.alden.website/post/100days/Day-56/</link>
       <pubDate>Thu, 28 Feb 2019 12:01:30 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-56/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-56/</guid>
       <description>I saw a search today for someone looking for spaceLYnk logic controllers, a kind of logic controller for SCADA systems made by Schneider Electric (SCADA, if you remember from day 30, stands for supervisory control and data acquisition).
 spaceLYnk SCADA System on 213.6.102.238 There were quite a few results from all over the place, but I noticed that most of them didn&amp;rsquo;t have visualizations of the system. So I picked one that had the whole system mapped out, in Palestine.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 55: Dancing with Skunks and Annotating Goats in Fremont, Ornamental Hermits, Gopherspace, and the Mysteries of Time</title>
-      <link>http://blog.alden.website/post/100days/Day-55/</link>
+      <link>https://blog.alden.website/post/100days/Day-55/</link>
       <pubDate>Wed, 27 Feb 2019 13:39:11 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-55/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-55/</guid>
       <description>Some Cisco routers say &amp;ldquo;SAN FRANCISCO&amp;rdquo; when telneting into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&amp;rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.
 An Ornamental Hermit on 74.207.243.202 What caught my eye on this IP was that Shodan was indicating that it was running gopher on port 70.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 54: Pumping Your Own in Saint-Denis</title>
-      <link>http://blog.alden.website/post/100days/Day-54/</link>
+      <link>https://blog.alden.website/post/100days/Day-54/</link>
       <pubDate>Tue, 26 Feb 2019 19:43:36 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-54/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-54/</guid>
       <description>I read this old blog post from 2015 talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.
 Automated Tank Gauge on 81.248.205.246 Based on that blog post it seemed that the best thing to search for was &amp;ldquo;I20100&amp;rdquo;. I immediately found several thousand results and yes all of them seemed to be accessible.</description>
     </item>
     
     <item>
       <title>Future&#39;s Market at the Schemers, Scammers, and Subverters Symposium</title>
-      <link>http://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</link>
+      <link>https://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</link>
       <pubDate>Tue, 26 Feb 2019 14:36:07 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</guid>
+      <guid>https://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</guid>
       <description>This past weekend I was speaking at the Schemers, Scammers, and Subverters Symposium in Portland, OR, and I asked the organizers if I could also run a prototype of my thesis at the event. Obviously I didn&amp;rsquo;t describe it as such to them, in keeping with the spirit of the event I said that I had a fully polished performance ready named &amp;ldquo;Future&amp;rsquo;s Market&amp;rdquo;. As part of the conference they were also running a market called &amp;ldquo;The Totally Honest Barter Bazaar&amp;rdquo;, and they told me I could take up a little corner of the room in order to hawk my wares.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 53: Just an IoT Highway Sign in Los Angeles</title>
-      <link>http://blog.alden.website/post/100days/Day-53/</link>
+      <link>https://blog.alden.website/post/100days/Day-53/</link>
       <pubDate>Mon, 25 Feb 2019 19:46:10 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-53/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-53/</guid>
       <description>I had a red eye flight last night and am deliriously sleepy, and somewhere in this state bubbled up a strong desire to find an electronic highway billboard and read what it said remotely. I read Skyline makes internet connected billboards and use port 161. So I got searching.
 A Skyline Sign on 173.4.137.205 Skyline manufactures quite a few different kinds of signs, but all of them are related to car transit.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 52: The Littleborough Losers in Ramsgate, Having a Few Pints with the Lads, Fantasy Football Since 1995, Rick&#39;s Footy Challenge, and Wayne Rooney the True Ledge</title>
-      <link>http://blog.alden.website/post/100days/Day-52/</link>
+      <link>https://blog.alden.website/post/100days/Day-52/</link>
       <pubDate>Sun, 24 Feb 2019 23:48:26 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-52/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-52/</guid>
       <description>I saw an amazing search on Shodan today, it was just named &amp;ldquo;self-explanatory&amp;rdquo; and the search was just for the word &amp;ldquo;losers&amp;rdquo;. How could I say no?
 Littleborough Losers on 94.7.201.171 The results were pretty varied, there&amp;rsquo;s apparently a sex kink that has to do with being dominated and called a loser and so quite a few results were communities related to that, but I found a result in England that more closely fits my particular kink: 90s web design.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 51: Keeping Abreast of the Hyperlocal Weather in Uppsala, Yawcam, and Multinational Pest Control</title>
-      <link>http://blog.alden.website/post/100days/Day-51/</link>
+      <link>https://blog.alden.website/post/100days/Day-51/</link>
       <pubDate>Sat, 23 Feb 2019 07:29:11 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-51/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-51/</guid>
       <description>A quick webcam day as I was busy with a conference most of the day.
 A Yawcam on 85.224.37.79 This time I went looking for &amp;ldquo;yawcam&amp;rdquo;, a webcam server software whose name stands for Yet Another Webcam. Like most free DIY webcam servers the default seems to be &amp;ldquo;completely insecure&amp;rdquo;, and I found quite a few interesting cameras, but chose one in Sweden that was running on port 8888. I love this because this person has so clearly come up with the exact perfect hack for their needs.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 50: Pondering a Loading Bay in Saint Petersburg</title>
-      <link>http://blog.alden.website/post/100days/Day-50/</link>
+      <link>https://blog.alden.website/post/100days/Day-50/</link>
       <pubDate>Fri, 22 Feb 2019 10:36:25 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-50/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-50/</guid>
       <description>To celebrate my 50th day and the fact that there haven&amp;rsquo;t been any interesting new searches the past few days, I went to find an open RTSP video stream from an IP camera.
 Security Camera on 85.143.138.242 Unfortunately after searching for awhile I only found one open stream, from Russia, and it wasn&amp;rsquo;t particularly interesting. Definitely a warehouse or factory or some kind of industrial building. If only I could make out that sign in the upper corner.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 49: Solving Crimes and Protecting the Innocent in Paris</title>
-      <link>http://blog.alden.website/post/100days/Day-49/</link>
+      <link>https://blog.alden.website/post/100days/Day-49/</link>
       <pubDate>Thu, 21 Feb 2019 22:23:45 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-49/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-49/</guid>
       <description>Another boring day on the shared searches. I decided to search for IPs with &amp;ldquo;dev environment&amp;rdquo; in the title, hoping to find something good.
 Ace Attorney Online on 163.172.128.52 Many of the results were pretty interesting and I think it&amp;rsquo;s a fruitful search overall, but one result in France stood out to me. It&amp;rsquo;s the &amp;ldquo;developer environment&amp;rdquo; for a webpage running on port 8080 dedicated to fan-made versions of the popular Ace Attorney games.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board</title>
-      <link>http://blog.alden.website/post/100days/Day-48/</link>
+      <link>https://blog.alden.website/post/100days/Day-48/</link>
       <pubDate>Wed, 20 Feb 2019 15:47:18 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-48/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-48/</guid>
       <description>Kind of a weird one today. I didn&amp;rsquo;t like any of the searches I&amp;rsquo;d seen so I decided to search for anything that had &amp;ldquo;production plant&amp;rdquo; in the title.
 A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 47: Looking at Feet in Tokyo</title>
-      <link>http://blog.alden.website/post/100days/Day-47/</link>
+      <link>https://blog.alden.website/post/100days/Day-47/</link>
       <pubDate>Tue, 19 Feb 2019 23:37:04 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-47/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-47/</guid>
       <description>I&amp;rsquo;m busy preparing for a trip today and running errands so a quick one today. I found another Steven Wu webcam entirely by accident, just browsing Shodan&amp;rsquo;s webserver snapshots (see day 38 if Steven Wu doesn&amp;rsquo;t ring a bell). I like the Steven Wu cameras. The very simple interface, the snapshot approach. Feels right.
 IP Camera on 110.5.43.249 The camera&amp;rsquo;s webserver is running on port 81. Specifically what interested me about this webcam was its area of focus.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing</title>
-      <link>http://blog.alden.website/post/100days/Day-46/</link>
+      <link>https://blog.alden.website/post/100days/Day-46/</link>
       <pubDate>Mon, 18 Feb 2019 10:37:03 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-46/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-46/</guid>
       <description>Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&amp;rsquo;s a GPON you wonder? Let&amp;rsquo;s find out together.
 VNPT GPON ONT on 14.161.15.80 GPON stands for Gigabit Passive Optical Network. Though the real details of how they work escape me, it seems that they are a commonly used device by ISPs to separate out cable traffic between customers, frequently referred to as the &amp;ldquo;last mile&amp;rdquo; between the ISP and the end customer.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 45: Filferro in Empuriabrava, .NET Games, eMule, Pokémon Armageddon, and the Joy Only Known to Those Who Keep Their Campsites Cow Free</title>
-      <link>http://blog.alden.website/post/100days/Day-45/</link>
+      <link>https://blog.alden.website/post/100days/Day-45/</link>
       <pubDate>Sun, 17 Feb 2019 17:56:03 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-45/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-45/</guid>
       <description>Another day another search. Today I found a shared search for &amp;ldquo;emule&amp;rdquo;. &amp;ldquo;What&amp;rsquo;s an emule?&amp;rdquo; I asked myself, and dove in.
 An eMule on 87.216.176.220 eMule is an &amp;ldquo;electronic mule&amp;rdquo;, duh. It&amp;rsquo;s a kind of peer to peer software, different from bittorent, but I&amp;rsquo;m not sure exactly how. Every explanation I&amp;rsquo;ve found on how it works is a bit over my head, or at least over my attention span. It seemed like eMule was mostly popular in Europe, and I picked a result in Spain with eMule running on port 8000.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 44: Dealing with the Devil in Quebec, Repetitive Jetpack Death, Dr. Cheetos&#39; Pain Chamber, Ludum Dare 43, Unity Web GL, and What Happened to Dave?</title>
-      <link>http://blog.alden.website/post/100days/Day-44/</link>
+      <link>https://blog.alden.website/post/100days/Day-44/</link>
       <pubDate>Sat, 16 Feb 2019 20:51:47 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-44/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-44/</guid>
       <description>Saw a great search today, this for Unity Engine Web Players. Unity is a hugely popular 3D game engine, primarily used for making video games but has a wide range of applications, including workflow simulation, architectural prototyping, and filmmaking. Typically Unity outputs run as stand alone applications, but it also has the ability to output applications for the web via Web GL.
 Unity Web GL on 52.15.155.102 There were about 600 results for this search and I picked the first result I found.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 43: Jamming Out in Centerville, Bundesliga Fans, and the Discreet Charm of the Presentation Page</title>
-      <link>http://blog.alden.website/post/100days/Day-43/</link>
+      <link>https://blog.alden.website/post/100days/Day-43/</link>
       <pubDate>Fri, 15 Feb 2019 21:50:06 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-43/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-43/</guid>
       <description>I decided to double dip on AV receivers since someone was going so deep on them the past few days. Today I decided to look at Pioneer.
 Pioneer AV Receiver on 167.142.82.87 I mostly know pioneer as a manufacturer of CDJs, and had no idea that they had a diverse product line beyond DJ equipment. They make bike equipment and accessories, a wide variety of audio equipment, and some kinds of computer electronics.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 42: Party Mode in Kleppestø, Yamaha Receivers, and Incredible Web Design</title>
-      <link>http://blog.alden.website/post/100days/Day-42/</link>
+      <link>https://blog.alden.website/post/100days/Day-42/</link>
       <pubDate>Thu, 14 Feb 2019 22:41:11 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-42/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-42/</guid>
       <description>I saw that someone was searching for quite a few different types of AV receivers today. I decided to look into one of their searches, this one for Yamaha receiver.
 Yamaha AV Recievers on 90.149.252.214 I&amp;rsquo;m not sure what the typical use-case for remote control of an AV receiver is. Maybe if you run a cafe and you want to make sure your untrustworthy employees don&amp;rsquo;t make the music too loud while you&amp;rsquo;re out?</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 41: Mining for Innovation in Abu Dhabi, Trapped in the Multiverse of Project Validation, Haunted by the Lightbulb of Ideas, Tasked with an Eternity of Teamwork Communication Adjustment</title>
-      <link>http://blog.alden.website/post/100days/Day-41/</link>
+      <link>https://blog.alden.website/post/100days/Day-41/</link>
       <pubDate>Wed, 13 Feb 2019 23:19:12 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-41/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-41/</guid>
       <description>I saw someone searching for &amp;ldquo;snapchat&amp;rdquo; today. &amp;ldquo;YOLO&amp;rdquo;, I said to myself, and dived in.
 Fujairah Innovation Mine on 83.111.19.71 The search was in fact pulling up some of Snapchat&amp;rsquo;s production servers. Those were fairly boring however, though I did find something a little more interesting. This is a website for an organization called Fujairah Innovation Mine, which seems to be a typical tech startup incubator. The website was was running on port 7548 of the IP, so it clearly couldn&amp;rsquo;t be the official version.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 40: Blue_7 in Beijing, GGGG, Evading Government Censures, Server Login Lists, Abandoned Blogs, Shadow Socks, Telegram Chat Rooms, and the Mystery of Using URLs as Passwords</title>
-      <link>http://blog.alden.website/post/100days/Day-40/</link>
+      <link>https://blog.alden.website/post/100days/Day-40/</link>
       <pubDate>Tue, 12 Feb 2019 17:20:20 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-40/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-40/</guid>
       <description>I spent so long trying to figure out what I found today that I&amp;rsquo;ve forgotten how I found it. I think it was from someone&amp;rsquo;s search for &amp;ldquo;USB&amp;rdquo;, but I&amp;rsquo;m now unable to recreate the search.
 A Mystery on 118.24.95.11 However I discovered this IP, I first arrived at what looked like a normal blog on port 8083. There is a very ~hacker~ image of a guy in ad hoody as the author&amp;rsquo;s picture.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 39: More TV Torrenting in Toronto, Reckless API Key Exposure, Sonarr, Radarr, Jackett, Ombi, and Deluge</title>
-      <link>http://blog.alden.website/post/100days/Day-39/</link>
+      <link>https://blog.alden.website/post/100days/Day-39/</link>
       <pubDate>Mon, 11 Feb 2019 20:29:49 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-39/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-39/</guid>
       <description>Saw a search just for &amp;ldquo;gmail.com&amp;rdquo;, I assume to look for anyone who put their email address into their service. I decided to take a look.
 A Torrenting Operation on 162.157.129.215 I like this search because it&amp;rsquo;s device and service agnostic. I ended up just picking the first result and running with it, this one in Toronto. It turned out that the email address that brought me there belonged to the developer of a bittorent client named Deluge.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 38: A Clothing Store in Moscow</title>
-      <link>http://blog.alden.website/post/100days/Day-38/</link>
+      <link>https://blog.alden.website/post/100days/Day-38/</link>
       <pubDate>Sun, 10 Feb 2019 12:11:44 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-38/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-38/</guid>
       <description>A quick cam day today because I&amp;rsquo;m a busy bee. I found a search awhile back for &amp;ldquo;Auther: Steven Wu&amp;rdquo;. Yes with the typo. It seems that Steven Wu wrote some server software for networked cameras back in maybe 2009 that is now used in a few different camera brands, all of which allow for snapshots to be taken without a password even if the video feed itself requires a password.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 37: Minitel</title>
-      <link>http://blog.alden.website/post/100days/Day-37/</link>
+      <link>https://blog.alden.website/post/100days/Day-37/</link>
       <pubDate>Sat, 09 Feb 2019 21:50:14 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-37/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-37/</guid>
       <description>Oh Minitel. I never expected to find you, here on the very World Wide Web that killed you.
 3614 TEASER emulator on 62.210.93.204 I saw a recent search on Shodan for &amp;ldquo;ttyd terminal shell&amp;rdquo;. ttyd is a service for sharing your Terminal over the web, meaning that an insecure ttyd server would mean total access over someone&amp;rsquo;s computer (assuming they were porting root). I decided to take a look. Of the 12 results most were just named &amp;lsquo;ttyd - terminal&amp;rsquo; and most of those were inactive, but one stood out.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 36: A Sick Beard in Hilversum, Usenet Is Still Around, Torrenting SuperUsers, and How Much of the Internet Is Just People Trying to Watch TV?</title>
-      <link>http://blog.alden.website/post/100days/Day-36/</link>
+      <link>https://blog.alden.website/post/100days/Day-36/</link>
       <pubDate>Fri, 08 Feb 2019 22:40:09 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-36/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-36/</guid>
       <description>The Shodan recent searches is a well that never runs dry. Today I saw someone searching for &amp;ldquo;Sickbeard&amp;rdquo;. What could that possibly be??
 Sickbeard TV on 85.145.200.210 The search was named Sickbeard but the actual search was for &amp;ldquo;CherryPy/3.2.0rc1 This resource can be found at&amp;rdquo;. Looking into it, CherryPy is a python based framework for running webapps. It looks useful and I think I&amp;rsquo;ll log it into my toolkit for a later project.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 35: Library Kiosks in Duchesne, Session Management Solutions, and True Friendship</title>
-      <link>http://blog.alden.website/post/100days/Day-35/</link>
+      <link>https://blog.alden.website/post/100days/Day-35/</link>
       <pubDate>Thu, 07 Feb 2019 00:16:01 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-35/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-35/</guid>
       <description>Saw an amazing search on Shodan today: someone searched for &amp;ldquo;kiosk&amp;rdquo; with the comment &amp;ldquo;lotta cool stuff&amp;rdquo;. Lotta cool stuff! How could I resist.
 A Library Kiosk Management System on 104.239.140.99 Most of the kiosks seemed to be library kiosks, I even found one from my alma mater&amp;rsquo;s library! I ended up going with the first one that I couldn&amp;rsquo;t immediately figure out the purpose of. It was running some kind of web server on port 3000.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 34: Listening to La Merde in Bonneuil-sur-marne, Logitech Servers, the Squeezebox, and Becoming the Ghost in the Wifi Connected Radio</title>
-      <link>http://blog.alden.website/post/100days/Day-34/</link>
+      <link>https://blog.alden.website/post/100days/Day-34/</link>
       <pubDate>Wed, 06 Feb 2019 01:21:02 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-34/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-34/</guid>
       <description>As many of my days now start, I began my morning by looking through the recent searches on Shodan. I found one for Logitech devices that looked kind of interesting and dove in.
 Logitech Media Server on 82.64.23.201 I no longer remember why I picked this particular device since I did my searching in the morning and am writing at night. I think I was impressed by the number of ports it had open.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 33: Propaganda in Pyongyang</title>
-      <link>http://blog.alden.website/post/100days/Day-33/</link>
+      <link>https://blog.alden.website/post/100days/Day-33/</link>
       <pubDate>Tue, 05 Feb 2019 20:55:59 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-33/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-33/</guid>
       <description>Today I saw someone had compiled a list of every Shodan-discovered server running in North Korea. To be honest I was a little surprised that there would be much outward-facing internet in North Korea, so I decided to take a look.
 Media Ryugyong on 175.45.176.80 Most of the servers seemed to be mail servers, but some of them were running webpages. I picked the first one I found that was running a web page.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 32: Red Lion Industrial Controls in a Remote US Location, Riding the XetaWave, the AirLink ACEmanager, Tank Batteries, and the Stack Overflow Answer that Launched 6000 Redirects</title>
-      <link>http://blog.alden.website/post/100days/Day-32/</link>
+      <link>https://blog.alden.website/post/100days/Day-32/</link>
       <pubDate>Mon, 04 Feb 2019 17:27:29 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-32/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-32/</guid>
       <description>Today I decided to go looking for for industrial control systems made by a company called Red Lion Controls. Red Lion makes controllers, touch screen operation panels, and a few other things besides. Reading Shodan I found that I could find them by searching for devices using port 789, which is the default port that Red Lion&amp;rsquo;s software uses to communicate.
 A Red Lion Controller on 166.167.27.6 I just went with the first result, this one somewhere in the US on a Verizon wireless mobile network, and immediately got sucked into figuring out whatever was going on with it.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 31: Youth Volunteering in Guri, ePrinting, Jetdirect, Requiem for a Hewlett Packard, the State of Civil Society, and Hand Massages for the Elderly</title>
-      <link>http://blog.alden.website/post/100days/Day-31/</link>
+      <link>https://blog.alden.website/post/100days/Day-31/</link>
       <pubDate>Sun, 03 Feb 2019 21:23:52 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-31/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-31/</guid>
       <description>I saw a search on Shodan for &amp;ldquo;Jetdirect&amp;rdquo; with the tagline &amp;ldquo;unsecured printers&amp;rdquo;. I&amp;rsquo;d recently heard a story about fans of the Youtuber PewDiePie using Shodan to hack into 50,000 printers to print messages about him so I thought maybe I could take a look and see maybe how they had done it.
 HP Officejet Pro 8100 N811a on 121.161.211.66 Shodan showed 18,000 results for Jetdirect, with a plurality of them being in Korea.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 30: Automating Buildings in Copenhagen, the BAS SCADA Industry, Expandable Controllers, Cloriūs, KeRo, and O&amp;J CTS A/S</title>
-      <link>http://blog.alden.website/post/100days/Day-30/</link>
+      <link>https://blog.alden.website/post/100days/Day-30/</link>
       <pubDate>Sat, 02 Feb 2019 22:37:32 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-30/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-30/</guid>
       <description>Today I decided to go looking for SCADA systems. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&amp;rsquo;ll let the man himself, Carl Gould, take it away.   SCADA Building Automation System on 80.71.129.61 Not really sure how to find one, I just searched on Shodan for &amp;ldquo;SCADA&amp;rdquo; hoping to reap rewards with little research.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 29: Crypto World in Santa Monica, Trello Boards, Tokenization, and the Vectorialists</title>
-      <link>http://blog.alden.website/post/100days/Day-29/</link>
+      <link>https://blog.alden.website/post/100days/Day-29/</link>
       <pubDate>Fri, 01 Feb 2019 23:01:04 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-29/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-29/</guid>
       <description>I saw someone searching for &amp;ldquo;ICO&amp;rdquo;. At first I thought maybe it had something to do with the groundbreaking 2001 indie game, but after browsing some links I realized that no, it meant &amp;ldquo;Initial Coin Offering&amp;rdquo;, and yes this is another crypto thing.
 CoinCircle&amp;rsquo;s ICOStats Tracker on 165.227.6.170 Most of the results on Shodan are websites and webservers, but I found one running on Digital Ocean that&amp;rsquo;s just a web app running on port 3000.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 28: Joining the Electric World in Darmstadt</title>
-      <link>http://blog.alden.website/post/100days/Day-28/</link>
+      <link>https://blog.alden.website/post/100days/Day-28/</link>
       <pubDate>Thu, 31 Jan 2019 17:12:07 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-28/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-28/</guid>
       <description>Today I saw someone searching for &amp;ldquo;turbines&amp;rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.
 B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 27: A Connoisseur of Sorts in Shenzhen, Western Digital 2 Go, and Rest In Peace TwonkyMedia</title>
-      <link>http://blog.alden.website/post/100days/Day-27/</link>
+      <link>https://blog.alden.website/post/100days/Day-27/</link>
       <pubDate>Wed, 30 Jan 2019 00:04:46 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-27/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-27/</guid>
       <description>Saw somebody doing a search for &amp;ldquo;twonky&amp;rdquo;. What a name! I had to find out about it.
 A Twonky Media Server on 14.155.113.144 Twonky is one of many personal media servers I&amp;rsquo;ve now run into, meant to run either on a network attached storage device or on a computer. The purpose I assume is to be able to stream your media from any devices on your network without having to worry about storying them locally (so if you&amp;rsquo;ve stolen a lot of blueray movie rips from bittorent and want to watch them on your phone or something).</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ</title>
-      <link>http://blog.alden.website/post/100days/Day-26/</link>
+      <link>https://blog.alden.website/post/100days/Day-26/</link>
       <pubDate>Tue, 29 Jan 2019 22:22:18 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-26/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-26/</guid>
       <description>The other day I saw someone on Shodan searching for &amp;ldquo;udpxy&amp;rdquo;, and I couldn&amp;rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &amp;ldquo;200 OK&amp;rdquo; to the search and only return successful connections. So I did.
 A Udpxy Server on 5.136.117.163 There were only two results, both in Russia, so I picked the one that seemed a little more interesting, from Tomsk, Siberia.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 25: Helping Strangers in Singapore</title>
-      <link>http://blog.alden.website/post/100days/Day-25/</link>
+      <link>https://blog.alden.website/post/100days/Day-25/</link>
       <pubDate>Mon, 28 Jan 2019 16:34:22 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-25/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-25/</guid>
       <description>Today I saw someone searching for &amp;ldquo;SingTel&amp;rdquo;, and had given a description of the search saying &amp;ldquo;what? no auth? W o a h&amp;rdquo;. Pretty compelling stuff, so I gave it a search myself. The actual query was a little more complicated, &amp;ldquo;Server: Arcadyan httpd 1.0 200 OK org:&amp;ldquo;Singtel Fibre Broadband&amp;rdquo; &amp;ldquo;.
 An Unsecured Router on 219.74.62.124 Every result for the search was in Singapore, which I realized is because Singtel is one of the largest ISPs and mobile network providers in Singapore.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 24: Watching the News in Cheongju, IPTime Routers, Synology Yet Again, and TVheadend</title>
-      <link>http://blog.alden.website/post/100days/Day-24/</link>
+      <link>https://blog.alden.website/post/100days/Day-24/</link>
       <pubDate>Sun, 27 Jan 2019 17:16:00 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-24/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-24/</guid>
       <description>Today I saw a search just for &amp;ldquo;TVheadend&amp;rdquo; and I thought it looked like a weird name so I decided to investigate.
 TVheadened Server on 125.181.166.200 TVheadend is an open source streaming server and recorder for streaming television on Linux, FreeBSD, or Android machines. I believe it works by intercepting television input and putting it into streamable format, which means that the machine running this server would need some kind of cable or radio tv receiver (maybe even a Dreambox 😄).</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 23: Super Mediocrity in Albuquerque, Wifi Garage Doors, WebIOPi, and the Great Xylophone Saga of 2015</title>
-      <link>http://blog.alden.website/post/100days/Day-23/</link>
+      <link>https://blog.alden.website/post/100days/Day-23/</link>
       <pubDate>Sat, 26 Jan 2019 11:14:58 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-23/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-23/</guid>
       <description>Today&amp;rsquo;s was a true delight, a real moment of striking gold, of finding something so beautifully weird that I can barely contain my excitement in writing this. Truly the spice of life, this. I started off wanting to find a wifi connected garage door, and I read that garage door openers are a common application of WebIOPi, which is a toolkit for Raspberry Pis to turn them into common IoT products via their GPIO pins.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 22: Raising Cow Fighting Squid in Yilan</title>
-      <link>http://blog.alden.website/post/100days/Day-22/</link>
+      <link>https://blog.alden.website/post/100days/Day-22/</link>
       <pubDate>Fri, 25 Jan 2019 22:33:00 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-22/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-22/</guid>
       <description>I saw someone&amp;rsquo;s search for &amp;ldquo;Synology DiskStation&amp;rdquo; and even given our little foray into Synology back on day 20 I was ready to dive back into the world of the globe&amp;rsquo;s premier network attached storage maker.
 A Prototype of a Taiwanese Farm&amp;rsquo;s Website on 114.34.78.222 The DiskStation promises &amp;ldquo;personal cloud storage&amp;rdquo; which to me sounds just like a personal server you connect to the internet, but maybe I&amp;rsquo;m just old fashioned.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 21: POWERful Plates in Fargo, Digital Signage, Unsecured Pis, and the Cold Cold Midwest Winter</title>
-      <link>http://blog.alden.website/post/100days/Day-21/</link>
+      <link>https://blog.alden.website/post/100days/Day-21/</link>
       <pubDate>Thu, 24 Jan 2019 21:45:24 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-21/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-21/</guid>
       <description>Today I saw someone searching for &amp;ldquo;Screenly OSE&amp;rdquo; and actually gave a description for their search saying &amp;ldquo;screenly ose for the pi, think of a billboard system&amp;rdquo;. So I gave it a go.
 A Raspberry Pi Digital Sign on 140.186.23.181 Screenly is a software for doing digital signage off of a Raspberry Pi. They have a &amp;ldquo;Pro&amp;rdquo; version for quite a bit of money ($20/month minumum but up to $800/month) and also an open source edition, which is what OSE stands for.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 20: υηκηοωη ιδεηեτγ in France, Private Telephone Exchanges, Network Attached Storage, and Getting Lost in the Matrix</title>
-      <link>http://blog.alden.website/post/100days/Day-20/</link>
+      <link>https://blog.alden.website/post/100days/Day-20/</link>
       <pubDate>Wed, 23 Jan 2019 12:45:18 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-20/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-20/</guid>
       <description>Oh what a tangled web we weave. I&amp;rsquo;m not really sure what&amp;rsquo;s going on with this one or how I got here, I wanted to explore a search I had seen on Shodan called &amp;ldquo;3cx servers bcn&amp;rdquo; but now I&amp;rsquo;m trapped in a digital hall of mirrors. 3CX is a private telephone exchange that sometimes runs over VoIP, and has servers that typically tend to run on 5001.
 υηκηοωη ιδεηեτγ on 62.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 19: Never Trust Me With The WiFi</title>
-      <link>http://blog.alden.website/post/100days/Day-19/</link>
+      <link>https://blog.alden.website/post/100days/Day-19/</link>
       <pubDate>Tue, 22 Jan 2019 22:59:41 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-19/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-19/</guid>
       <description>Today I&amp;rsquo;m staying with a friend whose partner has a pretty serious media server set up (with 64TB! of content), and I thought I&amp;rsquo;d take a look to see if I could find it on Shodan. And sure enough I could!
 My Friend&amp;rsquo;s Media Server on 104.172.240.189 So I had previously seen a Plex service running on an IP back on day 9, but I didn&amp;rsquo;t investigate it too much because at the time I was focused on the irrigation system.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 18: Defaced Server in Walnut, Hacking in a Nutshell, These Jokes Don&#39;t Write Themselves!</title>
-      <link>http://blog.alden.website/post/100days/Day-18/</link>
+      <link>https://blog.alden.website/post/100days/Day-18/</link>
       <pubDate>Mon, 21 Jan 2019 23:35:30 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-18/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-18/</guid>
       <description>In what I hope will become an infrequently regular feature I decided today to look for an already hacked server that had been defaced. I had found one in the process of defacement on my very first day, but the fully defaced ones are interesting largely because of the tags left by the hackers themselves. I&amp;rsquo;m a little nervous about drawing attention to myself by publishing hacker tags in plaintext (easily found via Google alerts) so I&amp;rsquo;ll mostly be doing that via images.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 17: An ATM in Perm, Russia and Just How Much Market Capture Does Windows 2000 Have Anyway?</title>
-      <link>http://blog.alden.website/post/100days/Day-17/</link>
+      <link>https://blog.alden.website/post/100days/Day-17/</link>
       <pubDate>Sun, 20 Jan 2019 12:43:31 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-17/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-17/</guid>
       <description>Today I thought it might be fun to find an ATM, largely because I wanted to answer the question &amp;ldquo;why connect an ATM to the internet with a static IP?&amp;rdquo; I checked for past Shodan searches for ATMs to see if I could find anyone else looking for some so I would know what to look for, and I was able to find someone else looking for ATMs from a brand named NCR, which work over port 169.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 16: A Serbian Highway</title>
-      <link>http://blog.alden.website/post/100days/Day-16/</link>
+      <link>https://blog.alden.website/post/100days/Day-16/</link>
       <pubDate>Sat, 19 Jan 2019 15:34:20 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-16/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-16/</guid>
       <description>I&amp;rsquo;m pretty busy today with Processing Day so I&amp;rsquo;ll keep today&amp;rsquo;s short. Shodan may be best known for finding strangers&amp;rsquo; webcams, but I hadn&amp;rsquo;t gone for one yet because early on in this project I decided that on days when I don&amp;rsquo;t have a lot of time I&amp;rsquo;d just find an unsecured webcam and grab a still image. Today is one of those days.
 Someone&amp;rsquo;s Webcam in Belgrade on 109.</description>
     </item>
     
     <item>
       <title>LocalNet Adventure LA!!  Reference Page</title>
-      <link>http://blog.alden.website/post/localnet-adventure-LA/</link>
+      <link>https://blog.alden.website/post/localnet-adventure-LA/</link>
       <pubDate>Fri, 18 Jan 2019 18:43:52 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/localnet-adventure-LA/</guid>
+      <guid>https://blog.alden.website/post/localnet-adventure-LA/</guid>
       <description>You can download the slides here
 Hey All! This page exists to supplement my LocalNet Adventure!! workshop with a lot of technical background that I don&amp;rsquo;t directly address in the workshop. Hopefully even if you&amp;rsquo;re a command line pro you&amp;rsquo;ll find something new here.
 References and Resources  American Artist’s Black Gooey Universe Dhruv Mehrota’s Othernet NYCMesh Dan Phiffer’s Occupy.here Wifi art of Third Space Collective France Telecom’s Minitel Alternate Reality Games (e.</description>
@@ -746,157 +746,157 @@ References and Resources  American Artist’s Black Gooey Universe Dhruv Mehrota
     
     <item>
       <title>Shodan Stories Day 15: Deftly Avoiding Turning On A Stranger&#39;s Lights in Bologna, the Commercial Level ESP8266, Getting Too Close with WiGLE, and What&#39;s the Deal with Home Automation Anyway?</title>
-      <link>http://blog.alden.website/post/100days/Day-15/</link>
+      <link>https://blog.alden.website/post/100days/Day-15/</link>
       <pubDate>Fri, 18 Jan 2019 11:01:04 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-15/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-15/</guid>
       <description>Another IoT home device today. At this point I&amp;rsquo;m picturing the people with these things basically having a Wallace and Gromit style lifestyle (note: I do have a wifi plug and yes this is my lifestyle). This one was inspired by another search I didn&amp;rsquo;t recognize, for &amp;ldquo;Sonoff&amp;rdquo;.
 A Sonoff wifi enabled plug on 87.20.184.148 Sonoff is a company that makes IoT plugs and switches, as well as a couple of models of IoT fans and light bulbs.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 14: Startling Strangers in Vreden, DIY Home Automation, and the German Word for Waking Up in the Middle of the Night with the Realization That You Left Your Server Unsecured</title>
-      <link>http://blog.alden.website/post/100days/Day-14/</link>
+      <link>https://blog.alden.website/post/100days/Day-14/</link>
       <pubDate>Thu, 17 Jan 2019 07:04:32 -0800</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-14/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-14/</guid>
       <description>This is another find inspired by recent searches on Shodan. I saw searches &amp;ldquo;FHEM Home Automation&amp;rdquo; and I needed to know more.
 Fhem Home Automation Server on 85.190.248.171 Every single result for FHEM was from Germany. So I picked the first one and got going. Looking up FHEM first on Google I found that it is an open source server software for doing home automation, built in perl and meant to be run on any kind of full time 24 /7 computer, like a Raspberry Pi.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 13: Space X Email Server in Tokyo, No Not That Space X</title>
-      <link>http://blog.alden.website/post/100days/Day-13/</link>
+      <link>https://blog.alden.website/post/100days/Day-13/</link>
       <pubDate>Wed, 16 Jan 2019 14:37:54 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-13/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-13/</guid>
       <description>In honor of my spending about six hours on an airplane today I decided to search Shodan for &amp;ldquo;satellite&amp;rdquo; and, giving myself over to fate, pick the first result without looking at it.
 The Email Server of a Long Defunct Conference at 163.44.163.77 Since I was inspired by the fact that my airplane is being serviced by satellite internet I was of course hoping that I would find the IP for a real actual space satellite, though I suspected I was more likely to find someone&amp;rsquo;s satellite internet router or satellite dish.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 12: Influencer to Brand Marketplace and Authentic Content Platform in St Louis, Damaging My Klout Score via Unauthorized API Calls, GraphQL IDEs, and the Center of the Internet</title>
-      <link>http://blog.alden.website/post/100days/Day-12/</link>
+      <link>https://blog.alden.website/post/100days/Day-12/</link>
       <pubDate>Tue, 15 Jan 2019 20:20:27 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-12/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-12/</guid>
       <description>Today I saw a top search for something called &amp;ldquo;GraphQL&amp;rdquo;. Taking the bait on the unknown, I started looking.
 A Startup Named Zipline&amp;rsquo;s API Staging Space on 184.169.231.191 The first thing I noticed about GraphQL&amp;rsquo;s distribution on Shodan was that it was all in the US. The second was that it was, by a huge margin, all in Ashburn, Virginia. After doing a quick google search I figured out that this is certainly because Amazon has so many datacenters there (leading it to be cheekily referred to as the &amp;ldquo;center of the internet&amp;rdquo;), and every GraphQL service seemed to be running on an Amazon EC2 instance.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 11: Machine Learning in Beijing and the Mysteries of 126 and 163</title>
-      <link>http://blog.alden.website/post/100days/Day-11/</link>
+      <link>https://blog.alden.website/post/100days/Day-11/</link>
       <pubDate>Mon, 14 Jan 2019 14:27:56 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-11/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-11/</guid>
       <description>Today I went looking for MongoDB databases. I used MongoDB back in Shawn Van Every&amp;rsquo;s servers class, I remember feeling pretty cool using a NoSQL database. Shodan indicated that MongoDB tends to work off of port 27017 so that&amp;rsquo;s where I started looking.
 The Shell of Someone&amp;rsquo;s Machine Learning Blog on 35.185.145.24 I picked one of the first results I found on Shodan. According to Shodan it&amp;rsquo;s located in Singapore and hosted on Google Cloud services.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 10: Reading License Plates in Louisiana, the Bygone Days of Java Webapps, and Spying on Cops</title>
-      <link>http://blog.alden.website/post/100days/Day-10/</link>
+      <link>https://blog.alden.website/post/100days/Day-10/</link>
       <pubDate>Sun, 13 Jan 2019 20:08:21 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-10/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-10/</guid>
       <description>I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: automatic license plate readers (ALPRs). These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 9: I Got Rickrolled by an Irrigation System in Los Vegas</title>
-      <link>http://blog.alden.website/post/100days/Day-9/</link>
+      <link>https://blog.alden.website/post/100days/Day-9/</link>
       <pubDate>Sat, 12 Jan 2019 20:30:45 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-9/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-9/</guid>
       <description>This is another one I found from looking at recent searches on Shodan. Someone searched for &amp;ldquo;BlueSpray irrigation&amp;rdquo; and I decided to follow their lead.
 BlueSpray Wifi-Enabled Irrigation Controller (or maybe somebody&amp;rsquo;s pentesting playground) on 71.52.48.61 BlueSpray is a startup that makes an internet of things irrigation system for the consumer level (so for suburban lawns, not farms). If &amp;ldquo;internet of things lawn sprinkler&amp;rdquo; makes your eyes roll all the way back into your head well then this blog is for you.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 8: Mining Ethereum in Caracas, AMD GPUs, and Taking a Dip in the Nanopool</title>
-      <link>http://blog.alden.website/post/100days/Day-8/</link>
+      <link>https://blog.alden.website/post/100days/Day-8/</link>
       <pubDate>Fri, 11 Jan 2019 16:55:45 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-8/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-8/</guid>
       <description>A couple of days ago I noticed some people searching on Shodan for &amp;ldquo;ETH: total speed&amp;rdquo;. That didn&amp;rsquo;t mean anything to me so I took note of it and today decided to dig in.
 An Ethereum Miner on 186.90.40.229 Almost all the results I found for this search in Shodan were running off of port 3001 (the ones that weren&amp;rsquo;t were on 9001), and tended to be in Russia, South Korea, or Ukraine.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 7: Scammers in the Czech Republic, Cyrillic TLDs, and Hacking the Hackers</title>
-      <link>http://blog.alden.website/post/100days/Day-7/</link>
+      <link>https://blog.alden.website/post/100days/Day-7/</link>
       <pubDate>Thu, 10 Jan 2019 15:19:23 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-7/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-7/</guid>
       <description>Someone tried to phish me yesterday via text from a Los Vegas phone number. Fortunately I was able to figure out their IP address and, yes, their IP is on Shodan. Someone Trying to Phish Me on 146.120.89.201 I started out checking both номе.рф and xn&amp;ndash;e1ance.xn&amp;ndash;p1ai, which is the address the text message actually links to. In case you are wondering, and don&amp;rsquo;t want to read further, номе.рф is safe to go to in a browser but xn&amp;ndash;e1ance.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma</title>
-      <link>http://blog.alden.website/post/100days/Day-6/</link>
+      <link>https://blog.alden.website/post/100days/Day-6/</link>
       <pubDate>Wed, 09 Jan 2019 18:19:08 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-6/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-6/</guid>
       <description>Today I decided to look for more industrial control systems, specifically Mitsubishi Q-Series logic controllers.
 Yokohama Air Traffic Control Tower on 133.34.157.13 Reading about them on Shodan it looks like the Q-Series logic controllers tend to run off ports 5006 or 5007. So I did a search for those open ports. Judging from the results it looks like the majority of these Mitsubishi controllers are in Japan, not surprising I suppose since Mitsubishi is a Japanese company.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 5: Organic Chemistry in Poland, Ecotoxicology, and the Dangers of Static Electricity</title>
-      <link>http://blog.alden.website/post/100days/Day-5/</link>
+      <link>https://blog.alden.website/post/100days/Day-5/</link>
       <pubDate>Tue, 08 Jan 2019 13:33:49 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-5/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-5/</guid>
       <description>Today I decided to go looking for MySQL databases. I&amp;rsquo;ve always loved SQL, it was one of the first &amp;ldquo;programming languages&amp;rdquo; I learned and was a big part of one of my first jobs.
 Institute of Industrial Organic Chemistry on 79.96.39.102 Checking with MySQL documents I found that MySQL databases typically run off of port 3306. So I went on Shodan to look for things with port 3306. One of the first results I saw was from Poland, and being Polish I couldn&amp;rsquo;t resist poking around a bit in the homeland.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 4: Television in Spain, Firmware Hacking in Palestine, Linux Kernels, Clone Bombs, and 14 Years of Passion</title>
-      <link>http://blog.alden.website/post/100days/Day-4/</link>
+      <link>https://blog.alden.website/post/100days/Day-4/</link>
       <pubDate>Mon, 07 Jan 2019 12:08:21 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-4/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-4/</guid>
       <description>Today I saw that the fifth most searched for term on Shodan of the day was &amp;ldquo;dreambox&amp;rdquo;. What a name! I couldn&amp;rsquo;t resist! After a little digging I found that dreambox probably referred to a kind of linux-based television receiver, made by a German company with a truly fantastic logo. Cloned Dreambox Television Receiver on 84.39.177.219 I started out just searching on Shodan for &amp;ldquo;dreambox&amp;rdquo;, like so many others were doing today.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 3: Playing Minecraft in Minnesota, Wasting Time with Catholic Teens</title>
-      <link>http://blog.alden.website/post/100days/Day-3/</link>
+      <link>https://blog.alden.website/post/100days/Day-3/</link>
       <pubDate>Sun, 06 Jan 2019 16:59:25 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-3/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-3/</guid>
       <description>Since I didn&amp;rsquo;t do Minecraft servers yesterday I decided to do them today. First I read a little guide on how to set up a Minecraft server to get a sense of what they looked like.
 Les Chevaliers Royale Minecraft Server on 97.94.56.211 I actually don&amp;rsquo;t know much about Minecraft, I&amp;rsquo;ve never played it. I know it&amp;rsquo;s popular with a wide range of people, and that really dedicated players like to set up servers for group play, so I thought it might be interesting to look around for a server and figure out if I could find the people who were using it.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 2: Joann Fabric&#39;s Sinister Plot</title>
-      <link>http://blog.alden.website/post/100days/Day-2/</link>
+      <link>https://blog.alden.website/post/100days/Day-2/</link>
       <pubDate>Sat, 05 Jan 2019 15:46:52 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-2/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-2/</guid>
       <description>Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&amp;rsquo;d heard of them before.
 Joann Fabric&amp;rsquo;s Industrial Control System on 208.83.32.213 Siemens has a proprietary network protocol called S7 Communications that they use for their Programmable Logic Controllers (PLC), which they also provide a nice sales brochure for.</description>
     </item>
     
     <item>
       <title>Shodan Stories Day 1</title>
-      <link>http://blog.alden.website/post/100days/Day-1/</link>
+      <link>https://blog.alden.website/post/100days/Day-1/</link>
       <pubDate>Fri, 04 Jan 2019 11:06:35 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/100days/Day-1/</guid>
+      <guid>https://blog.alden.website/post/100days/Day-1/</guid>
       <description>A note up front:
 Generally I&amp;rsquo;ve been struggling with an ethical question of this project, should I be publishing the IP addresses and personal identification of individual people I find? I can&amp;rsquo;t imagine that anyone reading this would take that info and do anything untoward with it, but it&amp;rsquo;s an odd stance on surveillance culture to dox strangers meaninglessly, even if the ability to reach out and randomly touching a stranger is the reality of networked existence.</description>
     </item>
     
     <item>
       <title>Heaven Is a Waste Place Research Summary and Reflection</title>
-      <link>http://blog.alden.website/post/tempexp/heaven-is-a-waste-place/</link>
+      <link>https://blog.alden.website/post/tempexp/heaven-is-a-waste-place/</link>
       <pubDate>Mon, 17 Dec 2018 18:31:31 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/heaven-is-a-waste-place/</guid>
+      <guid>https://blog.alden.website/post/tempexp/heaven-is-a-waste-place/</guid>
       <description>&amp;ldquo;In the end everything&amp;rsquo;s garbage&amp;rdquo; - Nick DiMola (one of my experts)
 &amp;ldquo;Trash carries dystopia within&amp;rdquo; - Maite Zubiaurre
 Heaven Is A Waste Place is a simulated corporation, The Ongoing Now Corporation, and the space in which it is simulated. It is part office role play and part doomsday cult. The goal of TONCO and its employees is to find new uses for waste after the apocalypse, and maybe a new, more holy way of life.</description>
@@ -904,10 +904,10 @@ Heaven Is A Waste Place is a simulated corporation, The Ongoing Now Corporation,
     
     <item>
       <title>The Ongoing Now</title>
-      <link>http://blog.alden.website/post/tempexp/the-ongoing-now/</link>
+      <link>https://blog.alden.website/post/tempexp/the-ongoing-now/</link>
       <pubDate>Sun, 18 Nov 2018 02:43:10 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/the-ongoing-now/</guid>
+      <guid>https://blog.alden.website/post/tempexp/the-ongoing-now/</guid>
       <description>Inspired in part by seasteaders and other such cults which are entirely engaged in a utopia-building project even if that utopia looks like a nightmare to outsiders, I&amp;rsquo;ve begun building my own mythology of The Ongoing Now Corporation.
 TON Corp is a corporate cult created by Theong Oingnow for the purpose of preparing for the Bow Sink, the day that Noah&amp;rsquo;s ark finally capsizes.
 Preparations include the collection, analysis, and categorization of various discarded objects.</description>
@@ -915,38 +915,38 @@ Preparations include the collection, analysis, and categorization of various dis
     
     <item>
       <title>RESTful VJing</title>
-      <link>http://blog.alden.website/post/undernet/RESTful-VJing/</link>
+      <link>https://blog.alden.website/post/undernet/RESTful-VJing/</link>
       <pubDate>Mon, 12 Nov 2018 22:46:34 -0500</pubDate>
       
-      <guid>http://blog.alden.website/post/undernet/RESTful-VJing/</guid>
+      <guid>https://blog.alden.website/post/undernet/RESTful-VJing/</guid>
       <description>Beverly and I decided to work on a quick VJing system. We started out doing research and interviewed a few people on the floor to ask them what they thought made for good VJing, and what made for bad VJing. The most consistent thing we heard was that the visuals should match the mood and timing of the music. Since beat syncing the visuals to the music might be hard with REST we decided to have two &amp;ldquo;modes&amp;rdquo; for the system, GIF mode and visuals mode.</description>
     </item>
     
     <item>
       <title>My Network Packets</title>
-      <link>http://blog.alden.website/post/undernet/my-network-packets/</link>
+      <link>https://blog.alden.website/post/undernet/my-network-packets/</link>
       <pubDate>Mon, 29 Oct 2018 22:56:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/undernet/my-network-packets/</guid>
+      <guid>https://blog.alden.website/post/undernet/my-network-packets/</guid>
       <description>My network map was more or less what I expected to see. Here&amp;rsquo;s the map from Herbivore. Note that my public IP&amp;rsquo;s threat level is low.
 The TP-Link at 192.168.0.1 is, naturally, my router. The TP-Link at .100 is actually my wifi-enabled plug from the same manufacturer. The Amazon Technologies device is an Echo (running 64 bit Linux? I thought they ran &amp;lsquo;Amazon Fire&amp;rsquo; EDIT: looks like Fire OS has a Linux kernel), The Canon is a printer, the Pis are actually a single Pi connected via both wifi and ethernet.</description>
     </item>
     
     <item>
       <title>Trash Moods</title>
-      <link>http://blog.alden.website/post/tempexp/trash-moods/</link>
+      <link>https://blog.alden.website/post/tempexp/trash-moods/</link>
       <pubDate>Tue, 23 Oct 2018 03:51:21 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/trash-moods/</guid>
+      <guid>https://blog.alden.website/post/tempexp/trash-moods/</guid>
       <description>Garbage Man KITH Smart Pipe Garbage Story</description>
     </item>
     
     <item>
       <title>Trash Research Hub</title>
-      <link>http://blog.alden.website/post/tempexp/trash-research/</link>
+      <link>https://blog.alden.website/post/tempexp/trash-research/</link>
       <pubDate>Mon, 22 Oct 2018 03:17:51 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/trash-research/</guid>
+      <guid>https://blog.alden.website/post/tempexp/trash-research/</guid>
       <description> Running Bibliography
 Daily Practice
 Research Links  Propublica on Deadly Garbage Collection
@@ -962,281 +962,281 @@ Research Links  Propublica on Deadly Garbage Collection
     
     <item>
       <title>Sandbox</title>
-      <link>http://blog.alden.website/post/tempexp/sandbox/</link>
+      <link>https://blog.alden.website/post/tempexp/sandbox/</link>
       <pubDate>Mon, 22 Oct 2018 03:13:12 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/sandbox/</guid>
+      <guid>https://blog.alden.website/post/tempexp/sandbox/</guid>
       <description>Does garbage conceal our dreams for the future? Is &amp;lsquo;throwing out&amp;rsquo; a hopeful act?  Do we remake ourselves with each discard? The Life Changing Magic of Throwing Out? What is &amp;ldquo;trash&amp;rdquo; culture? Junk food? Jerry Springer? Garbage / the lesser than.
 A cockroach literally, actually crawled across my monitor just now. Cleansing and purging. Removal.</description>
     </item>
     
     <item>
       <title>Self Curation Self Curated</title>
-      <link>http://blog.alden.website/post/cabofwon/self-curation-self-curated/</link>
+      <link>https://blog.alden.website/post/cabofwon/self-curation-self-curated/</link>
       <pubDate>Sun, 21 Oct 2018 23:08:40 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/cabofwon/self-curation-self-curated/</guid>
+      <guid>https://blog.alden.website/post/cabofwon/self-curation-self-curated/</guid>
       <description>A show based on my own biography? It&amp;rsquo;s almost too much to ask, my brain feels like it&amp;rsquo;s turning over trying to keep up with the flood of associations. There&amp;rsquo;s me as a young dancer, watching William Forsythe&amp;rsquo;s Improvisation Technologies, or working with Physical Education, or reading The Collected Stories of Lydia Davis. Going to Berghain with my sister and then reading Gender Trouble all the next day without sleeping. There&amp;rsquo;s me as a young gallerist flying to New York to see the Wynn Greenwood show that such and such person had curated with the New Museum.</description>
     </item>
     
     <item>
       <title>Leaf Town: Plant Communication Hub</title>
-      <link>http://blog.alden.website/post/hellocomp/plant-communication-hub/</link>
+      <link>https://blog.alden.website/post/hellocomp/plant-communication-hub/</link>
       <pubDate>Fri, 19 Oct 2018 18:50:48 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/plant-communication-hub/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/plant-communication-hub/</guid>
       <description>In making this project I had on my mind both the kind of joy of speaking to non-humans and feeling understood, generating a level of closeness that can feel deep yet uncomplicated, and the kind of snake-oilish claims that some researchers in the AI community make about their work. Naturally these thoughts led me to start making a device that would allow users to speak directly with their plants and have the plants speak back.</description>
     </item>
     
     <item>
       <title>Cybercaves 2: Return 2 Cybercave</title>
-      <link>http://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</link>
+      <link>https://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</link>
       <pubDate>Tue, 16 Oct 2018 12:49:00 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</guid>
+      <guid>https://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</guid>
       <description>You can play Cybercaves 2: Return 2 Cybercave here. Setting out on making my original Twine game I had just wanted to play around and have a laugh, working with typical choose your own, cyberpunk, and text adventure genre conventions like so many Lego blocks. I also had two games on my mind: Porpetine&amp;rsquo;s drown in 2 inches of humid bathbomb water, a game much more serious than mine but that uses Twine to ambigously shift between genres, and Frog Fractions, which I think of frequently as an apotheosis of a kind of cultural overflow, of media objects so steeped in referential circulationism that the joke becomes their own lack of essence.</description>
     </item>
     
     <item>
       <title>Museum of Now</title>
-      <link>http://blog.alden.website/post/cabofwon/museum-of-now/</link>
+      <link>https://blog.alden.website/post/cabofwon/museum-of-now/</link>
       <pubDate>Sun, 14 Oct 2018 21:50:40 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/cabofwon/museum-of-now/</guid>
+      <guid>https://blog.alden.website/post/cabofwon/museum-of-now/</guid>
       <description>Whenever I imagine the world of the medium-term future looking back on the current time, say 75-100 years from now, which I do reasonably often, I imagine an intense future regret for now. It&amp;rsquo;s a hard emotion to put into words. Maybe a kind of warm nostalgia combined with disgust, the way many Americans now view the 1950s, but mixed in with the sense that this time, the early 20XXs, was a time when wrong choices were made willfully in the face of evidence pointing toward right choices.</description>
     </item>
     
     <item>
       <title>Adventure Continue</title>
-      <link>http://blog.alden.website/post/hellocomp/adventure-continue/</link>
+      <link>https://blog.alden.website/post/hellocomp/adventure-continue/</link>
       <pubDate>Tue, 09 Oct 2018 17:52:12 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/adventure-continue/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/adventure-continue/</guid>
       <description>I tried to continue on my theme of making a colossal cave adventure clone for voice, thinking that this time using the webhook fulfillment it would be much clearer what to do. I did get it functioning, somewhat. Unfortunately going south here should get you into the forest. I encountered numerous other bugs, such as items not appearing in the rooms they should be in, and getting stuck in a room permanently.</description>
     </item>
     
     <item>
       <title>Diorama of Daily Life</title>
-      <link>http://blog.alden.website/post/cabofwon/diorama/</link>
+      <link>https://blog.alden.website/post/cabofwon/diorama/</link>
       <pubDate>Sun, 07 Oct 2018 00:16:44 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/cabofwon/diorama/</guid>
+      <guid>https://blog.alden.website/post/cabofwon/diorama/</guid>
       <description>For a daily life diorama I wanted to share one of my favorite daily activities: flossing! Construction wasn&amp;rsquo;t too hard but took some ingenuity. I used a shoebox, construction paper, tissue paper, and a clear plastic egg carton for the teeth. Quite a bit of tape, and of course a piece of floss.
 I really do love flossing and look forward to it every evening. When I was much younger I would never floss but I&amp;rsquo;ve had a lot of problems with my teeth and jaw over the years and have since become a total convert, maybe it gives me the feeling of being in control a bit more over a part of me that has been so unruly.</description>
     </item>
     
     <item>
       <title>Uncanny Sandra</title>
-      <link>http://blog.alden.website/post/hellocomp/uncanny-sandra/</link>
+      <link>https://blog.alden.website/post/hellocomp/uncanny-sandra/</link>
       <pubDate>Sun, 30 Sep 2018 00:46:09 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/uncanny-sandra/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/uncanny-sandra/</guid>
       <description>Sandra I love the premise of Sandra but I can&amp;rsquo;t help but wonder what kind of system could instantaneously categorize and direct all of these requests but couldn&amp;rsquo;t formulate automated responses for most of them. Does it go more into detail about what ends up happening? There is something in the show about the current economy&amp;rsquo;s preference for high-abstraction capital (algorithms, systems, connections) over labor, like the company Alia Shawkat is working for is the service economy equivalent of an old steel factory.</description>
     </item>
     
     <item>
       <title>Grant Gore</title>
-      <link>http://blog.alden.website/post/cabofwon/grant-gore/</link>
+      <link>https://blog.alden.website/post/cabofwon/grant-gore/</link>
       <pubDate>Fri, 28 Sep 2018 17:37:42 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/cabofwon/grant-gore/</guid>
+      <guid>https://blog.alden.website/post/cabofwon/grant-gore/</guid>
       <description>The peculiarly named Grant Gore, a small triangular park at the intersection of Dean and Bedford in Crown Heights (&amp;lsquo;gore&amp;rsquo; being an obscure term for any small triangular park), is home to a truly massive bronze statue of Ulysses S Grant, Union hero of the Civil War and two term Reconstruction era president.
 On a crisp morning this week I went to take a look at the statue. I was intrigued by the short bit of history I had read about it and the Gilded Age high society club that had commissioned it, but I also went because I wanted to unpack the inexplicable warmth I feel towards Grant.</description>
     </item>
     
     <item>
       <title>Draft Energy Field Guide</title>
-      <link>http://blog.alden.website/post/tempexp/draft-guide/</link>
+      <link>https://blog.alden.website/post/tempexp/draft-guide/</link>
       <pubDate>Tue, 25 Sep 2018 14:42:10 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/draft-guide/</guid>
+      <guid>https://blog.alden.website/post/tempexp/draft-guide/</guid>
       <description>I made a draft of my field guide using the time honored &amp;ldquo;paper prototype&amp;rdquo; method. Corporate aesthetics, coming apart at the wheels. I used a hacky scan tool with Google photos to get these pictures of the draft since I didn&amp;rsquo;t want to run in the rain to the library for a real scan, hence the weird banners, but I actually think they fit the overall aesthetic well, though it washed out the color a bit.</description>
     </item>
     
     <item>
       <title>Archives Made Easy</title>
-      <link>http://blog.alden.website/post/hellocomp/archive_made_easy/</link>
+      <link>https://blog.alden.website/post/hellocomp/archive_made_easy/</link>
       <pubDate>Mon, 24 Sep 2018 17:22:44 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
       <description>Recently I&amp;rsquo;ve been reading a ton of books with names like &amp;ldquo;Cyber Dictionary: Your Guide To The Wired World&amp;rdquo; or &amp;ldquo;Net Chick: A Smart-Girl Guide to the Wired World&amp;rdquo;, hip and breezy internet guide books written between 1996-2000. This has led to me making a few strange archive tools around the Internet Archive&amp;rsquo;s Wayback Machine
 The one I made for Hello Computer this week, a voice controlled archive navigation system, can be found here but unfortunately because I don&amp;rsquo;t have HTTPS certification on my prototypes site Chrome will not allow you to access the microphone, so all you can see is the initial button.</description>
     </item>
     
     <item>
       <title>Taxonomies Systems</title>
-      <link>http://blog.alden.website/post/tempexp/taxonomies-systems/</link>
+      <link>https://blog.alden.website/post/tempexp/taxonomies-systems/</link>
       <pubDate>Mon, 17 Sep 2018 23:32:01 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/tempexp/taxonomies-systems/</guid>
+      <guid>https://blog.alden.website/post/tempexp/taxonomies-systems/</guid>
       <description>List of Taxonomies All ideas for coherent taxonomies  Energy Types (Country by Country Energy Mix) -  high renewable mostly coal mostly nuclear mostly gas import/export ratio  Policy Goals  Seeking investment Building infrastructure Making revenue Reducing carbon admissions National security Political kick-backs Prop up the failing coal industry to own the libs (Just the US) Reducing city pollution Don&amp;rsquo;t rock the boat  Market Structures and Regulatory Regimes  Deregulated generation to transmission markets Regulated vertically integrated private utilities State-run vertically integrated utilities State/private grey area uh oh zone  Ownership (who owns what where and what power do they have)  Power of generation owners&amp;rsquo; lobbying (not sure how to measure) Acumulated wealth of energy investors and company owners as % of GDP   Due to the vastness and scope of nations&amp;rsquo; global energy policies I have been imagining so far pursuing a scattershot approach, with a few entries from different categories, say, for example, an entry on Japan&amp;rsquo;s nuclear energy policies, an entry on FERC chairman Kevin J.</description>
     </item>
     
     <item>
       <title>Digi Me</title>
-      <link>http://blog.alden.website/post/avatars/digi-me/</link>
+      <link>https://blog.alden.website/post/avatars/digi-me/</link>
       <pubDate>Mon, 17 Sep 2018 22:50:19 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/avatars/digi-me/</guid>
+      <guid>https://blog.alden.website/post/avatars/digi-me/</guid>
       <description>This week the phrase &amp;ldquo;digital avatars&amp;rdquo; has kept making me think of Digimon. I don&amp;rsquo;t think Digimon ever really established what exactly happened to these kids when they entered the DigiWorld. Was their meatbody converted to bits and code? They pass back and forth between the barrier several times, which to me seems like a painful transition.
 I worked with Nico and Kim doing 3D body scans with itSeez3D. We did a lot of scans.</description>
     </item>
     
     <item>
       <title>Traced Routes</title>
-      <link>http://blog.alden.website/post/undernet/traceroutes/</link>
+      <link>https://blog.alden.website/post/undernet/traceroutes/</link>
       <pubDate>Mon, 17 Sep 2018 22:07:07 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/undernet/traceroutes/</guid>
+      <guid>https://blog.alden.website/post/undernet/traceroutes/</guid>
       <description>The websites I visit most frequently are a little boring. According to what Chrome, my browser, suggests, my number one visited website is Twitter, followed by the (in?)famous data journalism blog FiveThirtyEight, then ScaryGoRound.com which is a webcomic I&amp;rsquo;ve been reading for almost 15 years, then Gmail (the Inbox flavor), then Github, and then my own blog which you are reading now. I think that last one is only because of how often I need to double check that my posts have actually made it online, not because of the love I have for my own posts.</description>
     </item>
     
     <item>
       <title>Talking Circle</title>
-      <link>http://blog.alden.website/post/hellocomp/eager_icon/</link>
+      <link>https://blog.alden.website/post/hellocomp/eager_icon/</link>
       <pubDate>Sun, 16 Sep 2018 20:39:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/eager_icon/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/eager_icon/</guid>
       <description>In starting to make some kind of something that talks I wanted to emulate one of my favorite browser games (is it a game?) ClickClickClick. But I found that I didn&amp;rsquo;t know enough about &amp;ldquo;The DOM&amp;rdquo; to get much of my foot in the door without a bunch of research time. So instead I went an easier route, dipping into the familiar warmth of P5. I took a project that I had given a bit of a start to before, a little game about waiting around.</description>
     </item>
     
     <item>
       <title>American Museum of Natural History</title>
-      <link>http://blog.alden.website/post/cabofwon/american-museum-natural-history/</link>
+      <link>https://blog.alden.website/post/cabofwon/american-museum-natural-history/</link>
       <pubDate>Sun, 16 Sep 2018 14:54:30 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/cabofwon/american-museum-natural-history/</guid>
+      <guid>https://blog.alden.website/post/cabofwon/american-museum-natural-history/</guid>
       <description>My first thought walking up to the Central Park West was &amp;ldquo;I hate this goddamn statue&amp;rdquo;. Teddy Roosevelt, the magnanimous colonizer, leading the Othered literal lower-thans toward civilization, away from inhumanity. The statue recontextualizes a history of violence, slavery, and cultural erasure into one of progress, benevolence, and grace. This was my first time seeing it in person and it feels like a visceral affront, hard to look at, hard to stomach.</description>
     </item>
     
     <item>
       <title>Localnet Adventure!! Reference Page</title>
-      <link>http://blog.alden.website/post/localnet-adventure/</link>
+      <link>https://blog.alden.website/post/localnet-adventure/</link>
       <pubDate>Thu, 13 Sep 2018 14:33:27 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/localnet-adventure/</guid>
+      <guid>https://blog.alden.website/post/localnet-adventure/</guid>
       <description>You can download the slides here
 Some Useful Command Line Commands  man - opens the manual for a command pwd - prints the working directory, i.e. shows you where you are ls - lists the files and directories in a given directory. default is working directory cd - changes directory cat - prints the contents of a file echo - prints exactly what you give it ssh - secure shell, creates a secure shell connection to another machine touch - creates a file mkdir - makes a new directory rm - deletes a file (remove), or a directory when given the flag -r mv - moves a file to another directory, can be used to rename a file cp - copies a file nano - default command line text editor | - pipes the results of one command to another  In this exercise you will mostly be using ssh, ls, cat, and cd</description>
     </item>
     
     <item>
       <title>Nation State Energy Policy</title>
-      <link>http://blog.alden.website/2018/09/11/energy-map/</link>
+      <link>https://blog.alden.website/2018/09/11/energy-map/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/09/11/energy-map/</guid>
+      <guid>https://blog.alden.website/2018/09/11/energy-map/</guid>
       <description>https://vimeo.com/289321256
 That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON.</description>
     </item>
     
     <item>
       <title>Nation State Energy Policy</title>
-      <link>http://blog.alden.website/2018/09/11/energy-map/</link>
+      <link>https://blog.alden.website/2018/09/11/energy-map/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/09/11/energy-map/</guid>
+      <guid>https://blog.alden.website/2018/09/11/energy-map/</guid>
       <description>https://vimeo.com/289321256
 That a light bulb turns on is a horrendous miracle. Each and every electron that passes through the bulb has to be generated at almost the exact same second as the bulb is turned on, and if too many or too few electrons are created and pushed out through the electric grid the whole system can fail. The reliability of the entire system is founded on the bedrock of federal regulation, the prime directive of which is that THE LIGHTS MUST REMAIN ON.</description>
     </item>
     
     <item>
       <title>Two Avatars</title>
-      <link>http://blog.alden.website/2018/09/11/two-avatars/</link>
+      <link>https://blog.alden.website/2018/09/11/two-avatars/</link>
       <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/09/11/two-avatars/</guid>
+      <guid>https://blog.alden.website/2018/09/11/two-avatars/</guid>
       <description>Part of my interest in digital avatars stems from their existence for me as a place of identity building and actualization. Being able to create and visualize new images of myself has been empowering and intoxicating force (additionally for several years, until I was banned, I [consciously and intentionally, rather than through workaday self-curation] treated my Facebook as a sandbox identity separate from my physical meat body, which I think made me both alluring and confusing to acquaintances).</description>
     </item>
     
     <item>
       <title>Bad Pong</title>
-      <link>http://blog.alden.website/2018/09/10/bad-pong/</link>
+      <link>https://blog.alden.website/2018/09/10/bad-pong/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/09/10/bad-pong/</guid>
+      <guid>https://blog.alden.website/2018/09/10/bad-pong/</guid>
       <description>I really like gesture controls, nothing makes me feel more like a technopagan completing a ritual than controlling something on my screen just by waving my hands around, so I decided that I wanted to control the paddle in just such a manner. Initially in order to make some kind of gestural control system I wanted to put a camera on a raspberry pi and train it to recognize particular hand shapes, but that sounded like overkill and I missed the Arduino IDE too much not to take advantage of the opportunity to use it again.</description>
     </item>
     
     <item>
       <title>Welcome To</title>
-      <link>http://blog.alden.website/2018/05/04/welcome-to/</link>
+      <link>https://blog.alden.website/2018/05/04/welcome-to/</link>
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/05/04/welcome-to/</guid>
+      <guid>https://blog.alden.website/2018/05/04/welcome-to/</guid>
       <description>I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&amp;rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &amp;lsquo;artist talk&amp;rsquo; within the art labor economy.</description>
     </item>
     
     <item>
       <title>Classic_Bad_Generative_Synths.wav</title>
-      <link>http://blog.alden.website/2018/04/13/word-vector-music/</link>
+      <link>https://blog.alden.website/2018/04/13/word-vector-music/</link>
       <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/04/13/word-vector-music/</guid>
+      <guid>https://blog.alden.website/2018/04/13/word-vector-music/</guid>
       <description>For this assignment I fell off the generative text pathway and onto the well worn path of the media artist: bad generative music compositions with shiny new tools. On my Github feed I noticed that Rebecca Fiebrink had recently created a new repository called word2vec2osc and I realized that I could use word vectors plugged into Wekinator to train a bunch of sine wave generators to turn bodies of text into musical compositions.</description>
     </item>
     
     <item>
       <title>Three Projects</title>
-      <link>http://blog.alden.website/2018/03/19/three-video-projects/</link>
+      <link>https://blog.alden.website/2018/03/19/three-video-projects/</link>
       <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/03/19/three-video-projects/</guid>
+      <guid>https://blog.alden.website/2018/03/19/three-video-projects/</guid>
       <description>I don&amp;rsquo;t like working over long breaks because - well - instead of making one finished project I have three projects that are halfway done. The first is the most complete but also the simplest, with Cambridge Analytica so in the news I couldn&amp;rsquo;t resist doing something with one of my all time favorite videos, their talk at the Concordia Summit in 2016. I&amp;rsquo;m surprised it took so long for their story to break.</description>
     </item>
     
     <item>
       <title>Biometric Fortune Telling</title>
-      <link>http://blog.alden.website/2018-03-09-biometric-fortunes/</link>
+      <link>https://blog.alden.website/2018-03-09-biometric-fortunes/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018-03-09-biometric-fortunes/</guid>
+      <guid>https://blog.alden.website/2018-03-09-biometric-fortunes/</guid>
       <description>In keeping with my interests in human to machine learning interaction and in how individuals&amp;rsquo; identities and personal narratives are shaped by those interactions, I decided to make a biometric scanning application (game?) that gives you your fortune based on the information it scans from you. My interest in algorithmic thinking and machine learning decision-making is manifesting as fortune telling projects because of the amount of predictive faith machine learning has culturally engendered: statistical pattern recognition as the new oracles, etc.</description>
     </item>
     
     <item>
       <title>Unepic Poem</title>
-      <link>http://blog.alden.website/2018/03/09/unepic-poem/</link>
+      <link>https://blog.alden.website/2018/03/09/unepic-poem/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/03/09/unepic-poem/</guid>
+      <guid>https://blog.alden.website/2018/03/09/unepic-poem/</guid>
       <description>When thinking of making my own poetic form I, in a fit of grandiose mania, decided that I would make my own form of generative epic poetry. Dactylic hexameter?&amp;hellip; yes! Alliteration?&amp;hellip; YES! Epithets?&amp;hellip; YES YES!! Heroic narrative defining the moral values of my society?&amp;hellip; YES YES YES!!!
 Well it didn&amp;rsquo;t really work out that well. The biggest problem is that narrative is really hard to pull off with generative and random-based methods.</description>
     </item>
     
     <item>
       <title>Algorithmic Decision Making in Bureaucracy, Public Policy, and The City</title>
-      <link>http://blog.alden.website/2018-03-07-algorithmic-decision-making/</link>
+      <link>https://blog.alden.website/2018-03-07-algorithmic-decision-making/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018-03-07-algorithmic-decision-making/</guid>
+      <guid>https://blog.alden.website/2018-03-07-algorithmic-decision-making/</guid>
       <description>Here you can see the slides from my research presentation And here is my executive summary
 Reports, Research Papers, and Press Releases As a great resource for all of our classes&amp;rsquo; discussions on AI I want to point out first the AI Now annual report. AI Now Institute is a research institute (within NYU! we can go talk to them) focused on interdisciplinary research on the social impacts of AI.</description>
     </item>
     
     <item>
       <title>Pig Texts</title>
-      <link>http://blog.alden.website/2018/02/22/pig-texts/</link>
+      <link>https://blog.alden.website/2018/02/22/pig-texts/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/02/22/pig-texts/</guid>
+      <guid>https://blog.alden.website/2018/02/22/pig-texts/</guid>
       <description>I&amp;rsquo;ve been working with my iMessage history in order to do a sentiment analysis over time. In doing so I decided to start trying to randomly generate new texts that would kind of sound like me, much like the kind of creepy post-death chatbot made by training a neural net on all of your messages. My results weren&amp;rsquo;t that&amp;hellip; good, but there was enough structure there to hint at real language.</description>
     </item>
     
     <item>
       <title>Peñabots, Digital Obfuscation, and Government Trolling</title>
-      <link>http://blog.alden.website/2018/02/15/312/</link>
+      <link>https://blog.alden.website/2018/02/15/312/</link>
       <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/02/15/312/</guid>
+      <guid>https://blog.alden.website/2018/02/15/312/</guid>
       <description>In the first class I mentioned peñabots as an example of government social media manipulation. Rather than define them myself I&amp;#8217;ll lean on the Wikipedia page definition: &amp;#8220;the name given to what analysts believe to be a network of automated accounts on social media used by the Mexican government to spread pro-government propaganda and to marginalize dissenting opinions in social media&amp;#8221;. Though not the first institutionally-organized trolling operation they stand apart for their sophistication, their effectiveness at shutting down oppositional organizing, and their use in a nominally non-authoritarian government (although one with a deep history of media manipulation).</description>
     </item>
     
     <item>
       <title>Ken Wark on Chantal Mouffe</title>
-      <link>http://blog.alden.website/2018/02/02/ken-wark-on-chantal-mouffe/</link>
+      <link>https://blog.alden.website/2018/02/02/ken-wark-on-chantal-mouffe/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
+      <guid>https://blog.alden.website/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
       <description>For my transcription exercise I wanted to pick something that was
 a) short enough so that I could transcribe the whole thing
 b) interesting enough that I wouldn&amp;#8217;t mind listening to it over and over again
@@ -1246,28 +1246,28 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
     
     <item>
       <title>Psychographic Categorization Neural Network Simulator 2000</title>
-      <link>http://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</link>
+      <link>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</link>
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
+      <guid>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
       <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one&amp;#8217;s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
     </item>
     
     <item>
       <title>Crypt vs Mausoleum</title>
-      <link>http://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</link>
+      <link>https://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</guid>
+      <guid>https://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</guid>
       <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a &amp;#8216;tap&amp;#8217; from a &amp;#8216;step&amp;#8217;, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
     </item>
     
     <item>
       <title>Make a Digital Public Space</title>
-      <link>http://blog.alden.website/2017/11/16/make-a-digital-public-space/</link>
+      <link>https://blog.alden.website/2017/11/16/make-a-digital-public-space/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/11/16/make-a-digital-public-space/</guid>
+      <guid>https://blog.alden.website/2017/11/16/make-a-digital-public-space/</guid>
       <description>Inspired by the near extinct website guestbook and completely extinct methods of phone phreaking, I wanted to make something that felt as unfinished and wide open with potential as the &amp;#8220;old&amp;#8221; web of 1992 &amp;#8211; 2001.
 Please participate: https://tinyurl.com/y7tvrusf
 Communication between users in this space is possible but only through &amp;#8220;hacks&amp;#8221; of the intended use. There is no security and everything can be seen.</description>
@@ -1275,19 +1275,19 @@ Communication between users in this space is possible but only through &amp;#822
     
     <item>
       <title>Haunted Dollhouse Planning</title>
-      <link>http://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</link>
+      <link>https://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</link>
       <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</guid>
+      <guid>https://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</guid>
       <description>At this point I have gotten the basic Google home API working on my raspberry pi and have started manipulating the methods of interaction (changing the trigger word, changing the voices) and have started to work on building a specific Google home Action. Still to do is build the haunted dollhouse enclosure. Since the basic first interaction I want users to have with the haunted doll is to knock on the dollhouse door, I wanted to first set up a basic knock and open circuit.</description>
     </item>
     
     <item>
       <title>World Cheese Index</title>
-      <link>http://blog.alden.website/2017/11/06/world-cheese-index/</link>
+      <link>https://blog.alden.website/2017/11/06/world-cheese-index/</link>
       <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/11/06/world-cheese-index/</guid>
+      <guid>https://blog.alden.website/2017/11/06/world-cheese-index/</guid>
       <description>I really wanted to work with the twitter API and to show data in real time. I started working with the word cheese just to test it out and I ended up sticking with it throughout the process.
 You can observer cheeses here.
 And see code here.</description>
@@ -1295,19 +1295,19 @@ And see code here.</description>
     
     <item>
       <title>Haunted Dolls and Things</title>
-      <link>http://blog.alden.website/2017/11/01/haunted-dolls-and-things/</link>
+      <link>https://blog.alden.website/2017/11/01/haunted-dolls-and-things/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/11/01/haunted-dolls-and-things/</guid>
+      <guid>https://blog.alden.website/2017/11/01/haunted-dolls-and-things/</guid>
       <description>Recently I&amp;#8217;ve been thinking mostly &amp;#8211; but somewhat disjointedly &amp;#8211; about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI &amp;#8211; which frequently is embodied feminized labor &amp;#8211; disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
     </item>
     
     <item>
       <title>Button Game</title>
-      <link>http://blog.alden.website/2017/10/30/button-game/</link>
+      <link>https://blog.alden.website/2017/10/30/button-game/</link>
       <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/30/button-game/</guid>
+      <guid>https://blog.alden.website/2017/10/30/button-game/</guid>
       <description>I&amp;#8217;m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons&amp;#8230; a lot.
 You can see the code for the game here.
 And you can play the game here.
@@ -1316,10 +1316,10 @@ And you can play the game here.
     
     <item>
       <title>Hi Five Machine</title>
-      <link>http://blog.alden.website/2017/10/25/hi-five-machine/</link>
+      <link>https://blog.alden.website/2017/10/25/hi-five-machine/</link>
       <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/25/hi-five-machine/</guid>
+      <guid>https://blog.alden.website/2017/10/25/hi-five-machine/</guid>
       <description>For our midterm Ridwan and I thought it would be really funny to make a machine that claims to give a high five but actually fakes you out every time.
 Aesthetically it reminds me a bit of the toilet hand from Zelda.
 Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for camera tracking controlling the hand, an HC- SR04 distance sensor, and an LCD screen.</description>
@@ -1327,10 +1327,10 @@ Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for 
     
     <item>
       <title>Circle Game with Tracking</title>
-      <link>http://blog.alden.website/2017/10/23/circle-game-with-tracking/</link>
+      <link>https://blog.alden.website/2017/10/23/circle-game-with-tracking/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/23/circle-game-with-tracking/</guid>
+      <guid>https://blog.alden.website/2017/10/23/circle-game-with-tracking/</guid>
       <description>&amp;nbsp;
 I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I&amp;#8217;d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn&amp;#8217;t finish that in a playable way.
 You can see the improved code here.
@@ -1339,59 +1339,59 @@ I put a playable version of it here.</description>
     
     <item>
       <title>Empathy Lense Kickstarter Campaign</title>
-      <link>http://blog.alden.website/2017/10/20/empathy-lense-kickstarter-campaign/</link>
+      <link>https://blog.alden.website/2017/10/20/empathy-lense-kickstarter-campaign/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/20/empathy-lense-kickstarter-campaign/</guid>
+      <guid>https://blog.alden.website/2017/10/20/empathy-lense-kickstarter-campaign/</guid>
       <description>We&amp;#8217;d like to thank Jason, Rick, and most importantly of all, Archibald! Thanks to bensound.com for the use of his music.
 &amp;nbsp;</description>
     </item>
     
     <item>
       <title>Business Card</title>
-      <link>http://blog.alden.website/2017/10/18/business-card/</link>
+      <link>https://blog.alden.website/2017/10/18/business-card/</link>
       <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/18/business-card/</guid>
+      <guid>https://blog.alden.website/2017/10/18/business-card/</guid>
       <description>Side A of the business card:
 I really liked the hands and eyes that I had going in my show poster, so I decided that I wanted the same kind of thing for my business card. I wasn&amp;#8217;t really sure what to put for my &amp;#8220;title&amp;#8221; so that is just a placeholder for now. The font I used was &amp;#8220;Gil Sans&amp;#8221; and I took my Twitter and Github icons from their media packages.</description>
     </item>
     
     <item>
       <title>Making a Controller for My P5 Game</title>
-      <link>http://blog.alden.website/2017/10/18/making-a-controller-for-my-p5-game/</link>
+      <link>https://blog.alden.website/2017/10/18/making-a-controller-for-my-p5-game/</link>
       <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/18/making-a-controller-for-my-p5-game/</guid>
+      <guid>https://blog.alden.website/2017/10/18/making-a-controller-for-my-p5-game/</guid>
       <description>(note all the code for these projects can be viewed on my Github here though I will make specific references to scripts down below).
 One of my P5 projects that I am the happiest with is an interactive poetry/anti-game game that involves corralling a ball with the cursor to reveal a narrative. I decided I wanted to replace the mouse and cursor with a joystick, and that I wanted to use node, express, and a websocket to interface between P5 and the arduino.</description>
     </item>
     
     <item>
       <title>Circle Game</title>
-      <link>http://blog.alden.website/2017/10/16/circle-game/</link>
+      <link>https://blog.alden.website/2017/10/16/circle-game/</link>
       <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/16/circle-game/</guid>
+      <guid>https://blog.alden.website/2017/10/16/circle-game/</guid>
       <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
 &amp;#8220;Points&amp;#8221; are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of &amp;#8220;cookie clicker&amp;#8221; type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
     </item>
     
     <item>
       <title>ITP Winter Show Card</title>
-      <link>http://blog.alden.website/2017/10/11/itp-winter-show-card/</link>
+      <link>https://blog.alden.website/2017/10/11/itp-winter-show-card/</link>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/11/itp-winter-show-card/</guid>
+      <guid>https://blog.alden.website/2017/10/11/itp-winter-show-card/</guid>
       <description>Initially I wanted to make something inspired by Tadanori Yokoo. I spent a lot of time futzing around with different elements but I ultimately decided what I liked was the simplest, a little line drawing reaching out to the show information, giving a sense of playfulness. I really like this color contrast but I think it might be a little distracting. I put a less contrast version on the bottom of the post.</description>
     </item>
     
     <item>
       <title>You Suck</title>
-      <link>http://blog.alden.website/2017/10/07/you-suck/</link>
+      <link>https://blog.alden.website/2017/10/07/you-suck/</link>
       <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/07/you-suck/</guid>
+      <guid>https://blog.alden.website/2017/10/07/you-suck/</guid>
       <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
 
 You can see the code for that here.
@@ -1400,19 +1400,19 @@ Katya then had the idea to make something that prompted the user to write someth
     
     <item>
       <title>Breaking A Servo?</title>
-      <link>http://blog.alden.website/2017/10/04/breaking-a-servo/</link>
+      <link>https://blog.alden.website/2017/10/04/breaking-a-servo/</link>
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/04/breaking-a-servo/</guid>
+      <guid>https://blog.alden.website/2017/10/04/breaking-a-servo/</guid>
       <description>I wanted to make a project that would display a dubiously motivational message each time I sat at my home office desk. To start off I used a HC-SR04 ping distance sensor and attached a pin with a message (in this case a pin I got at the art book fair) to a little SG90 micro servo motor. I initially tried to map the distance readings of the HC-SR04 to the angle of the servo motor, but it was too noisy and the servo jittered around quickly (you can see that code commented out below).</description>
     </item>
     
     <item>
       <title>Personal Color Palette</title>
-      <link>http://blog.alden.website/2017/10/04/personal-color-palette/</link>
+      <link>https://blog.alden.website/2017/10/04/personal-color-palette/</link>
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/04/personal-color-palette/</guid>
+      <guid>https://blog.alden.website/2017/10/04/personal-color-palette/</guid>
       <description>&amp;nbsp;
 I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
 &amp;nbsp;</description>
@@ -1420,39 +1420,39 @@ I took my color palette from my twitter avi (drawn by Norah Horwitz). From there
     
     <item>
       <title>Infomercial Brainstorming and Storyboard</title>
-      <link>http://blog.alden.website/2017/10/02/infomercial-brainstorming-and-storyboard/</link>
+      <link>https://blog.alden.website/2017/10/02/infomercial-brainstorming-and-storyboard/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/10/02/infomercial-brainstorming-and-storyboard/</guid>
+      <guid>https://blog.alden.website/2017/10/02/infomercial-brainstorming-and-storyboard/</guid>
       <description>Initial Ideas
 As you can see from the above picture Amitabh, Martin, and I had a few different ideas, but we settled on a device that takes the way in which online human communications are mediated via AI algorithms and replicates it in the real world. We debated for a while what form we wanted this to take &amp;#8211; either a consumer level device for facial recognition for emotion or an AI that determines political leanings.</description>
     </item>
     
     <item>
       <title>Boarding Pass and Expressive Words</title>
-      <link>http://blog.alden.website/2017/09/27/boarding-pass-and-expressive-words/</link>
+      <link>https://blog.alden.website/2017/09/27/boarding-pass-and-expressive-words/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/27/boarding-pass-and-expressive-words/</guid>
+      <guid>https://blog.alden.website/2017/09/27/boarding-pass-and-expressive-words/</guid>
       <description>On first glance of a boarding pass I notice not just a jumble of information poorly organized, but too much information, a heaping mass of which obscures the information that the traveller is really am interested in when they have a pass in hand.
 The date is unnecessary, a traveler would only be receiving this pass on the day of the flight. Origin and destinations are also unnecessary; we must assume that they have knowledge of their destination and current locations already in mind.</description>
     </item>
     
     <item>
       <title>Subway Turnstile</title>
-      <link>http://blog.alden.website/2017/09/27/subway-turnstile/</link>
+      <link>https://blog.alden.website/2017/09/27/subway-turnstile/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/27/subway-turnstile/</guid>
+      <guid>https://blog.alden.website/2017/09/27/subway-turnstile/</guid>
       <description>Since moving to New York I&amp;#8217;ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn&amp;#8217;t gotten the hang of swiping smoothly enough to avoid &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221;, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221; message, they were walking straight into the turnstile after doing it.</description>
     </item>
     
     <item>
       <title>Blowing on Confetti</title>
-      <link>http://blog.alden.website/2017/09/25/blowing-on-confetti/</link>
+      <link>https://blog.alden.website/2017/09/25/blowing-on-confetti/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/25/blowing-on-confetti/</guid>
+      <guid>https://blog.alden.website/2017/09/25/blowing-on-confetti/</guid>
       <description>I&amp;#8217;ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by &amp;#8220;blowing&amp;#8221; on it with the mouse.
 
 Right now they kind of jiggle around expectantly, this was to meet the &amp;#8220;one element that moves independently of the mouse&amp;#8221; part of the homework. Getting the confetti to move realistically when blown has been a pain, right now it jumps around semi-randomly, which gives a good imitation of a scattering effect but the motion is discontinuous and unnatural.</description>
@@ -1460,19 +1460,19 @@ Right now they kind of jiggle around expectantly, this was to meet the &amp;#822
     
     <item>
       <title>Sound Walk</title>
-      <link>http://blog.alden.website/2017/09/22/sound-walk/</link>
+      <link>https://blog.alden.website/2017/09/22/sound-walk/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/22/sound-walk/</guid>
+      <guid>https://blog.alden.website/2017/09/22/sound-walk/</guid>
       <description>Episode 19 of the 4th season of Creature Feature, made by Shreiya and Alden. Please start on the 12th floor of the Tisch building, just outside of elevator bank A. And don&amp;#8217;t forget to walk slow and really take in your surroundings!</description>
     </item>
     
     <item>
       <title>Servo Switch</title>
-      <link>http://blog.alden.website/2017/09/20/servo-switch/</link>
+      <link>https://blog.alden.website/2017/09/20/servo-switch/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/20/servo-switch/</guid>
+      <guid>https://blog.alden.website/2017/09/20/servo-switch/</guid>
       <description>Pen Switch
 My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. 
 Servo Switch
@@ -1481,10 +1481,10 @@ I really wanted to get my hands into programming the arduino so I next made a sw
     
     <item>
       <title>Sign Research</title>
-      <link>http://blog.alden.website/2017/09/19/sign-intervention/</link>
+      <link>https://blog.alden.website/2017/09/19/sign-intervention/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/19/sign-intervention/</guid>
+      <guid>https://blog.alden.website/2017/09/19/sign-intervention/</guid>
       <description>I started out my sign research scouting by going to the Rob Rauschenberg show at MoMA. Rauschenberg makes copious use of street signage, here are a couple of examples:
 Decontextualizing signs makes them jarring, bringing them much more to the forefront of our consciousness than they occupy in their usual streetside homes.
 (*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli&amp;#8217;s sign I took &amp;#8211; what I have to say about it is that it is simple, effective, and purposeful **)</description>
@@ -1492,10 +1492,10 @@ Decontextualizing signs makes them jarring, bringing them much more to the foref
     
     <item>
       <title>Experiments in P5 drawing</title>
-      <link>http://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</link>
+      <link>https://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</link>
       <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
+      <guid>https://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
       <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
 http://alpha.editor.p5js.org/alden/sketches/ByIzAYaq-
 Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background&amp;#8230; or a website background 🙂 I used for loops to avoid copy/pasting all my code:
@@ -1505,38 +1505,38 @@ This led me to try to recreate this piece by Paul Nasca:</description>
     
     <item>
       <title>Janet Cardiff Sound Walk and Reading Response</title>
-      <link>http://blog.alden.website/2017/09/14/janet-cardiff-sound-walk/</link>
+      <link>https://blog.alden.website/2017/09/14/janet-cardiff-sound-walk/</link>
       <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/14/janet-cardiff-sound-walk/</guid>
+      <guid>https://blog.alden.website/2017/09/14/janet-cardiff-sound-walk/</guid>
       <description>For several hours after I finished Her Long Black Hair, Janet Cardiff&amp;#8217;s Central Park sound walk combining field recording, found object and narrative techniques of film noir, I felt a heightened awareness of the world around me, a sense that both the aural and visual information I was consuming had hidden narratives, meanings unknown to me, entire words and lives just beyond the field of my comprehension. This sense of hidden but pulsating alive connectivity is the central goal of Cardiff&amp;#8217;s work: to create connections within time between the walker/listener and the spaces and strangers around them, and to create connections across time, between the walker/listener, the woman with black hair, Orpheus descending into Hades to rescue Eurydice, and Cardiff herself, connecting and condensing these moments of time and myth into a gem of experiential authenticity.</description>
     </item>
     
     <item>
       <title>Akira Poster Design Analysis</title>
-      <link>http://blog.alden.website/2017/09/13/48/</link>
+      <link>https://blog.alden.website/2017/09/13/48/</link>
       <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/13/48/</guid>
+      <guid>https://blog.alden.website/2017/09/13/48/</guid>
       <description>Visually striking and iconic* &amp;#8211; the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
 The eye is immediately drawn by the image organization and the blue splash on his jacket toward the figure in the center, bringing him front and center to the poster and indicating that he is, if not the lead character, at least central to the film.</description>
     </item>
     
     <item>
       <title>What Is Interaction?</title>
-      <link>http://blog.alden.website/2017/09/11/what-is-interaction/</link>
+      <link>https://blog.alden.website/2017/09/11/what-is-interaction/</link>
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/11/what-is-interaction/</guid>
+      <guid>https://blog.alden.website/2017/09/11/what-is-interaction/</guid>
       <description>Within ten minutes of using any screened device my left eye begins to strain and ache. My wrists hurt almost constantly and frequently I need to use wrist splints when typing in order to avoid the pain. When I go to sleep at night I have a dull ache in my neck and between my eyes, and when I wake up my first thought is to check my phone. Before thinking about coffee, before thinking about food, or work, or my day ahead, or my partner lying beside me, a light goes off in my brain, a synapse fires, indicating that it is seeking a dopamine reward for checking Twitter.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://blog.alden.website/post/avatars/rig-me/</link>
+      <link>https://blog.alden.website/post/avatars/rig-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/post/avatars/rig-me/</guid>
+      <guid>https://blog.alden.website/post/avatars/rig-me/</guid>
       <description>sc+++ title = &amp;ldquo;Rig Me&amp;rdquo; date = 2018-09-25T15:07:58-04:00 draft = false tags = [] categories = [&amp;ldquo;performative avatars&amp;rdquo;] +++
 All my rigged, texture, .obj files located here.
 Had a ton of fun with my body once I rigged it. I realized in this process that I need to rescan myself if I want a more real world vision of my body because I wore my glasses during my scan and they aren&amp;rsquo;t showing up super good on my body digitally.</description>

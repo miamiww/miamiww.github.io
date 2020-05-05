@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello Computer on Alden&#39;s Blog Home</title>
-    <link>http://blog.alden.website/categories/hello-computer/</link>
+    <link>https://blog.alden.website/categories/hello-computer/</link>
     <description>Recent content in Hello Computer on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Oct 2018 18:50:48 -0400</lastBuildDate>
     
-	<atom:link href="http://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Leaf Town: Plant Communication Hub</title>
-      <link>http://blog.alden.website/post/hellocomp/plant-communication-hub/</link>
+      <link>https://blog.alden.website/post/hellocomp/plant-communication-hub/</link>
       <pubDate>Fri, 19 Oct 2018 18:50:48 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/plant-communication-hub/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/plant-communication-hub/</guid>
       <description>In making this project I had on my mind both the kind of joy of speaking to non-humans and feeling understood, generating a level of closeness that can feel deep yet uncomplicated, and the kind of snake-oilish claims that some researchers in the AI community make about their work. Naturally these thoughts led me to start making a device that would allow users to speak directly with their plants and have the plants speak back.</description>
     </item>
     
     <item>
       <title>Adventure Continue</title>
-      <link>http://blog.alden.website/post/hellocomp/adventure-continue/</link>
+      <link>https://blog.alden.website/post/hellocomp/adventure-continue/</link>
       <pubDate>Tue, 09 Oct 2018 17:52:12 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/adventure-continue/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/adventure-continue/</guid>
       <description>I tried to continue on my theme of making a colossal cave adventure clone for voice, thinking that this time using the webhook fulfillment it would be much clearer what to do. I did get it functioning, somewhat. Unfortunately going south here should get you into the forest. I encountered numerous other bugs, such as items not appearing in the rooms they should be in, and getting stuck in a room permanently.</description>
     </item>
     
     <item>
       <title>Uncanny Sandra</title>
-      <link>http://blog.alden.website/post/hellocomp/uncanny-sandra/</link>
+      <link>https://blog.alden.website/post/hellocomp/uncanny-sandra/</link>
       <pubDate>Sun, 30 Sep 2018 00:46:09 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/uncanny-sandra/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/uncanny-sandra/</guid>
       <description>Sandra I love the premise of Sandra but I can&amp;rsquo;t help but wonder what kind of system could instantaneously categorize and direct all of these requests but couldn&amp;rsquo;t formulate automated responses for most of them. Does it go more into detail about what ends up happening? There is something in the show about the current economy&amp;rsquo;s preference for high-abstraction capital (algorithms, systems, connections) over labor, like the company Alia Shawkat is working for is the service economy equivalent of an old steel factory.</description>
     </item>
     
     <item>
       <title>Archives Made Easy</title>
-      <link>http://blog.alden.website/post/hellocomp/archive_made_easy/</link>
+      <link>https://blog.alden.website/post/hellocomp/archive_made_easy/</link>
       <pubDate>Mon, 24 Sep 2018 17:22:44 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/archive_made_easy/</guid>
       <description>Recently I&amp;rsquo;ve been reading a ton of books with names like &amp;ldquo;Cyber Dictionary: Your Guide To The Wired World&amp;rdquo; or &amp;ldquo;Net Chick: A Smart-Girl Guide to the Wired World&amp;rdquo;, hip and breezy internet guide books written between 1996-2000. This has led to me making a few strange archive tools around the Internet Archive&amp;rsquo;s Wayback Machine
 The one I made for Hello Computer this week, a voice controlled archive navigation system, can be found here but unfortunately because I don&amp;rsquo;t have HTTPS certification on my prototypes site Chrome will not allow you to access the microphone, so all you can see is the initial button.</description>
     </item>
     
     <item>
       <title>Talking Circle</title>
-      <link>http://blog.alden.website/post/hellocomp/eager_icon/</link>
+      <link>https://blog.alden.website/post/hellocomp/eager_icon/</link>
       <pubDate>Sun, 16 Sep 2018 20:39:25 -0400</pubDate>
       
-      <guid>http://blog.alden.website/post/hellocomp/eager_icon/</guid>
+      <guid>https://blog.alden.website/post/hellocomp/eager_icon/</guid>
       <description>In starting to make some kind of something that talks I wanted to emulate one of my favorite browser games (is it a game?) ClickClickClick. But I found that I didn&amp;rsquo;t know enough about &amp;ldquo;The DOM&amp;rdquo; to get much of my foot in the door without a bunch of research time. So instead I went an easier route, dipping into the familiar warmth of P5. I took a project that I had given a bit of a start to before, a little game about waiting around.</description>
     </item>
     

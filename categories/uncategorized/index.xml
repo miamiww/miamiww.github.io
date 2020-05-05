@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Alden&#39;s Blog Home</title>
-    <link>http://blog.alden.website/categories/uncategorized/</link>
+    <link>https://blog.alden.website/categories/uncategorized/</link>
     <description>Recent content in Uncategorized on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.alden.website/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.alden.website/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blowing on Confetti</title>
-      <link>http://blog.alden.website/2017/09/25/blowing-on-confetti/</link>
+      <link>https://blog.alden.website/2017/09/25/blowing-on-confetti/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2017/09/25/blowing-on-confetti/</guid>
+      <guid>https://blog.alden.website/2017/09/25/blowing-on-confetti/</guid>
       <description>I&amp;#8217;ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by &amp;#8220;blowing&amp;#8221; on it with the mouse.
 
 Right now they kind of jiggle around expectantly, this was to meet the &amp;#8220;one element that moves independently of the mouse&amp;#8221; part of the homework. Getting the confetti to move realistically when blown has been a pain, right now it jumps around semi-randomly, which gives a good imitation of a scattering effect but the motion is discontinuous and unnatural.</description>

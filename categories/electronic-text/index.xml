@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronic Text on Alden&#39;s Blog Home</title>
-    <link>http://blog.alden.website/categories/electronic-text/</link>
+    <link>https://blog.alden.website/categories/electronic-text/</link>
     <description>Recent content in Electronic Text on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.alden.website/categories/electronic-text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.alden.website/categories/electronic-text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome To</title>
-      <link>http://blog.alden.website/2018/05/04/welcome-to/</link>
+      <link>https://blog.alden.website/2018/05/04/welcome-to/</link>
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/05/04/welcome-to/</guid>
+      <guid>https://blog.alden.website/2018/05/04/welcome-to/</guid>
       <description>I have been thinking about a completely automated conference talk since I saw Hito Steyerl and Wendy Chun give a talk at The Guggenheim for Hito&amp;rsquo;s book launch in January. Much of the content of their conversation had to do with economies of labor in art, economies of presence in art, and of the demands on artists and their time and of the place of the &amp;lsquo;artist talk&amp;rsquo; within the art labor economy.</description>
     </item>
     
     <item>
       <title>Unepic Poem</title>
-      <link>http://blog.alden.website/2018/03/09/unepic-poem/</link>
+      <link>https://blog.alden.website/2018/03/09/unepic-poem/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/03/09/unepic-poem/</guid>
+      <guid>https://blog.alden.website/2018/03/09/unepic-poem/</guid>
       <description>When thinking of making my own poetic form I, in a fit of grandiose mania, decided that I would make my own form of generative epic poetry. Dactylic hexameter?&amp;hellip; yes! Alliteration?&amp;hellip; YES! Epithets?&amp;hellip; YES YES!! Heroic narrative defining the moral values of my society?&amp;hellip; YES YES YES!!!
 Well it didn&amp;rsquo;t really work out that well. The biggest problem is that narrative is really hard to pull off with generative and random-based methods.</description>
     </item>
     
     <item>
       <title>Pig Texts</title>
-      <link>http://blog.alden.website/2018/02/22/pig-texts/</link>
+      <link>https://blog.alden.website/2018/02/22/pig-texts/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.alden.website/2018/02/22/pig-texts/</guid>
+      <guid>https://blog.alden.website/2018/02/22/pig-texts/</guid>
       <description>I&amp;rsquo;ve been working with my iMessage history in order to do a sentiment analysis over time. In doing so I decided to start trying to randomly generate new texts that would kind of sound like me, much like the kind of creepy post-death chatbot made by training a neural net on all of your messages. My results weren&amp;rsquo;t that&amp;hellip; good, but there was enough structure there to hint at real language.</description>
     </item>
     
