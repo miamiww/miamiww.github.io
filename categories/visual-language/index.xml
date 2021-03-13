@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visual Language on Alden&#39;s Blog Home</title>
-    <link>https://blog.alden.website/categories/visual-language/</link>
+    <link>https://blog.alden.website/categories/Visual-Language/</link>
     <description>Recent content in Visual Language on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/visual-language/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alden.website/categories/Visual-Language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Business Card</title>
       <link>https://blog.alden.website/2017/10/18/business-card/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://blog.alden.website/2017/10/18/business-card/</guid>
       <description>Side A of the business card:
-I really liked the hands and eyes that I had going in my show poster, so I decided that I wanted the same kind of thing for my business card. I wasn&amp;#8217;t really sure what to put for my &amp;#8220;title&amp;#8221; so that is just a placeholder for now. The font I used was &amp;#8220;Gil Sans&amp;#8221; and I took my Twitter and Github icons from their media packages.</description>
+I really liked the hands and eyes that I had going in my show poster, so I decided that I wanted the same kind of thing for my business card. I wasn’t really sure what to put for my “title” so that is just a placeholder for now. The font I used was “Gil Sans” and I took my Twitter and Github icons from their media packages.</description>
     </item>
     
     <item>
@@ -36,9 +32,8 @@ I really liked the hands and eyes that I had going in my show poster, so I decid
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/04/personal-color-palette/</guid>
-      <description>&amp;nbsp;
-I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
-&amp;nbsp;</description>
+      <description> I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
+ </description>
     </item>
     
     <item>
@@ -59,7 +54,7 @@ The date is unnecessary, a traveler would only be receiving this pass on the day
       <guid>https://blog.alden.website/2017/09/19/sign-intervention/</guid>
       <description>I started out my sign research scouting by going to the Rob Rauschenberg show at MoMA. Rauschenberg makes copious use of street signage, here are a couple of examples:
 Decontextualizing signs makes them jarring, bringing them much more to the forefront of our consciousness than they occupy in their usual streetside homes.
-(*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli&amp;#8217;s sign I took &amp;#8211; what I have to say about it is that it is simple, effective, and purposeful **)</description>
+(*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli’s sign I took – what I have to say about it is that it is simple, effective, and purposeful **)</description>
     </item>
     
     <item>
@@ -68,7 +63,7 @@ Decontextualizing signs makes them jarring, bringing them much more to the foref
       <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/13/48/</guid>
-      <description>Visually striking and iconic* &amp;#8211; the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
+      <description>Visually striking and iconic* – the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
 The eye is immediately drawn by the image organization and the blue splash on his jacket toward the figure in the center, bringing him front and center to the poster and indicating that he is, if not the lead character, at least central to the film.</description>
     </item>
     

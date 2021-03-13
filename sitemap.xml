@@ -1,10 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.alden.website/</loc>
+    <lastmod>2021-03-08T19:57:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/</loc>
+    <lastmod>2021-03-08T19:57:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/post/Workshops/future-of-waste/</loc>
+    <lastmod>2021-03-08T19:57:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/post/</loc>
+    <lastmod>2021-03-08T19:57:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/workshop/</loc>
+    <lastmod>2021-03-08T19:57:05-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/Workshops/shodan-tips/</loc>
     <lastmod>2019-06-13T16:19:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/workshops/</loc>
+    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/100-days/</loc>
+    <lastmod>2019-04-12T22:22:42-04:00</lastmod>
   </url>
   
   <url>
@@ -174,6 +209,11 @@
   
   <url>
     <loc>https://blog.alden.website/post/thesis/schemers-scammers-subverters-symposium/</loc>
+    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/thesis/</loc>
     <lastmod>2019-02-26T14:36:07-05:00</lastmod>
   </url>
   
@@ -373,6 +413,11 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/los-angeles/</loc>
+    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/100days/Day-15/</loc>
     <lastmod>2019-01-18T11:01:04-08:00</lastmod>
   </url>
@@ -453,12 +498,22 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/temporary-expert/</loc>
+    <lastmod>2018-12-17T18:31:31-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/tempexp/the-ongoing-now/</loc>
     <lastmod>2018-11-18T02:43:10-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.alden.website/post/undernet/RESTful-VJing/</loc>
+    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/understanding-networks/</loc>
     <lastmod>2018-11-12T22:46:34-05:00</lastmod>
   </url>
   
@@ -483,13 +538,28 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/cabinets-of-wonder/</loc>
+    <lastmod>2018-10-21T23:08:40-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/cabofwon/self-curation-self-curated/</loc>
     <lastmod>2018-10-21T23:08:40-04:00</lastmod>
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/hello-computer/</loc>
+    <lastmod>2018-10-19T18:50:48-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/hellocomp/plant-communication-hub/</loc>
     <lastmod>2018-10-19T18:50:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/computational-narrative/</loc>
+    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
   </url>
   
   <url>
@@ -543,6 +613,11 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/performative-avatars/</loc>
+    <lastmod>2018-09-17T22:50:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/post/undernet/traceroutes/</loc>
     <lastmod>2018-09-17T22:07:07-04:00</lastmod>
   </url>
@@ -583,6 +658,11 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/Electronic-Text/</loc>
+    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2018/05/04/welcome-to/</loc>
     <lastmod>2018-05-04T00:00:00+00:00</lastmod>
   </url>
@@ -590,6 +670,16 @@
   <url>
     <loc>https://blog.alden.website/2018/04/13/word-vector-music/</loc>
     <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/ElectronicText/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/Detourning/</loc>
+    <lastmod>2018-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -603,12 +693,22 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/Dynamic-Web-Development/</loc>
+    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2018/03/09/unepic-poem/</loc>
     <lastmod>2018-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.alden.website/2018-03-07-algorithmic-decision-making/</loc>
+    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/Future-Scenarios/</loc>
     <lastmod>2018-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -628,6 +728,11 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/Computational-Media/</loc>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
   </url>
@@ -638,12 +743,22 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/DigitalPractice/</loc>
+    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2017/11/16/make-a-digital-public-space/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</loc>
+    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/Physical-Computing/</loc>
     <lastmod>2017-11-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -678,12 +793,22 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/Sound-and-Video/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2017/10/18/business-card/</loc>
     <lastmod>2017-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.alden.website/2017/10/18/making-a-controller-for-my-p5-game/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.alden.website/categories/Visual-Language/</loc>
     <lastmod>2017-10-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -733,6 +858,11 @@
   </url>
   
   <url>
+    <loc>https://blog.alden.website/categories/Uncategorized/</loc>
+    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.alden.website/2017/09/22/sound-walk/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
   </url>
@@ -772,152 +902,7 @@
   </url>
   
   <url>
-    <loc>https://blog.alden.website/categories/100-days/</loc>
-    <lastmod>2019-04-12T22:22:42-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/</loc>
-    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/cabinets-of-wonder/</loc>
-    <lastmod>2018-10-21T23:08:40-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/</loc>
-    <lastmod>2019-04-12T22:22:42-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/computational-media/</loc>
-    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/computational-narrative/</loc>
-    <lastmod>2018-10-16T12:49:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/detourning/</loc>
-    <lastmod>2018-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/digitalpractice/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/dynamic-web-development/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/electronic-text/</loc>
-    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/electronictext/</loc>
-    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/future-scenarios/</loc>
-    <lastmod>2018-03-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/hello-computer/</loc>
-    <lastmod>2018-10-19T18:50:48-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/los-angeles/</loc>
-    <lastmod>2019-01-18T18:43:52-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/performative-avatars/</loc>
-    <lastmod>2018-09-17T22:50:19-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/physical-computing/</loc>
-    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/post/</loc>
-    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/sound-and-video/</loc>
-    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.alden.website/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/temporary-expert/</loc>
-    <lastmod>2018-12-17T18:31:31-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/thesis/</loc>
-    <lastmod>2019-02-26T14:36:07-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/uncategorized/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/understanding-networks/</loc>
-    <lastmod>2018-11-12T22:46:34-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/visual-language/</loc>
-    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.alden.website/categories/workshops/</loc>
-    <lastmod>2019-06-13T16:19:25-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

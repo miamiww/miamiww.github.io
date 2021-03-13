@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Physical Computing on Alden&#39;s Blog Home</title>
-    <link>https://blog.alden.website/categories/physical-computing/</link>
+    <link>https://blog.alden.website/categories/Physical-Computing/</link>
     <description>Recent content in Physical Computing on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/physical-computing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alden.website/categories/Physical-Computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haunted Dollhouse Planning</title>
       <link>https://blog.alden.website/2017/11/15/haunted-dollhouse-planning/</link>
@@ -26,7 +22,7 @@
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/11/01/haunted-dolls-and-things/</guid>
-      <description>Recently I&amp;#8217;ve been thinking mostly &amp;#8211; but somewhat disjointedly &amp;#8211; about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI &amp;#8211; which frequently is embodied feminized labor &amp;#8211; disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
+      <description>Recently I’ve been thinking mostly – but somewhat disjointedly – about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI – which frequently is embodied feminized labor – disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
     </item>
     
     <item>
@@ -65,7 +61,7 @@ One of my P5 projects that I am the happiest with is an interactive poetry/anti-
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/27/subway-turnstile/</guid>
-      <description>Since moving to New York I&amp;#8217;ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn&amp;#8217;t gotten the hang of swiping smoothly enough to avoid &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221;, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221; message, they were walking straight into the turnstile after doing it.</description>
+      <description>Since moving to New York I’ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn’t gotten the hang of swiping smoothly enough to avoid “PLEASE SWIPE AGAIN”, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the “PLEASE SWIPE AGAIN” message, they were walking straight into the turnstile after doing it.</description>
     </item>
     
     <item>
@@ -75,8 +71,7 @@ One of my P5 projects that I am the happiest with is an interactive poetry/anti-
       
       <guid>https://blog.alden.website/2017/09/20/servo-switch/</guid>
       <description>Pen Switch
-My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. 
-Servo Switch
+My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. Servo Switch
 I really wanted to get my hands into programming the arduino so I next made a switch that involves stringing a resistor into the arm of a small servo motor and using the arduino to control the movements of the motor so that it completes a circuit and lights up an LED.</description>
     </item>
     

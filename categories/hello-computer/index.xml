@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello Computer on Alden&#39;s Blog Home</title>
+    <title>hello computer on Alden&#39;s Blog Home</title>
     <link>https://blog.alden.website/categories/hello-computer/</link>
-    <description>Recent content in Hello Computer on Alden&#39;s Blog Home</description>
+    <description>Recent content in hello computer on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Oct 2018 18:50:48 -0400</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Oct 2018 18:50:48 -0400</lastBuildDate><atom:link href="https://blog.alden.website/categories/hello-computer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leaf Town: Plant Communication Hub</title>
       <link>https://blog.alden.website/post/hellocomp/plant-communication-hub/</link>

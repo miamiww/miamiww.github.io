@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I went looking for MongoDB databases. I used MongoDB back in Shawn Van Every&rsquo;s servers class, I remember feeling pretty cool using a NoSQL database. Shodan indicated that MongoDB tends to work off of port 27017 so that&rsquo;s where I started looking.
 The Shell of Someone&rsquo;s Machine Learning Blog on 35.185.145.24 I picked one of the first results I found on Shodan. According to Shodan it&rsquo;s located in Singapore and hosted on Google Cloud services." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-11/" /><meta property="article:published_time" content="2019-01-14T14:27:56-05:00"/>
-<meta property="article:modified_time" content="2019-01-14T14:27:56-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-11/" />
+<meta property="article:published_time" content="2019-01-14T14:27:56-05:00" />
+<meta property="article:modified_time" content="2019-01-14T14:27:56-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 11: Machine Learning in Beijing and the Mysteries of 126 and 163"/>
 <meta name="twitter:description" content="Today I went looking for MongoDB databases. I used MongoDB back in Shawn Van Every&rsquo;s servers class, I remember feeling pretty cool using a NoSQL database. Shodan indicated that MongoDB tends to work off of port 27017 so that&rsquo;s where I started looking.
@@ -41,14 +42,9 @@ The Shell of Someone&rsquo;s Machine Learning Blog on 35.185.145.24 I picked one
 		
 
 		<section class="body">
-			
-
-<p>Today I went looking for <a href="https://www.mongodb.com/">MongoDB</a> databases. I used MongoDB back in Shawn Van Every&rsquo;s servers class, I remember feeling pretty cool using a <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL database</a>. Shodan indicated that MongoDB tends to work off of port 27017 so that&rsquo;s where I started looking.</p>
-
-<h2 id="the-shell-of-someone-s-machine-learning-blog-on-35-185-145-24">The Shell of Someone&rsquo;s Machine Learning Blog on 35.185.145.24</h2>
-
+			<p>Today I went looking for <a href="https://www.mongodb.com/">MongoDB</a> databases. I used MongoDB back in Shawn Van Every&rsquo;s servers class, I remember feeling pretty cool using a <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL database</a>. Shodan indicated that MongoDB tends to work off of port 27017 so that&rsquo;s where I started looking.</p>
+<h2 id="the-shell-of-someones-machine-learning-blog-on-3518514524">The Shell of Someone&rsquo;s Machine Learning Blog on 35.185.145.24</h2>
 <p>I picked one of the first results I found on Shodan. According to Shodan it&rsquo;s located in Singapore and hosted on Google Cloud services. After running <code>nmap</code> on the IP I saw it had port 80, the http port, open so I decided to visit it in a browser.</p>
-
 <pre><code>➜  sandbox git:(master) ✗ nmap -p- 35.185.145.24
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-14 18:02 EST
 Nmap scan report for 24.145.185.35.bc.googleusercontent.com (35.185.145.24)
@@ -64,20 +60,16 @@ PORT      STATE SERVICE
 27017/tcp open  mongod
 
 Nmap done: 1 IP address (1 host up) scanned in 1507.34 seconds
-</code></pre>
-
-<p><img src="/images/100Days/Day11/ailab.png" alt="" />
+</code></pre><p><img src="/images/100Days/Day11/ailab.png" alt="">
 It looks like a blog named AI Lab with a bunch of posts about how to use quite an extensive range of machine learning tools. Additionally it has posts about songs and music. Some things are off though. None of the media embeddings work (i.e. none of the songs play), every post has 666 likes and no comments, some of the code formatting is broken and unreadable in the posts, and quite a few of the image links are broken. Also it has no DNS entry, it&rsquo;s only resolving to the googleusercontent.com URL. Clearly this blog is not meant for public eyes. The bottom has a note about the author: their name is Leo, and you can message them on WeChat.
-<img src="/images/100Days/Day11/wechat.png" alt="" />
+<img src="/images/100Days/Day11/wechat.png" alt="">
 So now I really wanted to know about the history of this blog and I got kind of overly obsessed with why it&rsquo;s in this quasi state of reality. I thought about messaging Leo, but I thought that would be too weird right off the bat, though I did check Leo&rsquo;s WeChat page and it said that they were in Beijing, not Singapore. That makes sense for two reasons: the website is in simplified Chinese, and not traditional like they use in Singapore, and Google doesn&rsquo;t have facilities in China to my knowledge so if you want to use Google hosting and you&rsquo;re in Beijing then Singapore seems like a close option.</p>
-
 <p>There&rsquo;s a signup and login (?) at the top right I thought about trying to join but decided that that would be too weird also. I tried probing all the other open ports and one of them yielded returns, 8080, which seems to be hosting an entirely different, though related, website.
-<img src="/images/100Days/Day11/wiki.png" alt="" />
+<img src="/images/100Days/Day11/wiki.png" alt="">
 This is kind of like a documentation website that goes through many specific tools than in the blog, which does more deep dives on things like processes and methodologies.
 Now I noticed that there&rsquo;s the friendly Github Octocat logo in the corner (which even waves when you hover over it), which I was hoping would be Leo&rsquo;s Github page. It was not a link to Leo&rsquo;s Github page. Instead it&rsquo;s a link to git.riverrun.cn.
-<img src="/images/100Days/Day11/riverrun.png" alt="" />
+<img src="/images/100Days/Day11/riverrun.png" alt="">
 This is a <a href="https://gogs.io/docs">Gogs-based</a> self hosted Git service, so it&rsquo;s essentially someone&rsquo;s private version of Github. riverrun.cn itself does not appear to exist as a website, and instead prompts a download of a blank file whenever it is visited in a browser, but it does have a WhoIS entry.</p>
-
 <pre><code>Domain Name: riverrun.cn
 ROID: 20140703s10001s71703193-cn
 Domain Status: ok
@@ -90,17 +82,11 @@ Name Server: f1g1ns2.dnspod.net
 Registration Time: 2014-07-03 17:14:08
 Expiration Time: 2019-07-03 17:14:08
 DNSSEC: unsigned
-</code></pre>
-
-<p>163.com, I&rsquo;d seen that before! As embedded javascript on the first web page.
-<img src="/images/100Days/Day11/163.png" alt="" /></p>
-
-<p>Now at this point I did two deep dives. One to find out more about those 126 and 163 urls, and the next to find out more about Leo and guangmin001@163.com.</p>
-
-<p>The first might be the most interesting, and the <a href="https://www.quora.com/What-does-126-and-163-mean-in-Chinese-language">Quora question I&rsquo;m linking to has a pretty decent answer</a>. 163 and 126 were commonly used numbers back in China&rsquo;s dialup era to connect to the web. The numbers still connote &ldquo;internet service&rdquo; to people even though dialup is no longer used, and 163.com is one of the most commonly used email service provider (much like gmail for many Americans), owned by a company called <a href="https://en.wikipedia.org/wiki/NetEase">NetEase</a>. NetEase seems a little bit more like Verizon than Google though, the company has a wide reaching scope and a successful email hosting operation but doesn&rsquo;t seem to be on the forefront of innovation and growth. Their main domain property, <a href="https://www.163.com/">www.163.com</a>, even looks a little bit like <a href="https://www.yahoo.com/">yahoo.com</a>. They do have a successful music streaming service, and that&rsquo;s where those nonfunctioning music embeds in Leo&rsquo;s website were pointing toward.&rsquo;</p>
-
+</code></pre><p>163.com, I&rsquo;d seen that before! As embedded javascript on the first web page.
+<img src="/images/100Days/Day11/163.png" alt=""></p>
+<p>Now at this point I did two deep dives. One to find out more about those 126 and 163 urls, and the next to find out more about Leo and <a href="mailto:guangmin001@163.com">guangmin001@163.com</a>.</p>
+<p>The first might be the most interesting, and the <a href="https://www.quora.com/What-does-126-and-163-mean-in-Chinese-language">Quora question I&rsquo;m linking to has a pretty decent answer</a>. 163 and 126 were commonly used numbers back in China&rsquo;s dialup era to connect to the web. The numbers still connote &ldquo;internet service&rdquo; to people even though dialup is no longer used, and 163.com is one of the most commonly used email service provider (much like gmail for many Americans), owned by a company called <a href="https://en.wikipedia.org/wiki/NetEase">NetEase</a>. NetEase seems a little bit more like Verizon than Google though, the company has a wide reaching scope and a successful email hosting operation but doesn&rsquo;t seem to be on the forefront of innovation and growth. Their main domain property, <a href="https://www.163.com/">www.163.com</a>, even looks a little bit like <a href="https://www.yahoo.com/">yahoo.com</a>. They do have a successful music streaming service, and that&rsquo;s where those nonfunctioning music embeds in Leo&rsquo;s website were pointing toward.'</p>
 <p>The second got a little too doxxy for me to want to write about too much. But I found that Leo seemingly has a penchant for raw IPs over domain names, and Guangmin, in addition to running the Riverrun Network, created a protocol for streaming television which is now used by a service called <a href="https://www.fengmi.tv/">Feng Mi</a>.</p>
-
 <p>But what was the MondoDB database being used for in the first place? My guess is probably to manage accounts on that login thing I ignored. But why make an account on someone&rsquo;s hidden and half-finished blog? See you tomorrow.</p>
 
 		</section>
@@ -114,7 +100,7 @@ DNSSEC: unsigned
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

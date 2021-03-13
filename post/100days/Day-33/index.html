@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I saw someone had compiled a list of every Shodan-discovered server running in North Korea. To be honest I was a little surprised that there would be much outward-facing internet in North Korea, so I decided to take a look.
 Media Ryugyong on 175.45.176.80 Most of the servers seemed to be mail servers, but some of them were running webpages. I picked the first one I found that was running a web page." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-33/" /><meta property="article:published_time" content="2019-02-05T20:55:59-05:00"/>
-<meta property="article:modified_time" content="2019-02-05T20:55:59-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-33/" />
+<meta property="article:published_time" content="2019-02-05T20:55:59-05:00" />
+<meta property="article:modified_time" content="2019-02-05T20:55:59-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 33: Propaganda in Pyongyang"/>
 <meta name="twitter:description" content="Today I saw someone had compiled a list of every Shodan-discovered server running in North Korea. To be honest I was a little surprised that there would be much outward-facing internet in North Korea, so I decided to take a look.
@@ -41,34 +42,26 @@ Media Ryugyong on 175.45.176.80 Most of the servers seemed to be mail servers, b
 		
 
 		<section class="body">
-			
-
-<p>Today I saw someone had compiled a list of every Shodan-discovered server running in North Korea. To be honest I was a little surprised that there would be much outward-facing internet in North Korea, so I decided to take a look.</p>
-
-<h2 id="media-ryugyong-on-175-45-176-80">Media Ryugyong on 175.45.176.80</h2>
-
+			<p>Today I saw someone had compiled a list of every Shodan-discovered server running in North Korea. To be honest I was a little surprised that there would be much outward-facing internet in North Korea, so I decided to take a look.</p>
+<h2 id="media-ryugyong-on-1754517680">Media Ryugyong on 175.45.176.80</h2>
 <p>Most of the servers seemed to be mail servers, but some of them were running webpages. I picked the first one I found that was running a web page.
-<img src="/images/100Days/Day32/media.png" alt="" />
+<img src="/images/100Days/Day32/media.png" alt="">
 The website is clearly meant for an international audience as it comes not only in Korean but also with translations to Russian, English, Chinese, French, and Spanish. After looking around I figured out that the purpose of this site is to collect patriotic pictures and videos of various aspects of North Korean life.
-<img src="/images/100Days/Day32/supremeleader2.png" alt="" />
+<img src="/images/100Days/Day32/supremeleader2.png" alt="">
 There are many many many photo albums of Kim Jong Un.
-<img src="/images/100Days/Day32/kimandxi.png" alt="" />
+<img src="/images/100Days/Day32/kimandxi.png" alt="">
 Here&rsquo;s a picture of Kim Jung Un meeting with Xi Jinping I remember seeing on the South Korean TV station a bunch of times way back on day 24! I wonder if they got it from here? Or maybe all of these political meeting photos all kind of look the same.</p>
-
 <p>The website also has about 100 videos that vary in content from &ldquo;check out this cool mountain&rdquo; to &ldquo;we the Korean people are soul bound to follow the Party down the only road into the future&rdquo;.
-<img src="/images/100Days/Day32/mediaA.png" alt="" />
+<img src="/images/100Days/Day32/mediaA.png" alt="">
 Quite a few of the videos are extremely long (15+ minutes) patriotic songs. Again I could tell that these videos were clearly meant for an international audience, as they had english subtitles and frequent asides to give context.
-<img src="/images/100Days/Day32/mediaB.png" alt="" />
+<img src="/images/100Days/Day32/mediaB.png" alt="">
 Some of the tourist-focused videos were really interesting. I found myself watching them for almost two hours.
-<img src="/images/100Days/Day32/videostills.png" alt="" />
+<img src="/images/100Days/Day32/videostills.png" alt="">
 There are videos about beaches, patriotic dogs, military factories, military airplanes, a <a href="https://en.wikipedia.org/wiki/USS_Pueblo_(AGER-2)">US navy boat that the North Koreans captured from the United States in 1968 that has since been turned into a museum</a>, memorials of The War, the 38th parallel, US imperialism, fish pickling factories, special babies, a water park, and more. Many of them take the form of song.
-<img src="/images/100Days/Day32/uncloak.png" alt="" />
+<img src="/images/100Days/Day32/uncloak.png" alt="">
 It&rsquo;s kitschy for sure, but I find it greatly unsettling.</p>
-
 <p>The web page is called &ldquo;Media Ryugyong&rdquo; but when trying to search for it I at first only found information about a North Korean hotel named Ryugyong, that&rsquo;s <a href="https://en.wikipedia.org/wiki/Ryugyong_Hotel">apparently been under construction since 1987 and has the Guinnes world record for largest uninhabited building</a>. After looking a little harder I found that it&rsquo;s listed as one of <a href="https://nkinternet.wordpress.com/websites/">only a handful of publicly accessible North Korean webpages</a>, but with very little English-language information available beyond that. I did find that it was made by a company called <a href="https://www.northkoreatech.org/2018/10/10/north-korea-launches-an-internet-portal/">Ryugyong Computer</a>, but then I couldn&rsquo;t find any information about that company.</p>
-
 <p>I was a little curious about how exactly I&rsquo;m connecting to this website. Physical cables lead from my home all the way there, and I read that the only link to the internet outside of North Korea is <a href="https://en.wikipedia.org/wiki/Telecommunications_in_North_Korea#International_Internet_access">a cable between Pyongyang and Dandong in China</a>. I checked traceroute to see if I could get a complete picture of the trip.</p>
-
 <pre><code>➜  sandbox traceroute 175.45.176.80
 traceroute to 175.45.176.80 (175.45.176.80), 64 hops max, 52 byte packets
  1  192.168.0.1 (192.168.0.1)  10.712 ms  5.223 ms  3.130 ms
@@ -142,9 +135,7 @@ traceroute to 175.45.176.80 (175.45.176.80), 64 hops max, 52 byte packets
 62  * * *
 63  * * *
 64  * * *
-</code></pre>
-
-<p>Clearly I couldn&rsquo;t, but 219.158.39.42 at least seems to be in China. At least that&rsquo;s something. See you tomorrow.</p>
+</code></pre><p>Clearly I couldn&rsquo;t, but 219.158.39.42 at least seems to be in China. At least that&rsquo;s something. See you tomorrow.</p>
 
 		</section>
 
@@ -157,7 +148,7 @@ traceroute to 175.45.176.80 (175.45.176.80), 64 hops max, 52 byte packets
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

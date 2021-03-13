@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Detourning on Alden&#39;s Blog Home</title>
-    <link>https://blog.alden.website/categories/detourning/</link>
+    <link>https://blog.alden.website/categories/Detourning/</link>
     <description>Recent content in Detourning on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/detourning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alden.website/categories/Detourning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Three Projects</title>
       <link>https://blog.alden.website/2018/03/19/three-video-projects/</link>

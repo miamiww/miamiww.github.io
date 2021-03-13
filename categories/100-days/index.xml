@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>100 Days on Alden&#39;s Blog Home</title>
+    <title>100 days on Alden&#39;s Blog Home</title>
     <link>https://blog.alden.website/categories/100-days/</link>
-    <description>Recent content in 100 Days on Alden&#39;s Blog Home</description>
+    <description>Recent content in 100 days on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Apr 2019 22:22:42 -0400</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 12 Apr 2019 22:22:42 -0400</lastBuildDate><atom:link href="https://blog.alden.website/categories/100-days/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shodan Stories Day 93: Poking the BusyBox in Camboriu</title>
       <link>https://blog.alden.website/post/100days/Day-93/</link>
@@ -57,7 +53,7 @@ Dgraph Server on 13.210.169.101 There were only 5 results, all either in China o
       <pubDate>Thu, 04 Apr 2019 21:43:37 -0400</pubDate>
       
       <guid>https://blog.alden.website/post/100days/Day-85/</guid>
-      <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
+      <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;rdquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
 A Raspberry Pi on 178.12.106.221 I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443.</description>
     </item>
     
@@ -88,7 +84,7 @@ Modbus Gateway on 82.143.179.14 Modbus is a protocol for communication over seri
       
       <guid>https://blog.alden.website/post/100days/Day-81/</guid>
       <description>Today a search for &amp;ldquo;unprotected WiMAX towers&amp;rdquo;. The word tower was pretty tantalizing. The actual search was for &amp;ldquo;OX253P&amp;rdquo;.
-WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE.</description>
+WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE. It works much in the same way as cell towers, and frequently WiMAX and cell towers are bundled into one.</description>
     </item>
     
     <item>
@@ -395,7 +391,7 @@ Ace Attorney Online on 163.172.128.52 Many of the results were pretty interestin
       
       <guid>https://blog.alden.website/post/100days/Day-48/</guid>
       <description>Kind of a weird one today. I didn&amp;rsquo;t like any of the searches I&amp;rsquo;d seen so I decided to search for anything that had &amp;ldquo;production plant&amp;rdquo; in the title.
-A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device.</description>
+A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!</description>
     </item>
     
     <item>
@@ -593,7 +589,7 @@ CoinCircle&amp;rsquo;s ICOStats Tracker on 165.227.6.170 Most of the results on 
       
       <guid>https://blog.alden.website/post/100days/Day-28/</guid>
       <description>Today I saw someone searching for &amp;ldquo;turbines&amp;rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.
-B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs.</description>
+B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs. There seemed to be some other interesting results but this company had one very compelling trump card that cleanly explains whatever success they have in the area of industrial electric parts and devices.</description>
     </item>
     
     <item>
@@ -709,8 +705,8 @@ My Friend&amp;rsquo;s Media Server on 104.172.240.189 So I had previously seen a
       <pubDate>Sat, 19 Jan 2019 15:34:20 -0800</pubDate>
       
       <guid>https://blog.alden.website/post/100days/Day-16/</guid>
-      <description>I&amp;rsquo;m pretty busy today with Processing Day so I&amp;rsquo;ll keep today&amp;rsquo;s short. Shodan may be best known for finding strangers&amp;rsquo; webcams, but I hadn&amp;rsquo;t gone for one yet because early on in this project I decided that on days when I don&amp;rsquo;t have a lot of time I&amp;rsquo;d just find an unsecured webcam and grab a still image. Today is one of those days.
-Someone&amp;rsquo;s Webcam in Belgrade on 109.</description>
+      <description>I&amp;rsquo;m pretty busy today with Processing Day so I&amp;rsquo;ll keep today&amp;rsquo;s short. Shodan may be best known for finding strangers&#39; webcams, but I hadn&amp;rsquo;t gone for one yet because early on in this project I decided that on days when I don&amp;rsquo;t have a lot of time I&amp;rsquo;d just find an unsecured webcam and grab a still image. Today is one of those days.
+Someone&amp;rsquo;s Webcam in Belgrade on 109.206.96.249 Running on port 8080, using Webcam 7.</description>
     </item>
     
     <item>

@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.
 WampServer on 197.230.101.90 I&rsquo;m not sure what force compelled me to type 197.230.101.90, but it was indeed in Shodan and looked like it was running a website (80 and 443 were serving HTTP) and SQL databases (3306, the mySQL database port and 5432, the PostgreSQL port were both running)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-70/" /><meta property="article:published_time" content="2019-03-14T22:18:19-04:00"/>
-<meta property="article:modified_time" content="2019-03-14T22:18:19-04:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-70/" />
+<meta property="article:published_time" content="2019-03-14T22:18:19-04:00" />
+<meta property="article:modified_time" content="2019-03-14T22:18:19-04:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 70: Engineering Consulting in Tangier, WampServer, CORS the Silent Killer, and You&#39;ll Always Have a Job with PHP"/>
 <meta name="twitter:description" content="Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.
@@ -41,14 +42,9 @@ WampServer on 197.230.101.90 I&rsquo;m not sure what force compelled me to type 
 		
 
 		<section class="body">
-			
-
-<p>Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.</p>
-
-<h2 id="wampserver-on-197-230-101-90">WampServer on 197.230.101.90</h2>
-
+			<p>Today I truly cast a stone into the sea blindfolded, and decided to see what typing in just any old random IP address into Shodan would bring up.</p>
+<h2 id="wampserver-on-19723010190">WampServer on 197.230.101.90</h2>
 <p>I&rsquo;m not sure what force compelled me to type 197.230.101.90, but it was indeed in Shodan and looked like it was running a website (80 and 443 were serving HTTP) and SQL databases (3306, the <a href="https://www.mysql.com/">mySQL</a> database port and 5432, the <a href="https://www.postgresql.org/">PostgreSQL</a> port were both running). And it looked like a Windows machine, because 137 was running <a href="https://en.wikipedia.org/wiki/NetBIOS">NetBIOS</a>. Before checking the webserver though, I checked WhoIS and DNS, and while the IP address doesn&rsquo;t look like it&rsquo;s tied to a DNS address (i.e. has no url), the IP address is in a block of addresses fixed to &ldquo;Tanger Med engineering&rdquo;.</p>
-
 <pre><code>inetnum:        197.230.101.88 - 197.230.101.95
 netname:        Fixed_B2B
 descr:          Fixed B2B Orange Maroc Customer Tanger Med engineering
@@ -61,20 +57,15 @@ status:         ASSIGNED PA
 mnt-by:         meditel-MNT
 source:         AFRINIC # Filtered
 parent:         197.230.0.0 - 197.230.255.255
-</code></pre>
-
-<p>That confirmed for me what Shodan had already told me, that this IP was in Morocco, as Tanger Med is the name of a <a href="https://www.tangermed.ma/en/">huge port complex in Tangier</a>, and Orange Maroc is <a href="https://en.wikipedia.org/wiki/Orange_S.A.">the Moroccan subsidiary of Orange, the French telecom giant</a>.</p>
-
-<p>According to their <a href="https://www.linkedin.com/company/tme-tanger-med-engineering-/about/">LinkedIn page</a>, Tanger Med Engineering is a subsidiary of the Tanger Med ownership company, and specializes in international consulting on large-scale infrastructure engineering. Now for something interesting. Tanger Med Engineering&rsquo;s website, which their LinkedIn indicates is www.tme.ma, does not work, giving a &ldquo;refused to connect&rdquo; error. It&rsquo;s specifically a CORS error: &ldquo;Refused to display &lsquo;<a href="https://www.tangermed.ma/en/'">https://www.tangermed.ma/en/'</a> in a frame because it set &lsquo;X-Frame-Options&rsquo; to &lsquo;sameorigin&rsquo;.&rdquo; And I think I know why. Let&rsquo;s get back to the original IP.
-<img src="/images/100Days/Day70/firstlook.png" alt="" />
+</code></pre><p>That confirmed for me what Shodan had already told me, that this IP was in Morocco, as Tanger Med is the name of a <a href="https://www.tangermed.ma/en/">huge port complex in Tangier</a>, and Orange Maroc is <a href="https://en.wikipedia.org/wiki/Orange_S.A.">the Moroccan subsidiary of Orange, the French telecom giant</a>.</p>
+<p>According to their <a href="https://www.linkedin.com/company/tme-tanger-med-engineering-/about/">LinkedIn page</a>, Tanger Med Engineering is a subsidiary of the Tanger Med ownership company, and specializes in international consulting on large-scale infrastructure engineering. Now for something interesting. Tanger Med Engineering&rsquo;s website, which their LinkedIn indicates is <a href="http://www.tme.ma">www.tme.ma</a>, does not work, giving a &ldquo;refused to connect&rdquo; error. It&rsquo;s specifically a CORS error: &ldquo;Refused to display &lsquo;<a href="https://www.tangermed.ma/en/'">https://www.tangermed.ma/en/'</a> in a frame because it set &lsquo;X-Frame-Options&rsquo; to &lsquo;sameorigin&rsquo;.&rdquo; And I think I know why. Let&rsquo;s get back to the original IP.
+<img src="/images/100Days/Day70/firstlook.png" alt="">
 The website it&rsquo;s running is a configuration page for a <a href="http://www.wampserver.com/en/">WampServer</a>. WampServer is &ldquo;a Windows web development environment which allows you to create web applications with Apache2, PHP and a MySQL database&rdquo;. It has one of the most demented mascots you could imagine, click the link to see. Most of those little links you see there are just full of PHP, and I&rsquo;m reminded of a Vine video I saw years ago that was just a fake PHP ad that said &ldquo;You&rsquo;ll always have a job with PHP&rdquo;. PHP has been going strong for almost 25 years, but Vine is gone forever. RIP Vine.</p>
-
 <p>My own life is a little too short to spend too much time looking at PHP, so I focused on the two non-PHP links, TME and TMMS down at the bottom. Now I&rsquo;m sure you&rsquo;ve guessed it already, TME does indeed stand for Tanger Med Engineering, and yes indeed, this is their missing website.
-<img src="/images/100Days/Day70/tme.png" alt="" />
+<img src="/images/100Days/Day70/tme.png" alt="">
 Why is it here? My guess is that they are working on it, and this WampServer is a Tanger Med staging ground for web development. Maybe it broke, and they set the original URL to show instead a frame of the Tanger Med main page, but it isn&rsquo;t working because they didn&rsquo;t configure the CORS on the main page to allow for that kind of redirect. Have they noticed? Are they worried? This seems like a big problem for a &ldquo;international consulting&rdquo; group. I guess 20 years ago it wouldn&rsquo;t have been too weird not to have a web page that worked. Times have changed.
-<img src="/images/100Days/Day70/tmms.png" alt="" />
+<img src="/images/100Days/Day70/tmms.png" alt="">
 As for the TMMS, it stands for Tanger Med Marine Simulator, which is another subsidiary of Tanger Med. They do training for ship captains and pilots. It&rsquo;s specifically&hellip; a <a href="http://www.tmpa.ma/en/activites-services/tanger-med-marine-simulator/">room made to look like a boat helm</a>?</p>
-
 <p>Well hopefully they get it sorted out soon. See you tomorrow.</p>
 
 		</section>
@@ -88,7 +79,7 @@ As for the TMMS, it stands for Tanger Med Marine Simulator, which is another sub
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

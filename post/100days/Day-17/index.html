@@ -5,8 +5,9 @@
 	<meta property="og:title" content="Shodan Stories Day 17: An ATM in Perm, Russia and Just How Much Market Capture Does Windows 2000 Have Anyway?" />
 <meta property="og:description" content="Today I thought it might be fun to find an ATM, largely because I wanted to answer the question &ldquo;why connect an ATM to the internet with a static IP?&rdquo; I checked for past Shodan searches for ATMs to see if I could find anyone else looking for some so I would know what to look for, and I was able to find someone else looking for ATMs from a brand named NCR, which work over port 169." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-17/" /><meta property="article:published_time" content="2019-01-20T12:43:31-08:00"/>
-<meta property="article:modified_time" content="2019-01-20T12:43:31-08:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-17/" />
+<meta property="article:published_time" content="2019-01-20T12:43:31-08:00" />
+<meta property="article:modified_time" content="2019-01-20T12:43:31-08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 17: An ATM in Perm, Russia and Just How Much Market Capture Does Windows 2000 Have Anyway?"/>
 <meta name="twitter:description" content="Today I thought it might be fun to find an ATM, largely because I wanted to answer the question &ldquo;why connect an ATM to the internet with a static IP?&rdquo; I checked for past Shodan searches for ATMs to see if I could find anyone else looking for some so I would know what to look for, and I was able to find someone else looking for ATMs from a brand named NCR, which work over port 169."/>
@@ -39,23 +40,15 @@
 		
 
 		<section class="body">
-			
-
-<p>Today I thought it might be fun to find an ATM, largely because I wanted to answer the question &ldquo;why connect an ATM to the internet with a static IP?&rdquo; I checked for past Shodan searches for ATMs to see if I could find anyone else looking for some so I would know what to look for, and I was able to find someone else looking for ATMs from a brand named <a href="https://www.ncr.com/">NCR</a>, which work over port 169.
-<img src="/images/100Days/Day17/atmncr.png" alt="" />
+			<p>Today I thought it might be fun to find an ATM, largely because I wanted to answer the question &ldquo;why connect an ATM to the internet with a static IP?&rdquo; I checked for past Shodan searches for ATMs to see if I could find anyone else looking for some so I would know what to look for, and I was able to find someone else looking for ATMs from a brand named <a href="https://www.ncr.com/">NCR</a>, which work over port 169.
+<img src="/images/100Days/Day17/atmncr.png" alt="">
 So I followed their lead and got looking.</p>
-
-<h2 id="an-ncr-atm-on-178-161-141-162">An NCR ATM on 178.161.141.162</h2>
-
+<h2 id="an-ncr-atm-on-178161141162">An NCR ATM on 178.161.141.162</h2>
 <p>I found quite a few <a href="https://www.ncr.com/financial-services/intelligent-deposit-atms">NCR ATMs</a>, most of which were in Russia, so I picked one of the first Russian ATMs and took a look, and found that Shodan had the output from their UDP scan of this ATM&rsquo;s 169 port.</p>
-
 <pre><code>NCR Self-Service Terminal Hardware: x86 Family 15 Model 2
 Stepping 9 AT/AT COMPATIBLE - Software: Windows 2000 Version 5.1 (Build 2600 Uniprocessor Free)
-</code></pre>
-
-<p><img src="/images/100Days/Day17/NCRpersonas.png" alt="" />
+</code></pre><p><img src="/images/100Days/Day17/NCRpersonas.png" alt="">
 It seems like NCR has discontinued the 86 line as they were no longer advertising them on their website, instead showcasing their 81, 82, and 88 models. I tried to replicate the scan Shodan had done couldn&rsquo;t figure out how they had gotten that response, finding instead that port 169 on this device was closed.</p>
-
 <pre><code>➜  ~ nmap -p 169 178.161.141.162
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-20 18:42 PST
 Nmap scan report for 178.161.141.162.ipn.v4.saturn-internet.ru (178.161.141.162)
@@ -84,12 +77,8 @@ PORT      STATE    SERVICE
 52869/tcp filtered unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 31.88 seconds
-</code></pre>
-
-<p>I couldn&rsquo;t totally figure out what these services were doing. <a href="https://polestarllp.com/">Polestar</a>, <a href="https://river.apache.org/release-doc/3.0.0/release-notes/activation.html">Java RMI activation</a>, and <a href="https://www.neuber.com/taskmanager/process/msgsys.exe.html">msgsys</a> make it seem like it&rsquo;s definitely an enterprise piece of equipment running Windows (as of course so does the microsoft-ds). So Shodan probably isn&rsquo;t lying to me, but possibly something had been changed on the ATM since Shodan had done its scan.</p>
-
+</code></pre><p>I couldn&rsquo;t totally figure out what these services were doing. <a href="https://polestarllp.com/">Polestar</a>, <a href="https://river.apache.org/release-doc/3.0.0/release-notes/activation.html">Java RMI activation</a>, and <a href="https://www.neuber.com/taskmanager/process/msgsys.exe.html">msgsys</a> make it seem like it&rsquo;s definitely an enterprise piece of equipment running Windows (as of course so does the microsoft-ds). So Shodan probably isn&rsquo;t lying to me, but possibly something had been changed on the ATM since Shodan had done its scan.</p>
 <p>I was able to find the <a href="https://ncr.co.il/wp-content/uploads/2014/05/6786.pdf">datasheet</a> for the x86 family of NCR ATMs to see if I could find any clues. The datasheet read more like an advertisement really than as a proper datasheet, which I suppose makes sense because you wouldn&rsquo;t want to give too many details away of your ATM system but you do want to turn any eyeballs you get into a sales conversion opportunity.</p>
-
 <p>Well I still couldn&rsquo;t figure out why you&rsquo;d want to connect an ATM with a static IP. What&rsquo;s the business model there? And what are the risks? Other than people like me poking about the place. See you tomorrow.</p>
 
 		</section>
@@ -103,7 +92,7 @@ Nmap done: 1 IP address (1 host up) scanned in 31.88 seconds
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

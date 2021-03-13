@@ -6,8 +6,9 @@
 <meta property="og:description" content="I read this old blog post from 2015 talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.
 Automated Tank Gauge on 81.248.205.246 Based on that blog post it seemed that the best thing to search for was &ldquo;I20100&rdquo;. I immediately found several thousand results and yes all of them seemed to be accessible." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-54/" /><meta property="article:published_time" content="2019-02-26T19:43:36-05:00"/>
-<meta property="article:modified_time" content="2019-02-26T19:43:36-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-54/" />
+<meta property="article:published_time" content="2019-02-26T19:43:36-05:00" />
+<meta property="article:modified_time" content="2019-02-26T19:43:36-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 54: Pumping Your Own in Saint-Denis"/>
 <meta name="twitter:description" content="I read this old blog post from 2015 talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.
@@ -41,14 +42,9 @@ Automated Tank Gauge on 81.248.205.246 Based on that blog post it seemed that th
 		
 
 		<section class="body">
-			
-
-<p>I read this <a href="https://www.ericzhang.me/gas-station-atgs-exposed-to-public/">old blog post from 2015</a> talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.</p>
-
-<h2 id="automated-tank-gauge-on-81-248-205-246">Automated Tank Gauge on 81.248.205.246</h2>
-
+			<p>I read this <a href="https://www.ericzhang.me/gas-station-atgs-exposed-to-public/">old blog post from 2015</a> talking about how many internet connected pumps at gas stations were vulnerable to hacking. I wanted to see if anything had really changed in the last four years.</p>
+<h2 id="automated-tank-gauge-on-81248205246">Automated Tank Gauge on 81.248.205.246</h2>
 <p>Based on that blog post it seemed that the best thing to search for was &ldquo;I20100&rdquo;. I immediately found several thousand results and yes all of them seemed to be accessible. I picked one in Réunion thinking that it would probably be the only time I would find something from there given its tiny population. Following what the blog post indicated I should do, I used <code>netcat</code> to connect to one of the ports and print out a status report from the gauges.</p>
-
 <pre><code>➜  ~ nc -v 81.248.205.246 10001
 found 0 associations
 found 1 connections:
@@ -75,17 +71,13 @@ INVENT INTERNE
 CUVE PRODUIT             VOLUME TC VOLUME   CREUX     HAUT      EAU      TEMP
   1  SP R2.1 25M3          9576         0    14528   1015.4      0.0    30.69
   2  GO R3.1 30M3         23361         0     5609   1790.2      0.0    32.54
-</code></pre>
-
-<p>Aha, so I have what seems like an address: <em>845645 TOTAL CAMELIA
+</code></pre><p>Aha, so I have what seems like an address: <em>845645 TOTAL CAMELIA
 BVD DORET ST DENIS</em>.</p>
-
 <p>In addition I get a report on the amount of oil in each of two tanks. Reading <a href="https://www.ericzhang.me/wp-content/uploads/2015/01/576013-635.pdf">an English language manual</a> I learn that cuve is the tank number, produit (product in english) is the name of the tank, volume is the amount of oil in the tank at the current temperature, tc volume is what the volume would be at 60F degrees, creux (ullage in English) is the amount of space in the tank not taken up by oil, haut is the oil height, eau is the amount of water in the tank, and temp is just the current temperature. It seems as though the TC Volume measure is not working, but they have no water in them (which I think is good), and still have plenty of oil in them, although tank 1 is over half empty.
-<img src="/images/100Days/Day54/address.png" alt="" />
+<img src="/images/100Days/Day54/address.png" alt="">
 That is indeed an address, though the number is a bit of a red herring, as I now believe it is the internal numbering system for gas pump company in Rénion and other places called <a href="https://en.wikipedia.org/wiki/Total_Gas_%26_Power">Total</a>. As near as I can tell the station is on Blvd. Doret in Saint-Denis, though I still have not been able to figure out what Camelia means..
-<img src="/images/100Days/Day54/station.png" alt="" />
+<img src="/images/100Days/Day54/station.png" alt="">
 And here it is! The Google maps car didn&rsquo;t go down this street, but Total itself had uploaded an image of this location.</p>
-
 <p>Looks like they have an actual deli counter with sandwiches. When was the last time you got sandwiches at a gas station? See you tomorrow.</p>
 
 		</section>
@@ -99,7 +91,7 @@ And here it is! The Google maps car didn&rsquo;t go down this street, but Total 
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

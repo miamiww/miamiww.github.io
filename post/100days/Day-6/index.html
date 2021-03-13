@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I decided to look for more industrial control systems, specifically Mitsubishi Q-Series logic controllers.
 Yokohama Air Traffic Control Tower on 133.34.157.13 Reading about them on Shodan it looks like the Q-Series logic controllers tend to run off ports 5006 or 5007. So I did a search for those open ports. Judging from the results it looks like the majority of these Mitsubishi controllers are in Japan, not surprising I suppose since Mitsubishi is a Japanese company." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-6/" /><meta property="article:published_time" content="2019-01-09T18:19:08-05:00"/>
-<meta property="article:modified_time" content="2019-01-09T18:19:08-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-6/" />
+<meta property="article:published_time" content="2019-01-09T18:19:08-05:00" />
+<meta property="article:modified_time" content="2019-01-09T18:19:08-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 6: Air Conditioning and Air Traffic Control in Yokohoma"/>
 <meta name="twitter:description" content="Today I decided to look for more industrial control systems, specifically Mitsubishi Q-Series logic controllers.
@@ -41,14 +42,9 @@ Yokohama Air Traffic Control Tower on 133.34.157.13 Reading about them on Shodan
 		
 
 		<section class="body">
-			
-
-<p>Today I decided to look for more industrial control systems, specifically <a href="https://us.mitsubishielectric.com/fa/en/products/controllers/programmable-controllers-melsec/melsec_q-series">Mitsubishi Q-Series logic controllers</a>.</p>
-
-<h3 id="yokohama-air-traffic-control-tower-on-133-34-157-13">Yokohama Air Traffic Control Tower on 133.34.157.13</h3>
-
+			<p>Today I decided to look for more industrial control systems, specifically <a href="https://us.mitsubishielectric.com/fa/en/products/controllers/programmable-controllers-melsec/melsec_q-series">Mitsubishi Q-Series logic controllers</a>.</p>
+<h3 id="yokohama-air-traffic-control-tower-on-1333415713">Yokohama Air Traffic Control Tower on 133.34.157.13</h3>
 <p>Reading about them on Shodan it looks like the Q-Series logic controllers tend to run off ports 5006 or 5007. So I did a search for those open ports. Judging from the results it looks like the majority of these Mitsubishi controllers are in Japan, not surprising I suppose since Mitsubishi is a Japanese company. So I picked one of the first results. I&rsquo;ve been finding that <code>nmap</code> is a pretty good first go-to tool since, <code>host</code>, <code>whois</code>, and <code>nslookup</code> depend on DNS records, and quite a few things aren&rsquo;t on DNS.</p>
-
 <pre><code>👻🌵✨$ nmap -p- 133.34.157.13
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-09 20:32 EST
 Nmap scan report for 133.34.157.13
@@ -63,26 +59,21 @@ PORT      STATE  SERVICE
 30301/tcp open   unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 1431.86 seconds
-</code></pre>
-
-<p>One interestingly bit, port 502 is running mbap which is the <a href="https://en.wikipedia.org/wiki/Modbus">Modbus</a> protocol for <a href="https://en.wikipedia.org/wiki/Serial_communication">serial communication</a>.</p>
-
+</code></pre><p>One interestingly bit, port 502 is running mbap which is the <a href="https://en.wikipedia.org/wiki/Modbus">Modbus</a> protocol for <a href="https://en.wikipedia.org/wiki/Serial_communication">serial communication</a>.</p>
 <p>Very interestingly though port 80 is open even though I couldn&rsquo;t find anything about this IP on <code>nslookup</code>, meaning it&rsquo;s running something via http for a browser to interpret but doesn&rsquo;t have a URL. So taking a look via a browser&hellip;
-<img src="/images/100Days/Day6/DL8.png" alt="" />
+<img src="/images/100Days/Day6/DL8.png" alt="">
 I was pretty dumbfounded by what I was looking at. Yokohama Air Control Tower&hellip; as in Air Traffic Control? After looking around quite a bit, near as I can tell this is indeed a data logger for the facility management system for an air traffic control tower in Yokohama. I couldn&rsquo;t really find much about an airport in Yokohama, it seems that there isn&rsquo;t a major airport but there is a small airfield for private or government flights. It has an airport code, <a href="https://www.world-airport-codes.com/japan/yokohama-7799.html">YOK</a>, but you can&rsquo;t book a flight there, and travel guides all recommend flying into Tokyo&rsquo;s Haneda airport. There&rsquo;s also heliports&hellip; English language sources are scarce and I&rsquo;m not sure what to search for in Japanese to find out more.
-<img src="/images/100Days/Day6/data.png" alt="" />
+<img src="/images/100Days/Day6/data.png" alt="">
 But I can find out about the amount of power demand from this building&rsquo;s lighting and air conditioning. I&rsquo;m guessing that the other measurements have to do with water.
-<img src="/images/100Days/Day6/data2.png" alt="" />
+<img src="/images/100Days/Day6/data2.png" alt="">
 It seems like I could actually make changes to things here but I resisted the urge to hit too many buttons. But I did find that they had conveniently left the telnet login on this web app.
-<img src="/images/100Days/Day6/Telnet.png" alt="" />
+<img src="/images/100Days/Day6/Telnet.png" alt="">
 Whoops! Possibly that&rsquo;s why port 23 is closed.</p>
-
 <p>Looking at the other obvious info on this web app, <a href="http://www.m-system.com/english/index.html">MSYSTEM</a> is a manufacturer of a variety of data loggers and logic controllers, and the DL8 is their series of web-based data loggers.
-<img src="/images/100Days/Day6/MSeries.png" alt="" />
+<img src="/images/100Days/Day6/MSeries.png" alt="">
 So this wasn&rsquo;t what I had originally gone searching for, a Mitsubishi Q-Series. They must be using 5007 for something else.
-<img src="/images/100Days/Day6/MSeries2.png" alt="" />
+<img src="/images/100Days/Day6/MSeries2.png" alt="">
 Sure looks familiar so this is definitely what is behind this IP.</p>
-
 <p>But why collect water quality levels in a seemingly nonexistent air traffic control tower? Who&rsquo;s really running this operation. See you tomorrow.</p>
 
 		</section>
@@ -96,7 +87,7 @@ Sure looks familiar so this is definitely what is behind this IP.</p>
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

@@ -6,8 +6,9 @@
 <meta property="og:description" content="A note up front:
 Generally I&rsquo;ve been struggling with an ethical question of this project, should I be publishing the IP addresses and personal identification of individual people I find? I can&rsquo;t imagine that anyone reading this would take that info and do anything untoward with it, but it&rsquo;s an odd stance on surveillance culture to dox strangers meaninglessly, even if the ability to reach out and randomly touching a stranger is the reality of networked existence." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-1/" /><meta property="article:published_time" content="2019-01-04T11:06:35-05:00"/>
-<meta property="article:modified_time" content="2019-01-04T11:06:35-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-1/" />
+<meta property="article:published_time" content="2019-01-04T11:06:35-05:00" />
+<meta property="article:modified_time" content="2019-01-04T11:06:35-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 1"/>
 <meta name="twitter:description" content="A note up front:
@@ -41,28 +42,18 @@ Generally I&rsquo;ve been struggling with an ethical question of this project, s
 		
 
 		<section class="body">
-			
-
-<p>A note up front:</p>
-
+			<p>A note up front:</p>
 <p>Generally I&rsquo;ve been struggling with an ethical question of this project, should I be publishing the IP addresses and personal identification of individual people I find? I can&rsquo;t imagine that anyone reading this would take that info and do anything untoward with it, but it&rsquo;s an odd stance on surveillance culture to dox strangers meaninglessly, even if the ability to reach out and randomly touching a stranger is the reality of networked existence. Currently I&rsquo;m erring on the side of publishing IPs, since they are an important part of my process and should be documented, and then including anything from WhoIs records as is valid to the project, since WhoIs is meant to be public record. Things like hacker tags and defacements that I find I definitely will publish though. Happy to get input on this.</p>
-
-<h3 id="an-open-vnc-server-on-204-12-214-178">An Open VNC Server on 204.12.214.178</h3>
-
-<p><img src="/images/100Days/Day1/OpenVNCServers.png" alt="" /></p>
-
+<h3 id="an-open-vnc-server-on-20412214178">An Open VNC Server on 204.12.214.178</h3>
+<p><img src="/images/100Days/Day1/OpenVNCServers.png" alt=""></p>
 <p>Day 1 I&rsquo;m starting with some low hanging fruit: looking for people who&rsquo;ve left VNC servers running without passwords. <a href="https://en.wikipedia.org/wiki/Virtual_Network_Computing">VNC (standing for Virtual Network Computing)</a> is a framework for remotely logging into a computer using a GUI, and is a common alternative to ssh for people who don&rsquo;t know how to use the command line or need GUI functionality on their remote machine. To do this on Shodan I searched for IPs with port 5900 open, since VNC typically runs on 5900, and then just started trying to connect using <a href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer</a> as a client. Well the second result I found on Shodan didn&rsquo;t have a password and had already been totally overrun with trolls leaving each other notes and tearing apart the server. When I first logged in someone had drawn a bunch of swastikas in MS Paint and made it the background of the desktop, which I quickly changed, and someone else was playing solitaire. The server was running Microsoft Windows Server 2000 as its operating system, so it had a bunch of the classic 1999 features of Windows like MS Paint and grey boxes UI. It was a little nostalgic.</p>
-
-<p><img src="/images/100Days/Day1/Windows2000.png" alt="" />
+<p><img src="/images/100Days/Day1/Windows2000.png" alt="">
 Looking around I got kind of nervous because I could tell other people were also in this machine. It&rsquo;s uncomfortable to be in a computer with a bunch of other people, at least one of whom is a nazi. Whoever was playing solitaire was clearly very engaged because they kept pulling the window back to the front.
-<img src="/images/100Days/Day1/Defacement1.png" alt="" />
-<img src="/images/100Days/Day1/Tag.png" alt="" />
+<img src="/images/100Days/Day1/Defacement1.png" alt="">
+<img src="/images/100Days/Day1/Tag.png" alt="">
 Some hacker going by <code>yellows111</code> had left a tag. It looks like they use that tag a lot and I found their twitter, github, soundcloud, steam account, youtube, etc.  They have a <a href="https://yellows111.github.io/">bot of them that you can add to your discord server</a> so if you want you can have yellows111 in your life at all times. Judging from their Youtube <a href="https://www.youtube.com/watch?v=97vRVU-UO6w">they like to go around trashing old Windows servers</a> and might have been the one playing solitaire.</p>
-
 <p>The man who owns this server lives in Missouri and purchased the server space from <a href="https://www.wholesaleinternet.net/">Wholesale Internet</a>. I think he&rsquo;s getting ripped off, at minimum $10/month for a server running an almost 20 year old operating system is pretty bad.</p>
-
 <p>There were some more mysteries though that are up to the reader to interpret. Here is a traceroute result from me to the IP. What&rsquo;s onliare.com? It doesn&rsquo;t resolve to anything in a browser.</p>
-
 <pre><code>traceroute to 204.12.214.178 (204.12.214.178), 64 hops max, 52 byte packets
  1  192.168.0.1 (192.168.0.1)  2.529 ms  1.650 ms  1.168 ms
  2  * * *
@@ -84,7 +75,6 @@ Some hacker going by <code>yellows111</code> had left a tag. It looks like they 
 12  agg-a.dist-2-2-a.clay.mci.us.as33387.net (192.187.107.25)  43.440 ms  42.648 ms  41.724 ms
 13  onliare.com (204.12.214.178)  46.359 ms  49.177 ms  60.840 ms
 </code></pre>
-
 		</section>
 
 		<div class="post-tags">
@@ -96,7 +86,7 @@ Some hacker going by <code>yellows111</code> had left a tag. It looks like they 
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

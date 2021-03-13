@@ -6,8 +6,9 @@
 <meta property="og:description" content="The other day I saw someone on Shodan searching for &ldquo;udpxy&rdquo;, and I couldn&rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &ldquo;200 OK&rdquo; to the search and only return successful connections. So I did.
 A Udpxy Server on 5.136.117.163 There were only two results, both in Russia, so I picked the one that seemed a little more interesting, from Tomsk, Siberia." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-26/" /><meta property="article:published_time" content="2019-01-29T22:22:18-05:00"/>
-<meta property="article:modified_time" content="2019-01-29T22:22:18-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-26/" />
+<meta property="article:published_time" content="2019-01-29T22:22:18-05:00" />
+<meta property="article:modified_time" content="2019-01-29T22:22:18-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 26: Multicasting in Siberia, UDP Packet Pixies, and Free Civ"/>
 <meta name="twitter:description" content="The other day I saw someone on Shodan searching for &ldquo;udpxy&rdquo;, and I couldn&rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &ldquo;200 OK&rdquo; to the search and only return successful connections. So I did.
@@ -41,16 +42,11 @@ A Udpxy Server on 5.136.117.163 There were only two results, both in Russia, so 
 		
 
 		<section class="body">
-			
-
-<p>The other day I saw someone on Shodan searching for &ldquo;udpxy&rdquo;, and I couldn&rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &ldquo;200 OK&rdquo; to the search and only return successful connections. So I did.</p>
-
-<h2 id="a-udpxy-server-on-5-136-117-163">A Udpxy Server on 5.136.117.163</h2>
-
+			<p>The other day I saw someone on Shodan searching for &ldquo;udpxy&rdquo;, and I couldn&rsquo;t determine what was going on with that because all of the results would give me 401 no auth errors. Today I realized that I could, of course, add &ldquo;200 OK&rdquo; to the search and only return successful connections. So I did.</p>
+<h2 id="a-udpxy-server-on-5136117163">A Udpxy Server on 5.136.117.163</h2>
 <p>There were only two results, both in Russia, so I picked the one that seemed a little more interesting, from Tomsk, Siberia. I could see from Shodan that the &ldquo;udpxy&rdquo; service was running on port 4321, so I visited in a browser.
-<img src="/images/100Days/Day26/udpxy.png" alt="" />
+<img src="/images/100Days/Day26/udpxy.png" alt="">
 <a href="http://www.udpxy.com/">udpxy, pronounced &ldquo;you-dee-pixie&rdquo;</a>, is a relay for multicast data streams to any HTTP clients that make the correct GET request. That means essentially that it can take multiple UDP streams and turn them into something accessible over HTTP. You might want to do this so that you can <a href="https://angrytechnician.wordpress.com/2012/07/31/converting-your-multicast-iptv-freeview-to-http-unicast-using-udpxy/">pipe your captured cable tv streams to your smart phone</a>, or something like that. In everything I could read about this application however it seemed to be for running on your local network first and foremost, with most long-term internet applications having better and safer tools available, which would explain why there were only two results on Shodan that were accessible. So I got kind of curious about why this one, and did a port scan.</p>
-
 <pre><code>👻 🌵 ✨ $ nmap 5.136.117.163
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-29 17:49 EST
 Nmap scan report for 5.136.117.163
@@ -62,10 +58,7 @@ PORT     STATE    SERVICE
 5555/tcp filtered freeciv
 
 Nmap done: 1 IP address (1 host up) scanned in 20.35 seconds
-</code></pre>
-
-<p>What&rsquo;s that on port 5555? Freeciv, as in Free <a href="https://en.wikipedia.org/wiki/Civilization_(series)">Civilization</a>? <a href="http://www.freeciv.org/">The open source implementation of blockbuster game franchise Civilization</a>? <a href="https://en.wikipedia.org/wiki/Freeciv">Built in 1996 and still looks the same even though it&rsquo;s been in steady beta development for <em>23 years</em></a>? I was a little suspicious, because ports are frequently used for things other than what the common label is for them, especially snappy all the same number ones like 5555. I found that it was closed to TCP connections but UDP was working! That would make sense if this were a Freeciv server, which would require real time gaming.</p>
-
+</code></pre><p>What&rsquo;s that on port 5555? Freeciv, as in Free <a href="https://en.wikipedia.org/wiki/Civilization_(series)">Civilization</a>? <a href="http://www.freeciv.org/">The open source implementation of blockbuster game franchise Civilization</a>? <a href="https://en.wikipedia.org/wiki/Freeciv">Built in 1996 and still looks the same even though it&rsquo;s been in steady beta development for <em>23 years</em></a>? I was a little suspicious, because ports are frequently used for things other than what the common label is for them, especially snappy all the same number ones like 5555. I found that it was closed to TCP connections but UDP was working! That would make sense if this were a Freeciv server, which would require real time gaming.</p>
 <pre><code>➜  sandbox git:(master) ✗ nc -vu  5.136.117.163 5555
 found 0 associations
 found 1 connections:
@@ -76,15 +69,11 @@ found 1 connections:
         rank info not available
 
 Connection to 5.136.117.163 port 5555 [udp/personal-agent] succeeded!
-</code></pre>
-
-<p>So I thought I&rsquo;d install Freeciv and see if I could join their server.
-<img src="/images/100Days/Day26/freeciv.png" alt="" />
+</code></pre><p>So I thought I&rsquo;d install Freeciv and see if I could join their server.
+<img src="/images/100Days/Day26/freeciv.png" alt="">
 It&rsquo;s extremely quaint. I had to install and start it from the command line, brings me back to the golden age of MS-DOS gaming. Those were truly the days.</p>
-
-<p><img src="/images/100Days/Day26/freecivnet2.png" alt="" />
+<p><img src="/images/100Days/Day26/freecivnet2.png" alt="">
 Sure enough you can connect to a remote server. There were a couple that just showed up in my list. When I tried to connect to this server however I timed out, and then the game crashed.</p>
-
 <p>Too bad. I looked into whether the multicasting could be related to the gaming. <a href="https://freeciv.fandom.com/wiki/Forum:Multicast_message_to_freeciv_serverS_runing_on_the_same_machine?t=20100205185257">It seems that&hellip; yes?</a> The answer got a bit too in the weeds for me to figure out.
 I have a new game to play anyway. See you tomorrow.</p>
 
@@ -99,7 +88,7 @@ I have a new game to play anyway. See you tomorrow.</p>
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

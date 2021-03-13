@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alden&#39;s Blog Home</title>
@@ -6,10 +6,17 @@
     <description>Recent content on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jun 2019 16:19:25 -0400</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 08 Mar 2021 19:57:05 -0500</lastBuildDate><atom:link href="https://blog.alden.website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future of Waste: Speculative Approaches to Technotrash</title>
+      <link>https://blog.alden.website/post/Workshops/future-of-waste/</link>
+      <pubDate>Mon, 08 Mar 2021 19:57:05 -0500</pubDate>
+      
+      <guid>https://blog.alden.website/post/Workshops/future-of-waste/</guid>
+      <description>&amp;ldquo;Trash carries dystopia within&amp;rdquo; - Maite Zubiaurre
+ The Future of Waste is a workshop for imagining no-waste futures, dystopian and otherwise. slides
+Why Technotrash? In technology-adjacent sustainability circles, often (not always!) the futures in which humans have solved their great ecological crises - garbage, energy, climate change - are depicted as a utopia at best and as a slightly better and more equitable version of the present at worst.</description>
+    </item>
     
     <item>
       <title>Shodan Workshop Resource List</title>
@@ -68,7 +75,7 @@ Dgraph Server on 13.210.169.101 There were only 5 results, all either in China o
       <pubDate>Thu, 04 Apr 2019 21:43:37 -0400</pubDate>
       
       <guid>https://blog.alden.website/post/100days/Day-85/</guid>
-      <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;ldquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
+      <description>There&amp;rsquo;s been a flurry of interesting recently shared searches on Shodan recently and I&amp;rsquo;m just catching up with them. Today I looked into one for Raspberry Pis running SSH that was just &amp;ldquo;port:22 &amp;ldquo;raspbian&amp;rdquo;&amp;rdquo;. There are almost 100,000 results which I think goes to show just how popular these tiny computers are.
 A Raspberry Pi on 178.12.106.221 I picked a result in Germany because I saw that in addition to SSH it was also running a webserver on 443.</description>
     </item>
     
@@ -99,7 +106,7 @@ Modbus Gateway on 82.143.179.14 Modbus is a protocol for communication over seri
       
       <guid>https://blog.alden.website/post/100days/Day-81/</guid>
       <description>Today a search for &amp;ldquo;unprotected WiMAX towers&amp;rdquo;. The word tower was pretty tantalizing. The actual search was for &amp;ldquo;OX253P&amp;rdquo;.
-WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE.</description>
+WiMAX Tower on 117.244.48.33 WiMAX is a communication standard meant to give last mile wireless access to the internet to homes and businesses using microwaves. This would be a wireless alternative to DSL and cable internet, not requiring any cabling to the home endpoint, only a receiver antenna, much like LTE. It works much in the same way as cell towers, and frequently WiMAX and cell towers are bundled into one.</description>
     </item>
     
     <item>
@@ -415,7 +422,7 @@ Ace Attorney Online on 163.172.128.52 Many of the results were pretty interestin
       
       <guid>https://blog.alden.website/post/100days/Day-48/</guid>
       <description>Kind of a weird one today. I didn&amp;rsquo;t like any of the searches I&amp;rsquo;d seen so I decided to search for anything that had &amp;ldquo;production plant&amp;rdquo; in the title.
-A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device.</description>
+A Woodchem Production Plant on 154.126.209.18 I wasn&amp;rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!</description>
     </item>
     
     <item>
@@ -613,7 +620,7 @@ CoinCircle&amp;rsquo;s ICOStats Tracker on 165.227.6.170 Most of the results on 
       
       <guid>https://blog.alden.website/post/100days/Day-28/</guid>
       <description>Today I saw someone searching for &amp;ldquo;turbines&amp;rdquo;. An intriguing search, certainly, and at first I thought that they were looking for wind turbines. No however it seems that whoever it was just randomly searched turbines. I decided to roll with it and see what came up.
-B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs.</description>
+B-I-A Vertriebs GmbH on 82.165.151.127 I ended up deciding on the web server run by a German wholesaler for electricity parts named B-I-A Vertriebs. There seemed to be some other interesting results but this company had one very compelling trump card that cleanly explains whatever success they have in the area of industrial electric parts and devices.</description>
     </item>
     
     <item>
@@ -729,8 +736,8 @@ My Friend&amp;rsquo;s Media Server on 104.172.240.189 So I had previously seen a
       <pubDate>Sat, 19 Jan 2019 15:34:20 -0800</pubDate>
       
       <guid>https://blog.alden.website/post/100days/Day-16/</guid>
-      <description>I&amp;rsquo;m pretty busy today with Processing Day so I&amp;rsquo;ll keep today&amp;rsquo;s short. Shodan may be best known for finding strangers&amp;rsquo; webcams, but I hadn&amp;rsquo;t gone for one yet because early on in this project I decided that on days when I don&amp;rsquo;t have a lot of time I&amp;rsquo;d just find an unsecured webcam and grab a still image. Today is one of those days.
-Someone&amp;rsquo;s Webcam in Belgrade on 109.</description>
+      <description>I&amp;rsquo;m pretty busy today with Processing Day so I&amp;rsquo;ll keep today&amp;rsquo;s short. Shodan may be best known for finding strangers&#39; webcams, but I hadn&amp;rsquo;t gone for one yet because early on in this project I decided that on days when I don&amp;rsquo;t have a lot of time I&amp;rsquo;d just find an unsecured webcam and grab a still image. Today is one of those days.
+Someone&amp;rsquo;s Webcam in Belgrade on 109.206.96.249 Running on port 8080, using Webcam 7.</description>
     </item>
     
     <item>
@@ -947,16 +954,16 @@ The TP-Link at 192.168.0.1 is, naturally, my router. The TP-Link at .100 is actu
       <pubDate>Mon, 22 Oct 2018 03:17:51 -0400</pubDate>
       
       <guid>https://blog.alden.website/post/tempexp/trash-research/</guid>
-      <description> Running Bibliography
+      <description>Running Bibliography
 Daily Practice
-Research Links  Propublica on Deadly Garbage Collection
- Mob and Garbage
- Space Debris
- More Space Debris
- GPS Tracking
- Incineration
- Portland Garbage Chronicles 1
- Portland Garbage Chronicles 2
+Research Links   Propublica on Deadly Garbage Collection
+  Mob and Garbage
+  Space Debris
+  More Space Debris
+  GPS Tracking
+  Incineration
+  Portland Garbage Chronicles 1
+  Portland Garbage Chronicles 2
   </description>
     </item>
     
@@ -1069,7 +1076,7 @@ The one I made for Hello Computer this week, a voice controlled archive navigati
       <pubDate>Mon, 17 Sep 2018 23:32:01 -0400</pubDate>
       
       <guid>https://blog.alden.website/post/tempexp/taxonomies-systems/</guid>
-      <description>List of Taxonomies All ideas for coherent taxonomies  Energy Types (Country by Country Energy Mix) -  high renewable mostly coal mostly nuclear mostly gas import/export ratio  Policy Goals  Seeking investment Building infrastructure Making revenue Reducing carbon admissions National security Political kick-backs Prop up the failing coal industry to own the libs (Just the US) Reducing city pollution Don&amp;rsquo;t rock the boat  Market Structures and Regulatory Regimes  Deregulated generation to transmission markets Regulated vertically integrated private utilities State-run vertically integrated utilities State/private grey area uh oh zone  Ownership (who owns what where and what power do they have)  Power of generation owners&amp;rsquo; lobbying (not sure how to measure) Acumulated wealth of energy investors and company owners as % of GDP   Due to the vastness and scope of nations&amp;rsquo; global energy policies I have been imagining so far pursuing a scattershot approach, with a few entries from different categories, say, for example, an entry on Japan&amp;rsquo;s nuclear energy policies, an entry on FERC chairman Kevin J.</description>
+      <description>List of Taxonomies All ideas for coherent taxonomies  Energy Types (Country by Country Energy Mix) -  high renewable mostly coal mostly nuclear mostly gas import/export ratio   Policy Goals  Seeking investment Building infrastructure Making revenue Reducing carbon admissions National security Political kick-backs  Prop up the failing coal industry to own the libs (Just the US)   Reducing city pollution Don&amp;rsquo;t rock the boat   Market Structures and Regulatory Regimes  Deregulated generation to transmission markets Regulated vertically integrated private utilities State-run vertically integrated utilities State/private grey area uh oh zone   Ownership (who owns what where and what power do they have)  Power of generation owners&#39; lobbying (not sure how to measure) Acumulated wealth of energy investors and company owners as % of GDP    Due to the vastness and scope of nations&#39; global energy policies I have been imagining so far pursuing a scattershot approach, with a few entries from different categories, say, for example, an entry on Japan&amp;rsquo;s nuclear energy policies, an entry on FERC chairman Kevin J.</description>
     </item>
     
     <item>
@@ -1190,7 +1197,7 @@ That a light bulb turns on is a horrendous miracle. Each and every electron that
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2018-03-09-biometric-fortunes/</guid>
-      <description>In keeping with my interests in human to machine learning interaction and in how individuals&amp;rsquo; identities and personal narratives are shaped by those interactions, I decided to make a biometric scanning application (game?) that gives you your fortune based on the information it scans from you. My interest in algorithmic thinking and machine learning decision-making is manifesting as fortune telling projects because of the amount of predictive faith machine learning has culturally engendered: statistical pattern recognition as the new oracles, etc.</description>
+      <description>In keeping with my interests in human to machine learning interaction and in how individuals&#39; identities and personal narratives are shaped by those interactions, I decided to make a biometric scanning application (game?) that gives you your fortune based on the information it scans from you. My interest in algorithmic thinking and machine learning decision-making is manifesting as fortune telling projects because of the amount of predictive faith machine learning has culturally engendered: statistical pattern recognition as the new oracles, etc.</description>
     </item>
     
     <item>
@@ -1210,7 +1217,7 @@ Well it didn&amp;rsquo;t really work out that well. The biggest problem is that 
       
       <guid>https://blog.alden.website/2018-03-07-algorithmic-decision-making/</guid>
       <description>Here you can see the slides from my research presentation And here is my executive summary
-Reports, Research Papers, and Press Releases As a great resource for all of our classes&amp;rsquo; discussions on AI I want to point out first the AI Now annual report. AI Now Institute is a research institute (within NYU! we can go talk to them) focused on interdisciplinary research on the social impacts of AI.</description>
+Reports, Research Papers, and Press Releases As a great resource for all of our classes&#39; discussions on AI I want to point out first the AI Now annual report. AI Now Institute is a research institute (within NYU! we can go talk to them) focused on interdisciplinary research on the social impacts of AI.</description>
     </item>
     
     <item>
@@ -1228,7 +1235,7 @@ Reports, Research Papers, and Press Releases As a great resource for all of our 
       <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2018/02/15/312/</guid>
-      <description>In the first class I mentioned peñabots as an example of government social media manipulation. Rather than define them myself I&amp;#8217;ll lean on the Wikipedia page definition: &amp;#8220;the name given to what analysts believe to be a network of automated accounts on social media used by the Mexican government to spread pro-government propaganda and to marginalize dissenting opinions in social media&amp;#8221;. Though not the first institutionally-organized trolling operation they stand apart for their sophistication, their effectiveness at shutting down oppositional organizing, and their use in a nominally non-authoritarian government (although one with a deep history of media manipulation).</description>
+      <description>In the first class I mentioned peñabots as an example of government social media manipulation. Rather than define them myself I’ll lean on the Wikipedia page definition: “the name given to what analysts believe to be a network of automated accounts on social media used by the Mexican government to spread pro-government propaganda and to marginalize dissenting opinions in social media”. Though not the first institutionally-organized trolling operation they stand apart for their sophistication, their effectiveness at shutting down oppositional organizing, and their use in a nominally non-authoritarian government (although one with a deep history of media manipulation).</description>
     </item>
     
     <item>
@@ -1239,9 +1246,9 @@ Reports, Research Papers, and Press Releases As a great resource for all of our 
       <guid>https://blog.alden.website/2018/02/02/ken-wark-on-chantal-mouffe/</guid>
       <description>For my transcription exercise I wanted to pick something that was
 a) short enough so that I could transcribe the whole thing
-b) interesting enough that I wouldn&amp;#8217;t mind listening to it over and over again
+b) interesting enough that I wouldn’t mind listening to it over and over again
 c) spoken slowly enough that I would only have to pause and rewind ten seconds 500 times and not 1000.
-I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video on Chantal Mouffe for DIS magazine (now just DIS?</description>
+I’d recently watched to MacKenzie Wark’s edutainment video on Chantal Mouffe for DIS magazine (now just DIS?</description>
     </item>
     
     <item>
@@ -1250,7 +1257,7 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
-      <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one&amp;#8217;s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
+      <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one’s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
     </item>
     
     <item>
@@ -1259,7 +1266,7 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</guid>
-      <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a &amp;#8216;tap&amp;#8217; from a &amp;#8216;step&amp;#8217;, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
+      <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a ‘tap’ from a ‘step’, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
     </item>
     
     <item>
@@ -1268,9 +1275,9 @@ I&amp;#8217;d recently watched to MacKenzie Wark&amp;#8217;s edutainment video o
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/11/16/make-a-digital-public-space/</guid>
-      <description>Inspired by the near extinct website guestbook and completely extinct methods of phone phreaking, I wanted to make something that felt as unfinished and wide open with potential as the &amp;#8220;old&amp;#8221; web of 1992 &amp;#8211; 2001.
+      <description>Inspired by the near extinct website guestbook and completely extinct methods of phone phreaking, I wanted to make something that felt as unfinished and wide open with potential as the “old” web of 1992 – 2001.
 Please participate: https://tinyurl.com/y7tvrusf
-Communication between users in this space is possible but only through &amp;#8220;hacks&amp;#8221; of the intended use. There is no security and everything can be seen.</description>
+Communication between users in this space is possible but only through “hacks” of the intended use. There is no security and everything can be seen.</description>
     </item>
     
     <item>
@@ -1299,7 +1306,7 @@ And see code here.</description>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/11/01/haunted-dolls-and-things/</guid>
-      <description>Recently I&amp;#8217;ve been thinking mostly &amp;#8211; but somewhat disjointedly &amp;#8211; about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI &amp;#8211; which frequently is embodied feminized labor &amp;#8211; disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
+      <description>Recently I’ve been thinking mostly – but somewhat disjointedly – about haunted dolls as relational to AI and various societal-level fears. The doll as feminine artifact rendered creepy by autonomous movement and malicious intent is drawing parallels for me to visions of consumer-level AI – which frequently is embodied feminized labor – disrupting human civilization, both on the level of job displacement and as genocidal overlords. Many questions arise. At what depth of the uncanny valley does misogyny lie?</description>
     </item>
     
     <item>
@@ -1308,10 +1315,10 @@ And see code here.</description>
       <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/30/button-game/</guid>
-      <description>I&amp;#8217;m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons&amp;#8230; a lot.
+      <description>I’m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons… a lot.
 You can see the code for the game here.
 And you can play the game here.
-&amp;nbsp;</description>
+ </description>
     </item>
     
     <item>
@@ -1331,8 +1338,7 @@ Inside it has an arduino, two metal gear servos on a pan/tilt bracket meant for 
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/23/circle-game-with-tracking/</guid>
-      <description>&amp;nbsp;
-I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I&amp;#8217;d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn&amp;#8217;t finish that in a playable way.
+      <description>I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I’d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn’t finish that in a playable way.
 You can see the improved code here.
 I put a playable version of it here.</description>
     </item>
@@ -1343,8 +1349,8 @@ I put a playable version of it here.</description>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/20/empathy-lense-kickstarter-campaign/</guid>
-      <description>We&amp;#8217;d like to thank Jason, Rick, and most importantly of all, Archibald! Thanks to bensound.com for the use of his music.
-&amp;nbsp;</description>
+      <description>We’d like to thank Jason, Rick, and most importantly of all, Archibald! Thanks to bensound.com for the use of his music.
+ </description>
     </item>
     
     <item>
@@ -1354,7 +1360,7 @@ I put a playable version of it here.</description>
       
       <guid>https://blog.alden.website/2017/10/18/business-card/</guid>
       <description>Side A of the business card:
-I really liked the hands and eyes that I had going in my show poster, so I decided that I wanted the same kind of thing for my business card. I wasn&amp;#8217;t really sure what to put for my &amp;#8220;title&amp;#8221; so that is just a placeholder for now. The font I used was &amp;#8220;Gil Sans&amp;#8221; and I took my Twitter and Github icons from their media packages.</description>
+I really liked the hands and eyes that I had going in my show poster, so I decided that I wanted the same kind of thing for my business card. I wasn’t really sure what to put for my “title” so that is just a placeholder for now. The font I used was “Gil Sans” and I took my Twitter and Github icons from their media packages.</description>
     </item>
     
     <item>
@@ -1373,8 +1379,8 @@ One of my P5 projects that I am the happiest with is an interactive poetry/anti-
       <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/16/circle-game/</guid>
-      <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
-&amp;#8220;Points&amp;#8221; are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of &amp;#8220;cookie clicker&amp;#8221; type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
+      <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by “points”.
+“Points” are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of “cookie clicker” type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
     </item>
     
     <item>
@@ -1395,7 +1401,7 @@ One of my P5 projects that I am the happiest with is an interactive poetry/anti-
       <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
 
 You can see the code for that here.
-Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out &amp;#8220;You Suck&amp;#8221;. I thought that was pretty funny but we weren&amp;#8217;t sure how to get the actual drawing mechanism to work, i.</description>
+Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out “You Suck”. I thought that was pretty funny but we weren’t sure how to get the actual drawing mechanism to work, i.</description>
     </item>
     
     <item>
@@ -1413,9 +1419,8 @@ Katya then had the idea to make something that prompted the user to write someth
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/04/personal-color-palette/</guid>
-      <description>&amp;nbsp;
-I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
-&amp;nbsp;</description>
+      <description> I took my color palette from my twitter avi (drawn by Norah Horwitz). From there I created several pattern using P5.js inspired by 90s design, current brutalist web design, and art deco. You can see the code here.
+ </description>
     </item>
     
     <item>
@@ -1425,7 +1430,7 @@ I took my color palette from my twitter avi (drawn by Norah Horwitz). From there
       
       <guid>https://blog.alden.website/2017/10/02/infomercial-brainstorming-and-storyboard/</guid>
       <description>Initial Ideas
-As you can see from the above picture Amitabh, Martin, and I had a few different ideas, but we settled on a device that takes the way in which online human communications are mediated via AI algorithms and replicates it in the real world. We debated for a while what form we wanted this to take &amp;#8211; either a consumer level device for facial recognition for emotion or an AI that determines political leanings.</description>
+As you can see from the above picture Amitabh, Martin, and I had a few different ideas, but we settled on a device that takes the way in which online human communications are mediated via AI algorithms and replicates it in the real world. We debated for a while what form we wanted this to take – either a consumer level device for facial recognition for emotion or an AI that determines political leanings.</description>
     </item>
     
     <item>
@@ -1444,7 +1449,7 @@ The date is unnecessary, a traveler would only be receiving this pass on the day
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/27/subway-turnstile/</guid>
-      <description>Since moving to New York I&amp;#8217;ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn&amp;#8217;t gotten the hang of swiping smoothly enough to avoid &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221;, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the &amp;#8220;PLEASE SWIPE AGAIN&amp;#8221; message, they were walking straight into the turnstile after doing it.</description>
+      <description>Since moving to New York I’ve done it again and again: swiped my MetroCard through the reader only to slam at full walking speed into an unmoving turnstile. At first I thought the problem was just me, I was new to the subway and hadn’t gotten the hang of swiping smoothly enough to avoid “PLEASE SWIPE AGAIN”, but then I noticed that I was not alone in my turnstile mistakes. Not only were other people getting the “PLEASE SWIPE AGAIN” message, they were walking straight into the turnstile after doing it.</description>
     </item>
     
     <item>
@@ -1453,9 +1458,9 @@ The date is unnecessary, a traveler would only be receiving this pass on the day
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/25/blowing-on-confetti/</guid>
-      <description>I&amp;#8217;ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by &amp;#8220;blowing&amp;#8221; on it with the mouse.
+      <description>I’ve been wanting to recreate the experience of playing with confetti, this is one prototype for interacting with confetti by “blowing” on it with the mouse.
 
-Right now they kind of jiggle around expectantly, this was to meet the &amp;#8220;one element that moves independently of the mouse&amp;#8221; part of the homework. Getting the confetti to move realistically when blown has been a pain, right now it jumps around semi-randomly, which gives a good imitation of a scattering effect but the motion is discontinuous and unnatural.</description>
+Right now they kind of jiggle around expectantly, this was to meet the “one element that moves independently of the mouse” part of the homework. Getting the confetti to move realistically when blown has been a pain, right now it jumps around semi-randomly, which gives a good imitation of a scattering effect but the motion is discontinuous and unnatural.</description>
     </item>
     
     <item>
@@ -1464,7 +1469,7 @@ Right now they kind of jiggle around expectantly, this was to meet the &amp;#822
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/22/sound-walk/</guid>
-      <description>Episode 19 of the 4th season of Creature Feature, made by Shreiya and Alden. Please start on the 12th floor of the Tisch building, just outside of elevator bank A. And don&amp;#8217;t forget to walk slow and really take in your surroundings!</description>
+      <description>Please start on the 12th floor of the Tisch building, just outside of elevator bank A. And don’t forget to walk slow and really take in your surroundings!</description>
     </item>
     
     <item>
@@ -1474,8 +1479,7 @@ Right now they kind of jiggle around expectantly, this was to meet the &amp;#822
       
       <guid>https://blog.alden.website/2017/09/20/servo-switch/</guid>
       <description>Pen Switch
-My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. 
-Servo Switch
+My first switch was very simple, I wanted to incorporate elements outside of the traditional breadboard circuit so I used the metal part of a pen to connect two circuit elements and complete a circuit and light up an LED. Servo Switch
 I really wanted to get my hands into programming the arduino so I next made a switch that involves stringing a resistor into the arm of a small servo motor and using the arduino to control the movements of the motor so that it completes a circuit and lights up an LED.</description>
     </item>
     
@@ -1487,7 +1491,7 @@ I really wanted to get my hands into programming the arduino so I next made a sw
       <guid>https://blog.alden.website/2017/09/19/sign-intervention/</guid>
       <description>I started out my sign research scouting by going to the Rob Rauschenberg show at MoMA. Rauschenberg makes copious use of street signage, here are a couple of examples:
 Decontextualizing signs makes them jarring, bringing them much more to the forefront of our consciousness than they occupy in their usual streetside homes.
-(*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli&amp;#8217;s sign I took &amp;#8211; what I have to say about it is that it is simple, effective, and purposeful **)</description>
+(*\* if you are reading this it means that my webhost is terrible and will not let me upload a picture of Hans Deli’s sign I took – what I have to say about it is that it is simple, effective, and purposeful **)</description>
     </item>
     
     <item>
@@ -1498,7 +1502,7 @@ Decontextualizing signs makes them jarring, bringing them much more to the foref
       <guid>https://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
       <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
 http://alpha.editor.p5js.org/alden/sketches/ByIzAYaq-
-Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background&amp;#8230; or a website background 🙂 I used for loops to avoid copy/pasting all my code:
+Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background… or a website background 🙂 I used for loops to avoid copy/pasting all my code:
 http://alpha.editor.p5js.org/alden/sketches/Hyzy-5p9-
 This led me to try to recreate this piece by Paul Nasca:</description>
     </item>
@@ -1509,7 +1513,7 @@ This led me to try to recreate this piece by Paul Nasca:</description>
       <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/14/janet-cardiff-sound-walk/</guid>
-      <description>For several hours after I finished Her Long Black Hair, Janet Cardiff&amp;#8217;s Central Park sound walk combining field recording, found object and narrative techniques of film noir, I felt a heightened awareness of the world around me, a sense that both the aural and visual information I was consuming had hidden narratives, meanings unknown to me, entire words and lives just beyond the field of my comprehension. This sense of hidden but pulsating alive connectivity is the central goal of Cardiff&amp;#8217;s work: to create connections within time between the walker/listener and the spaces and strangers around them, and to create connections across time, between the walker/listener, the woman with black hair, Orpheus descending into Hades to rescue Eurydice, and Cardiff herself, connecting and condensing these moments of time and myth into a gem of experiential authenticity.</description>
+      <description>For several hours after I finished Her Long Black Hair, Janet Cardiff’s Central Park sound walk combining field recording, found object and narrative techniques of film noir, I felt a heightened awareness of the world around me, a sense that both the aural and visual information I was consuming had hidden narratives, meanings unknown to me, entire words and lives just beyond the field of my comprehension. This sense of hidden but pulsating alive connectivity is the central goal of Cardiff’s work: to create connections within time between the walker/listener and the spaces and strangers around them, and to create connections across time, between the walker/listener, the woman with black hair, Orpheus descending into Hades to rescue Eurydice, and Cardiff herself, connecting and condensing these moments of time and myth into a gem of experiential authenticity.</description>
     </item>
     
     <item>
@@ -1518,7 +1522,7 @@ This led me to try to recreate this piece by Paul Nasca:</description>
       <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/09/13/48/</guid>
-      <description>Visually striking and iconic* &amp;#8211; the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
+      <description>Visually striking and iconic* – the original poster for the film Akira brings forth a sense of encroaching gloom, of decay, of violence, all with a startling minimalism. The film depicts the country of Japan at a time of crisis, evoked here in the poster by centering the colors of the Japanese flag and surrounding them with creeping, looming shadows of blue-grey.
 The eye is immediately drawn by the image organization and the blue splash on his jacket toward the figure in the center, bringing him front and center to the poster and indicating that he is, if not the lead character, at least central to the film.</description>
     </item>
     

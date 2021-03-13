@@ -4,14 +4,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board - Alden&#39;s Blog Home</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board" />
 <meta property="og:description" content="Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.
-A Woodchem Production Plant on 154.126.209.18 I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device." />
+A Woodchem Production Plant on 154.126.209.18 I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-48/" /><meta property="article:published_time" content="2019-02-20T15:47:18-05:00"/>
-<meta property="article:modified_time" content="2019-02-20T15:47:18-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-48/" />
+<meta property="article:published_time" content="2019-02-20T15:47:18-05:00" />
+<meta property="article:modified_time" content="2019-02-20T15:47:18-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 48: Processing Wood Products in Piet Retief, Dahua Botnets, MikroTik Botnets, and Particle Board"/>
 <meta name="twitter:description" content="Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.
-A Woodchem Production Plant on 154.126.209.18 I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device."/>
+A Woodchem Production Plant on 154.126.209.18 I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa. On port 80 it was running a login for a Dahua Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!"/>
 
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -41,30 +42,21 @@ A Woodchem Production Plant on 154.126.209.18 I wasn&rsquo;t entirely sure what 
 		
 
 		<section class="body">
-			
-
-<p>Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.</p>
-
-<h2 id="a-woodchem-production-plant-on-154-126-209-18">A Woodchem Production Plant on 154.126.209.18</h2>
-
+			<p>Kind of a weird one today. I didn&rsquo;t like any of the searches I&rsquo;d seen so I decided to search for anything that had &ldquo;production plant&rdquo; in the title.</p>
+<h2 id="a-woodchem-production-plant-on-15412620918">A Woodchem Production Plant on 154.126.209.18</h2>
 <p>I wasn&rsquo;t entirely sure what I was looking for, but got several dozen results. I decided to pick one in South Africa.
-<img src="/images/100Days/Day48/firstlook.png" alt="" />
+<img src="/images/100Days/Day48/firstlook.png" alt="">
 On port 80 it was running a login for a <a href="https://www.dahuasecurity.com/">Dahua</a> Technology device. Dahua mostly makes surveillance products like cameras and patrol drones(!) but in researching them I also found that their products are infamous for <a href="https://www.hackread.com/bashlite-malware-linux-iot-ddos-botnet/">being used for botnets</a>.</p>
-
 <p>There was also a service running on port 1723, I couldn&rsquo;t tell exactly what it was but in the banner it said:</p>
-
 <pre><code>Firmware: 1
 Hostname: Woodchem-production-plant-CRS
 Vendor: MikroTik
-</code></pre>
-
-<p><a href="https://mikrotik.com/">MikroTik</a> is a manufacturer of routers and other network devices that is <a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/over-200-000-mikrotik-routers-compromised-in-cryptojacking-campaign">also well known</a> for <a href="https://www.zdnet.com/article/thousands-of-mikrotik-routers-are-snooping-on-user-traffic/">getting hacked</a>. So not the best sourcing from this possible woodchem production factory.
+</code></pre><p><a href="https://mikrotik.com/">MikroTik</a> is a manufacturer of routers and other network devices that is <a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/over-200-000-mikrotik-routers-compromised-in-cryptojacking-campaign">also well known</a> for <a href="https://www.zdnet.com/article/thousands-of-mikrotik-routers-are-snooping-on-user-traffic/">getting hacked</a>. So not the best sourcing from this possible woodchem production factory.
 Woodchem by the way both seems to be <a href="http://www.woodchem.fr/en/">a conference</a> about the wood products industry and a <a href="https://www.kap.co.za/portfolio-posts/producing-at-higher-volumes/">company that has invested in South Africa</a>. After reading a few different press releases I think this factory that I found is likely in Piet Retief, run by a company called <a href="http://www.safripol.com/">Safripol</a>, which is a subsidiary of KAP Industrial Holdings Limited, a large industrial multinational.
-<img src="/images/100Days/Day48/safripol.png" alt="" />
+<img src="/images/100Days/Day48/safripol.png" alt="">
 There were several wood related factories in Piet Retief, as its main industry is timber, but I was able to figure out that it&rsquo;s probably this one, as seen from Google maps.
-<img src="/images/100Days/Day48/factory.png" alt="" />
+<img src="/images/100Days/Day48/factory.png" alt="">
 Their main output is urea-formaldehyde resin, which is then used in the manufacture of processed woods like particle boards.</p>
-
 <p>I wonder where those particle boards go? See you tomorrow.</p>
 
 		</section>
@@ -78,7 +70,7 @@ Their main output is urea-formaldehyde resin, which is then used in the manufact
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

@@ -6,8 +6,9 @@
 <meta property="og:description" content="Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&rsquo;s a GPON you wonder? Let&rsquo;s find out together.
 VNPT GPON ONT on 14.161.15.80 GPON stands for Gigabit Passive Optical Network. Though the real details of how they work escape me, it seems that they are a commonly used device by ISPs to separate out cable traffic between customers, frequently referred to as the &ldquo;last mile&rdquo; between the ISP and the end customer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-46/" /><meta property="article:published_time" content="2019-02-18T10:37:03-05:00"/>
-<meta property="article:modified_time" content="2019-02-18T10:37:03-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-46/" />
+<meta property="article:published_time" content="2019-02-18T10:37:03-05:00" />
+<meta property="article:modified_time" content="2019-02-18T10:37:03-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 46: Getting Connected in Vietnam, GPON ONT, VNPT, and the Mysteries of DNS Addressing"/>
 <meta name="twitter:description" content="Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&rsquo;s a GPON you wonder? Let&rsquo;s find out together.
@@ -41,32 +42,20 @@ VNPT GPON ONT on 14.161.15.80 GPON stands for Gigabit Passive Optical Network. T
 		
 
 		<section class="body">
-			
-
-<p>Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&rsquo;s a GPON you wonder? Let&rsquo;s find out together.</p>
-
-<h2 id="vnpt-gpon-ont-on-14-161-15-80">VNPT GPON ONT on 14.161.15.80</h2>
-
+			<p>Someone was really looking for GPONs today, as I saw at least three searches for GPON related devices. What&rsquo;s a GPON you wonder? Let&rsquo;s find out together.</p>
+<h2 id="vnpt-gpon-ont-on-141611580">VNPT GPON ONT on 14.161.15.80</h2>
 <p>GPON stands for <a href="https://www.multicominc.com/solutions/technologies/gpon/">Gigabit Passive Optical Network</a>. Though the real details of how they work escape me, it seems that they are a commonly used device by ISPs to separate out cable traffic between customers, frequently referred to as the &ldquo;last mile&rdquo; between the ISP and the end customer. If you could follow your internet line out of your apartment you&rsquo;d might find that it attaches to one of these. They look like beefier home routers. I picked the first result I found on Shodan, this one from Vietnam.
-<img src="/images/100Days/Day46/firstlook.png" alt="" />
+<img src="/images/100Days/Day46/firstlook.png" alt="">
 It was running a web login on port 80. The title of the login page indicated that it was a GPON ONT, ONT standing for Optical Network Terminal, which I think means its a device to login to a GPON, again the descriptions online were deeply technical and assumed a lot of knowledge that I don&rsquo;t have. It was also running a telnet server on 23, and interestingly a DNS server on 53. That makes sense if it has to figure out where to send traffic. I decided to check <code>host</code>.</p>
-
 <pre><code>➜  ~ host 14.161.15.80
 80.15.161.14.in-addr.arpa domain name pointer static.vnpt.vn.
-</code></pre>
-
-<p>static.vnpt.vn, interestingly, does not follow back to the IP.</p>
-
+</code></pre><p>static.vnpt.vn, interestingly, does not follow back to the IP.</p>
 <pre><code>➜  ~ host static.vnpt.vn
 static.vnpt.vn has address 203.162.0.78
-</code></pre>
-
-<p><a href="https://en.wikipedia.org/wiki/VNPT">VNPT</a> is the second biggest company in Vietnam, a government-owned telecom giant that services the country. Again it makes sense that an ISP is running this GPON.
-<img src="/images/100Days/Day46/vnptb.png" alt="" />
+</code></pre><p><a href="https://en.wikipedia.org/wiki/VNPT">VNPT</a> is the second biggest company in Vietnam, a government-owned telecom giant that services the country. Again it makes sense that an ISP is running this GPON.
+<img src="/images/100Days/Day46/vnptb.png" alt="">
 I have a hunch that VNPT has just given static.vnpt.vn to all of its static IPs that it wants to keep track of, which would explain why I can&rsquo;t get back to the original IP address from the url.</p>
-
 <p>I at least half confirmed this with <code>traceroute</code>. As you can see the last six IPs are all under static.vnpt.vn</p>
-
 <pre><code>➜  ~ traceroute 14.161.15.80
 traceroute to 14.161.15.80 (14.161.15.80), 64 hops max, 52 byte packets
  1  104.156.210.168 (104.156.210.168)  17.293 ms  21.589 ms  16.476 ms
@@ -92,14 +81,11 @@ traceroute to 14.161.15.80 (14.161.15.80), 64 hops max, 52 byte packets
     static.vnpt.vn (113.171.7.34)  305.441 ms
 16  * static.vnpt.vn (113.171.48.218)  346.234 ms *
 17  static.vnpt.vn (14.161.15.80)  258.466 ms * *
-</code></pre>
-
-<p>I tried to figure out what the device looked like. I went around on their website for awhile before ending up on <a href="http://www.vnpt-technology.vn/ViewDetailContentAction?categoryId=56&amp;contentId=304">this page</a>.
-<img src="/images/100Days/Day46/vnpta.png" alt="" />
+</code></pre><p>I tried to figure out what the device looked like. I went around on their website for awhile before ending up on <a href="http://www.vnpt-technology.vn/ViewDetailContentAction?categoryId=56&amp;contentId=304">this page</a>.
+<img src="/images/100Days/Day46/vnpta.png" alt="">
 If you take a very close look at the bottom right of that image, you&rsquo;ll see that it is discussing GPONs. Let&rsquo;s take a closer look of the image of that device.
-<img src="/images/100Days/Day46/GW240.png" alt="" />
+<img src="/images/100Days/Day46/GW240.png" alt="">
 Yes! It&rsquo;s called an iGate, model GW240, with the words &ldquo;GPON Optical Network Terminal&rdquo; written on its side.</p>
-
 <p>Like I said, beefier router. See you tomorrow.</p>
 
 		</section>
@@ -113,7 +99,7 @@ Yes! It&rsquo;s called an iGate, model GW240, with the words &ldquo;GPON Optical
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

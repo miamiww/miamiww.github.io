@@ -5,8 +5,9 @@
 	<meta property="og:title" content="Shodan Stories Day 10: Reading License Plates in Louisiana, the Bygone Days of Java Webapps, and Spying on Cops" />
 <meta property="og:description" content="I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: automatic license plate readers (ALPRs). These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-10/" /><meta property="article:published_time" content="2019-01-13T20:08:21-05:00"/>
-<meta property="article:modified_time" content="2019-01-13T20:08:21-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-10/" />
+<meta property="article:published_time" content="2019-01-13T20:08:21-05:00" />
+<meta property="article:modified_time" content="2019-01-13T20:08:21-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 10: Reading License Plates in Louisiana, the Bygone Days of Java Webapps, and Spying on Cops"/>
 <meta name="twitter:description" content="I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: automatic license plate readers (ALPRs). These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that."/>
@@ -39,22 +40,17 @@
 		
 
 		<section class="body">
-			
-
-<p>I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: <a href="https://www.eff.org/pages/automated-license-plate-readers-alpr">automatic license plate readers (ALPRs)</a>. These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that. There&rsquo;s one in just about every police car and on many street corners, you could even <a href="https://www.a1securitycameras.com/license-plate-recognition-cameras/">buy your own to put wherever you wanted</a>. Checking on one of Shodan&rsquo;s explore guides I saw that one major vendor of ALPRs was named <a href="http://www.pipstechnology.com/">PIPS</a>, so I searched for PIPS ALPR.</p>
-
-<h2 id="an-automatic-license-plate-reader-on-166-150-87-204">An Automatic License Plate Reader on 166.150.87.204</h2>
-
+			<p>I was feeling listless today and a bit grumpy, so I decided to look for something that I could be motivationally upset about: <a href="https://www.eff.org/pages/automated-license-plate-readers-alpr">automatic license plate readers (ALPRs)</a>. These are a kind of surveillance camera that are frequently used by police forces or parking facility managers to track cars and car movement. You might have seen a kind of them attached to traffic signal beams to catch red light runners, but they are used far more widely than just that. There&rsquo;s one in just about every police car and on many street corners, you could even <a href="https://www.a1securitycameras.com/license-plate-recognition-cameras/">buy your own to put wherever you wanted</a>. Checking on one of Shodan&rsquo;s explore guides I saw that one major vendor of ALPRs was named <a href="http://www.pipstechnology.com/">PIPS</a>, so I searched for PIPS ALPR.</p>
+<h2 id="an-automatic-license-plate-reader-on-16615087204">An Automatic License Plate Reader on 166.150.87.204</h2>
 <p>I only found one result. What I had read on Shodan seemed to indicate that there used to be a whole lot of them visible, so maybe they got better at their security and made them less discoverable. The one that I did find seemed to be using an outdated system, since the PIPS logo appeared to be an old version (which looks suspiciously like <a href="https://cms.qz.com/wp-content/uploads/2016/07/screen-shot-2016-07-18-at-10-05-33-am.png?w=1240&amp;strip=all&amp;quality=75">Amazon&rsquo;s old logo</a>) and the copyright was for 2006. I was able to access it via browser on port 8083.
-<img src="/images/100Days/Day10/Pips.png" alt="" />
+<img src="/images/100Days/Day10/Pips.png" alt="">
 I first tried to see if I could &ldquo;see through the camera&rdquo;. There was an option for that but unfortunately it was running in a java applet and modern browsers don&rsquo;t allow java plugins. This thing really was old!
-<img src="/images/100Days/Day10/java.png" alt="" />
+<img src="/images/100Days/Day10/java.png" alt="">
 Finding a version of a browser that would let me install java wasn&rsquo;t really worth it to me, so I kept looking around. I found some details on the system pretty quickly. Interesting that it seemed to be in Louisiana (I believe what it&rsquo;s talking about in that line below is that it&rsquo;s using a Louisiana license plate database), as Shodan couldn&rsquo;t tell me where the IP was located beyond the United States.
-<img src="/images/100Days/Day10/stats.png" alt="" />
+<img src="/images/100Days/Day10/stats.png" alt="">
 Checking on a slideshare deck about the PIPS 372 from 2009 I was able to find a little bit more about this specific camera model. It appears that PIPS no long manufactures the 372 (the oldest model they still advertise is the <a href="http://www.pipstechnology.com/fixedalpr/">much sleeker 392+</a>), but you can buy a used <a href="https://www.govdeals.com/index.cfm?fa=Main.Item&amp;itemID=2898&amp;acctID=8445">government surplus one on the cheap</a>.
-<img src="https://image.slidesharecdn.com/fwindowsvistapresentamarcopipspipspresentation-maprimaq-espanol-090626180417-phpapp01/95/pips-control-de-vehiculos-9-728.jpg?cb=1246041898" alt="" />
+<img src="https://image.slidesharecdn.com/fwindowsvistapresentamarcopipspipspresentation-maprimaq-espanol-090626180417-phpapp01/95/pips-control-de-vehiculos-9-728.jpg?cb=1246041898" alt="">
 I tried to downloaded all of the recorded pictures but got a 700 error, but also I noticed that I would intermittently be unable to connect anymore, and generally navigating around the system was extremely slow. Another weird thing - each time I checked it with <code>nmap</code> it would show me something slightly different.</p>
-
 <pre><code>➜  sandbox git:(master) ✗ nmap 166.150.87.204 -Pn
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-13 21:07 EST
 Nmap scan report for 204.sub-166-150-87.myvzw.com (166.150.87.204)
@@ -66,10 +62,7 @@ PORT     STATE SERVICE
 8088/tcp open  radan-http
 
 Nmap done: 1 IP address (1 host up) scanned in 28.18 seconds
-</code></pre>
-
-<p>And then just a few minutes later:</p>
-
+</code></pre><p>And then just a few minutes later:</p>
 <pre><code>➜  sandbox git:(master) ✗ nmap 166.150.87.204 -Pn
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-01-13 21:39 EST
 Stats: 0:01:16 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
@@ -83,10 +76,7 @@ PORT     STATE SERVICE
 8084/tcp open  unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 126.82 seconds
-</code></pre>
-
-<p>This kind of thing is the reason I grind my teeth at night so much. Just why?? I think part of the reason has to do with the reverse DNS: yadayada.myvzw.com. After looking at it, myvzw.com seems to reference the Verizon Wireless mobile customer network. And so I could occasionally be losing connection because this camera system is on a bad mobile hotspot. Why are the ports showing inconsistently (and occasionally telling me that the host is up but that all ports are filtered, which I know isn&rsquo;t true because I&rsquo;m looking at it on 8083)?</p>
-
+</code></pre><p>This kind of thing is the reason I grind my teeth at night so much. Just why?? I think part of the reason has to do with the reverse DNS: yadayada.myvzw.com. After looking at it, myvzw.com seems to reference the Verizon Wireless mobile customer network. And so I could occasionally be losing connection because this camera system is on a bad mobile hotspot. Why are the ports showing inconsistently (and occasionally telling me that the host is up but that all ports are filtered, which I know isn&rsquo;t true because I&rsquo;m looking at it on 8083)?</p>
 <p>I was able to download the camera&rsquo;s event log, and all I was able to discern from it was that it had been rebooted about a half dozen times in the past couple of days. Maybe it&rsquo;s just kind of janky? It is pretty old in the world of computational devices. Another possibility is that the BlackICE service, which is a (<a href="https://www.itprotoday.com/compute-engines/blackice">now very outdated and no longer used</a>) service designed to prevent intrusion attempts, running on 8081 is recognizing me as an intruder. I did <code>nmap</code> it a half dozen times after all. See you tomorrow.</p>
 
 		</section>
@@ -100,7 +90,7 @@ Nmap done: 1 IP address (1 host up) scanned in 126.82 seconds
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

@@ -6,8 +6,9 @@
 <meta property="og:description" content="Some Cisco routers say &ldquo;SAN FRANCISCO&rdquo; when telneting into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.
 An Ornamental Hermit on 74.207.243.202 What caught my eye on this IP was that Shodan was indicating that it was running gopher on port 70." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-55/" /><meta property="article:published_time" content="2019-02-27T13:39:11-05:00"/>
-<meta property="article:modified_time" content="2019-02-27T13:39:11-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-55/" />
+<meta property="article:published_time" content="2019-02-27T13:39:11-05:00" />
+<meta property="article:modified_time" content="2019-02-27T13:39:11-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 55: Dancing with Skunks and Annotating Goats in Fremont, Ornamental Hermits, Gopherspace, and the Mysteries of Time"/>
 <meta name="twitter:description" content="Some Cisco routers say &ldquo;SAN FRANCISCO&rdquo; when telneting into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.
@@ -41,33 +42,21 @@ An Ornamental Hermit on 74.207.243.202 What caught my eye on this IP was that Sh
 		
 
 		<section class="body">
-			
-
-<p>Some Cisco routers say &ldquo;SAN FRANCISCO&rdquo; when <code>telnet</code>ing into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.</p>
-
-<h2 id="an-ornamental-hermit-on-74-207-243-202">An Ornamental Hermit on 74.207.243.202</h2>
-
+			<p>Some Cisco routers say &ldquo;SAN FRANCISCO&rdquo; when <code>telnet</code>ing into them, and so someone had searched for that on Shodan looking for these routers (they say other things too of course, but that&rsquo;s just an easily searchable commonality). That kind of dragnet obviously pulls in a lot of other stuff too and I was particularly taken with one result.</p>
+<h2 id="an-ornamental-hermit-on-74207243202">An Ornamental Hermit on 74.207.243.202</h2>
 <p>What caught my eye on this IP was that Shodan was indicating that it was running gopher on port 70. <a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">Gopher</a>, as you may know, was a hypertext transfer protocol that existed alongside HTTP in the early 1990s, and had a brief period of popularity peaking around 1993 before becoming overwhelmed by the World Wide Web. Gopher is primarily text based and would return hierarchically structured text documents with links and <a href="https://motherboard.vice.com/en_us/article/9kwek8/long-live-gopher-the-techies-keeping-the-text-driven-internet-alive">didn&rsquo;t have the kind of hypermedia support that web sites have</a>. Last I heard a few years ago there were supposedly only a few hundred pages in &ldquo;gopherspace&rdquo; meaning that this was a pretty rare find, so I installed a <a href="https://addons.mozilla.org/en-US/firefox/addon/overbitewx/">gopher plugin on Firefox</a>, put on Aphex Twin to get me in the 1992 mood, and got to exploring.</p>
-
 <p>The first thing I noticed was that the gopher page, which was named <strong>gopher.stjo.hn</strong> seemed to be completely different from the one running on the regular port 80 webserver, <strong>annotatedtmg.org</strong>.</p>
-
-<p><img src="/images/100Days/Day55/gopher.png" alt="" />
+<p><img src="/images/100Days/Day55/gopher.png" alt="">
 <strong>gopher.stjo.hn</strong></p>
-
-<p><img src="/images/100Days/Day55/mountaingoats.png" alt="" />
+<p><img src="/images/100Days/Day55/mountaingoats.png" alt="">
 <strong>annotatedtmg.org</strong></p>
-
 <p>Before long I was able to determine that port 80 was also running another webserver, this one actually a mirror of the gopher page.
-<img src="/images/100Days/Day55/stjohn.png" alt="" />
-<strong>www.stjo.hn</strong>
+<img src="/images/100Days/Day55/stjohn.png" alt="">
+<strong><a href="http://www.stjo.hn">www.stjo.hn</a></strong>
 I&rsquo;m guessing the font choice is as a way to encourage people to try gopher. But anyway: this is pretty surprising. It&rsquo;s entirely possible to have multiple domain names hosted on a single IP address, but it&rsquo;s pretty weird to see a situation where they have seemingly belong to entirely different people. Meanwhile the IP itself has a domain name pointer of&hellip; none of this addresses.</p>
-
 <pre><code>👻🌵🔮 $ host 74.207.243.202
 202.243.207.74.in-addr.arpa domain name pointer fuzzjunket.com.
-</code></pre>
-
-<p>It instead is registered to <strong>fuzzjunket.com</strong>. Luckily that just redirects <strong>to www.stjo.hn.com</strong> and there isn&rsquo;t too much mystery there to solve. Just checking the others to see for clues.</p>
-
+</code></pre><p>It instead is registered to <strong>fuzzjunket.com</strong>. Luckily that just redirects <strong>to <a href="http://www.stjo.hn.com">www.stjo.hn.com</a></strong> and there isn&rsquo;t too much mystery there to solve. Just checking the others to see for clues.</p>
 <pre><code>👻🌵🔮 $ host annotatedtmg.org
 annotatedtmg.org has address 74.207.243.202
 annotatedtmg.org mail is handled by 50 fb.mail.gandi.net.
@@ -81,23 +70,14 @@ gopher.stjo.hn has address 74.207.243.202
 fuzzjunket.com has address 74.207.243.202
 fuzzjunket.com has IPv6 address 2600:3c01::f03c:91ff:fe24:69e8
 fuzzjunket.com mail is handled by 10 mail.fuzzjunket.com.
-</code></pre>
-
-<p>Verified they are all on the same IP. I checked <code>whois</code> and saw that their webhost is <a href="https://www.linode.com/">Linode</a>, which does cloud hosting, so maybe Linode is saving on IP addresses by doubling up. Or maybe these two are friends and decided to save by splitting a virtual machine. Who are these two anyway?</p>
-
+</code></pre><p>Verified they are all on the same IP. I checked <code>whois</code> and saw that their webhost is <a href="https://www.linode.com/">Linode</a>, which does cloud hosting, so maybe Linode is saving on IP addresses by doubling up. Or maybe these two are friends and decided to save by splitting a virtual machine. Who are these two anyway?</p>
 <h3 id="st-john-karp">St John Karp</h3>
-
 <p>As you can read from his description, St John Karp is a &ldquo;writer, historian &amp; ornamental hermit&rdquo;. An ornamental hermit, as we all know, is the <a href="https://en.wikipedia.org/wiki/Garden_hermit">living predecessor to the garden gnome</a>, a man who very wealthy Europeans paid to live in a small hut on the outskirts of their property, dress as a druid, and live a humble rustic life for the observation and amusement of the landowner.
-<img src="/images/100Days/Day55/gardenhermit.png" alt="" /></p>
-
+<img src="/images/100Days/Day55/gardenhermit.png" alt=""></p>
 <p>I would posit that this man is not in fact an ornamental hermit. But he has written a couple of books and several plays. He seems to be a bit of a <a href="https://www.kirkusreviews.com/author/st-john-karp/">intentionally quirky person</a>, so I think the use of gopher plays into that.</p>
-
 <h3 id="annotated-mountain-goats">Annotated Mountain Goats</h3>
-
 <p>Another otaku weirdo&rsquo;s website, the Annotated Mountain Goats is dedicated to one man&rsquo;s extreme fandom for the indie rock band <a href="https://en.wikipedia.org/wiki/The_Mountain_Goats">the Mountain Goats</a>. Over the past many years he has attempted to uncover every hidden meaning and reference in every one of this band&rsquo;s songs. It seems as though he himself has gotten a fair bit of attention from the Mountain Goats fandom community, and in his blog posts he thanks many people for sending in emails with tips and ideas. He also makes free band-related buttons and will mail them to anyone who sends him an empty envelope. It&rsquo;s very sweet, and very twee, and reminds me of being a teenager, listening to <em>The Sunset Tree</em>, one of the band&rsquo;s albums. I remember having that album on my iPod, sitting in a yellow chair my parents owned, listening to it while working on my AP physics homework.</p>
-
 <p>Because I&rsquo;m also an obsessive otaku, I&rsquo;ve used <a href="https://www.last.fm">last.fm</a> to collect metadata on all the music I listen to for the past 13 years. I can see that I last listened to the Mountain Goats on October 6th, 2008, a Monday. More than ten years ago. I listened to &ldquo;You or Your Memory&rdquo;, which, I now know from the Annotated Mountain Goats, is about the main singer looking back on his teenage years.</p>
-
 <p>How&rsquo;s that for a tidy ending? See you tomorrow.</p>
 
 		</section>
@@ -111,7 +91,7 @@ fuzzjunket.com mail is handled by 10 mail.fuzzjunket.com.
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

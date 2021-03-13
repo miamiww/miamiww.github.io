@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I read about insecure video conferencing systems made by Polycom, and Googled up a Shodan query to find them. The query was &ldquo;polycom command shell&rdquo;.
 Polycom Conference Calling System on 14.143.72.118 The results were all video conferencing devices that had open telnet ports, but I ultimately chose one in India that was runnign a webserver as well, so that I could have something more interesting to take pictures of." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-76/" /><meta property="article:published_time" content="2019-03-21T16:17:26-04:00"/>
-<meta property="article:modified_time" content="2019-03-21T16:17:26-04:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-76/" />
+<meta property="article:published_time" content="2019-03-21T16:17:26-04:00" />
+<meta property="article:modified_time" content="2019-03-21T16:17:26-04:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 76: Conference Calls in Noida"/>
 <meta name="twitter:description" content="Today I read about insecure video conferencing systems made by Polycom, and Googled up a Shodan query to find them. The query was &ldquo;polycom command shell&rdquo;.
@@ -41,16 +42,10 @@ Polycom Conference Calling System on 14.143.72.118 The results were all video co
 		
 
 		<section class="body">
-			
-
-<p>Today <a href="https://www.rapid7.com/db/modules/exploit/unix/polycom_hdx_auth_bypass">I read about insecure video conferencing systems</a> made by <a href="https://www.polycom.com/">Polycom</a>, and Googled up a Shodan query to find them. The query was &ldquo;polycom command shell&rdquo;.</p>
-
-<h2 id="polycom-conference-calling-system-on-14-143-72-118">Polycom Conference Calling System on 14.143.72.118</h2>
-
+			<p>Today <a href="https://www.rapid7.com/db/modules/exploit/unix/polycom_hdx_auth_bypass">I read about insecure video conferencing systems</a> made by <a href="https://www.polycom.com/">Polycom</a>, and Googled up a Shodan query to find them. The query was &ldquo;polycom command shell&rdquo;.</p>
+<h2 id="polycom-conference-calling-system-on-1414372118">Polycom Conference Calling System on 14.143.72.118</h2>
 <p>The results were all video conferencing devices that had open telnet ports, but I ultimately chose one in India that was runnign a webserver as well, so that I could have something more interesting to take pictures of.</p>
-
 <p>Checking the telnet port first:</p>
-
 <pre><code>👻🌵🔮 $ nc 14.143.72.118 23 -v
 found 0 associations
 found 1 connections:
@@ -74,17 +69,13 @@ Session type: telnet
 2019-03-21 20:32:58 DEBUG jvm: pc[0]: UI: xcom-api: ClientManager: createSession(type: telnet sess: 21617)
 2019-03-21 20:32:58 DEBUG jvm: pc[0]: UI: xcom-api: ClientManager: createSession current open sessions count= 2
 2019-03-21 20:32:58 DEBUG avc: pc[0]: appcom: session 21617 registered
-</code></pre>
-
-<p>I didn&rsquo;t want to spend a bunch of time figuring out how to look around here so I exited the connection and went to the webserver.</p>
-
-<p><img src="/images/100Days/Day76/firstlook.png" alt="" />
+</code></pre><p>I didn&rsquo;t want to spend a bunch of time figuring out how to look around here so I exited the connection and went to the webserver.</p>
+<p><img src="/images/100Days/Day76/firstlook.png" alt="">
 I found pretty quickly that I could make any calls I wanted, see the entire call history, and even, maybe most troublingly, monitor any call in progress.
-<img src="/images/100Days/Day76/recent.png" alt="" />
+<img src="/images/100Days/Day76/recent.png" alt="">
 A lot of the calls seemed to be within-network, which made me think that this could be an office&rsquo;s conference room phone for conference calling, as in my time in offices we&rsquo;d frequently call a coworker mid-meeting to ask them some questions.
-<img src="/images/100Days/Day76/monitor.png" alt="" />
+<img src="/images/100Days/Day76/monitor.png" alt="">
 I don&rsquo;t understand not putting any password or authentication on this kind of system. I took a look at the security settings and it seems like they had chosen to set the security to &ldquo;minimal&rdquo;. Why? I can&rsquo;t image that it was the default.</p>
-
 <p>The last phone number called was an <a href="https://www.airtel.in/">Airtel India</a> phone number, and I was tempted to call it so I could figure out whose phone I was looking at, but it seemed unwise and also too difficult. I hate phone calls. See you tomorrow.</p>
 
 		</section>
@@ -98,7 +89,7 @@ I don&rsquo;t understand not putting any password or authentication on this kind
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Computational Narrative on Alden&#39;s Blog Home</title>
+    <title>computational narrative on Alden&#39;s Blog Home</title>
     <link>https://blog.alden.website/categories/computational-narrative/</link>
-    <description>Recent content in Computational Narrative on Alden&#39;s Blog Home</description>
+    <description>Recent content in computational narrative on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Oct 2018 12:49:00 -0400</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/computational-narrative/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 16 Oct 2018 12:49:00 -0400</lastBuildDate><atom:link href="https://blog.alden.website/categories/computational-narrative/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cybercaves 2: Return 2 Cybercave</title>
       <link>https://blog.alden.website/post/compunarra/cybercaves2_return2cybercave/</link>

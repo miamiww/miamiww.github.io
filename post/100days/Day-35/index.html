@@ -6,8 +6,9 @@
 <meta property="og:description" content="Saw an amazing search on Shodan today: someone searched for &ldquo;kiosk&rdquo; with the comment &ldquo;lotta cool stuff&rdquo;. Lotta cool stuff! How could I resist.
 A Library Kiosk Management System on 104.239.140.99 Most of the kiosks seemed to be library kiosks, I even found one from my alma mater&rsquo;s library! I ended up going with the first one that I couldn&rsquo;t immediately figure out the purpose of. It was running some kind of web server on port 3000." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-35/" /><meta property="article:published_time" content="2019-02-07T00:16:01-05:00"/>
-<meta property="article:modified_time" content="2019-02-07T00:16:01-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-35/" />
+<meta property="article:published_time" content="2019-02-07T00:16:01-05:00" />
+<meta property="article:modified_time" content="2019-02-07T00:16:01-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 35: Library Kiosks in Duchesne, Session Management Solutions, and True Friendship"/>
 <meta name="twitter:description" content="Saw an amazing search on Shodan today: someone searched for &ldquo;kiosk&rdquo; with the comment &ldquo;lotta cool stuff&rdquo;. Lotta cool stuff! How could I resist.
@@ -41,43 +42,30 @@ A Library Kiosk Management System on 104.239.140.99 Most of the kiosks seemed to
 		
 
 		<section class="body">
-			
-
-<p>Saw an amazing search on Shodan today: someone searched for &ldquo;kiosk&rdquo; with the comment &ldquo;lotta cool stuff&rdquo;. Lotta cool stuff! How could I resist.</p>
-
-<h2 id="a-library-kiosk-management-system-on-104-239-140-99">A Library Kiosk Management System on 104.239.140.99</h2>
-
+			<p>Saw an amazing search on Shodan today: someone searched for &ldquo;kiosk&rdquo; with the comment &ldquo;lotta cool stuff&rdquo;. Lotta cool stuff! How could I resist.</p>
+<h2 id="a-library-kiosk-management-system-on-10423914099">A Library Kiosk Management System on 104.239.140.99</h2>
 <p>Most of the kiosks seemed to be library kiosks, I even found one from my alma mater&rsquo;s library! I ended up going with the first one that I couldn&rsquo;t immediately figure out the purpose of. It was running some kind of web server on port 3000.
-<img src="/images/100Days/Day35/firstlook.png" alt="" />
+<img src="/images/100Days/Day35/firstlook.png" alt="">
 It seemed to be a scheduling application. It was running the same service on 3001 with different patron names.
-<img src="/images/100Days/Day35/secondlook.png" alt="" />
+<img src="/images/100Days/Day35/secondlook.png" alt="">
 Rather than rack my brain for possibilities though I just Googled the service - <a href="https://libki.org/">Libki Kiosk Management System</a>.
-<img src="/images/100Days/Day35/libki.png" alt="" />
+<img src="/images/100Days/Day35/libki.png" alt="">
 So Libki is a system for booking time on computers - more or less, meant for libraries and computer labs.</p>
-
 <p>Now I knew that the system I was looking at was running on a cloud server, but I wanted to know where the actual computers that were being booked were. So I checked it with <code>host</code> to see if anything showed up.</p>
-
 <pre><code>👻🌵🔮 $ host 104.239.140.99
 99.140.239.104.in-addr.arpa domain name pointer duchesne-libki.bywatersolutions.com.
-</code></pre>
-
-<p>Looks like the IP address is for the domain name duchesne-libki.bywatersolutions.com.
-<img src="/images/100Days/Day35/bywatersolutions.png" alt="" /></p>
-
+</code></pre><p>Looks like the IP address is for the domain name duchesne-libki.bywatersolutions.com.
+<img src="/images/100Days/Day35/bywatersolutions.png" alt=""></p>
 <p>Looking at <a href="https://bywatersolutions.com/">ByWater Solutions&rsquo;s website</a> I found that they were actually the makers of Libki, among other software solutions aimed at the library market. The owners seemed really sweet. Maybe I&rsquo;m just feeling hormonal but when I checked their website&rsquo;s WhoIS record and saw that it had one of the owner&rsquo;s real name and personal email address on it I got kind of choked up. So innocent!
-<img src="/images/100Days/Day35/theguys.png" alt="" />
+<img src="/images/100Days/Day35/theguys.png" alt="">
 By why were they running their own session managing at their company? For testing? Or because they all share computers?</p>
-
 <p>Looking a little harder at the url though, I had an insight: <em>duchesne</em>-libki. Duchesne, as we all know, is the name of a county in Utah. Counties typically have libraries in them. And in fact there is a Duchesne County Library in Duchesne county. And <em>in fact</em> the Duchesne County Library uses Libki.
-<img src="http://www.duchesne.utah.gov/wp-content/uploads/2017/01/Duchesne-Branch-crop.jpg" alt="" />
+<img src="http://www.duchesne.utah.gov/wp-content/uploads/2017/01/Duchesne-Branch-crop.jpg" alt="">
 How do I know that they use Libki? I checked the <a href="https://www.duchesne.utah.gov/wp-content/uploads/2017/01/2015-09-Duchesne-County-Library-Board-Meeting-Minutes.pdf">Duchesne County Library Board Meeting Minutes of September 17, 2015</a>, which clearly states the following:</p>
-
 <p><em>Libki – Patron computer management system is now functioning at both libraries to allow reservations for time
 slots on the computers</em></p>
-
-<p><img src="/images/100Days/Day35/meetingminutes.png" alt="" />
+<p><img src="/images/100Days/Day35/meetingminutes.png" alt="">
 Two libraries! That explains the two systems, on 3000 and 3001.</p>
-
 <p>Thank you, public records, and thank you libraries, for championing public space in an age of its retraction from daily life. See you tomorrow.</p>
 
 		</section>
@@ -91,7 +79,7 @@ Two libraries! That explains the two systems, on 3000 and 3001.</p>
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

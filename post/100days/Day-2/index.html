@@ -6,8 +6,9 @@
 <meta property="og:description" content="Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&rsquo;d heard of them before.
 Joann Fabric&rsquo;s Industrial Control System on 208.83.32.213 Siemens has a proprietary network protocol called S7 Communications that they use for their Programmable Logic Controllers (PLC), which they also provide a nice sales brochure for." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-2/" /><meta property="article:published_time" content="2019-01-05T15:46:52-05:00"/>
-<meta property="article:modified_time" content="2019-01-05T15:46:52-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-2/" />
+<meta property="article:published_time" content="2019-01-05T15:46:52-05:00" />
+<meta property="article:modified_time" content="2019-01-05T15:46:52-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 2: Joann Fabric&#39;s Sinister Plot"/>
 <meta name="twitter:description" content="Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&rsquo;d heard of them before.
@@ -41,23 +42,14 @@ Joann Fabric&rsquo;s Industrial Control System on 208.83.32.213 Siemens has a pr
 		
 
 		<section class="body">
-			
-
-<p>Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&rsquo;d heard of them before.</p>
-
-<h3 id="joann-fabric-s-industrial-control-system-on-208-83-32-213">Joann Fabric&rsquo;s Industrial Control System on 208.83.32.213</h3>
-
+			<p>Today I had two quick ideas for what to look for, either industrial control systems or minecraft servers. Flipping a coin, ICS won out. Reading a quick Shodan guide on them I decided to look for Siemens control systems, for no reason other than I&rsquo;d heard of them before.</p>
+<h3 id="joann-fabrics-industrial-control-system-on-2088332213">Joann Fabric&rsquo;s Industrial Control System on 208.83.32.213</h3>
 <p>Siemens has a proprietary network protocol called <a href="https://wiki.wireshark.org/S7comm">S7 Communications</a> that they use for their <a href="https://en.wikipedia.org/wiki/Programmable_logic_controller">Programmable Logic Controllers (PLC)</a>, which they also provide a nice <a href="https://www.automation.siemens.com/salesmaterial-as/brochure/en/brochure_simatic-controller_overview_en.pdf">sales brochure for</a>. It runs on port 102 so I did a search on Shodan for IPs using port 102.
 Picking one of the first IPs I found that it belonged to Joann Fabric.</p>
-
 <pre><code>👻🌵✨$ host 208.83.32.213
 213.32.83.208.in-addr.arpa domain name pointer i.joann.com
-</code></pre>
-
-<p>The IP was pointed to i.joann.com. I&rsquo;ve frequently seen in store websites&rsquo; code links to things like <code>abcde.store.com</code>, usually as links to their internal database for inventory or as internal content management systems. So my first hunch was that i.joann.com was a database used for their warehouse inventories that plugged into websites when making online orders (&ldquo;i&rdquo; sounds like a great name for an inventory service if you ask me). However I checked on <a href="https://publicwww.com">PublicWWW</a> to see if there were any links to i.joann.com in <em>any</em> websites and there were not. So it&rsquo;s not something that has to do with Joann&rsquo;s web presence. Then I used <a href="https://nmap.org/">nmap</a> to see all the different ports that they were using to see if I could figure out what they were using this service for. Well as you can see at the bottom it looks like they just left a whole lot of commonly used ports open, except, oddly enough, the one that brought me there (102). Why? What am I actually looking at here?</p>
-
+</code></pre><p>The IP was pointed to i.joann.com. I&rsquo;ve frequently seen in store websites' code links to things like <code>abcde.store.com</code>, usually as links to their internal database for inventory or as internal content management systems. So my first hunch was that i.joann.com was a database used for their warehouse inventories that plugged into websites when making online orders (&ldquo;i&rdquo; sounds like a great name for an inventory service if you ask me). However I checked on <a href="https://publicwww.com">PublicWWW</a> to see if there were any links to i.joann.com in <em>any</em> websites and there were not. So it&rsquo;s not something that has to do with Joann&rsquo;s web presence. Then I used <a href="https://nmap.org/">nmap</a> to see all the different ports that they were using to see if I could figure out what they were using this service for. Well as you can see at the bottom it looks like they just left a whole lot of commonly used ports open, except, oddly enough, the one that brought me there (102). Why? What am I actually looking at here?</p>
 <p>Checking traceroute I thought would give me a clue.</p>
-
 <pre><code>traceroute to i.joann.com (208.83.32.213), 64 hops max, 52 byte packets
  1  192.168.0.1 (192.168.0.1)  1.125 ms  0.812 ms  0.853 ms
  2  * * *
@@ -77,10 +69,7 @@ Picking one of the first IPs I found that it belonged to Joann Fabric.</p>
 14  192.171.21.226 (192.171.21.226)  63.501 ms  64.199 ms  64.973 ms
 15  gpvpn.joann.com (208.83.32.24)  68.489 ms  63.162 ms  63.991 ms
 16  i.joann.com (208.83.32.213)  71.032 ms  76.413 ms  81.920 ms
-</code></pre>
-
-<p>What&rsquo;s gpvpn.joann.com? Looking into it GVPN seems to stand for Global Protection VPN. I couldn&rsquo;t get much from its IP either but the other IPs around 208.83.32.XXX mostly seem to belong to Joann, some with some weird names.</p>
-
+</code></pre><p>What&rsquo;s gpvpn.joann.com? Looking into it GVPN seems to stand for Global Protection VPN. I couldn&rsquo;t get much from its IP either but the other IPs around 208.83.32.XXX mostly seem to belong to Joann, some with some weird names.</p>
 <pre><code>👻🌵✨$ host 208.83.32.1
 1.32.83.208.in-addr.arpa domain name pointer mobile.joann.com.
 👻🌵✨$ host 208.83.32.2
@@ -89,12 +78,8 @@ Picking one of the first IPs I found that it belonged to Joann Fabric.</p>
 3.32.83.208.in-addr.arpa domain name pointer thinclient.joann.com.
 👻🌵✨$ host 208.83.32.25
 25.32.83.208.in-addr.arpa domain name pointer infinitescarf.joann.com.
-</code></pre>
-
-<p>There are getting to be just too many threads to untangle here.</p>
-
+</code></pre><p>There are getting to be just too many threads to untangle here.</p>
 <p>Here is that port scan from the original IP. <a href="https://www.speedguide.net/port.php?port=666">Port 666</a> looks suspicious&hellip;</p>
-
 <pre><code>Nmap scan report for i.joann.com (208.83.32.213)
 Host is up (0.075s latency).
 
@@ -1100,7 +1085,6 @@ PORT      STATE SERVICE
 65129/tcp open  unknown
 65389/tcp open  unknown
 </code></pre>
-
 		</section>
 
 		<div class="post-tags">
@@ -1112,7 +1096,7 @@ PORT      STATE SERVICE
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

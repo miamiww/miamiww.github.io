@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computational Media on Alden&#39;s Blog Home</title>
-    <link>https://blog.alden.website/categories/computational-media/</link>
+    <link>https://blog.alden.website/categories/Computational-Media/</link>
     <description>Recent content in Computational Media on Alden&#39;s Blog Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.alden.website/categories/computational-media/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.alden.website/categories/Computational-Media/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Psychographic Categorization Neural Network Simulator 2000</title>
       <link>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</link>
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/12/11/psychographic-categorization-neural-network-simulator-2000/</guid>
-      <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one&amp;#8217;s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
+      <description>For my computational media final project I wanted to make a game about Cambridge Analytica and about the current cultural moment in data science and AI. I have seen the rise of the imperative to make one’s identity known and intelligible for collection online by various state and corporate actors as a sinister reach to further institutional control over the everyday, but I also think that the practice of psychographics is a silly pseudoscience.</description>
     </item>
     
     <item>
@@ -26,7 +22,7 @@
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/11/20/crypt-vs-mausoleum/</guid>
-      <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a &amp;#8216;tap&amp;#8217; from a &amp;#8216;step&amp;#8217;, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
+      <description>One of my favorite word games to play is to try to suss out the grey areas of meaning with seemingly well established words (e.g. what foot angle and distance of leaving the floor differentiates a ‘tap’ from a ‘step’, in what ways are the aesthetic associations of a crypt different from those of a mausoleum). Kind of a useless semiotics examing the edge case value of a word (how much mist on a misty morning differentiates a bog from a swamp).</description>
     </item>
     
     <item>
@@ -46,10 +42,10 @@ And see code here.</description>
       <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/30/button-game/</guid>
-      <description>I&amp;#8217;m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons&amp;#8230; a lot.
+      <description>I’m in the middle of changing hosts for my blog so I will keep this entry short. I made a game involving clicking DOM buttons… a lot.
 You can see the code for the game here.
 And you can play the game here.
-&amp;nbsp;</description>
+ </description>
     </item>
     
     <item>
@@ -58,8 +54,7 @@ And you can play the game here.
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/23/circle-game-with-tracking/</guid>
-      <description>&amp;nbsp;
-I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I&amp;#8217;d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn&amp;#8217;t finish that in a playable way.
+      <description>I overhauled some of the code from my project last week so that events would only happen once so that the player would not experience an event more than once. I’d like to implement some further tracking so that the narrative would change depending on what the user had done previously but I didn’t finish that in a playable way.
 You can see the improved code here.
 I put a playable version of it here.</description>
     </item>
@@ -70,8 +65,8 @@ I put a playable version of it here.</description>
       <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.alden.website/2017/10/16/circle-game/</guid>
-      <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by &amp;#8220;points&amp;#8221;.
-&amp;#8220;Points&amp;#8221; are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of &amp;#8220;cookie clicker&amp;#8221; type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
+      <description>I wanted to make a game-as-interactive-poetry without clear goals but with player progress still mediated by “points”.
+“Points” are displayed constantly in the upper left corner. Doing nothing makes the points go down, clicking and holding the circle in the center makes the points go up. I was thinking of “cookie clicker” type games (like the currently buzzing paper clip AI game) when I made this and how much I hate them for creating unintersting artificial rewards that my brain still loves.</description>
     </item>
     
     <item>
@@ -83,7 +78,7 @@ I put a playable version of it here.</description>
       <description>Katya and I started out just sitting next to each other, noodling around and sharing what we were doing. I ended up making this moon pattern with a surprise:
 
 You can see the code for that here.
-Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out &amp;#8220;You Suck&amp;#8221;. I thought that was pretty funny but we weren&amp;#8217;t sure how to get the actual drawing mechanism to work, i.</description>
+Katya then had the idea to make something that prompted the user to write something on the screen but then whatever they tried to write it would just spell out “You Suck”. I thought that was pretty funny but we weren’t sure how to get the actual drawing mechanism to work, i.</description>
     </item>
     
     <item>
@@ -94,7 +89,7 @@ Katya then had the idea to make something that prompted the user to write someth
       <guid>https://blog.alden.website/2017/09/18/week-1-experiments-in-p5-drawing/</guid>
       <description>I started off by trying to make faces/icons in the style of the Netflix user icons.
 http://alpha.editor.p5js.org/alden/sketches/ByIzAYaq-
-Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background&amp;#8230; or a website background 🙂 I used for loops to avoid copy/pasting all my code:
+Quickly I got bored with that so then I started trying to make patterns with simple shapes that could be optical illusions or tiled as a desktop background… or a website background 🙂 I used for loops to avoid copy/pasting all my code:
 http://alpha.editor.p5js.org/alden/sketches/Hyzy-5p9-
 This led me to try to recreate this piece by Paul Nasca:</description>
     </item>

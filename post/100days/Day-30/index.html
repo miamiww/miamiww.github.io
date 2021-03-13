@@ -5,8 +5,9 @@
 	<meta property="og:title" content="Shodan Stories Day 30: Automating Buildings in Copenhagen, the BAS SCADA Industry, Expandable Controllers, Cloriūs, KeRo, and O&amp;J CTS A/S" />
 <meta property="og:description" content="Today I decided to go looking for SCADA systems. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&rsquo;ll let the man himself, Carl Gould, take it away.   SCADA Building Automation System on 80.71.129.61 Not really sure how to find one, I just searched on Shodan for &ldquo;SCADA&rdquo; hoping to reap rewards with little research." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-30/" /><meta property="article:published_time" content="2019-02-02T22:37:32-05:00"/>
-<meta property="article:modified_time" content="2019-02-02T22:37:32-05:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-30/" />
+<meta property="article:published_time" content="2019-02-02T22:37:32-05:00" />
+<meta property="article:modified_time" content="2019-02-02T22:37:32-05:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 30: Automating Buildings in Copenhagen, the BAS SCADA Industry, Expandable Controllers, Cloriūs, KeRo, and O&amp;J CTS A/S"/>
 <meta name="twitter:description" content="Today I decided to go looking for SCADA systems. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&rsquo;ll let the man himself, Carl Gould, take it away.   SCADA Building Automation System on 80.71.129.61 Not really sure how to find one, I just searched on Shodan for &ldquo;SCADA&rdquo; hoping to reap rewards with little research."/>
@@ -39,9 +40,7 @@
 		
 
 		<section class="body">
-			
-
-<p>Today I decided to go looking for <a href="https://en.wikipedia.org/wiki/SCADA">SCADA systems</a>. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&rsquo;ll let the man himself, Carl Gould, take it away.
+			<p>Today I decided to go looking for <a href="https://en.wikipedia.org/wiki/SCADA">SCADA systems</a>. SCADA stands for supervisory control and data acquisition and is a type of widely used industry management software, typically made bespoke for a particular factory or building. For a little more information I&rsquo;ll let the man himself, Carl Gould, take it away.
 
 
   <div class="vimeo-container">
@@ -49,45 +48,32 @@
   </div>
 
 </p>
-
-<h2 id="scada-building-automation-system-on-80-71-129-61">SCADA Building Automation System on 80.71.129.61</h2>
-
+<h2 id="scada-building-automation-system-on-807112961">SCADA Building Automation System on 80.71.129.61</h2>
 <p>Not really sure how to find one, I just searched on Shodan for &ldquo;SCADA&rdquo; hoping to reap rewards with little research. I was not disappointed, as it seems that many SCADA systems declare themselves as such. Quite a few results prompted immediate logins or no-auths, but I found one in Denmark that had a landing page before the login with enough information to start digging.
-<img src="/images/100Days/Day30/system.png" alt="" />
+<img src="/images/100Days/Day30/system.png" alt="">
 The text on the page discusses how to get the extremely high quality customer service and repair services from a company called O&amp;J CTS. There are two methods to login to the actual SCADA interface, via Java and via HTML5. Based on what I&rsquo;ve gathered on SCADA it seems like quite a bit of the market is still Java applets working via the browser, which might explain why some analysts are <a href="https://controltrends.org/controltrends-news/news-and-information/11/are-bas-and-scada-systems-doomed-is-blue-pillars-digital-energy-network-next/">predicting the oncoming end of the SCADA industry</a>.</p>
-
 <p>Trying to login via HTML5 yields the following login with an HTML5 canvas underneath currently only showing the logo for BA Systems. I bet that if I successfully logged in the canvas would populate with lots of cool diagrams showing pipe flow and conveyor belt speed, all updating in real time.
-<img src="/images/100Days/Day30/login.png" alt="" />
+<img src="/images/100Days/Day30/login.png" alt="">
 So what is this system automating exactly? Here we have to split into several directions.</p>
-
-<h3 id="o-j-cts-a-s">O&amp;J CTS A/S</h3>
-
+<h3 id="oj-cts-as">O&amp;J CTS A/S</h3>
 <p>The landing page talks about how O&amp;J CTS (A/S is like the Danish &ldquo;GmbH&rdquo; or &ldquo;LLC&rdquo;) is the one to call to perform any maintenance, and also includes <a href="http://www.oj-cts.dk">a link to their website</a>.
-<img src="/images/100Days/Day30/cts.png" alt="" />
+<img src="/images/100Days/Day30/cts.png" alt="">
 In Google translate&rsquo;s words &ldquo;CTS is short for Central Condition Control and Control. A CTS System is an intelligent energy and climate control system that balances comfort, consumption and operation in larger buildings&rdquo;. The company seems to install and manage these systems. So perhaps this is an energy management and climate control system for a large office building, maybe even one of the ones listed on their <a href="http://www.oj-cts.dk/referencer">client references page</a>?</p>
-
 <h3 id="kero-systems-and-ba-systems">KeRo Systems and BA Systems</h3>
-
 <p>Two other names stand out however. On the same landing page there is a link to a copyright page, which declares that the copyright for the software belongs to <a href="http://www.kero.dk/">KeRo Systems</a>.
-<img src="/images/100Days/Day30/KeRo.png" alt="" />
+<img src="/images/100Days/Day30/KeRo.png" alt="">
 Reading the last couple of lines on the image up above there, I can see that they used to have a software product line called ISC Series that had been rebranded to <a href="http://www.basystems.dk/forside">BA Systems</a>. Which should sound familiar to you.
-<img src="/images/100Days/Day30/basystems2.png" alt="" />
+<img src="/images/100Days/Day30/basystems2.png" alt="">
 BA Systems makes sensors, components, and software, so it seems likely that O&amp;J CTS A/S either subcontracted out the development of the software to them or had purchased a product off the shelf.</p>
-
-<h3 id="cloriūs-controls-a-s">Cloriūs Controls A/S</h3>
-
+<h3 id="cloriūs-controls-as">Cloriūs Controls A/S</h3>
 <p>However I was a bit thrown for a loop when I checked out the manual for the system (linked to in the landing page), which had the logo for a company named Cloriūs all over it and had a bizarrely similar image of the landing page as its example but without the O&amp;J references replaced by Cloriūs.
-<img src="/images/100Days/Day30/bizz.png" alt="" />
+<img src="/images/100Days/Day30/bizz.png" alt="">
 That&rsquo;s even the same tiny pixelated image of two men working on a pipe.</p>
-
 <p>Clearly some kind of corporate skullduggery had occurred here, but just what exactly? At first I thought that perhaps Cloriūs had been bought out but no one had bothered to change the manuals, but no, Cloriūs remains in the land of extant corporations.
-<img src="/images/100Days/Day30/clorius2.png" alt="" />
+<img src="/images/100Days/Day30/clorius2.png" alt="">
 They even have a reasonably diversified product line. But I couldn&rsquo;t find any reference to an &ldquo;ISC SCADA&rdquo; product or even any kind of SCADA product on their website. On Google though I did find an <a href="https://ics-cert.us-cert.gov/advisories/ICSA-15-013-02">alert from the US Department of Homeland Security&rsquo;s Industrial Control Systems Cyber Emergency Response Team</a> that Cloriūs ISC SCADA systems had a major security flaw in their Java web client, as well as the <a href="http://www.cloriuscontrols.cn/pdf/GB/5005-GB.pdf">manual for another type of Cloriūs control system</a>.</p>
-
 <p>After what felt like years of searching I found a clue. Getting deep deep in the weeds of Danish industry press releases I was able to suss out that O&amp;J CTS had purchased Cloriūs&rsquo;s entire building management system department on December 1, 2017.</p>
-
 <p>AHA. CASE CLOSED. So O&amp;J CTS did purchase a (part) of Cloriūs, and then had never bothered to update the manual for their new systems with the new corporate branding. In addition they changed precious little on the system landing page other than their own logo. Either O&amp;J purchased components or subcontracted out work to BA Systems (formerly KeRo) or Cloriūs previously had in the development of their system.</p>
-
 <p>So uh what does the system do again? See you tomorrow.</p>
 
 		</section>
@@ -101,7 +87,7 @@ They even have a reasonably diversified product line. But I couldn&rsquo;t find 
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     

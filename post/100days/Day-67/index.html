@@ -5,8 +5,9 @@
 	<meta property="og:title" content="Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index" />
 <meta property="og:description" content="I saw a great search on Shodan the other day, one just for Apache Webservers. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&rsquo;s still among the most popular servers today; it&rsquo;s estimated that 20% of all current websites are running Apache.  So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.alden.website/post/100days/Day-67/" /><meta property="article:published_time" content="2019-03-11T22:41:52-04:00"/>
-<meta property="article:modified_time" content="2019-03-11T22:41:52-04:00"/>
+<meta property="og:url" content="https://blog.alden.website/post/100days/Day-67/" />
+<meta property="article:published_time" content="2019-03-11T22:41:52-04:00" />
+<meta property="article:modified_time" content="2019-03-11T22:41:52-04:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Shodan Stories Day 67: Taking Care of Feet in Buenos Aires, Good Old Apache Webservers, and the Forgotten History of the Directory Index"/>
 <meta name="twitter:description" content="I saw a great search on Shodan the other day, one just for Apache Webservers. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&rsquo;s still among the most popular servers today; it&rsquo;s estimated that 20% of all current websites are running Apache.  So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache."/>
@@ -39,28 +40,23 @@
 		
 
 		<section class="body">
-			
-
-<p>I saw a great search on Shodan the other day, one just for <a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache Webservers</a>. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&rsquo;s still among the most popular servers today; it&rsquo;s estimated that 20% of all current websites are running Apache.
-<a href="https://news.netcraft.com/archives/2019/01/24/january-2019-web-server-survey.html"><img src="https://news.netcraft.com/wp-content/uploads/2018/12/wpid-wss-share.png" alt="" /></a>
+			<p>I saw a great search on Shodan the other day, one just for <a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache Webservers</a>. Apache is a true classic, a webserver now 24 years old that had a big hand in the expansion of the early web. It&rsquo;s still among the most popular servers today; it&rsquo;s estimated that 20% of all current websites are running Apache.
+<a href="https://news.netcraft.com/archives/2019/01/24/january-2019-web-server-survey.html"><img src="https://news.netcraft.com/wp-content/uploads/2018/12/wpid-wss-share.png" alt=""></a>
 So I was expecting to see a lot of results, and indeed Shodan could identify at least 320,000 IP addresses running Apache.</p>
-
-<h2 id="an-apache-server-on-181-229-222-94">An Apache Server on 181.229.222.94</h2>
-
+<h2 id="an-apache-server-on-18122922294">An Apache Server on 181.229.222.94</h2>
 <p>With so much to go on, I decided to pick just the first result I found, in Argentina.
-<img src="/images/100Days/Day67/firstlook.png" alt="" />
-A classic page. The ol&rsquo; &ldquo;Index of /&rdquo; directory list. I remember seeing one of these for the first time maybe 20 years ago. I spent a good portion of the day trying to find any kind of scholarship, history, or journalism about this kind of directory page, but I couldn&rsquo;t find anything. If you know of anything like this please send it my way.</p>
-
+<img src="/images/100Days/Day67/firstlook.png" alt="">
+A classic page. The ol' &ldquo;Index of /&rdquo; directory list. I remember seeing one of these for the first time maybe 20 years ago. I spent a good portion of the day trying to find any kind of scholarship, history, or journalism about this kind of directory page, but I couldn&rsquo;t find anything. If you know of anything like this please send it my way.</p>
 <p>The little folders are directories and the &ldquo;?&ldquo;s are files. M leads to an empty array, and PU leads to an access page.
-<img src="/images/100Days/Day67/access.png" alt="" />
+<img src="/images/100Days/Day67/access.png" alt="">
 I downloaded one of the PU rar files and found that it had an entire PHP server and web page inside of it. When I tried to host it locally however, I found that it was full of errors and couldn&rsquo;t actually run. Maybe someone was scrambling to finish a web development job and never got it together. I didn&rsquo;t know enough PHP (or wanted to take the time to know) to figure out how to read the pages that I did have, but it included all of the images that the server was hosting, including this one.
-<img src="/images/100Days/Day67/Fondo8.jpg" alt="" />
+<img src="/images/100Days/Day67/Fondo8.jpg" alt="">
 I couldn&rsquo;t really figure out what was going on here, and I had more important things to look at anyway. TsT I couldn&rsquo;t get into but VA and VAweb are just great.
-<img src="/images/100Days/Day67/VA.png" alt="" />
+<img src="/images/100Days/Day67/VA.png" alt="">
 VA opened up this truly amazing website for a podiatrist in Buenos Aires. Look at all those colors of text. I can&rsquo;t read a single word of the pink text. That logo is just beautiful. Unfortunately it seems like they aren&rsquo;t actually using this website, because I looked them up on Google and found that their <a href="http://www.viviana-arias.com/">website looks like this</a>:
-<img src="/images/100Days/Day67/VAReal.png" alt="" />
+<img src="/images/100Days/Day67/VAReal.png" alt="">
 Amazingly that&rsquo;s also what the VAweb directory opens, which leads me to a theory that this index is the development area for a web designer to stage and showcase websites. By the way, if you didn&rsquo;t go to the page and see it in real life immediately, those images are an embedded flash animation.
-<img src="/images/100Days/Day67/maps2.png" alt="" />
+<img src="/images/100Days/Day67/maps2.png" alt="">
 Here it is in Google maps. The plant is the same, but it just doesn&rsquo;t look right without all the text scrawled in front of it. See you tomorrow.</p>
 
 		</section>
@@ -74,7 +70,7 @@ Here it is in Google maps. The plant is the same, but it just doesn&rsquo;t look
 </main>
 <footer>
     <hr>⚡️
-        2020  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+        2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
     </footer>
     
     
